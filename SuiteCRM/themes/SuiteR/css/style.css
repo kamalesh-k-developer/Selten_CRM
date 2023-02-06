@@ -3491,7 +3491,7 @@ table legend {
 /* Hide for mobile, show later */
 
 .sidebar {
-    /* display: none; */
+     display: none; 
 }
 
 @media (min-width: 979px) {
@@ -3606,6 +3606,7 @@ li.moremenu {
     .col-sm-3 {
 
         max-width:215px !important;
+        display: none !important;
     }
     .col-sm-offset-3 {
         margin-left:215px;
@@ -3619,12 +3620,14 @@ li.moremenu {
     .col-md-2 {
 
         max-width:215px !important;
+        display: none !important;
     }
     .col-md-offset-2 {
         margin-left:215px;
     }
     .col-md-10{
-        width:83%;
+        width: 99%;
+        margin-left: 1px;
     }
 }
 
@@ -3788,6 +3791,8 @@ li.moremenu {
     #bootstrap-container,.col-sm-9, .col-sm-offset-3, .col-md-10, .col-md-offset-2, .main {
         margin:0;
         padding:0;
+        width: 99%;
+        margin-left: 1px;
     }
     /* Fix for mobile footer hiding content at bottom of page */
     #content, #pageContainer {
@@ -4036,6 +4041,7 @@ a[id^=grouptab]:visited, a[id^=grouptab]:active {
 }
 
 #buttontoggle {
+    display:none;
     position: fixed;
     left: 0;
     top: 130px;
