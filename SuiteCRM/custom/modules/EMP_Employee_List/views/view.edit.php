@@ -10,7 +10,7 @@
           echo "<script src='custom/include/javascript/field_functions.js'></script>";
             echo "<script>
                $(document).ready(function(){
-                makeMandatory('emp_contact_c');
+                // hideField('#emp_dob_c');
               });
               </script>";
           }

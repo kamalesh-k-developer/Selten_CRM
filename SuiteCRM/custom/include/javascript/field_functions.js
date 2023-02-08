@@ -1,3 +1,7 @@
+/**
+ * function to add mandatory fields of panel to validation
+ * @param field_id {string|jQuery}
+ */
 function hideField(field_id) {
 	var target = _getFieldData(field_id);
 
@@ -28,6 +32,20 @@ function hideField(field_id) {
 	}
 }
 
+
+/**
+ * helper function. Return information about the field
+ *
+ * @param field_id {String | jQuery} -  Can accept field name, jQuery object or jQuery selector in paramether
+ * @returns {{
+* 				parentTd: boolean|jQuery,
+* 				field: boolean|jQuery,  - original field name. Can be different from 'id' attribute in case of file and datetimecombo fields
+* 				type: boolean|String,
+* 				fieldId: boolean|String,
+* 				labelTd: boolean|jQuery
+* 			}}
+* @private
+*/
 function _getFieldData(field_id) {
 	var result = {
 		field: false,
@@ -39,8 +57,10 @@ function _getFieldData(field_id) {
 
 	if (!field_id)
 		return result;
+		// console.log(result);
 	if (field_id instanceof jQuery)	{
 		result.field = field_id;
+		// console.log(field_id);
 	} else {
 		if (field_id.match(/^#?[a-zA-Z0-9_\-]+$/)) {
 			if (field_id.charAt(0) == '#')
@@ -90,6 +110,11 @@ function _getFieldData(field_id) {
 	return result;
 }
 
+/**
+ * return field type acceptable for 'addToValidate' function
+ * @param field_id {string} - field name
+ * @returns {string}
+ */
 function getFieldType(field_id){
 	field_id = field_id.replace('[]', '');
 	if ($('#'+field_id+'_file').length > 0){
