@@ -1675,12 +1675,13 @@ a.tabFormAdvLink:link, a.tabFormAdvLink:visited, a.tabFormAdvLink:hover {
 
 #globalLinks ul li a {
     max-width:150px !important;
-    color:#3C8DBC;
+    color:#423f93;
 }
 
 #globalLinks ul li a:hover {
     max-width:150px !important;
     color:#ffffff;
+    background-color:#323365 ;
 }
 
 #globalLinks ul li{
@@ -2076,7 +2077,7 @@ div#chartDashlets {
 
 /* miscellaneaous 508 classes */
 .detail508 tr td[scope="col"] {
-    background-color: #0061fb;
+    background-color: #323365;
     border-color: #CBDAE6;
     color: #ffffff;
     font-size:14px;
@@ -2481,7 +2482,7 @@ ul.clickMenu li ul.subnav li a:hover .showLessArrow, ul.clickMenu li ul.subnav l
 
 a#create_link.utilsLink {
     color: #FFFFFF;
-    background-color:#0061fb ;
+    background-color:#423f93 ;
     border:none;
     padding:10px 13px 10px 13px;
     font-weight:bold;
@@ -2494,7 +2495,7 @@ a#create_link.utilsLink {
 }
 
 a#create_link.utilsLink:hover {
-    background-color: #0245af;
+    background-color: #323365;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
@@ -3023,7 +3024,7 @@ fieldset[disabled] .btn-primary.active{
 }
 
 .dropdown-menu li a {
-    color:#0061fb;
+    color:#423f93;
     text-decoration:none;
     padding:5px;
     display:block;
@@ -3031,7 +3032,7 @@ fieldset[disabled] .btn-primary.active{
 
 .dropdown-menu li a:hover {
     color:#ffffff;
-    background:#0245af;
+    background:#323365;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
@@ -3140,7 +3141,7 @@ li.topnav{
 
 .button, input[type=submit], input[type=button] {
     color: #FFFFFF;
-    background-color: #0061fb;
+    background-color: #423f93;
     border:none;
     padding:7px 26px 5px 19px;
     font-weight:bold;
@@ -3153,7 +3154,7 @@ li.topnav{
 }
 
 button[disabled], input[type="submit"][disabled], input[type="reset"][disabled], input[type="button"][disabled]{
-    background-color: #777777;
+    background-color: #423f93;
     border:none;
     color: #ffffff;
     cursor:pointer;
@@ -3633,7 +3634,8 @@ li.moremenu {
 
 @media (min-width:1536px) {
     .col-md-10{
-        width:88%;
+        width:99%;
+        margin-left: 10px;
     }
 }
 
@@ -4386,7 +4388,7 @@ h3 span{
 /* save button header and footer  style*/
 .action_buttons input#SAVE_HEADER {
     color: #FFFFFF;
-    background-color: #0061fb;
+    background-color: #423f93;
     border:none;
     padding:8px 10px 8px 10px;
     font-weight:bold;
@@ -4398,7 +4400,7 @@ h3 span{
     text-decoration:none;
 }
 .action_buttons input#SAVE_HEADER:hover{
-    background-color: #0245af;
+    background-color: #323365;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
@@ -4406,7 +4408,7 @@ h3 span{
 }
 .action_buttons input#SAVE_FOOTER {
     color: #FFFFFF;
-    background-color: #0061fb;
+    background-color: #423f93;
     border:none;
     padding:8px 10px 8px 10px;
     font-weight:bold;
@@ -4419,7 +4421,7 @@ h3 span{
 }
 
 .action_buttons input#SAVE_FOOTER:hover{
-    background-color: #0245af;
+    background-color: #323365;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
@@ -4429,7 +4431,7 @@ h3 span{
 /* cancel button header and footer style */
 .action_buttons input#CANCEL_HEADER {
     color: #FFFFFF;
-    background-color: #0061fb;
+    background-color: #423f93;
     border:none;
     padding:8px 10px 8px 10px;
     font-weight:bold;
@@ -4442,7 +4444,7 @@ h3 span{
 }
 
 .action_buttons input#CANCEL_HEADER:hover {
-    background-color: #0245af;
+    background-color: #323365;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
@@ -4451,7 +4453,7 @@ h3 span{
 
 .action_buttons input#CANCEL_FOOTER {
     color: #FFFFFF;
-    background-color: #0061fb;
+    background-color: #423f93;
     border:none;
     padding:8px 10px 8px 10px;
     font-weight:bold;
@@ -4464,7 +4466,7 @@ h3 span{
 }
 
 .action_buttons input#CANCEL_FOOTER:hover {
-    background-color: #0245af;
+    background-color: #323365;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
@@ -4474,9 +4476,9 @@ h3 span{
 /* main login page style */
 .form-signin input#bigbutton {
     color: #FFFFFF;
-    background-color: #0061fb;
+    background-color: #423f93;
     border:none;
-    padding:7px 26px 5px 19px;
+    padding:7px 26px 8px 19px;
     font-weight:bold;
     font-size:13px;
     border-radius:8px;
@@ -4487,7 +4489,7 @@ h3 span{
     text-decoration:none;
 }
 .form-signin input#bigbutton:hover {
-    background-color: #0245af;
+    background-color: #323365;
     border:none;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
@@ -4500,14 +4502,14 @@ h3 span{
     color: black;
 }
 .input-group-addon:first-child {
-    color:#0061fb;
+    color:#323365;
 }
 #user_password, #user_name {
     font-family:serif;
 }
 input[type=button].btn-block{
     color: #FFFFFF;
-    background-color: #0061fb;
+    background-color: #423f93;
     border:none;
     padding:7px 26px 5px 19px;
     font-weight:bold;
@@ -4520,7 +4522,7 @@ input[type=button].btn-block{
     text-decoration:none;
 }
 input[type=button].btn-block:hover {
-    background-color: #0245af;
+    background-color: #323365;
     border:none;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
@@ -4540,7 +4542,7 @@ input[type=button].btn-block:hover {
 /* search and clear button style */
 .sumbitButtons input#search_form_submit{
     color: #FFFFFF;
-    background-color: #0061fb;
+    background-color: #423f93;
     border:none;
     padding:8px 10px 8px 10px;
     font-weight:bold;
@@ -4552,7 +4554,7 @@ input[type=button].btn-block:hover {
     text-decoration:none;
 }
 .sumbitButtons input#search_form_submit:hover {
-    background-color: #0245af;
+    background-color: #323365;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
@@ -4560,7 +4562,7 @@ input[type=button].btn-block:hover {
 }
 .sumbitButtons input#search_form_clear{
     color: #FFFFFF;
-    background-color: #0061fb;
+    background-color: #423f93;
     border:none;
     padding:8px 10px 8px 10px;
     font-weight:bold;
@@ -4572,7 +4574,7 @@ input[type=button].btn-block:hover {
     text-decoration:none;
 }
 .sumbitButtons input#search_form_clear:hover {
-    background-color: #0245af;
+    background-color: #323365;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
@@ -4582,7 +4584,7 @@ input[type=button].btn-block:hover {
 /* change log button in edit view - style */
 .action_buttons input#btn_view_change_log {
     color: #FFFFFF;
-    background-color: #0061fb;
+    background-color: #423f93;
     border:none;
     padding:8px 10px 8px 10px;
     font-weight:bold;
@@ -4594,7 +4596,7 @@ input[type=button].btn-block:hover {
     text-decoration:none;
 }
 .action_buttons input#btn_view_change_log:hover{
-    background-color: #0245af;
+    background-color: #323365;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
@@ -4604,7 +4606,7 @@ input[type=button].btn-block:hover {
 /* save and contnue button in edit view - style */
 .paginationWrapper button#save_and_continue {
     color: #FFFFFF;
-    background-color: #0061fb;
+    background-color: #423f93;
     border:none;
     padding:8px 10px 8px 10px;
     font-weight:bold;
@@ -4616,7 +4618,7 @@ input[type=button].btn-block:hover {
     text-decoration:none;
 }
 .paginationWrapper button#save_and_continue:hover {
-    background-color: #0245af;
+    background-color: #323365;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
@@ -4626,7 +4628,7 @@ input[type=button].btn-block:hover {
 /* studio inside button style */
 #export input#exportBtn {
     color: #FFFFFF;
-    background-color: #0061fb;
+    background-color: #423f93;
     border:none;
     padding:7px 26px 5px 19px;
     font-weight:bold;
@@ -4638,7 +4640,7 @@ input[type=button].btn-block:hover {
     text-decoration:none;
 }
 #export input#exportBtn:hover {
-    background-color: #0245af;
+    background-color: #323365;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
@@ -4648,7 +4650,7 @@ input[type=button].btn-block:hover {
 /* module name inside -> lable buttons style */
 #editlabels input#publishBtn {
     color: #FFFFFF;
-    background-color: #0061fb;
+    background-color: #423f93;
     border:none;
     padding:7px 26px 5px 19px;
     font-weight:bold;
@@ -4660,7 +4662,7 @@ input[type=button].btn-block:hover {
     text-decoration:none;
 }
 #editlabels input#publishBtn:hover {
-    background-color: #0245af;
+    background-color: #323365;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
@@ -4668,7 +4670,7 @@ input[type=button].btn-block:hover {
 }
 #editlabels input#renameModBtn {
     color: #FFFFFF;
-    background-color: #0061fb;
+    background-color: #423f93;
     border:none;
     padding:7px 26px 5px 19px;
     font-weight:bold;
@@ -4680,7 +4682,7 @@ input[type=button].btn-block:hover {
     text-decoration:none;
 }
 #editlabels input#renameModBtn:hover {
-    background-color: #0245af;
+    background-color: #323365;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
@@ -4690,7 +4692,7 @@ input[type=button].btn-block:hover {
 /* module name inside -> field buttons style */
 #studiofields input {
     color: #FFFFFF;
-    background-color: #0061fb;
+    background-color: #423f93;
     border:none;
     padding:7px 26px 5px 19px;
     font-weight:bold;
@@ -4702,7 +4704,7 @@ input[type=button].btn-block:hover {
     text-decoration:none;
 }
 #studiofields input:hover {
-    background-color: #0245af;
+    background-color: #323365;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
@@ -4711,7 +4713,7 @@ input[type=button].btn-block:hover {
 /* add field button styel */
 #popup_form_id input.button {
     color: #FFFFFF;
-    background-color: #0061fb;
+    background-color: #423f93;
     border:none;
     padding:8px 10px 8px 10px;
     font-weight:bold;
@@ -4723,7 +4725,7 @@ input[type=button].btn-block:hover {
     text-decoration:none;
 }
 #popup_form_id input.button:hover {
-    background-color: #0245af;
+    background-color: #323365;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
@@ -4733,7 +4735,7 @@ input[type=button].btn-block:hover {
 /* relationship inside buttons style */
 .bodywrapper input.button {
     color: #FFFFFF;
-    background-color: #0061fb;
+    background-color: #423f93;
     border:none;
     padding:7px 26px 5px 19px;
     margin: 5px;
@@ -4747,7 +4749,7 @@ input[type=button].btn-block:hover {
     text-decoration:none;
 }
 .bodywrapper input.button:hover {
-    background-color: #0245af;
+    background-color: #323365;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
@@ -4757,7 +4759,7 @@ input[type=button].btn-block:hover {
 /* relate field buttons style */
 #detailpanel_1 button#btn_project_assign_to_c {
     color: #FFFFFF;
-    background-color: #0061fb;
+    background-color: #423f93;
     border:none;
     padding:6px 13px 6px 12px;
     margin: 5px;
@@ -4770,7 +4772,7 @@ input[type=button].btn-block:hover {
     text-decoration:none;
 }
 #detailpanel_1 button#btn_project_assign_to_c:hover {
-    background-color: #0245af;
+    background-color: #323365;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
@@ -4778,7 +4780,7 @@ input[type=button].btn-block:hover {
 }
 #detailpanel_1 button#btn_clr_project_assign_to_c {
     color: #FFFFFF;
-    background-color: #0061fb;
+    background-color: #423f93;
     border:none;
     padding:6px 13px 6px 12px;
     margin: 5px;
@@ -4791,7 +4793,7 @@ input[type=button].btn-block:hover {
     text-decoration:none;
 }
 #detailpanel_1 button#btn_clr_project_assign_to_c:hover {
-    background-color: #0245af;
+    background-color: #323365;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
