@@ -91,6 +91,7 @@ array (
           'panelDefault' => 'expanded',
         ),
       ),
+      'syncDetailEditViews' => true,
     ),
     'panels' => 
     array (
@@ -98,56 +99,87 @@ array (
       array (
         0 => 
         array (
-          0 => 'employee_status',
+          0 => 
+          array (
+            'name' => 'employee_id_c',
+            'label' => 'LBL_EMPLOYEE_ID_C',
+          ),
         ),
         1 => 
         array (
-          0 => 'name',
+          0 => 'reports_to_name',
         ),
         2 => 
         array (
-          0 => 'title',
-          1 => 'phone_work',
+          0 => 
+          array (
+            'name' => 'first_name',
+            'label' => 'LBL_FIRST_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'last_name',
+            'label' => 'LBL_LAST_NAME',
+          ),
         ),
         3 => 
         array (
-          0 => 'department',
-          1 => 'phone_mobile',
+          0 => 
+          array (
+            'name' => 'employee_gender_c',
+            'studio' => 'visible',
+            'label' => 'LBL_EMPLOYEE_GENDER_C',
+          ),
+          1 => 
+          array (
+            'name' => 'employee_date_of_birth_c',
+            'label' => 'LBL_EMPLOYEE_DATE_OF_BIRTH_C',
+          ),
         ),
         4 => 
         array (
-          0 => 'reports_to_name',
-          1 => 'phone_other',
+          0 => 'phone_mobile',
         ),
         5 => 
         array (
-          0 => '',
-          1 => 'phone_fax',
+          0 => 'email1',
         ),
         6 => 
         array (
-          0 => '',
-          1 => 'phone_home',
+          0 => 
+          array (
+            'name' => 'employe_qualification_c',
+            'studio' => 'visible',
+            'label' => 'LBL_EMPLOYE_QUALIFICATION_C',
+          ),
         ),
         7 => 
         array (
-          0 => 'messenger_type',
+          0 => 'title',
         ),
         8 => 
         array (
-          0 => 'messenger_id',
+          0 => 
+          array (
+            'name' => 'address_city',
+            'label' => 'LBL_CITY',
+          ),
         ),
         9 => 
         array (
-          0 => 'address_country',
+          0 => 
+          array (
+            'name' => 'address_state',
+            'label' => 'LBL_STATE',
+          ),
         ),
         10 => 
         array (
-          0 => 'description',
+          0 => 'address_country',
         ),
         11 => 
         array (
-          0 => 'email1',
+          0 => 'employee_status',
         ),
       ),
     ),
