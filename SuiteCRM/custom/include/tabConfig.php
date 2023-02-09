@@ -1,5 +1,5 @@
 <?php
-// created: 2023-02-01 06:19:22
+// created: 2023-02-09 04:49:34
 $GLOBALS['tabStructure'] = array (
   'LBL_TABGROUP_SUPPORT' => 
   array (
@@ -11,6 +11,7 @@ $GLOBALS['tabStructure'] = array (
       2 => 'sh_Salary_History',
       3 => 'pro_Projects',
       4 => 'PAY_Payments',
+      5 => 'EMP_Employees',
     ),
   ),
   'LBL_GROUPTAB2_1669877619' => 
