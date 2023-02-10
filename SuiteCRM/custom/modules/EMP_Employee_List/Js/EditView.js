@@ -1,3 +1,3 @@
-// $(document).ready(function(){
-//     hideField("emp_dob_c");
-// });
+$(document).ready(function(){
+   // $('#emp_gender_c').multipleSelect();
+});
