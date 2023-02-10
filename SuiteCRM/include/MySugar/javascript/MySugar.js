@@ -1,6 +1,9 @@
 /*********************************************************************************
  * SugarCRM Community Edition is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
+ 
+ * SuiteCRM is an extension to SugarCRM Community Edition developed by Salesagility Ltd.
+ * Copyright (C) 2011 - 2014 Salesagility Ltd.
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -28,9 +31,9 @@
  *
  * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
  * these Appropriate Legal Notices must retain the display of the "Powered by
- * SugarCRM" logo. If the display of the logo is not reasonably feasible for
- * technical reasons, the Appropriate Legal Notices must display the words
- * "Powered by SugarCRM".
+ * SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
+ * reasonably feasible for  technical reasons, the Appropriate Legal Notices must
+ * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  ********************************************************************************/
 initMySugar=function(){SUGAR.mySugar=function(){var originalLayout=null;var configureDashletId=null;var currentDashlet=null;var leftColumnInnerHTML=null;var leftColObj=null;var maxCount;var warningLang;var closeDashletsDialogTimer=null;var activeTab=activePage;var current_user=current_user_id;var module=moduleName;var charts=new Object();if(module=='Dashboard'){cookiePageIndex=current_user+"_activeDashboardPage";}
 else{cookiePageIndex=current_user+"_activePage";}
