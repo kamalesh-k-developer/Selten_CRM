@@ -10,10 +10,10 @@ class EMP_Employee_ListViewEdit extends ViewEdit {
     echo "<script src='custom/include/javascript/field_functions.js'></script>";
       echo "<script>
         $(document).ready(function(){
-          hideField('emp_email_c');
+          // hideField('emp_email_c');
           makeNonMandatory('emp_dob_c');
-          $('#emp_gender_c').hide();
-          console.log('test');
+          // $('#emp_gender_c').hide();
+          // console.log('test');
         });
         </script>";
       }
