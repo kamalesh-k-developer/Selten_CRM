@@ -99,6 +99,16 @@ array (
             'label' => 'LBL_EMPLOYEE_STATUS_C',
           ),
         ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'emp_skill_c',
+            'comment' => 'Test created by Me',
+            'label' => 'Skill',
+          ),
+          1 => '',
+        ),
       ),
     ),
   ),

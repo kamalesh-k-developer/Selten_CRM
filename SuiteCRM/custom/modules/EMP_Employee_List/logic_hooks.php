@@ -6,6 +6,8 @@
  
    $hook_array['process_record'] = Array();
    $hook_array['process_record'][] = Array(1, 'Update Name Field with ID In Records', 'custom/modules/EMP_Employee_List/customlogichook.php','EMP_Employee_List_cstm', 'update_bean');
+//    $hook_array['process_record'][] = Array(2, 'DropdownList', 'custom/modules/EMP_Employee_List/customlogichook.php','EMP_Employee_List_cstm', 'dropdown_List');
+
    $hook_array['after_save'] = Array();
    $hook_array['after_save'][] = Array(1, 'Update Name Field with ID In Database', 'custom/modules/EMP_Employee_List/customlogichook.php','EMP_Employee_List_cstm', 'add_record_number'); 
    $hook_array['after_relationship_add'] = Array();

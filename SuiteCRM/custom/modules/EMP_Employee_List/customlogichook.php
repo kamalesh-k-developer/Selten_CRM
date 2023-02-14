@@ -37,7 +37,19 @@
                     $retrieveSalaryHistoryBean->save();
             }
         }
+      
+        // function dropdown_List(&$bean, $event, $arguments){
+        //     global $db;
+        //     $query = "SELECT skill_name_c FROM sk_skill_cstm"; 
+        //     $result = $db->query($query);
+            
+        //     while ($row = $db->fetchByAssoc($result)) { 
+        //         $GLOBALS['log']->fatal("test");
+        //         $bean->emp_username_c->addOption($row['skill_name_c']);
+        //         $GLOBALS['log']->fatal("testing".print_r($bean->emp_username_c,true));
+        //     } 
 
+        // }
         
     }
     
