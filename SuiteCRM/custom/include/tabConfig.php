@@ -1,5 +1,5 @@
 <?php
-// created: 2023-02-09 04:49:34
+// created: 2023-02-20 11:34:13
 $GLOBALS['tabStructure'] = array (
   'LBL_TABGROUP_SUPPORT' => 
   array (
@@ -9,9 +9,8 @@ $GLOBALS['tabStructure'] = array (
       0 => 'EMP_Employee_List',
       1 => 'at_Attentance',
       2 => 'sh_Salary_History',
-      3 => 'pro_Projects',
-      4 => 'PAY_Payments',
-      5 => 'EMP_Employees',
+      3 => 'PAY_Payments',
+      4 => 'CLI_Clients',
     ),
   ),
   'LBL_GROUPTAB2_1669877619' => 
@@ -36,6 +35,22 @@ $GLOBALS['tabStructure'] = array (
     'modules' => 
     array (
       0 => 'Opportunities',
+    ),
+  ),
+  'LBL_GROUPTAB4_1676888637' => 
+  array (
+    'label' => 'LBL_GROUPTAB4_1676888637',
+    'modules' => 
+    array (
+      0 => 'pro_Projects',
+    ),
+  ),
+  'LBL_GROUPTAB5_1676888637' => 
+  array (
+    'label' => 'LBL_GROUPTAB5_1676888637',
+    'modules' => 
+    array (
+      0 => 'Contacts',
     ),
   ),
 );

@@ -20,6 +20,10 @@ array (
           'field' => '30',
         ),
       ),
+      'javascript' => '{sugar_getscript file="custom/include/javascript/field_functions.js"}
+                       {sugar_getscript file="custom/modules/pro_Projects/Javascript/EditView.js"}
+                       {sugar_getscript file="cache/include/javascript/sugar_grp_yui_widgets.js"}
+                       <link rel="stylesheet" type="text/css" href="{sugar_getjspath file="custom/css/multiple-select.css"}">',
       'useTabs' => false,
       'tabDefs' => 
       array (

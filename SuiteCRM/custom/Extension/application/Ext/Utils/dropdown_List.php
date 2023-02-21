@@ -8,7 +8,7 @@ function dropdown_List(){
             while($row = $db->fetchByAssoc($result)){
                 // $GLOBALS['log']->fatal("test1".print_r($row,true));
                 $getDropdown[] = $row['skill_name_c'];
-                $GLOBALS['log']->fatal("test1".print_r($getDropdown,true));
+                // $GLOBALS['log']->fatal("test1".print_r($getDropdown,true));
                 // $getDropdown++;
             }
             return $getDropdown;
