@@ -1,5 +1,5 @@
 <?php
-// created: 2023-01-27 06:13:33
+// created: 2023-02-21 06:02:45
 $subpanel_layout['list_fields'] = array (
   'name' => 
   array (
@@ -12,12 +12,18 @@ $subpanel_layout['list_fields'] = array (
     'target_module' => NULL,
     'target_record_key' => NULL,
   ),
-  'project_emp_name_c' => 
+  'project_assign_to_c' => 
   array (
-    'type' => 'varchar',
+    'type' => 'relate',
     'default' => true,
-    'vname' => 'LBL_PROJECT_EMP_NAME_C',
+    'studio' => 'visible',
+    'vname' => 'LBL_PROJECT_ASSIGN_TO_C',
+    'id' => 'EMP_EMPLOYEE_LIST_ID_C',
+    'link' => true,
     'width' => '10%',
+    'widget_class' => 'SubPanelDetailViewLink',
+    'target_module' => 'EMP_Employee_List',
+    'target_record_key' => 'emp_employee_list_id_c',
   ),
   'project_name_c' => 
   array (

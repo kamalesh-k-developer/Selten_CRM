@@ -125,6 +125,13 @@ $moduleList[] = 'at_Attentance';
 
  
  //WARNING: The contents of this file are auto-generated
+$beanList['CLI_Clients'] = 'CLI_Clients';
+$beanFiles['CLI_Clients'] = 'modules/CLI_Clients/CLI_Clients.php';
+$moduleList[] = 'CLI_Clients';
+
+
+ 
+ //WARNING: The contents of this file are auto-generated
 $beanList['EMP_Employee'] = 'EMP_Employee';
 $beanFiles['EMP_Employee'] = 'modules/EMP_Employee/EMP_Employee.php';
 $moduleList[] = 'EMP_Employee';

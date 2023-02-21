@@ -10,6 +10,11 @@
 		$query = "UPDATE `".$bean->table_name."` SET `name` = concat('PRO_', record_number) WHERE `id` = '".$bean->id."'";
 		$db->query($query);
 	}
+
+   function update_employee_subpanel_method($bean, $event, $arguments){
+      // $assigned_to_employee = $bean->project_assign_to_c->getBeans();
+      $GLOBALS['log']->fatal("testing".print_r($event,true));
+   }
    }
 
 

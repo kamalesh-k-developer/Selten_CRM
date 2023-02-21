@@ -13,22 +13,6 @@ array (
         'default' => true,
         'name' => 'name',
       ),
-      'first_name' => 
-      array (
-        'type' => 'name',
-        'label' => 'LBL_FIRST_NAME',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'first_name',
-      ),
-      'last_name' => 
-      array (
-        'type' => 'name',
-        'label' => 'LBL_LAST_NAME',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'last_name',
-      ),
       'employee_gender_c' => 
       array (
         'type' => 'enum',
