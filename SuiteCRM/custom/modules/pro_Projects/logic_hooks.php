@@ -7,6 +7,7 @@
    $hook_array['process_record'] = Array();
    $hook_array['process_record'][] = Array(1, 'Update Name Field with ID', 'custom/modules/pro_Projects/customlogichook.php','pro_Projects_cstm', 'update_bean');
    $hook_array['after_save'] = Array();
+
    $hook_array['after_save'][] = Array(2, 'Update Name Field with ID', 'custom/modules/pro_Projects/customlogichook.php','pro_Projects_cstm', 'add_record_number');
    $hook_array['after_save'][] = Array(1, 'Check project assigned', 'custom/modules/pro_Projects/customlogichook.php','pro_Projects_cstm', 'checkProjectAssigned'); 
 

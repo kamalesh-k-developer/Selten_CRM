@@ -11,6 +11,7 @@
 		$db->query($query);
 	}
 
+
    function checkProjectAssigned($bean, $event, $arguments){
       $empId = $bean->emp_employee_list_id_c;
       if(!empty($empId)){
@@ -23,6 +24,7 @@
       }
      }
   }
+
 
 
 ?>

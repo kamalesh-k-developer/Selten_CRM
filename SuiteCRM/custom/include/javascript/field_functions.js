@@ -4,9 +4,11 @@
  */
 function hideField(id) {
 	var target = _getFieldData(id);
+	console.log(target);
 
 	if (typeof _form_id != 'undefined' && _form_id != 'DetaiView' && (!target.field || !target.field.length))
 		return;
+		console.log(_form_id);
 	if (target.parentTd.find('div#' + target.fieldId + '_parent_wrapper').length === 0){
 		var parent_padding = target.parentTd.css('padding');
 		var label_padding = target.labelTd.css('padding');
@@ -58,9 +60,9 @@ function _getFieldData(id) {
 	if (!id)
 		return result;
 		// console.log(result);
-	if (id instanceof jQuery)	{
+		// console.log(id instanceof jQuery);
+	if (id instanceof jQuery)	{  // instanceof is the check the value
 		result.field = id;
-		// console.log(id);
 	} else {
 		if (id.match(/^#?[a-zA-Z0-9_\-]+$/)) {
 			if (id.charAt(0) == '#')
