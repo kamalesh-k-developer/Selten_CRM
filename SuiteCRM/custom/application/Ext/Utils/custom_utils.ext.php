@@ -5,7 +5,7 @@
 function dropdown_List(){
 //    $GLOBALS['log']->fatal("testing".print_r($bean,true));
             global $db;
-            $query = "SELECT skill_name_c FROM sk_skill_cstm"; 
+            $query = "SELECT id_c,skill_name_c FROM sk_skill_cstm"; 
             $result = $db->query($query);
             $getDropdown = array();
             while($row = $db->fetchByAssoc($result)){
