@@ -42,8 +42,42 @@ $dictionary['PAY_Payments'] = array(
 	'audited'=>true,
 		'duplicate_merge'=>true,
 		'fields'=>array (
+'record_number' =>
+  array (
+    'required' => false,
+    'name' => 'record_number',
+    'vname' => 'LBL_RECORD_NUMBER',
+    'type' => 'int',
+	'link' => true,
+    'massupdate' => 0,
+    'no_default' => false,
+    'comments' => '',
+    'help' => '',
+    'auto_increment' => true,
+    'isnull' => false,
+    'importable' => 'true',
+    'duplicate_merge' => 'disabled',
+    'duplicate_merge_dom_value' => '0',
+    'audited' => false,
+    'reportable' => true,
+    'unified_search' => false,
+    'merge_filter' => 'disabled',
+    'len' => '255',
+    'size' => '20',
+    'enable_range_search' => false,
+    'disable_num_format' => '1',
+    'min' => false,
+    'max' => false,
+  ),
 ),
 	'relationships'=>array (
+),
+'indices' => array(
+	array(
+		'name' => 'record_number',
+		'type' => 'unique',
+		'fields'=> array('record_number')
+	),
 ),
 	'optimistic_locking'=>true,
 		'unified_search'=>true,

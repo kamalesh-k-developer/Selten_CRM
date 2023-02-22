@@ -1,5 +1,5 @@
 <?php
-$module_name = 'at_Attentance';
+$module_name = 'CLI_Clients';
 $viewdefs [$module_name] = 
 array (
   'EditView' => 
@@ -37,44 +37,20 @@ array (
       array (
         0 => 
         array (
-          0 => 
-          array (
-            'name' => 'attentance_emp_name_c',
-            'label' => 'LBL_ATTENTANCE_EMP_NAME_C',
-          ),
+          0 => 'name',
         ),
         1 => 
         array (
           0 => 
           array (
-            'name' => 'entry_time_c',
-            'label' => 'LBL_ENTRY_TIME_C',
-          ),
-          1 => 
-          array (
-            'name' => 'exit_time_c',
-            'label' => 'LBL_EXIT_TIME_C',
+            'name' => 'client_name_c',
+            'label' => 'LBL_CLIENT_NAME_C',
           ),
         ),
         2 => 
         array (
-          0 => 
-          array (
-            'name' => 'attentance_joining_date_c',
-            'label' => 'LBL_ATTENTANCE_JOINING_DATE_C',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'attentance_absent_c',
-            'label' => 'LBL_ATTENTANCE_ABSENT_C',
-          ),
-        ),
-        4 => 
-        array (
-          0 => 'description',
+          0 => '',
+          1 => '',
         ),
       ),
     ),

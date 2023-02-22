@@ -1,5 +1,5 @@
 <?php
-// created: 2023-02-02 06:21:54
+// created: 2023-02-22 15:18:11
 $mod_strings = array (
   'LBL_PAYMENT_METHOD_C' => 'Mode Of Pay',
   'LBL_PAYMENT_AMOUNT_IN_RUPEES_C' => 'Amount In Rupees',
@@ -9,4 +9,5 @@ $mod_strings = array (
   'LBL_PAYMENT_YEAR_C' => 'Year',
   'LBL_PAYMENT_MONTH_C' => 'Month',
   'LBL_PAYMENT_DAY_C' => 'Day',
+  'LBL_RECORD_NUMBER' => 'Record Number',
 );

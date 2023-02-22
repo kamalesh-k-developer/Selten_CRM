@@ -4085,8 +4085,9 @@ a[id^=grouptab]:visited, a[id^=grouptab]:active {
 }
 
 .dashletPanel .h3Row h3{
-    color:#3C8DBC;
+    color:#323365;
     font-weight:bold;
+    font-size: 15px;
     margin:0 0 0 10px;
 }
 
