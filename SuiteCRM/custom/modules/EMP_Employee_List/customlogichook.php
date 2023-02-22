@@ -14,45 +14,20 @@
 
         function PopulateAttendance_EmployeeName($bean, $event, $arguments){
             if ($arguments['related_module'] == 'at_Attentance') {
-
-                    // $GLOBALS['log']->fatal("testing".print_r($arguments,true));
-                    // $GLOBALS['log']->fatal("testing".print_r($bean,true));
-                    // $GLOBALS['log']->fatal("testing".print_r($emp_username_c,true));
-
-                    // Retrieve the related the record
-                    // $attendance = BeanFactory::retrieveBean('at_Attentance', $arguments['related_bean']);
-                    $retrieveAttentanceBean = $arguments['related_bean'];
-                    // assgining the values
-                    $retrieveAttentanceBean->attentance_emp_name_c = $bean->emp_username_c;
-                    $retrieveAttentanceBean->save();
+                $retrieveAttentanceBean = $arguments['related_bean'];
+                $retrieveAttentanceBean->attentance_emp_name_c = $bean->emp_username_c;
+                $retrieveAttentanceBean->save();
             }
             if($arguments['related_module'] == 'pro_Projects'){ 
-                    $retrieveProjectBean = $arguments['related_bean'];
-                    $retrieveProjectBean->project_emp_name_c = $bean->emp_username_c;
-                    $retrieveProjectBean->save();
+                $retrieveProjectBean = $arguments['related_bean'];
+                $retrieveProjectBean->project_emp_name_c = $bean->emp_username_c;
+                $retrieveProjectBean->save();
             }
             if($arguments['related_module'] == 'sh_Salary_History'){
-                    $retrieveSalaryHistoryBean = $arguments['related_bean'];
-                    $retrieveSalaryHistoryBean->sly_history_emp_name_c = $bean->emp_username_c;
-                    $retrieveSalaryHistoryBean->save();
+                $retrieveSalaryHistoryBean = $arguments['related_bean'];
+                $retrieveSalaryHistoryBean->sly_history_emp_name_c = $bean->emp_username_c;
+                $retrieveSalaryHistoryBean->save();
             }
         }
-      
-        // function dropdown_List(&$bean, $event, $arguments){
-        //     global $db;
-        //     $query = "SELECT skill_name_c FROM sk_skill_cstm"; 
-        //     $result = $db->query($query);
-            
-        //     while ($row = $db->fetchByAssoc($result)) { 
-        //         $GLOBALS['log']->fatal("test");
-        //         $bean->emp_username_c->addOption($row['skill_name_c']);
-        //         $GLOBALS['log']->fatal("testing".print_r($bean->emp_username_c,true));
-        //     } 
-
-        // }
-        
     }
-    
-
-
 ?>
