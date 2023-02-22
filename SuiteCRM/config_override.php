@@ -8,5 +8,7 @@ $sugar_config['developerMode'] = false;
 $sugar_config['default_theme'] = 'SuiteR';
 $sugar_config['disabled_themes'] = 'Suite7';
 $sugar_config['hide_history_contacts_emails']['Cases'] = true;
-$sugar_config['addAjaxBannedModules'][1] = 'EMP_Employee_List';
+$sugar_config['addAjaxBannedModules'][1] = 'SecurityGroups';
+$sugar_config['addAjaxBannedModules'][0] = 'EMP_Employee_List';
+$sugar_config['addAjaxBannedModules'][2] = 'at_Attentance';
 /***CONFIGURATOR***/
