@@ -2,12 +2,13 @@
 $module_name = 'PAY_Payments';
 $listViewDefs [$module_name] = 
 array (
-  'NAME' => 
+  'RECORD_NUMBER' => 
   array (
-    'width' => '32%',
-    'label' => 'LBL_NAME',
-    'default' => true,
+    'type' => 'int',
     'link' => true,
+    'label' => 'LBL_RECORD_NUMBER',
+    'width' => '10%',
+    'default' => true,
   ),
   'PAYMENT_METHOD_C' => 
   array (
