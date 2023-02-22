@@ -11,11 +11,18 @@
 		$db->query($query);
 	}
 
-   function update_employee_subpanel_method($bean, $event, $arguments){
-      // $assigned_to_employee = $bean->project_assign_to_c->getBeans();
-      $GLOBALS['log']->fatal("testing".print_r($event,true));
-   }
-   }
+   function checkProjectAssigned($bean, $event, $arguments){
+      $empId = $bean->emp_employee_list_id_c;
+      if(!empty($empId)){
+        $employee = BeanFactory::getBean('EMP_Employee_List',$bean->emp_employee_list_id_c);
+        $id = $employee->id;
+        if($empId == $id){
+           $employee->load_relationship('emp_employee_list_pro_projects_1');
+           $employee->emp_employee_list_pro_projects_1->add($bean->id);
+        }
+      }
+     }
+  }
 
 
 ?>
