@@ -1,5 +1,6 @@
 <?php
-// created: 2023-02-22 12:23:19
+
+// created: 2023-02-22 13:44:38
 $mod_strings = array (
   'LBL_EMP_USERNAME_C' => 'Employee Name',
   'LBL_EMP_EMAIL_C' => 'Email',
@@ -15,4 +16,5 @@ $mod_strings = array (
   'LBL_EMP_EMPLOYEE_LIST_SH_SALARY_HISTORY_1_FROM_SH_SALARY_HISTORY_TITLE' => 'Salary History',
   'LBL_EMPLOYEE_STATUS_C' => 'Status',
   'LBL_MULTISELECT' => 'Multiselect',
+  'LBL_MUCH' => 'much',
 );
