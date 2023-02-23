@@ -4,18 +4,18 @@
  */
 function hideField(id) {
 	var target = _getFieldData(id);
-	console.log(target);
 
 	if (typeof _form_id != 'undefined' && _form_id != 'DetaiView' && (!target.field || !target.field.length))
 		return;
-		console.log(_form_id);
-	if (target.parentTd.find('div#' + target.fieldId + '_parent_wrapper').length === 0){
+	if (target.parentTd.find('div#' + target.fieldId + '_parent_wrapper').length == 0){
 		var parent_padding = target.parentTd.css('padding');
 		var label_padding = target.labelTd.css('padding');
 
-		target.parentTd
-			.css('padding', '0')
-			.wrapInner( "<div id='"+target.fieldId+"_parent_wrapper' data-padding='"+parent_padding+"' style='display:none;'></div>");
+		target.field
+           .wrap("<div id='" + target.fieldId + "_wrapper' style='display:none;'></div>");
+        target.parentTd
+          .css('padding', '0')
+          .wrapInner("<div id='" + target.fieldId + "_parent_wrapper' data-padding='" + parent_padding + "'></div>");
 		target.labelTd
 			.css('padding', '0')
 			.wrapInner( "<div id='"+target.fieldId+"_label_wrapper' data-padding='"+label_padding+"' style='display:none;'></div>");
@@ -33,6 +33,46 @@ function hideField(id) {
 		}
 	}
 }
+
+function showField(id) {
+	var target = _getFieldData(id);
+	if (typeof _form_id != 'undefined' && _form_id != 'DetaiView' && (!target.field || !target.field.length))
+		return;
+	         var parent_wrapper = target.parentTd.find("div#"+target.fieldId+"_parent_wrapper");
+	         var label_wrapper = target.labelTd.find("div#"+target.fieldId+"_label_wrapper");
+	   if (parent_wrapper.length) {
+		    target.parentTd.css('padding', parent_wrapper.data('padding'));
+		    target.labelTd.css('padding', label_wrapper.data('padding'));
+		    parent_wrapper.children().unwrap();
+		    target.labelTd.html(label_wrapper.html());
+		if (target.field && target.field.length && target.labelTd.find("span.required").length) {
+			var message = target.labelTd.html()
+				.replace('<span class="required">*</span>','')
+				.replace(/:[\s]*$/, '');
+			removeFromValidate(_form_id, target.field.prop('id'));
+			if (target.type == 'datetimecombo') {
+				removeFromValidate(_form_id, target.fieldId + '_date');
+				addToValidate(_form_id, target.fieldId + "_date", target.type, true, message);
+				target.parentTd.find("#"+target.fieldId+"_hours, #"+target.fieldId+"_minutes, #"+target.fieldId+"_meridiem").each(function(){
+					addToValidateBinaryDependency(_form_id, this.id, 'alpha', false, message, target.fieldId+"_date");
+				});
+			}
+			else if (target.type == 'FileUpload') {
+				_addToValidate_FileUpload(target, message);
+			}
+			else if (target.type == 'radioenum') {
+				_addToValidate_RadioEnum(target, message);
+			}
+			else if (target.type == 'url') {
+				_addToValidate_URL(target, message);
+			}
+			else {
+				addToValidate(_form_id, target.fieldId, target.type, true, message);
+			}
+		}
+	}
+}
+
 
 
 /**
@@ -189,41 +229,3 @@ function makeMandatory(id){
 		target.labelTd.append(errorSpan);
 }
 
-function showField(id) {
-	var target = _getFieldData(id);
-	if (typeof _form_id != 'undefined' && _form_id != 'DetaiView' && (!target.field || !target.field.length))
-		return;
-	var parent_wrapper = target.parentTd.find("div#"+target.fieldId+"_parent_wrapper");
-	var label_wrapper = target.labelTd.find("div#"+target.fieldId+"_label_wrapper");
-	if (parent_wrapper.length) {
-		target.parentTd.css('padding', parent_wrapper.data('padding'));
-		target.labelTd.css('padding', label_wrapper.data('padding'));
-		parent_wrapper.children().unwrap();
-		target.labelTd.html(label_wrapper.html());
-		if (target.field && target.field.length && target.labelTd.find("span.required").length) {
-			var message = target.labelTd.html()
-				.replace('<span class="required">*</span>','')
-				.replace(/:[\s]*$/, '');
-			removeFromValidate(_form_id, target.field.prop('id'));
-			if (target.type == 'datetimecombo') {
-				removeFromValidate(_form_id, target.fieldId + '_date');
-				addToValidate(_form_id, target.fieldId + "_date", target.type, true, message);
-				target.parentTd.find("#"+target.fieldId+"_hours, #"+target.fieldId+"_minutes, #"+target.fieldId+"_meridiem").each(function(){
-					addToValidateBinaryDependency(_form_id, this.id, 'alpha', false, message, target.fieldId+"_date");
-				});
-			}
-			else if (target.type == 'FileUpload') {
-				_addToValidate_FileUpload(target, message);
-			}
-			else if (target.type == 'radioenum') {
-				_addToValidate_RadioEnum(target, message);
-			}
-			else if (target.type == 'url') {
-				_addToValidate_URL(target, message);
-			}
-			else {
-				addToValidate(_form_id, target.fieldId, target.type, true, message);
-			}
-		}
-	}
-}
