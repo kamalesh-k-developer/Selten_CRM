@@ -47,17 +47,13 @@ array (
       array (
         0 => 
         array (
-          0 => 'name',
-        ),
-        1 => 
-        array (
           0 => 
           array (
             'name' => 'emp_username_c',
             'label' => 'LBL_EMP_USERNAME_C',
           ),
         ),
-        2 => 
+        1 => 
         array (
           0 => 
           array (
@@ -65,7 +61,7 @@ array (
             'label' => 'LBL_EMP_EMAIL_C',
           ),
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -73,7 +69,7 @@ array (
             'label' => 'LBL_EMP_DOB_C',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -81,7 +77,7 @@ array (
             'label' => 'LBL_EMP_CONTACT_C',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -90,7 +86,7 @@ array (
             'label' => 'LBL_EMP_GENDER_C',
           ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -99,7 +95,7 @@ array (
             'label' => 'LBL_EMPLOYEE_STATUS_C',
           ),
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (

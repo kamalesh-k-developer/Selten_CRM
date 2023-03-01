@@ -47,17 +47,13 @@ array (
       array (
         0 => 
         array (
-          0 => 'name',
-        ),
-        1 => 
-        array (
           0 => 
           array (
             'name' => 'sly_history_emp_name_c',
             'label' => 'LBL_SLY_HISTORY_EMP_NAME_C',
           ),
         ),
-        2 => 
+        1 => 
         array (
           0 => 
           array (
@@ -65,7 +61,7 @@ array (
             'label' => 'LBL_EMPLOYE_SALARY_DATE_C',
           ),
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -73,7 +69,7 @@ array (
             'label' => 'LBL_EMPLOYE_SALARY_AMONT_C',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -81,7 +77,7 @@ array (
             'label' => 'LBL_SLY_HISTORY_MONTHS_SLARAY_C',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 'description',
         ),

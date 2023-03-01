@@ -13,6 +13,7 @@ class EMP_Employee_ListViewEdit extends ViewEdit {
     echo "<link href='custom/css/multi-select.css'/>";
       echo "<script>
         $(document).ready(function(){
+
           // hideField('emp_email_c');
           makeNonMandatory('emp_dob_c');
           // $('#emp_gender_c').hide();
@@ -22,6 +23,7 @@ class EMP_Employee_ListViewEdit extends ViewEdit {
           //$('emp_gender_c').multiSelect();
           $('#emp_gender_c').multiselect();
 
+          console.log('test in views');
         });
         </script>";
       }

@@ -1,5 +1,5 @@
 <?php
-// created: 2023-02-27 06:47:38
+
 $mod_strings = array (
   'LBL_EMP_USERNAME_C' => 'Employee Name',
   'LBL_EMP_EMAIL_C' => 'Email',
