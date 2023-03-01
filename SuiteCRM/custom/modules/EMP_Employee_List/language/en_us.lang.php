@@ -1,6 +1,5 @@
 <?php
 
-// created: 2023-02-22 13:44:38
 $mod_strings = array (
   'LBL_EMP_USERNAME_C' => 'Employee Name',
   'LBL_EMP_EMAIL_C' => 'Email',
@@ -17,4 +16,5 @@ $mod_strings = array (
   'LBL_EMPLOYEE_STATUS_C' => 'Status',
   'LBL_MULTISELECT' => 'Multiselect',
   'LBL_MUCH' => 'much',
+  'LBL_VARIOU_TYPE' => 'variou type',
 );
