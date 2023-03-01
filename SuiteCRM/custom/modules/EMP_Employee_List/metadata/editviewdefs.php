@@ -23,7 +23,7 @@ array (
       'javascript' => '{sugar_getscript file="custom/include/javascript/field_functions.js"}
                        {sugar_getscript file="custom/modules/EMP_Employee_List/Js/EditView.js"}
                        {sugar_getscript file="cache/include/javascript/sugar_grp_yui_widgets.js"}
-                       <link rel="stylesheet" type="text/css" href="{sugar_getjspath file="custom/css/multiple-select.css"}">',
+                       <link rel="stylesheet" type="text/css" href="{sugar_getjspath file="custom/css/multi-select.css"}">',
       'useTabs' => false,
       'tabDefs' => 
       array (
