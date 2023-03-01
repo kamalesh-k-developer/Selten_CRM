@@ -8,6 +8,7 @@ class EMP_Employee_ListViewEdit extends ViewEdit {
   function display(){
     parent::display();
     echo "<script src='custom/include/javascript/field_functions.js'></script>";
+    echo "<script src='custom/include/javascript/multiselect.js'></script>";
       echo "<script>
         $(document).ready(function(){
           console.log('test in views');

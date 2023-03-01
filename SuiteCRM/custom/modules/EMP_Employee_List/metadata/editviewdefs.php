@@ -97,7 +97,12 @@ array (
             'comment' => 'Test created by Me',
             'label' => 'Skill',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'various_types_c',
+            'studio' => 'visible',
+            'label' => 'LBL_VARIOUS_TYPES',
+          ),
         ),
       ),
     ),
