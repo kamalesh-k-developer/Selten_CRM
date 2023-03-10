@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 03, 2023 at 10:50 AM
+-- Generation Time: Mar 10, 2023 at 08:06 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 5.6.40
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `suitecrm`
+-- Database: `selten_crm`
 --
 
 -- --------------------------------------------------------
@@ -281,6 +281,7 @@ INSERT INTO `acl_actions` (`id`, `date_entered`, `date_modified`, `modified_user
 ('21a1c5e1-1f5e-cb27-3e6f-634e3e9513db', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'view', 'EmailMarketing', 'module', 90, 0),
 ('21de6d67-e4d6-0316-b7f4-634e3eddfe1b', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'massupdate', 'Notes', 'module', 90, 0),
 ('21f00fd4-7311-ef93-fbfb-634e3e5dee84', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'list', 'jjwg_Maps', 'module', 90, 0),
+('2394bace-298f-fafd-1b16-63f34c30ca4d', '2023-02-20 10:31:38', '2023-02-20 10:31:38', '1', '1', 'access', 'CLI_Clients', 'module', 89, 0),
 ('23bc1dc1-02fd-f015-2ff0-634e3e5f478e', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'list', 'EmailMarketing', 'module', 90, 0),
 ('248b8d91-1b25-9a09-7142-63cf6a33af01', '2023-01-24 05:21:42', '2023-01-24 05:21:42', '1', '1', 'access', 'EMP_Employee_List', 'module', 89, 0),
 ('25685860-69a2-f507-195d-634e3e308353', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'edit', 'EmailMarketing', 'module', 90, 0),
@@ -312,27 +313,34 @@ INSERT INTO `acl_actions` (`id`, `date_entered`, `date_modified`, `modified_user
 ('38030a70-fb8c-21f9-12f5-634e3e78086a', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'export', 'AOP_Case_Events', 'module', 90, 0),
 ('38931867-a12c-a05c-5ed6-634e3eaeab88', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'import', 'AOW_WorkFlow', 'module', 90, 0),
 ('3a0c023a-0756-3690-dbb8-634e3e2ee614', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'view', 'AOS_PDF_Templates', 'module', 90, 0),
+('3a76a546-f76e-0103-e23d-63f34c1e5c3d', '2023-02-20 10:31:38', '2023-02-20 10:31:38', '1', '1', 'view', 'CLI_Clients', 'module', 90, 0),
 ('3aa93e85-8260-66b1-25be-634e3e141880', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'export', 'AOW_WorkFlow', 'module', 90, 0),
 ('3aad0fab-9b5d-be15-1c7b-634e3e6cca6d', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'massupdate', 'AM_TaskTemplates', 'module', 90, 0),
 ('3b7faacf-ea82-5eda-3048-634e3ebebbdf', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'massupdate', 'AOP_Case_Events', 'module', 90, 0),
 ('3c20e2f7-0595-d4f9-e7ea-63cf6a57e701', '2023-01-24 05:21:42', '2023-01-24 05:21:42', '1', '1', 'view', 'EMP_Employee_List', 'module', 90, 0),
 ('3c56432b-ec84-74dc-80b9-634e3ef7b14f', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'massupdate', 'AOW_WorkFlow', 'module', 90, 0),
+('3d34fbf6-a1c9-c245-ca26-63f34c6e6578', '2023-02-20 10:31:38', '2023-02-20 10:31:38', '1', '1', 'list', 'CLI_Clients', 'module', 90, 0),
 ('3d530073-72f2-4b7f-9e49-634e57892b87', '2022-10-18 07:38:32', '2022-10-18 07:38:32', '1', '1', 'edit', 'EMP_Employees', 'module', 90, 0),
 ('3dd92275-d08d-08bb-b127-634e3e2d6462', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'access', 'jjwg_Address_Cache', 'module', 89, 0),
 ('3f15c53a-90da-68e8-c8d6-63cf6a398ae3', '2023-01-24 05:21:42', '2023-01-24 05:21:42', '1', '1', 'list', 'EMP_Employee_List', 'module', 90, 0),
+('3fa416f9-f2d5-b25a-a535-63f34c0c642a', '2023-02-20 10:31:38', '2023-02-20 10:31:38', '1', '1', 'edit', 'CLI_Clients', 'module', 90, 0),
 ('3fd11335-7a90-c66f-0ff4-634e3e32885d', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'view', 'jjwg_Address_Cache', 'module', 90, 0),
 ('408a3f1d-4623-f28a-8ee5-634e3e9f6bec', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'access', 'SecurityGroups', 'module', 89, 0),
 ('421b4fb5-ed03-af32-c1b9-634e3ef805a8', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'list', 'jjwg_Address_Cache', 'module', 90, 0),
+('422f9159-2f58-3f7a-d51a-63f34c50c764', '2023-02-20 10:31:38', '2023-02-20 10:31:38', '1', '1', 'delete', 'CLI_Clients', 'module', 90, 0),
 ('42f423e1-c0fe-6060-86da-634e3e74f840', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'view', 'SecurityGroups', 'module', 90, 0),
 ('430f209f-8669-6ac2-6908-63cf6aee5541', '2023-01-24 05:21:42', '2023-01-24 05:21:42', '1', '1', 'edit', 'EMP_Employee_List', 'module', 90, 0),
 ('442280b0-ce32-ea19-e428-634e3e293ead', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'edit', 'jjwg_Address_Cache', 'module', 90, 0),
 ('4494b068-1902-b421-7624-634e3ecdff85', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'list', 'SecurityGroups', 'module', 90, 0),
+('45229d8d-c99e-8156-aaf1-63f34c14e17d', '2023-02-20 10:31:38', '2023-02-20 10:31:38', '1', '1', 'import', 'CLI_Clients', 'module', 90, 0),
 ('45f56fe6-0938-eaaa-18f1-63cf6a627d59', '2023-01-24 05:21:42', '2023-01-24 05:21:42', '1', '1', 'delete', 'EMP_Employee_List', 'module', 90, 0),
 ('4657d138-fe02-b0f3-32c1-634e3ec840f8', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'delete', 'jjwg_Address_Cache', 'module', 90, 0),
 ('4785ad84-1428-94e2-acf3-634e3e36156c', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'edit', 'SecurityGroups', 'module', 90, 0),
+('478ecd7b-526a-95bb-ba44-63f34cf69431', '2023-02-20 10:31:38', '2023-02-20 10:31:38', '1', '1', 'export', 'CLI_Clients', 'module', 90, 0),
 ('48d5e852-6917-faae-2dcf-634e3e0f59e3', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'import', 'jjwg_Address_Cache', 'module', 90, 0),
 ('48e3262a-5122-acb9-6fdc-63cf6ad347a2', '2023-01-24 05:21:42', '2023-01-24 05:21:42', '1', '1', 'import', 'EMP_Employee_List', 'module', 90, 0),
 ('4a5a6f54-24f9-1739-b8bf-63d9f50f9773', '2023-02-01 05:14:28', '2023-02-01 05:14:28', '1', '1', 'view', 'PAY_Payments', 'module', 90, 0),
+('4b082f01-5775-c6d8-79e8-63f34c74c8de', '2023-02-20 10:31:38', '2023-02-20 10:31:38', '1', '1', 'massupdate', 'CLI_Clients', 'module', 90, 0),
 ('4b12964a-3859-3423-9868-634e3e98ae27', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'access', 'AM_ProjectHolidays', 'module', 89, 0),
 ('4b81acd7-a36e-748a-a0b4-63cf6a10b826', '2023-01-24 05:21:42', '2023-01-24 05:21:42', '1', '1', 'export', 'EMP_Employee_List', 'module', 90, 0),
 ('4bfdffc8-1e5d-7394-201c-634e3ef9a51b', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'export', 'jjwg_Address_Cache', 'module', 90, 0),
@@ -345,6 +353,7 @@ INSERT INTO `acl_actions` (`id`, `date_entered`, `date_modified`, `modified_user
 ('4f0005d6-bd64-536c-65af-634e3e060513', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'access', 'Meetings', 'module', 89, 0),
 ('50051c1e-7eb2-8285-b4f7-634e3e94d317', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'access', 'Project', 'module', 89, 0),
 ('500a156b-7122-073b-98d9-63d9f54142ff', '2023-02-01 05:14:28', '2023-02-01 05:14:28', '1', '1', 'edit', 'PAY_Payments', 'module', 90, 0),
+('5017a19f-2f08-4faf-ef6e-63e9c44f9432', '2023-02-13 05:00:53', '2023-02-13 05:00:53', '1', '1', 'access', 'SK_Skill', 'module', 89, 0),
 ('50c20710-c2c1-d48c-f9cd-634e3eb41745', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'edit', 'AOR_Scheduled_Reports', 'module', 90, 0),
 ('52494a23-9791-27fc-2b7c-634e3e0c6c92', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'view', 'Project', 'module', 90, 0),
 ('527e7f37-53bb-06bf-47ee-634e3e374bae', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'import', 'SecurityGroups', 'module', 90, 0),
@@ -410,6 +419,7 @@ INSERT INTO `acl_actions` (`id`, `date_entered`, `date_modified`, `modified_user
 ('6d2a0ef3-a559-0aad-0f19-634e3e754277', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'view', 'Bugs', 'module', 90, 0),
 ('6d3c9938-2343-2f5a-71c9-634e3e2f31c0', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'edit', 'Tasks', 'module', 90, 0),
 ('6d420d5c-5869-8582-3e6f-634e3e8bea1b', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'delete', 'AOS_Product_Categories', 'module', 90, 0),
+('6da59cdf-7e17-e126-39ce-63e9c499554a', '2023-02-13 05:00:53', '2023-02-13 05:00:53', '1', '1', 'view', 'SK_Skill', 'module', 90, 0),
 ('6dace313-8b60-ea42-99f3-634e3eeea6f7', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'delete', 'Contacts', 'module', 90, 0),
 ('6e0a3fd5-0375-1319-b81f-634e3ed04097', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'access', 'FP_events', 'module', 89, 0),
 ('6edcc1a3-93c7-873c-11af-634e3e1e4caa', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'list', 'Bugs', 'module', 90, 0),
@@ -418,6 +428,7 @@ INSERT INTO `acl_actions` (`id`, `date_entered`, `date_modified`, `modified_user
 ('702d34d3-5d7c-2c3c-1408-634e3e03ada3', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'import', 'Contacts', 'module', 90, 0),
 ('70525342-4319-6158-2ff5-634e3e329f15', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'view', 'FP_events', 'module', 90, 0),
 ('7096ca6a-679f-a079-8ebc-634e3e694798', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'edit', 'Bugs', 'module', 90, 0),
+('709c8e0e-44d8-1cf6-09da-63e9c4446171', '2023-02-13 05:00:53', '2023-02-13 05:00:53', '1', '1', 'list', 'SK_Skill', 'module', 90, 0),
 ('71692206-be30-1712-5c45-634e3ed60168', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'export', 'AOS_Product_Categories', 'module', 90, 0),
 ('71ebdc56-8f06-b1f7-27bb-634e3e6923f2', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'export', 'Contacts', 'module', 90, 0),
 ('71ed2150-21c9-80eb-8f43-634e3e2221c7', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'import', 'Tasks', 'module', 90, 0),
@@ -425,6 +436,7 @@ INSERT INTO `acl_actions` (`id`, `date_entered`, `date_modified`, `modified_user
 ('722e50cf-2562-3fa9-e52f-634e3e983998', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'delete', 'Bugs', 'module', 90, 0),
 ('72b7c281-4fba-81a0-d097-634e3ed7b8dc', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'list', 'FP_events', 'module', 90, 0),
 ('7304b81c-212a-d416-22a2-634e3ee55333', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'access', 'Opportunities', 'module', 89, 0),
+('736c6289-8253-d9e0-8252-63e9c4f723d2', '2023-02-13 05:00:53', '2023-02-13 05:00:53', '1', '1', 'edit', 'SK_Skill', 'module', 90, 0),
 ('73b48d88-ba55-c328-450d-634e3e7b45c1', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'massupdate', 'AOS_Product_Categories', 'module', 90, 0),
 ('74490af8-29f9-a62d-3962-634e3e533058', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'view', 'Meetings', 'module', 90, 0),
 ('7490ecf6-7584-e055-1b2f-634e3ee89dee', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'import', 'Bugs', 'module', 90, 0),
@@ -433,6 +445,7 @@ INSERT INTO `acl_actions` (`id`, `date_entered`, `date_modified`, `modified_user
 ('7544e2ce-452c-ea43-bbd6-634e3e7bfadb', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'view', 'jjwg_Markers', 'module', 90, 0),
 ('754aadbd-76eb-8cce-be4c-634e3eee80d4', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'view', 'Opportunities', 'module', 90, 0),
 ('76070b28-c4bd-5c18-ecef-634e3e17639d', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'export', 'Tasks', 'module', 90, 0),
+('7625f73e-ef2d-6e4f-78d8-63e9c4b87c8f', '2023-02-13 05:00:53', '2023-02-13 05:00:53', '1', '1', 'delete', 'SK_Skill', 'module', 90, 0),
 ('7630e367-140b-8315-ef07-634e3edda06c', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'export', 'Bugs', 'module', 90, 0),
 ('76dc8764-b04f-b7e1-e101-634e3e3be65b', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'delete', 'FP_events', 'module', 90, 0),
 ('7708d267-dc54-1c42-479f-634e3eb914e4', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'list', 'Opportunities', 'module', 90, 0),
@@ -444,6 +457,7 @@ INSERT INTO `acl_actions` (`id`, `date_entered`, `date_modified`, `modified_user
 ('78baa973-04cf-77f4-8ede-634e3e63fcfb', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'import', 'FP_events', 'module', 90, 0),
 ('78d7ff22-8d66-ccdd-9892-634e3ee20e23', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'massupdate', 'Tasks', 'module', 90, 0),
 ('78e43d2d-53c9-68bf-6ad9-634e3e7a6a24', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'edit', 'Opportunities', 'module', 90, 0),
+('78f87803-3643-ec60-892d-63e9c49f3c57', '2023-02-13 05:00:53', '2023-02-13 05:00:53', '1', '1', 'import', 'SK_Skill', 'module', 90, 0),
 ('797f18b0-1c6b-18dd-ebae-63889ec7d898', '2022-12-01 12:31:04', '2022-12-01 12:31:04', '1', '1', 'access', 'sh_Salary_History', 'module', 89, 0),
 ('79c1c44c-69a7-e92a-1a0c-634e3ee51d8d', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'view', 'ProspectLists', 'module', 90, 0),
 ('79c90f75-a77f-73d5-c3da-634e3e7d749a', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'edit', 'AOS_PDF_Templates', 'module', 90, 0),
@@ -451,12 +465,14 @@ INSERT INTO `acl_actions` (`id`, `date_entered`, `date_modified`, `modified_user
 ('7aa732b4-1051-0a9e-00a5-634e3efa933c', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'delete', 'Opportunities', 'module', 90, 0),
 ('7b080f26-4270-a20e-eb79-634e3e4768bf', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'export', 'FP_events', 'module', 90, 0),
 ('7b58126c-b69c-dd53-5833-634e3e6a3e9b', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'list', 'ProspectLists', 'module', 90, 0),
+('7bf25ced-daf3-9f99-f611-63e9c47e1150', '2023-02-13 05:00:53', '2023-02-13 05:00:53', '1', '1', 'export', 'SK_Skill', 'module', 90, 0),
 ('7bfac7d7-0095-53fd-b336-634e3e8c5de0', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'delete', 'jjwg_Markers', 'module', 90, 0),
 ('7c120808-1c02-19dc-a3ca-634e3e404343', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'delete', 'Calls_Reschedule', 'module', 90, 0),
 ('7cb4efb9-b935-ce22-9566-634e3e50bdf6', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'import', 'Opportunities', 'module', 90, 0),
 ('7d4df8b7-1e03-b917-56df-634e3e2d01b0', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'massupdate', 'FP_events', 'module', 90, 0),
 ('7d535fb9-ba6e-ab11-2a9d-634e3e9fb978', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'edit', 'ProspectLists', 'module', 90, 0),
 ('7e3de2d0-97c8-21ce-f204-634e3e9b206b', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'export', 'Opportunities', 'module', 90, 0),
+('7eaa20ec-7b9e-ce6a-d98d-63e9c4a774e6', '2023-02-13 05:00:53', '2023-02-13 05:00:53', '1', '1', 'massupdate', 'SK_Skill', 'module', 90, 0),
 ('7f8f7b68-cbf4-cf4e-b43b-634e3e9ad471', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'import', 'jjwg_Markers', 'module', 90, 0),
 ('80d24085-b5a3-d1ab-59cc-634e3ee8b498', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'massupdate', 'Opportunities', 'module', 90, 0),
 ('81a608f7-ba06-bd5c-f4c3-634e3e1c32e9', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'export', 'jjwg_Markers', 'module', 90, 0),
@@ -585,7 +601,8 @@ INSERT INTO `acl_actions` (`id`, `date_entered`, `date_modified`, `modified_user
 ('c65f4437-379b-3698-763b-634e3ef92883', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'massupdate', 'AOS_Products', 'module', 90, 0),
 ('c697e0db-0202-b411-8850-638b35812d37', '2022-12-03 11:41:49', '2022-12-03 11:41:49', '1', '1', 'view', 'pro_Projects', 'module', 90, 0),
 ('c6d91de7-fd0b-0619-0a0c-634e3e8ce61d', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'view', 'jjwg_Areas', 'module', 90, 0),
-('c6e80131-fb23-7e28-535e-634e3ee16c4a', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'view', 'AOD_Index', 'module', 90, 0),
+('c6e80131-fb23-7e28-535e-634e3ee16c4a', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'view', 'AOD_Index', 'module', 90, 0);
+INSERT INTO `acl_actions` (`id`, `date_entered`, `date_modified`, `modified_user_id`, `created_by`, `name`, `category`, `acltype`, `aclaccess`, `deleted`) VALUES
 ('c87f477f-e8a2-de3d-f61a-634e3e95fa24', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'access', 'FP_Event_Locations', 'module', 89, 0),
 ('c8eb4a47-a0f8-6d3c-4932-634e3efc75eb', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'access', 'EmailTemplates', 'module', 89, 0),
 ('c905bb85-7444-4e5e-ab46-634e3e36b478', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'list', 'jjwg_Areas', 'module', 90, 0),
@@ -601,8 +618,7 @@ INSERT INTO `acl_actions` (`id`, `date_entered`, `date_modified`, `modified_user
 ('cc162edf-1e2b-a2f8-1fc4-634e3e4f448a', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'view', 'Prospects', 'module', 90, 0),
 ('cd0f3e0e-5db5-c8d0-0156-634e3e55f621', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'delete', 'jjwg_Areas', 'module', 90, 0),
 ('cd3b99e9-7696-afd8-e3b5-634e3ecfcd2f', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'list', 'EmailTemplates', 'module', 90, 0),
-('cd795a18-6187-4adb-dc7a-634e3ef56f6a', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'list', 'FP_Event_Locations', 'module', 90, 0);
-INSERT INTO `acl_actions` (`id`, `date_entered`, `date_modified`, `modified_user_id`, `created_by`, `name`, `category`, `acltype`, `aclaccess`, `deleted`) VALUES
+('cd795a18-6187-4adb-dc7a-634e3ef56f6a', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'list', 'FP_Event_Locations', 'module', 90, 0),
 ('cddb2fbf-5006-9207-47c2-638b354a2a02', '2022-12-03 11:41:49', '2022-12-03 11:41:49', '1', '1', 'delete', 'pro_Projects', 'module', 90, 0),
 ('ce1302a5-0e58-479b-209e-634e3e70730c', '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '', 'delete', 'Meetings', 'module', 90, 0),
 ('ce2ce687-d760-bfcd-4619-63884e24d2bc', '2022-12-01 06:49:25', '2022-12-01 06:49:25', '1', '1', 'list', 'at_Attentance', 'module', 90, 0),
@@ -1424,10 +1440,13 @@ INSERT INTO `aod_indexevent` (`id`, `name`, `date_entered`, `date_modified`, `mo
 ('13a5d887-65c7-e995-6eb9-635babe643b3', 'harish', '2022-10-28 10:14:04', '2022-10-28 10:17:43', '1', '1', NULL, 0, '', NULL, 1, 'bb084835-1dee-8b7e-d159-635bab2a11e2', 'SLY_Salary'),
 ('14ddf9b9-ca6b-bf30-68e0-63c91ff26dee', 'PRO_2', '2023-01-19 10:44:53', '2023-01-19 10:44:53', '1', '1', NULL, 0, NULL, NULL, 1, 'aa19b04f-fb44-6261-f084-63c91f53d74e', 'pro_Projects'),
 ('1523191f-66c8-2311-8439-63c8f2fa3f60', 'test', '2023-01-19 07:36:08', '2023-01-19 07:36:08', '1', '1', NULL, 0, NULL, NULL, 1, '9b2336e7-4847-8e4b-4ecf-63c8f26b365b', 'EMP_Employee'),
+('159882a3-0ae5-23b1-bc32-63f61f26fbde', 'ATT_13', '2023-02-22 13:59:14', '2023-02-22 13:59:14', '1', '1', NULL, 0, NULL, NULL, 1, '300cadf5-b3b8-c036-0b5a-63f61fcc7abc', 'at_Attentance'),
+('172b4f5c-3d6c-471b-09f8-63f2ff6b87b8', 'PRO_8', '2023-02-20 05:06:19', '2023-02-22 05:00:32', '1', '1', NULL, 0, '', NULL, 1, '4c7b7103-b5ef-3c17-5b99-63f2ffdb27a6', 'pro_Projects'),
 ('17305da5-3fce-3bf8-3362-635b83ce121c', 'lokesh', '2022-10-28 07:22:04', '2022-10-28 07:22:04', '1', '1', NULL, 0, '', NULL, 1, 'cbc3a03b-8d1d-901f-0be6-635b8332e558', 'SLY_Salary'),
 ('18119797-aca9-51f9-9e87-63cb7397a8cf', '', '2023-01-21 05:08:15', '2023-01-21 05:08:15', '1', '1', NULL, 0, NULL, NULL, 1, 'e4ae3856-ae28-f4c2-d122-63cb737ba244', 'EMP_Employee'),
 ('1e7ee015-e1dc-29dd-0f6e-63cb735e8a73', '', '2023-01-21 05:11:15', '2023-01-21 05:11:15', '1', '1', NULL, 0, NULL, NULL, 1, '805aedcf-7c30-8a30-2e0c-63cb738d6a52', 'EMP_Employee'),
 ('1ee00293-54d4-8fa8-657e-63500c81e36e', '', '2022-10-19 14:40:16', '2022-10-19 14:40:16', '1', '1', NULL, 0, NULL, NULL, 1, 'c4cf923f-b3c3-3128-565c-63500cabb86b', 'EMP_Employees'),
+('244690af-ac33-54a8-e126-63f744973ea4', 'ATT_3', '2023-02-23 10:50:34', '2023-02-23 10:50:34', '1', '1', NULL, 0, NULL, NULL, 1, '915b3b90-74f9-2c97-4809-63f74474dc1d', 'PAY_Payments'),
 ('25241ab6-4d43-9735-9683-635a16228551', '', '2022-10-27 05:28:28', '2022-10-27 05:35:55', '1', '1', NULL, 0, '', NULL, 1, '9e95406f-5098-f348-35c9-635a167080bb', 'SLY_Salaries'),
 ('26e468d4-96e5-4ecf-9807-635247f735f1', 'test', '2022-10-21 07:16:32', '2022-10-21 07:16:32', '1', '1', NULL, 0, NULL, NULL, 1, '88831df5-3f1f-e1db-a68e-6352472a4104', 'EMP_Employees'),
 ('284e5293-e276-a88d-9ef2-63590bbe7627', 'kamalesh', '2022-10-26 10:25:08', '2022-10-26 10:25:08', '1', '1', NULL, 0, NULL, NULL, 1, '7c72333a-73e4-3610-e67b-63590bebda4e', 'EMP_Employees'),
@@ -1442,6 +1461,7 @@ INSERT INTO `aod_indexevent` (`id`, `name`, `date_entered`, `date_modified`, `mo
 ('2ed4d4f4-d150-c851-84f1-635b737b1305', 'kamalesh', '2022-10-28 06:13:28', '2022-10-28 06:13:28', '1', '1', NULL, 0, '', NULL, 1, '1b780d43-aedf-7a78-088e-635b73b94b08', 'SLY_Salary'),
 ('2fd051e2-04c2-1b1d-c87d-635cb9932668', 'harish ragavendran', '2022-10-29 05:25:54', '2022-10-29 05:25:54', '1', '1', NULL, 0, '', NULL, 1, 'e7c58bd7-0b7d-442e-843a-635cb9e4e1d2', 'SLY_Salary'),
 ('3161ba1f-d003-22a6-d323-63c91b640709', 'karthi', '2023-01-19 10:31:20', '2023-01-19 10:38:05', '1', '1', NULL, 0, '', NULL, 1, 'b1ef0c7e-b911-ef95-b118-63c91b7ad840', 'EMP_Employee'),
+('325408d7-a98f-d86a-d244-63f5fb7b40c6', 'EMP_8', '2023-02-22 11:22:51', '2023-02-22 11:22:51', '1', '1', NULL, 0, NULL, NULL, 1, 'b60c5610-6fa0-1c8d-79fc-63f5fbc8becf', 'EMP_Employee_List'),
 ('3d014f77-2fc1-d6c4-0940-635b72a84ba2', 'akash', '2022-10-28 06:11:38', '2022-10-29 10:21:11', '1', '1', NULL, 0, '', NULL, 1, 'cb3406cc-befa-d024-d3a9-635b72d5485d', 'EMP_Employees'),
 ('3d722672-d2ff-0e3c-8fc4-63d3b3ca9075', 'ATT_9', '2023-01-27 11:20:51', '2023-01-27 11:20:51', '1', '1', NULL, 0, NULL, NULL, 1, 'd9675e71-2598-b64d-a6af-63d3b32db81f', 'at_Attentance'),
 ('3e12164a-976d-b320-b4d2-635b736b9684', 'karthi', '2022-10-28 06:14:14', '2022-10-28 06:14:14', '1', '1', NULL, 0, '', NULL, 1, '1209ec17-ad24-661f-fa51-635b73530dda', 'SLY_Salary'),
@@ -1458,12 +1478,14 @@ INSERT INTO `aod_indexevent` (`id`, `name`, `date_entered`, `date_modified`, `mo
 ('585da08a-dda2-44a5-53b0-635250efd85c', 'test', '2022-10-21 07:55:43', '2022-10-21 07:55:43', '1', '1', NULL, 0, NULL, NULL, 1, '11c51292-62e1-1c02-84ae-635250f8d628', 'EMP_Employees'),
 ('589a3568-2fb2-aa93-df86-639033e4db1b', 'EMP_10', '2022-12-07 06:34:22', '2022-12-07 06:34:22', '1', '1', NULL, 0, NULL, NULL, 1, '8e230360-35ff-5aed-8fca-6390336d95b0', 'EMP_Employees'),
 ('595a30b2-6672-141d-6af6-63500c1b57df', 'testing', '2022-10-19 14:42:40', '2022-10-19 14:42:40', '1', '1', NULL, 0, NULL, NULL, 1, '2579f732-a3be-b867-e044-63500ca2ed48', 'SLY_Salaries'),
+('5b32ed04-7188-2021-9523-63f6201f7579', 'SLH_7', '2023-02-22 14:02:23', '2023-02-22 14:02:23', '1', '1', NULL, 0, NULL, NULL, 1, 'ddb45ace-061c-f43c-79bd-63f620512dfc', 'sh_Salary_History'),
 ('5de612ff-b4a9-a05d-0ee5-63d3ae78ed29', 'ATT_8', '2023-01-27 10:59:15', '2023-01-27 10:59:15', '1', '1', NULL, 0, '', NULL, 1, '16ee83cc-d0e3-4f22-a44e-63d3ae6aacd3', 'at_Attentance'),
 ('5e5a16c7-aed5-440b-8b7f-63c922af5a60', 'EMP_11', '2023-01-19 10:57:06', '2023-01-19 10:57:06', '1', '1', NULL, 0, NULL, NULL, 1, 'e70fa988-c5f1-1cf5-4e48-63c92238dbbf', 'EMP_Employees'),
 ('5fc55fa6-d556-06c0-7c45-635cbbd750ec', 'Kamalesh', '2022-10-29 05:34:00', '2022-10-29 05:34:00', '1', '1', NULL, 0, '', NULL, 1, 'ed5a9a98-f236-0ad4-159b-635cbbe44206', 'SLY_Salary'),
 ('60513ac1-ddad-4b33-0a26-635a65ed6781', 'kamalesh', '2022-10-27 11:02:30', '2022-10-28 05:35:51', '1', '1', NULL, 0, '', NULL, 1, 'c57bb7ee-a30b-02ed-29fb-635a65543ad5', 'SLY_Salary'),
 ('643be9d7-5c6f-4608-8a81-63d11514f0d8', 'ATT_3', '2023-01-25 11:42:07', '2023-01-27 05:34:38', '1', '1', NULL, 0, '', NULL, 1, '1ad5051c-9f2f-cfc2-08c3-63d1151dc6de', 'at_Attentance'),
 ('64d25281-3202-f744-4674-635cbe92f84e', '', '2022-10-29 05:47:56', '2022-10-29 05:47:56', '1', '1', NULL, 0, '', NULL, 1, 'ade5ae0b-ea9f-0440-6d7d-635cbe28c533', 'SLY_Salary'),
+('64d7042a-942d-91cd-c4c5-63ea62f50d7c', 'raj', '2023-02-13 16:16:22', '2023-02-14 05:40:33', '1', '1', NULL, 0, '', NULL, 1, '90ac729c-16df-59fb-b021-63ea62bd8fa3', 'SK_Skill'),
 ('64f3cbfd-e1a0-31eb-5b84-63819c0f4719', 'harish', '2022-11-26 04:58:21', '2022-11-26 04:58:21', '1', '1', NULL, 0, '', NULL, 1, 'c850150b-02eb-e251-c572-63819cc3ef0a', 'EMP_Employees'),
 ('6581576d-0bda-cdaf-b915-638ee601614c', 'logo.ico', '2022-12-06 06:52:16', '2022-12-06 06:52:16', '1', '1', NULL, 0, NULL, 'Mime type image/x-icon not supported', 0, '514c6cb0-cc98-cc13-5d69-638ee6584413', 'DocumentRevisions'),
 ('67f3e4cd-7f81-9cd5-4f7b-635cb62f3b15', 'harish.k', '2022-10-29 05:15:35', '2022-10-29 05:15:35', '1', '1', NULL, 0, '', NULL, 1, '27f3c811-140c-9631-7e72-635cb6b211ce', 'SLY_Salary'),
@@ -1475,6 +1497,7 @@ INSERT INTO `aod_indexevent` (`id`, `name`, `date_entered`, `date_modified`, `mo
 ('71574ea0-3f65-40c2-963e-63d0c1b2421a', 'EMP_1', '2023-01-25 05:45:14', '2023-01-30 13:29:41', '1', '1', NULL, 0, '', NULL, 1, '28e7bb6e-ffd9-89a5-1af9-63d0c1069938', 'EMP_Employee_List'),
 ('7685edf1-4bdf-c49b-e7c9-63591e3f90fd', 'karan', '2022-10-26 11:46:53', '2022-10-26 11:58:03', '1', '1', NULL, 0, '', NULL, 1, '276df170-d60e-3f2b-f20c-63591ed41461', 'EMP_Employees'),
 ('7ab06951-e15d-dabb-3b93-63593efb2092', 'lokesh', '2022-10-26 14:04:59', '2022-10-26 14:04:59', '1', '1', NULL, 0, NULL, NULL, 1, '5b690da2-f44b-f71c-7a73-63593e62d278', 'SLY_Salaries'),
+('7d4c5f80-1d25-d5b2-7952-63f6efae9106', 'vicky', '2023-02-23 04:44:27', '2023-02-23 04:44:27', '1', '1', NULL, 0, NULL, NULL, 1, 'ef01054e-d73b-c93e-3046-63f6ef629224', 'SK_Skill'),
 ('7f695f9a-9867-1238-c842-63d117e2cf3d', 'SLH_4', '2023-01-25 11:50:05', '2023-01-25 11:50:05', '1', '1', NULL, 0, NULL, NULL, 1, '3004f8c2-d10d-5495-f45f-63d1170f8c4b', 'sh_Salary_History'),
 ('81899b63-4bfa-6657-dced-63d3a7629f64', 'ATT_6', '2023-01-27 10:30:55', '2023-01-27 10:30:55', '1', '1', NULL, 0, NULL, NULL, 1, '38c58fbf-8fd0-1e67-546e-63d3a7b75223', 'at_Attentance'),
 ('87c3a9af-9e85-808c-d2b0-6350d798f3de', 'karthick', '2022-10-20 05:07:11', '2022-10-20 05:07:11', '1', '1', NULL, 0, NULL, NULL, 1, '48c21a37-ed6b-6c14-67ca-6350d7c55397', 'SLY_Salaries'),
@@ -1483,14 +1506,17 @@ INSERT INTO `aod_indexevent` (`id`, `name`, `date_entered`, `date_modified`, `mo
 ('8b7de780-00af-806a-d931-63590c6de2a3', 'vicky', '2022-10-26 10:31:18', '2022-10-26 10:31:18', '1', '1', NULL, 0, NULL, NULL, 1, '565a94bf-aabb-9d78-ba1e-63590c3f398c', 'EMP_Employees'),
 ('8b869518-be1b-b12f-bb90-63593f19144d', 'test', '2022-10-26 14:08:30', '2022-10-26 14:08:30', '1', '1', NULL, 0, NULL, NULL, 1, '30e1cc9f-4076-c498-8c86-63593fe36db1', 'SLY_Salaries'),
 ('8f7fc039-a3b1-2e80-4a17-635922b1e2b1', 'karthi', '2022-10-26 12:05:05', '2022-10-26 13:44:00', '1', '1', NULL, 0, '', NULL, 1, '4347719f-33ee-e81f-e8a8-635922b72386', 'EMP_Employees'),
+('90f4904b-cb8b-23b0-f18c-63eb1952dba9', 'karthi', '2023-02-14 05:17:05', '2023-02-23 04:46:09', '1', '1', NULL, 0, '', NULL, 1, '60e1cd4b-b3a1-177f-5ee3-63eb195bd4fc', 'SK_Skill'),
 ('9132d71b-cd54-7d9f-c942-63524c2e19cb', 'Admin', '2022-10-21 07:40:46', '2022-10-21 07:40:46', '1', '1', NULL, 0, NULL, NULL, 1, '49c825ec-fb61-9f88-7f9d-63524c815ef9', 'EMP_Employees'),
 ('915d5cd6-f81d-6a82-6a0c-639426b2fe90', 'kamalesh', '2022-12-10 06:27:29', '2022-12-10 06:27:29', '1', '1', NULL, 0, NULL, NULL, 1, '1509469a-e1a7-4908-67b6-6394265cb78a', 'Accounts'),
+('9241ca04-cb07-0d46-3309-63f624d5c784', 'ATT_2', '2023-02-22 14:18:56', '2023-02-22 14:18:56', '1', '1', NULL, 0, NULL, NULL, 1, '21794ff6-3240-07f1-20e9-63f62425babb', 'PAY_Payments'),
 ('9392feb0-7049-ae56-fbdf-635cb6ba1fe4', 'harish.kali', '2022-10-29 05:11:36', '2022-10-29 05:11:36', '1', '1', NULL, 0, '', NULL, 1, '13471fa6-3ebc-de64-0c01-635cb645bb85', 'SLY_Salary'),
 ('96cc947b-f1bb-860b-16e5-635bae6e9090', 'vicknesh', '2022-10-28 10:25:30', '2022-10-28 10:25:30', '1', '1', NULL, 0, '', NULL, 1, '58bdff80-4e77-ecae-aeae-635bae555c82', 'SLY_Salary'),
 ('96e419ea-1eb3-fba1-9fc5-63c9355fcc19', 'PRO_3', '2023-01-19 12:18:28', '2023-01-19 12:18:28', '1', '1', NULL, 0, NULL, NULL, 1, '191d9827-a895-32ef-9dd3-63c935979d22', 'pro_Projects'),
 ('96e98a33-7b13-e70c-5b64-634f97ab304d', '', '2022-10-19 06:20:06', '2022-10-19 06:20:06', '1', '1', NULL, 0, NULL, NULL, 1, '65dd3473-c619-3205-626a-634f97148e86', 'EMP_Employees'),
 ('99dd84cf-874f-33dd-5a3b-6351509b6cb3', '', '2022-10-20 13:44:04', '2022-10-20 13:44:04', '1', '1', NULL, 0, NULL, NULL, 1, '204ea969-ba36-c0b8-38ee-635127d4f225', 'EMP_Employees'),
 ('9a51310f-1eca-4151-c9a1-63942735fc50', 'kamalesh', '2022-12-10 06:29:48', '2022-12-10 06:29:48', '1', '1', NULL, 0, NULL, NULL, 1, '6ed60655-7206-e3f6-2fe3-639427cffa37', 'Opportunities'),
+('9aba343f-9d45-3e19-51f5-63f5a4f5ead5', 'EMP_6', '2023-02-22 05:12:18', '2023-02-22 05:12:18', '1', '1', NULL, 0, NULL, NULL, 1, '344b0904-cbdb-dcdd-0b5c-63f5a4745aa5', 'EMP_Employee_List'),
 ('9c7ceb34-6079-8bf9-e6af-635151bf7c10', 'admin', '2022-10-20 13:48:11', '2022-10-20 13:48:11', '1', '1', NULL, 0, NULL, NULL, 1, '5d2c8682-32c1-9544-caed-635151097137', 'EMP_Employees'),
 ('9f77fd64-8c29-52de-a2ff-63d3b7166c1a', 'ATT_11', '2023-01-27 11:36:04', '2023-01-27 11:36:04', '1', '1', NULL, 0, '', NULL, 1, '38b0f80d-9b14-d2e7-393d-63d3b77be099', 'at_Attentance'),
 ('a4d83eb8-f633-2bab-6e5d-6388a1552f44', 'kamalesh', '2022-12-01 12:43:20', '2022-12-01 12:43:20', '1', '1', NULL, 0, NULL, NULL, 1, 'e9cb18e3-65d5-a354-f5c7-6388a1bb39a7', 'sh_Salary_History'),
@@ -1498,12 +1524,15 @@ INSERT INTO `aod_indexevent` (`id`, `name`, `date_entered`, `date_modified`, `mo
 ('a8360c2f-d6aa-8805-4148-63c936f2750d', 'EMP_12', '2023-01-19 12:25:15', '2023-01-19 12:25:15', '1', '1', NULL, 0, NULL, NULL, 1, '78f3faff-0612-a504-3830-63c93663badd', 'EMP_Employees'),
 ('ab387530-91c3-719b-3bd9-635a1da8ea20', 'kamalesh', '2022-10-27 05:54:48', '2022-10-27 05:54:48', '1', '1', NULL, 0, NULL, NULL, 1, '23d2383b-c38d-f285-ffe6-635a1dd6e0fe', 'SLY_Salaries'),
 ('ace82c52-694b-c55c-53e2-6381a67e19af', 'kamalesh', '2022-11-26 05:37:33', '2022-11-26 05:37:33', '1', '1', NULL, 0, '', NULL, 1, '574076fd-97d0-bf3e-00da-6381a64c69b8', 'EMP_Employees'),
+('aec36d8c-eea8-a529-060c-63eb434e8780', 'kamalesh', '2023-02-14 08:16:09', '2023-02-23 04:43:52', '1', '1', NULL, 0, '', NULL, 1, '68689fc6-73a9-8110-d365-63eb43fef40f', 'SK_Skill'),
 ('afa47fbd-cc04-9b10-a149-635b6b089fb5', 'karthi', '2022-10-28 05:42:58', '2022-10-28 05:44:59', '1', '1', NULL, 0, '', NULL, 1, '74156368-6d53-ad2e-a5e8-635b6b3a8ced', 'SLY_Salary'),
 ('afa9ab2f-d835-2d76-ca68-635b827b0dd5', 'kamalesh', '2022-10-28 07:17:28', '2022-10-28 07:17:28', '1', '1', NULL, 0, '', NULL, 1, '706bf2af-ae68-a308-dceb-635b82298ed1', 'SLY_Salary'),
 ('b019ce69-e48e-1806-f697-63524e9714ac', 'kamalesh', '2022-10-21 07:47:10', '2022-10-21 07:47:10', '1', '1', NULL, 0, NULL, NULL, 1, '660f2374-5389-5946-5078-63524e681967', 'EMP_Employees'),
+('b207c424-54b3-49ef-1bfd-63f6ef34dd96', 'karan', '2023-02-23 04:45:16', '2023-02-23 04:45:16', '1', '1', NULL, 0, NULL, NULL, 1, '695c9ee1-d925-311e-feec-63f6ef6033ca', 'SK_Skill'),
 ('b2144f8c-7dd6-0aa3-5d42-635a124ee7f0', 'lokesh', '2022-10-27 05:09:15', '2022-10-27 05:09:15', '1', '1', NULL, 0, NULL, NULL, 1, 'ebbdbef2-98ff-b915-6fc7-635a125c9731', 'SLY_Salaries'),
 ('b22e0be9-874f-cd2a-4e38-635a3dd27fc9', 'lokesh', '2022-10-27 08:14:54', '2022-10-27 08:14:54', '1', '1', NULL, 0, NULL, NULL, 1, '21cd9ad5-eb71-2aa4-4ba5-635a3d9f9d91', 'SLY_Salary'),
 ('b32f7ef9-3fe7-88d5-eae1-63593ec2c253', 'lokesh', '2022-10-26 14:05:41', '2022-10-26 14:05:41', '1', '1', NULL, 0, NULL, NULL, 1, '60e80281-ddb4-43c5-ca44-63593ed8f7fb', 'SLY_Salaries'),
+('b342a4e3-6793-6d34-b14c-63f5b825b7f6', 'PRO_9', '2023-02-22 06:37:19', '2023-02-22 06:37:19', '1', '1', NULL, 0, NULL, NULL, 1, '5c7abcb2-e4db-5d0d-d335-63f5b87a74ee', 'pro_Projects'),
 ('b583808f-ee88-d486-1756-63d3a347b55d', 'ATT_5', '2023-01-27 10:11:51', '2023-01-27 10:58:30', '1', '1', NULL, 0, '', NULL, 1, '351eeb9a-e442-e7e8-0830-63d3a3912004', 'at_Attentance'),
 ('b60605d8-bc24-7fab-7b13-635b8962cfc8', 'kamalesh', '2022-10-28 07:47:35', '2022-10-28 07:47:35', '1', '1', NULL, 0, '', NULL, 1, 'a8683512-ce0c-a11d-0131-635b89800c54', 'SLY_Salary'),
 ('b6cc3afb-68d8-4e02-fd15-63cb76ec7991', '', '2023-01-21 05:22:16', '2023-01-21 06:28:08', '1', '1', NULL, 0, '', NULL, 1, '4bf00790-19dd-da3b-cae9-63cb76293e2b', 'EMP_Employee'),
@@ -1511,13 +1540,15 @@ INSERT INTO `aod_indexevent` (`id`, `name`, `date_entered`, `date_modified`, `mo
 ('b765175f-9e34-e235-ac95-635a3c7ac9b0', 'lokesh', '2022-10-27 08:09:56', '2022-10-27 08:09:56', '1', '1', NULL, 0, NULL, NULL, 1, '2e8b85ad-61b9-5793-ad15-635a3c93dfdb', 'SLY_Salary'),
 ('bde9cf46-a4a2-35f0-b114-634f8e9bf301', '', '2022-10-19 05:41:33', '2022-10-19 13:15:29', '1', '1', NULL, 0, '', NULL, 1, '5e4c86b7-b5f3-ffc6-63ba-634f8e8aee5c', 'EMP_Employees'),
 ('bff5fd0c-fd6e-9630-8608-635bab0ef208', 'harish', '2022-10-28 10:13:32', '2022-10-28 10:13:32', '1', '1', NULL, 0, NULL, NULL, 1, '62400fe6-c81e-cce8-aa37-635bab8750dd', 'EMP_Employees'),
+('c25c0cfd-63fa-09a2-27d3-63e9c740b3e8', 'mani', '2023-02-13 05:17:48', '2023-02-23 04:45:47', '1', '1', NULL, 0, '', NULL, 1, '5c3cbdc0-46e3-4aac-fab5-63e9c77cb4f0', 'SK_Skill'),
+('c5d76285-786b-fc87-d233-63f5c9d55318', 'PRO_10', '2023-02-22 07:52:42', '2023-03-01 11:45:50', '1', '1', NULL, 0, '', NULL, 1, '5f9d8183-5ee9-394f-651e-63f5c95bb6ca', 'pro_Projects'),
 ('c7041eb4-e9c8-0a87-0a4f-63cb79d6e563', '', '2023-01-21 05:37:00', '2023-01-21 05:37:00', '1', '1', NULL, 0, NULL, NULL, 1, '2f1ce1cf-dbe8-31f1-2bac-63cb79e799c1', 'EMP_Employee'),
 ('c790152e-dd9b-8f17-9d54-635b795ec34e', 'karthi', '2022-10-28 06:41:47', '2022-10-28 06:41:47', '1', '1', NULL, 0, '', NULL, 1, '84b88284-a5bb-7860-6583-635b794ab284', 'EMP_Employees'),
 ('c87f8ee0-64a9-3c05-d23b-634fd6577c02', '', '2022-10-19 10:48:53', '2022-10-19 10:48:53', '1', '1', NULL, 0, NULL, NULL, 1, '9d70a3d2-414e-e435-a7c7-634fd61d872c', 'EMP_Employees'),
 ('c9cd6e97-f3e6-2417-74fa-63d3bafc4298', 'EMP_3', '2023-01-27 11:50:10', '2023-01-30 12:30:58', '1', '1', NULL, 0, '', NULL, 1, '55de057b-8cc0-423f-18cb-63d3ba47c4d2', 'EMP_Employee_List'),
 ('ce0c0171-9215-979d-26ed-63c8e63a0ed3', 'kamalesh', '2023-01-19 06:41:44', '2023-01-19 10:22:16', '1', '1', NULL, 0, '', NULL, 1, 'dc30881f-172c-dee8-8b05-63c8e625416c', 'EMP_Employee'),
 ('d0726f36-da6f-1ace-6e4a-635b734dd873', 'Employees', '2022-10-28 06:15:22', '2022-10-28 06:15:22', '1', '1', NULL, 0, '', NULL, 1, '86242914-fa7b-250d-a79c-635b73a87197', 'SLY_Salary'),
-('d17c7bb9-9a48-f5a9-d3ea-63d3b5cb7ca6', 'PRO_7', '2023-01-27 11:28:27', '2023-01-27 11:36:21', '1', '1', NULL, 0, '', NULL, 1, '6baefc3b-b985-a6d4-73cc-63d3b5c3f3ba', 'pro_Projects'),
+('d17c7bb9-9a48-f5a9-d3ea-63d3b5cb7ca6', 'PRO_7', '2023-01-27 11:28:27', '2023-03-01 13:19:27', '1', '1', NULL, 0, '', NULL, 1, '6baefc3b-b985-a6d4-73cc-63d3b5c3f3ba', 'pro_Projects'),
 ('d3300b56-6729-55fb-915a-63da168538e1', 'kamalesh', '2023-02-01 07:35:26', '2023-02-01 07:35:26', '1', '1', NULL, 0, NULL, NULL, 1, '55007ae1-476a-c74a-bd9e-63da16def25c', 'PAY_Payments'),
 ('d3b45ccc-a1e2-77f7-7633-635cbc53bff4', 'kamalesh.k', '2022-10-29 05:39:43', '2022-10-29 05:39:43', '1', '1', NULL, 0, '', NULL, 1, 'ba49bb1d-73be-1ddf-66be-635cbcba82f2', 'SLY_Salary'),
 ('d3ef25fc-ccd9-7b47-c3ac-63d36dc34aec', 'ATT_4', '2023-01-27 06:22:45', '2023-01-27 06:22:45', '1', '1', NULL, 0, NULL, NULL, 1, '455fd05a-5532-2356-ac14-63d36d24864b', 'at_Attentance'),
@@ -1527,7 +1558,9 @@ INSERT INTO `aod_indexevent` (`id`, `name`, `date_entered`, `date_modified`, `mo
 ('d7700ff6-f7ca-eaac-0ebb-63d3b3340a32', 'PRO_6', '2023-01-27 11:21:16', '2023-01-27 11:21:16', '1', '1', NULL, 0, NULL, NULL, 1, 'bdf3ede9-8411-e6a4-1bfa-63d3b3aa98e9', 'pro_Projects'),
 ('db96e6bf-d007-3cad-e234-63c91928fd79', 'lokesh', '2023-01-19 10:21:20', '2023-01-19 10:21:20', '1', '1', NULL, 0, NULL, NULL, 1, '3f4417ec-dc7e-e252-d9e7-63c919777f24', 'EMP_Employee'),
 ('e3afba0b-fdd6-6115-6200-6388573b40f1', 'kamalesh', '2022-12-01 07:26:04', '2022-12-01 07:26:04', '1', '1', NULL, 0, NULL, NULL, 1, '34f4395e-a987-17e2-a421-638857392f07', 'at_Attentance'),
+('e4af0274-f86a-9f62-3b27-63f5fa9082c5', 'EMP_7', '2023-02-22 11:20:30', '2023-02-22 11:20:30', '1', '1', NULL, 0, NULL, NULL, 1, '81a1ade6-8a93-f010-f494-63f5fa4fe72b', 'EMP_Employee_List'),
 ('e71d0757-060e-4bb5-1a2c-635249ae0e4d', 'kamalesh', '2022-10-21 07:27:05', '2022-10-21 07:27:05', '1', '1', NULL, 0, NULL, NULL, 1, 'b4528914-7ac8-df22-307a-635249e04ee9', 'EMP_Employees'),
+('ec1d0a0c-d6be-e066-c658-63f4c94b4766', 'EMP_5', '2023-02-21 13:39:32', '2023-02-21 13:39:32', '1', '1', NULL, 0, NULL, NULL, 1, '508492db-9f9c-45e4-c9d3-63f4c90d7ec7', 'EMP_Employee_List'),
 ('ee9c5d2a-f3fa-3a5c-382d-63527f757b8d', 'karthi', '2022-10-21 11:15:07', '2022-10-21 11:15:07', '1', '1', NULL, 0, NULL, NULL, 1, 'a5bc2304-6e99-dda5-d649-63527f6a1abb', 'EMP_Employees');
 
 -- --------------------------------------------------------
@@ -2456,9 +2489,10 @@ CREATE TABLE `at_attentance` (
 --
 
 INSERT INTO `at_attentance` (`id`, `name`, `date_entered`, `date_modified`, `modified_user_id`, `created_by`, `description`, `deleted`, `assigned_user_id`, `record_number`) VALUES
-('13480227-3f80-a014-351c-63d3b4736d3e', 'ATT_10', NULL, '2023-01-27 11:23:40', '1', '1', '', 0, NULL, 10),
+('13480227-3f80-a014-351c-63d3b4736d3e', 'ATT_10', NULL, '2023-02-22 07:09:35', '1', '1', '', 1, NULL, 10),
 ('16ee83cc-d0e3-4f22-a44e-63d3ae6aacd3', 'ATT_8', NULL, '2023-01-27 11:19:51', '1', '1', 'test', 1, NULL, 8),
 ('1ad5051c-9f2f-cfc2-08c3-63d1151dc6de', 'ATT_3', '2023-01-25 11:42:07', '2023-01-27 06:24:43', '1', '1', 'test', 1, '', 3),
+('300cadf5-b3b8-c036-0b5a-63f61fcc7abc', 'ATT_13', '2023-02-22 13:59:14', '2023-02-22 13:59:14', '1', '1', 'test', 0, NULL, 13),
 ('34f4395e-a987-17e2-a421-638857392f07', 'kamalesh', '2022-12-01 07:26:04', '2023-01-24 06:23:19', '1', '1', 'test', 1, '1', 1),
 ('351eeb9a-e442-e7e8-0830-63d3a3912004', 'ATT_5', '2023-01-27 10:11:51', '2023-01-27 11:20:02', '1', '1', 'test', 1, '', 5),
 ('38b0f80d-9b14-d2e7-393d-63d3b77be099', 'ATT_11', NULL, '2023-01-27 11:36:04', '1', '1', 'test', 0, NULL, 11),
@@ -2511,6 +2545,7 @@ INSERT INTO `at_attentance_cstm` (`id_c`, `entry_time_c`, `exit_time_c`, `attent
 ('13480227-3f80-a014-351c-63d3b4736d3e', '2023-01-26 23:00:00', '2023-01-04 23:00:00', '7', '2023-01-06', 'kamalesh.K'),
 ('16ee83cc-d0e3-4f22-a44e-63d3ae6aacd3', '2023-01-04 23:00:00', '2023-01-03 23:00:00', '5', '2023-01-05', 'kamalesh.K'),
 ('1ad5051c-9f2f-cfc2-08c3-63d1151dc6de', '2023-01-24 23:00:00', '2023-01-09 23:00:00', '2', '2023-01-19', 'kamal'),
+('300cadf5-b3b8-c036-0b5a-63f61fcc7abc', '2023-02-21 23:00:00', '2021-03-15 23:00:00', '3', '2023-02-22', 'mani'),
 ('34f4395e-a987-17e2-a421-638857392f07', '2022-11-30 23:00:00', '2022-12-08 23:00:00', NULL, NULL, NULL),
 ('351eeb9a-e442-e7e8-0830-63d3a3912004', '2023-01-26 23:00:00', '2023-01-15 23:00:00', '7', '2023-01-07', 'kamal'),
 ('38b0f80d-9b14-d2e7-393d-63d3b77be099', '2023-01-26 23:00:00', '2023-01-03 23:00:00', '2', '2023-01-07', 'kamalesh.K'),
@@ -2867,6 +2902,54 @@ CREATE TABLE `cases_cstm` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `cli_clients`
+--
+
+CREATE TABLE `cli_clients` (
+  `id` char(36) NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `date_entered` datetime DEFAULT NULL,
+  `date_modified` datetime DEFAULT NULL,
+  `modified_user_id` char(36) DEFAULT NULL,
+  `created_by` char(36) DEFAULT NULL,
+  `description` text,
+  `deleted` tinyint(1) DEFAULT '0',
+  `assigned_user_id` char(36) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cli_clients_audit`
+--
+
+CREATE TABLE `cli_clients_audit` (
+  `id` char(36) NOT NULL,
+  `parent_id` char(36) NOT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `created_by` varchar(36) DEFAULT NULL,
+  `field_name` varchar(100) DEFAULT NULL,
+  `data_type` varchar(100) DEFAULT NULL,
+  `before_value_string` varchar(255) DEFAULT NULL,
+  `after_value_string` varchar(255) DEFAULT NULL,
+  `before_value_text` text,
+  `after_value_text` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cli_clients_cstm`
+--
+
+CREATE TABLE `cli_clients_cstm` (
+  `id_c` char(36) NOT NULL,
+  `client_name_c` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `config`
 --
 
@@ -2887,7 +2970,7 @@ INSERT INTO `config` (`category`, `name`, `value`) VALUES
 ('notify', 'on', '1'),
 ('notify', 'send_from_assigning_user', '0'),
 ('info', 'sugar_version', '6.5.20'),
-('MySettings', 'tab', 'YTo5OntzOjQ6IkhvbWUiO3M6NDoiSG9tZSI7czo4OiJBY2NvdW50cyI7czo4OiJBY2NvdW50cyI7czoxMzoiYXRfQXR0ZW50YW5jZSI7czoxMzoiYXRfQXR0ZW50YW5jZSI7czoxMzoiT3Bwb3J0dW5pdGllcyI7czoxMzoiT3Bwb3J0dW5pdGllcyI7czoxNzoic2hfU2FsYXJ5X0hpc3RvcnkiO3M6MTc6InNoX1NhbGFyeV9IaXN0b3J5IjtzOjU6IkxlYWRzIjtzOjU6IkxlYWRzIjtzOjEyOiJwcm9fUHJvamVjdHMiO3M6MTI6InByb19Qcm9qZWN0cyI7czoxNzoiRU1QX0VtcGxveWVlX0xpc3QiO3M6MTc6IkVNUF9FbXBsb3llZV9MaXN0IjtzOjEyOiJQQVlfUGF5bWVudHMiO3M6MTI6IlBBWV9QYXltZW50cyI7fQ=='),
+('MySettings', 'tab', 'YToxNDp7czo0OiJIb21lIjtzOjQ6IkhvbWUiO3M6ODoiQWNjb3VudHMiO3M6ODoiQWNjb3VudHMiO3M6MTM6ImF0X0F0dGVudGFuY2UiO3M6MTM6ImF0X0F0dGVudGFuY2UiO3M6ODoiQ29udGFjdHMiO3M6ODoiQ29udGFjdHMiO3M6NToiVGFza3MiO3M6NToiVGFza3MiO3M6ODoiTWVldGluZ3MiO3M6ODoiTWVldGluZ3MiO3M6MTM6Ik9wcG9ydHVuaXRpZXMiO3M6MTM6Ik9wcG9ydHVuaXRpZXMiO3M6MTc6InNoX1NhbGFyeV9IaXN0b3J5IjtzOjE3OiJzaF9TYWxhcnlfSGlzdG9yeSI7czo1OiJMZWFkcyI7czo1OiJMZWFkcyI7czoxMjoicHJvX1Byb2plY3RzIjtzOjEyOiJwcm9fUHJvamVjdHMiO3M6MTc6IkVNUF9FbXBsb3llZV9MaXN0IjtzOjE3OiJFTVBfRW1wbG95ZWVfTGlzdCI7czoxMjoiUEFZX1BheW1lbnRzIjtzOjEyOiJQQVlfUGF5bWVudHMiO3M6ODoiU0tfU2tpbGwiO3M6ODoiU0tfU2tpbGwiO3M6MTE6IkNMSV9DbGllbnRzIjtzOjExOiJDTElfQ2xpZW50cyI7fQ=='),
 ('portal', 'on', '0'),
 ('tracker', 'Tracker', '1'),
 ('system', 'skypeout_on', '1'),
@@ -3712,18 +3795,23 @@ CREATE TABLE `emp_employee_list` (
   `description` text,
   `deleted` tinyint(1) DEFAULT '0',
   `assigned_user_id` char(36) DEFAULT NULL,
-  `record_number` int(255) NOT NULL
+  `record_number` int(255) NOT NULL,
+  `emp_skill_c` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `emp_employee_list`
 --
 
-INSERT INTO `emp_employee_list` (`id`, `name`, `date_entered`, `date_modified`, `modified_user_id`, `created_by`, `description`, `deleted`, `assigned_user_id`, `record_number`) VALUES
-('1b1f65dd-3f65-dfd6-e636-63d3c2f4ad2e', 'EMP_4', '2023-01-27 12:22:26', '2023-01-31 12:26:28', '1', '1', NULL, 0, '', 4),
-('28e7bb6e-ffd9-89a5-1af9-63d0c1069938', 'EMP_1', '2023-01-25 05:45:14', '2023-01-30 13:29:41', '1', '1', NULL, 0, '', 1),
-('55de057b-8cc0-423f-18cb-63d3ba47c4d2', 'EMP_3', '2023-01-27 11:50:10', '2023-01-30 12:30:58', '1', '1', NULL, 0, '', 3),
-('92fd65e2-d16c-6639-9299-63cf77ae0def', 'kamalesh', '2023-01-24 06:16:34', '2023-01-25 05:43:50', '1', '1', NULL, 1, '', 2);
+INSERT INTO `emp_employee_list` (`id`, `name`, `date_entered`, `date_modified`, `modified_user_id`, `created_by`, `description`, `deleted`, `assigned_user_id`, `record_number`, `emp_skill_c`) VALUES
+('1b1f65dd-3f65-dfd6-e636-63d3c2f4ad2e', 'EMP_4', '2023-01-27 12:22:26', '2023-01-31 12:26:28', '1', '1', NULL, 0, '', 4, NULL),
+('28e7bb6e-ffd9-89a5-1af9-63d0c1069938', 'EMP_1', '2023-01-25 05:45:14', '2023-01-30 13:29:41', '1', '1', NULL, 0, '', 1, NULL),
+('344b0904-cbdb-dcdd-0b5c-63f5a4745aa5', 'EMP_6', '2023-02-22 05:12:18', '2023-02-22 05:12:18', '1', '1', NULL, 0, NULL, 6, '0'),
+('508492db-9f9c-45e4-c9d3-63f4c90d7ec7', 'EMP_5', '2023-02-21 13:39:32', '2023-02-21 13:39:32', '1', '1', NULL, 0, NULL, 5, NULL),
+('55de057b-8cc0-423f-18cb-63d3ba47c4d2', 'EMP_3', '2023-01-27 11:50:10', '2023-01-30 12:30:58', '1', '1', NULL, 0, '', 3, NULL),
+('81a1ade6-8a93-f010-f494-63f5fa4fe72b', 'EMP_7', '2023-02-22 11:20:30', '2023-02-22 11:20:30', '1', '1', NULL, 0, NULL, 7, '2'),
+('92fd65e2-d16c-6639-9299-63cf77ae0def', 'kamalesh', '2023-01-24 06:16:34', '2023-01-25 05:43:50', '1', '1', NULL, 1, '', 2, NULL),
+('b60c5610-6fa0-1c8d-79fc-63f5fbc8becf', 'EMP_8', '2023-02-22 11:22:51', '2023-02-22 11:22:51', '1', '1', NULL, 0, NULL, 8, '1');
 
 -- --------------------------------------------------------
 
@@ -3745,7 +3833,7 @@ CREATE TABLE `emp_employee_list_at_attentance_1_c` (
 
 INSERT INTO `emp_employee_list_at_attentance_1_c` (`id`, `date_modified`, `deleted`, `emp_employee_list_at_attentance_1emp_employee_list_ida`, `emp_employee_list_at_attentance_1at_attentance_idb`) VALUES
 ('195bc85e-8447-9f4e-2df3-63d3ae8abac4', '2023-01-27 11:19:51', 1, '28e7bb6e-ffd9-89a5-1af9-63d0c1069938', '16ee83cc-d0e3-4f22-a44e-63d3ae6aacd3'),
-('35ca003c-b7c4-3a27-8d29-63d3b4b1cdb0', '2023-01-27 11:23:40', 0, '28e7bb6e-ffd9-89a5-1af9-63d0c1069938', '13480227-3f80-a014-351c-63d3b4736d3e'),
+('35ca003c-b7c4-3a27-8d29-63d3b4b1cdb0', '2023-02-22 07:09:35', 1, '28e7bb6e-ffd9-89a5-1af9-63d0c1069938', '13480227-3f80-a014-351c-63d3b4736d3e'),
 ('381c5228-939e-1024-2076-63d3a3572370', '2023-01-27 11:20:02', 1, '28e7bb6e-ffd9-89a5-1af9-63d0c1069938', '351eeb9a-e442-e7e8-0830-63d3a3912004'),
 ('3b0c5186-ba1b-c2ef-8f49-63d3a7c68238', '2023-01-27 11:20:02', 1, '28e7bb6e-ffd9-89a5-1af9-63d0c1069938', '38c58fbf-8fd0-1e67-546e-63d3a7b75223'),
 ('3b5cdd9a-dbfb-866a-7d6e-63d3b7f2042e', '2023-01-27 11:36:04', 0, '28e7bb6e-ffd9-89a5-1af9-63d0c1069938', '38b0f80d-9b14-d2e7-393d-63d3b77be099'),
@@ -3794,18 +3882,23 @@ CREATE TABLE `emp_employee_list_cstm` (
   `emp_contact_c` varchar(255) DEFAULT NULL,
   `emp_gender_c` varchar(100) DEFAULT NULL,
   `emp_dob_c` date DEFAULT NULL,
-  `employee_status_c` varchar(100) DEFAULT NULL
+  `employee_status_c` varchar(100) DEFAULT NULL,
+  `various_types_c` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `emp_employee_list_cstm`
 --
 
-INSERT INTO `emp_employee_list_cstm` (`id_c`, `emp_username_c`, `emp_email_c`, `emp_address_c`, `emp_contact_c`, `emp_gender_c`, `emp_dob_c`, `employee_status_c`) VALUES
-('1b1f65dd-3f65-dfd6-e636-63d3c2f4ad2e', 'Karthick Raj', 'karthi123@gmail.com', '', '12348562', 'male', '2023-01-19', 'inactive'),
-('28e7bb6e-ffd9-89a5-1af9-63d0c1069938', 'kamalesh.K', 'test123@gmail.com', '', '985634532', 'male', '2023-01-09', 'active'),
-('55de057b-8cc0-423f-18cb-63d3ba47c4d2', 'vicknesh', 'test123@gmail.com', '', '6545676554', 'male', '2023-01-13', 'inactive'),
-('92fd65e2-d16c-6639-9299-63cf77ae0def', 'kamalesh', 'kamalesh123@gmail.com', 'test', '12348562', 'male', '2023-01-04', NULL);
+INSERT INTO `emp_employee_list_cstm` (`id_c`, `emp_username_c`, `emp_email_c`, `emp_address_c`, `emp_contact_c`, `emp_gender_c`, `emp_dob_c`, `employee_status_c`, `various_types_c`) VALUES
+('1b1f65dd-3f65-dfd6-e636-63d3c2f4ad2e', 'Karthick Raj', 'karthi123@gmail.com', '', '12348562', 'male', '2023-01-19', 'active', NULL),
+('28e7bb6e-ffd9-89a5-1af9-63d0c1069938', 'kamalesh.K', 'test123@gmail.com', '', '985634532', 'male', '2023-01-09', 'active', NULL),
+('344b0904-cbdb-dcdd-0b5c-63f5a4745aa5', 'karan', 'karan123@gmail.com', '', '9876543432', 'male', '2023-02-11', 'active', NULL),
+('508492db-9f9c-45e4-c9d3-63f4c90d7ec7', 'Mani', 'mani123@gmail.com', '', '7654345676', 'male', '2023-02-23', 'active', NULL),
+('55de057b-8cc0-423f-18cb-63d3ba47c4d2', 'vicknesh', 'test123@gmail.com', '', '6545676554', 'male', '2023-01-13', 'active', NULL),
+('81a1ade6-8a93-f010-f494-63f5fa4fe72b', 'harish', 'harish123@gmail.com', '', '8765536432', 'male', '2023-02-16', 'active', NULL),
+('92fd65e2-d16c-6639-9299-63cf77ae0def', 'kamalesh', 'kamalesh123@gmail.com', 'test', '12348562', 'male', '2023-01-04', NULL, NULL),
+('b60c5610-6fa0-1c8d-79fc-63f5fbc8becf', 'test', 'test123@gmail.com', '', '7654345676', '^male^,^female^', '2023-02-11', 'active', '');
 
 -- --------------------------------------------------------
 
@@ -3827,7 +3920,14 @@ CREATE TABLE `emp_employee_list_pro_projects_1_c` (
 
 INSERT INTO `emp_employee_list_pro_projects_1_c` (`id`, `date_modified`, `deleted`, `emp_employee_list_pro_projects_1emp_employee_list_ida`, `emp_employee_list_pro_projects_1pro_projects_idb`) VALUES
 ('24db7d79-1331-e2e7-ab30-63d36c9478c5', '2023-01-27 07:06:22', 1, '28e7bb6e-ffd9-89a5-1af9-63d0c1069938', 'f0ec95a4-3726-ae4c-0232-63cf7a684e80'),
-('6de172ee-21ca-8d5c-a8f9-63d3b5b9661e', '2023-01-27 11:28:27', 0, '28e7bb6e-ffd9-89a5-1af9-63d0c1069938', '6baefc3b-b985-a6d4-73cc-63d3b5c3f3ba'),
+('5f42bdd8-8008-62ef-6947-63ff50772de5', '2023-03-01 13:19:27', 1, '1b1f65dd-3f65-dfd6-e636-63d3c2f4ad2e', '6baefc3b-b985-a6d4-73cc-63d3b5c3f3ba'),
+('64d3f31f-4650-b75b-feef-63ff50ded3fa', '2023-03-01 13:19:27', 1, '28e7bb6e-ffd9-89a5-1af9-63d0c1069938', '6baefc3b-b985-a6d4-73cc-63d3b5c3f3ba'),
+('6904875e-511d-2388-3ea2-63f5c99e4fd0', '2023-02-23 04:47:54', 1, '344b0904-cbdb-dcdd-0b5c-63f5a4745aa5', '5f9d8183-5ee9-394f-651e-63f5c95bb6ca'),
+('6b36f094-8456-cedd-8956-63ff50a8fa82', '2023-03-01 13:19:27', 0, '1b1f65dd-3f65-dfd6-e636-63d3c2f4ad2e', '6baefc3b-b985-a6d4-73cc-63d3b5c3f3ba'),
+('6de172ee-21ca-8d5c-a8f9-63d3b5b9661e', '2023-03-01 13:19:27', 1, '28e7bb6e-ffd9-89a5-1af9-63d0c1069938', '6baefc3b-b985-a6d4-73cc-63d3b5c3f3ba'),
+('b641359d-aad9-e397-8caf-63f6efa4d6e9', '2023-02-23 04:47:54', 1, '508492db-9f9c-45e4-c9d3-63f4c90d7ec7', '5f9d8183-5ee9-394f-651e-63f5c95bb6ca'),
+('b9f61067-f9bf-7e70-1796-63f6ef2dad87', '2023-02-23 04:47:54', 1, '344b0904-cbdb-dcdd-0b5c-63f5a4745aa5', '5f9d8183-5ee9-394f-651e-63f5c95bb6ca'),
+('c0207845-7a0b-4436-4bf7-63f6ef65ef5d', '2023-02-23 04:47:54', 0, '508492db-9f9c-45e4-c9d3-63f4c90d7ec7', '5f9d8183-5ee9-394f-651e-63f5c95bb6ca'),
 ('c0888cb8-c5de-f35d-2a95-63d3b37cc59e', '2023-01-27 11:21:16', 0, '28e7bb6e-ffd9-89a5-1af9-63d0c1069938', 'bdf3ede9-8411-e6a4-1bfa-63d3b3aa98e9'),
 ('da79bb06-c2ca-28d8-9b94-63d3b0bdcc2b', '2023-01-27 11:20:18', 1, '28e7bb6e-ffd9-89a5-1af9-63d0c1069938', 'd682fb16-2809-2ac8-c921-63d3b0731e4b');
 
@@ -3902,6 +4002,7 @@ INSERT INTO `fields_meta_data` (`id`, `name`, `vname`, `comments`, `help`, `cust
 ('Casesjjwg_maps_geocode_status_c', 'jjwg_maps_geocode_status_c', 'LBL_JJWG_MAPS_GEOCODE_STATUS', 'Geocode Status', 'Geocode Status', 'Cases', 'varchar', 255, 0, NULL, '2022-10-18 05:48:09', 0, 0, 0, 0, 1, 'true', NULL, '', '', ''),
 ('Casesjjwg_maps_lat_c', 'jjwg_maps_lat_c', 'LBL_JJWG_MAPS_LAT', '', 'Latitude', 'Cases', 'float', 10, 0, '0.00000000', '2022-10-18 05:48:09', 0, 0, 0, 0, 1, 'true', '8', '', '', ''),
 ('Casesjjwg_maps_lng_c', 'jjwg_maps_lng_c', 'LBL_JJWG_MAPS_LNG', '', 'Longitude', 'Cases', 'float', 11, 0, '0.00000000', '2022-10-18 05:48:09', 0, 0, 0, 0, 1, 'true', '8', '', '', ''),
+('CLI_Clientsclient_name_c', 'client_name_c', 'LBL_CLIENT_NAME_C', '', '', 'CLI_Clients', 'varchar', 255, 1, '', '2023-02-22 11:14:50', 0, 0, 0, 0, 1, 'true', '', '', '', ''),
 ('Contactsjjwg_maps_address_c', 'jjwg_maps_address_c', 'LBL_JJWG_MAPS_ADDRESS', 'Address', 'Address', 'Contacts', 'varchar', 255, 0, NULL, '2022-10-18 05:48:09', 0, 0, 0, 0, 1, 'true', NULL, '', '', ''),
 ('Contactsjjwg_maps_geocode_status_c', 'jjwg_maps_geocode_status_c', 'LBL_JJWG_MAPS_GEOCODE_STATUS', 'Geocode Status', 'Geocode Status', 'Contacts', 'varchar', 255, 0, NULL, '2022-10-18 05:48:09', 0, 0, 0, 0, 1, 'true', NULL, '', '', ''),
 ('Contactsjjwg_maps_lat_c', 'jjwg_maps_lat_c', 'LBL_JJWG_MAPS_LAT', '', 'Latitude', 'Contacts', 'float', 10, 0, '0.00000000', '2022-10-18 05:48:09', 0, 0, 0, 0, 1, 'true', '8', '', '', ''),
@@ -3917,6 +4018,7 @@ INSERT INTO `fields_meta_data` (`id`, `name`, `vname`, `comments`, `help`, `cust
 ('EMP_Employee_Listemp_email_c', 'emp_email_c', 'LBL_EMP_EMAIL_C', '', '', 'EMP_Employee_List', 'varchar', 255, 1, '', '2023-01-24 05:27:58', 0, 0, 0, 0, 1, 'true', '', '', '', ''),
 ('EMP_Employee_Listemp_gender_c', 'emp_gender_c', 'LBL_EMP_GENDER_C', '', '', 'EMP_Employee_List', 'enum', 100, 1, '', '2023-01-24 05:31:05', 0, 0, 0, 0, 1, 'true', 'gender_list', '', '', ''),
 ('EMP_Employee_Listemp_username_c', 'emp_username_c', 'LBL_EMP_USERNAME_C', NULL, NULL, 'EMP_Employee_List', 'varchar', 255, 1, NULL, '2023-01-25 10:50:13', 0, 0, 0, 0, 1, 'true', NULL, NULL, NULL, NULL),
+('EMP_Employee_Listvarious_types_c', 'various_types_c', 'LBL_VARIOUS_TYPES', '', '', 'EMP_Employee_List', 'multienum', 100, 0, NULL, '2023-02-27 06:10:46', 0, 0, 0, 0, 1, 'true', 'various_types_list', '', '', ''),
 ('Leadsjjwg_maps_address_c', 'jjwg_maps_address_c', 'LBL_JJWG_MAPS_ADDRESS', 'Address', 'Address', 'Leads', 'varchar', 255, 0, NULL, '2022-10-18 05:48:09', 0, 0, 0, 0, 1, 'true', NULL, '', '', ''),
 ('Leadsjjwg_maps_geocode_status_c', 'jjwg_maps_geocode_status_c', 'LBL_JJWG_MAPS_GEOCODE_STATUS', 'Geocode Status', 'Geocode Status', 'Leads', 'varchar', 255, 0, NULL, '2022-10-18 05:48:09', 0, 0, 0, 0, 1, 'true', NULL, '', '', ''),
 ('Leadsjjwg_maps_lat_c', 'jjwg_maps_lat_c', 'LBL_JJWG_MAPS_LAT', '', 'Latitude', 'Leads', 'float', 10, 0, '0.00000000', '2022-10-18 05:48:09', 0, 0, 0, 0, 1, 'true', '8', '', '', ''),
@@ -3958,7 +4060,13 @@ INSERT INTO `fields_meta_data` (`id`, `name`, `vname`, `comments`, `help`, `cust
 ('sh_Salary_Historysalary_hours_logged_c', 'salary_hours_logged_c', 'LBL_SALARY_HOURS_LOGGED_C', '', '', 'sh_Salary_History', 'datetimecombo', NULL, 1, '', '2022-12-01 12:40:35', 0, 0, 0, 0, 1, 'true', '', '', '', ''),
 ('sh_Salary_Historysly_history_emp_name_c', 'sly_history_emp_name_c', 'LBL_SLY_HISTORY_EMP_NAME_C', '', '', 'sh_Salary_History', 'varchar', 255, 1, '', '2023-01-25 10:54:11', 0, 0, 0, 0, 1, 'true', '', '', '', ''),
 ('sh_Salary_Historysly_history_months_slaray_c', 'sly_history_months_slaray_c', 'LBL_SLY_HISTORY_MONTHS_SLARAY_C', '', '', 'sh_Salary_History', 'int', 255, 1, '', '2023-01-25 05:13:26', 0, 0, 0, 0, 1, 'true', '', '', '', ''),
-('SLY_Salariesuser_c', 'user_c', 'LBL_USER_C', '', '', 'SLY_Salaries', 'varchar', 255, 0, '', '2022-10-18 07:47:50', 0, 0, 0, 0, 1, 'true', '', '', '', '');
+('SK_Skillskill_name_c', 'skill_name_c', 'LBL_SKILL_NAME_C', NULL, NULL, 'SK_Skill', 'varchar', 255, 1, NULL, '2023-02-13 05:10:46', 0, 0, 0, 0, 1, 'true', NULL, NULL, NULL, NULL),
+('SK_Skillskill_proficion_c', 'skill_proficion_c', 'LBL_SKILL_PROFICION_C', NULL, NULL, 'SK_Skill', 'enum', 100, 0, NULL, '2023-02-13 05:11:11', 0, 0, 0, 0, 1, 'true', 'skill_proficion_c_list', NULL, NULL, NULL),
+('SLY_Salariesuser_c', 'user_c', 'LBL_USER_C', '', '', 'SLY_Salaries', 'varchar', 255, 0, '', '2022-10-18 07:47:50', 0, 0, 0, 0, 1, 'true', '', '', '', ''),
+('Usersemployee_date_of_birth_c', 'employee_date_of_birth_c', 'LBL_EMPLOYEE_DATE_OF_BIRTH_C', '', '', 'Users', 'date', NULL, 1, '', '2023-02-09 10:15:25', 0, 0, 0, 0, 1, 'true', '', '', '', ''),
+('Usersemployee_gender_c', 'employee_gender_c', 'LBL_EMPLOYEE_GENDER_C', '', '', 'Users', 'enum', 100, 1, '', '2023-02-09 10:14:18', 0, 0, 0, 0, 1, 'true', 'gender_list', '', '', ''),
+('Usersemployee_id_c', 'employee_id_c', 'LBL_EMPLOYEE_ID_C', '', '', 'Users', 'int', 255, 1, '', '2023-02-09 10:25:25', 0, 0, 0, 0, 1, 'true', '', '', '', ''),
+('Usersemploye_qualification_c', 'employe_qualification_c', 'LBL_EMPLOYE_QUALIFICATION_C', '', '', 'Users', 'text', NULL, 0, '', '2023-02-09 13:23:20', 0, 0, 0, 0, 1, 'true', '', '4', '40', '');
 
 -- --------------------------------------------------------
 
@@ -5012,15 +5120,18 @@ CREATE TABLE `pay_payments` (
   `created_by` char(36) DEFAULT NULL,
   `description` text,
   `deleted` tinyint(1) DEFAULT '0',
-  `assigned_user_id` char(36) DEFAULT NULL
+  `assigned_user_id` char(36) DEFAULT NULL,
+  `record_number` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `pay_payments`
 --
 
-INSERT INTO `pay_payments` (`id`, `name`, `date_entered`, `date_modified`, `modified_user_id`, `created_by`, `description`, `deleted`, `assigned_user_id`) VALUES
-('55007ae1-476a-c74a-bd9e-63da16def25c', 'kamalesh', '2023-02-01 07:35:26', '2023-02-01 07:35:26', '1', '1', NULL, 0, NULL);
+INSERT INTO `pay_payments` (`id`, `name`, `date_entered`, `date_modified`, `modified_user_id`, `created_by`, `description`, `deleted`, `assigned_user_id`, `record_number`) VALUES
+('21794ff6-3240-07f1-20e9-63f62425babb', 'ATT_2', '2023-02-22 14:18:56', '2023-02-22 14:18:56', '1', '1', NULL, 0, NULL, 2),
+('55007ae1-476a-c74a-bd9e-63da16def25c', 'kamalesh', '2023-02-01 07:35:26', '2023-02-01 07:35:26', '1', '1', NULL, 0, NULL, 1),
+('915b3b90-74f9-2c97-4809-63f74474dc1d', 'ATT_3', '2023-02-23 10:50:34', '2023-02-23 10:50:34', '1', '1', NULL, 0, NULL, 3);
 
 -- --------------------------------------------------------
 
@@ -5065,7 +5176,9 @@ CREATE TABLE `pay_payments_cstm` (
 --
 
 INSERT INTO `pay_payments_cstm` (`id_c`, `payment_method_c`, `payment_amount_in_rupees_c`, `currency_id`, `payment_revenue_c`, `ia_any_pending_payments_c`, `pending_total_amount_c`, `payment_year_c`, `payment_month_c`, `payment_day_c`) VALUES
-('55007ae1-476a-c74a-bd9e-63da16def25c', 'cash', '7000.000000', NULL, 7, 1, '12.000000', NULL, NULL, NULL);
+('21794ff6-3240-07f1-20e9-63f62425babb', 'net_banking', '7000.000000', NULL, 7, 1, '12.000000', '2019', 'march', '4'),
+('55007ae1-476a-c74a-bd9e-63da16def25c', 'cash', '7000.000000', NULL, 7, 1, '12.000000', NULL, NULL, NULL),
+('915b3b90-74f9-2c97-4809-63f74474dc1d', 'net_banking', '7000.000000', NULL, 7, 1, NULL, '2019', 'april', '2');
 
 -- --------------------------------------------------------
 
@@ -5409,8 +5522,11 @@ CREATE TABLE `pro_projects` (
 
 INSERT INTO `pro_projects` (`id`, `name`, `date_entered`, `date_modified`, `modified_user_id`, `created_by`, `description`, `deleted`, `assigned_user_id`, `record_number`) VALUES
 ('191d9827-a895-32ef-9dd3-63c935979d22', 'PRO_3', '2023-01-19 12:18:28', '2023-01-24 06:23:41', '1', '1', NULL, 1, NULL, 3),
+('4c7b7103-b5ef-3c17-5b99-63f2ffdb27a6', 'PRO_8', '2023-02-20 05:06:19', '2023-02-22 05:00:32', '1', '1', NULL, 0, '', 8),
+('5c7abcb2-e4db-5d0d-d335-63f5b87a74ee', 'PRO_9', '2023-02-22 06:37:19', '2023-02-22 06:37:19', '1', '1', NULL, 0, NULL, 9),
 ('5ef1276c-3ff7-0ae7-4ceb-638b3c999078', 'PRO_1', '2022-12-03 12:08:15', '2023-01-19 10:44:08', '1', '1', 'test', 1, '1', 1),
-('6baefc3b-b985-a6d4-73cc-63d3b5c3f3ba', 'PRO_7', '2023-01-27 11:28:27', '2023-01-27 11:36:21', '1', '1', NULL, 0, '', 7),
+('5f9d8183-5ee9-394f-651e-63f5c95bb6ca', 'PRO_10', '2023-02-22 07:52:42', '2023-03-01 11:45:50', '1', '1', NULL, 0, '', 10),
+('6baefc3b-b985-a6d4-73cc-63d3b5c3f3ba', 'PRO_7', '2023-01-27 11:28:27', '2023-03-01 13:19:27', '1', '1', NULL, 0, '', 7),
 ('aa19b04f-fb44-6261-f084-63c91f53d74e', 'PRO_2', '2023-01-19 10:44:53', '2023-01-24 06:23:41', '1', '1', 'test', 1, '1', 2),
 ('bdf3ede9-8411-e6a4-1bfa-63d3b3aa98e9', 'PRO_6', '2023-01-27 11:21:16', '2023-01-27 11:21:16', '1', '1', NULL, 0, NULL, 6),
 ('d682fb16-2809-2ac8-c921-63d3b0731e4b', 'PRO_5', '2023-01-27 11:07:59', '2023-01-27 11:20:18', '1', '1', NULL, 1, NULL, 5),
@@ -5457,8 +5573,11 @@ CREATE TABLE `pro_projects_cstm` (
 
 INSERT INTO `pro_projects_cstm` (`id_c`, `project_report_c`, `project_date_start_c`, `project_name_c`, `project_expected_income_c`, `emp_employee_list_id_c`, `project_service_type_c`) VALUES
 ('191d9827-a895-32ef-9dd3-63c935979d22', '', '2023-01-25', 'beakon', 10000, NULL, NULL),
+('4c7b7103-b5ef-3c17-5b99-63f2ffdb27a6', '', '2023-02-17', 'selten ', 10000, '1b1f65dd-3f65-dfd6-e636-63d3c2f4ad2e', 'crm_services'),
+('5c7abcb2-e4db-5d0d-d335-63f5b87a74ee', '', '2023-02-10', 'BMD', 10000, '508492db-9f9c-45e4-c9d3-63f4c90d7ec7', 'digital_marketing'),
 ('5ef1276c-3ff7-0ae7-4ceb-638b3c999078', 'test', '2022-12-09', 'beakon', 123, NULL, NULL),
-('6baefc3b-b985-a6d4-73cc-63d3b5c3f3ba', '', '2023-01-11', 'beakon', 10000, NULL, NULL),
+('5f9d8183-5ee9-394f-651e-63f5c95bb6ca', '', '2023-02-15', 'selten technologies', 10000, '508492db-9f9c-45e4-c9d3-63f4c90d7ec7', '^crm_services^'),
+('6baefc3b-b985-a6d4-73cc-63d3b5c3f3ba', '', '2023-01-11', 'QIC', 10000, '1b1f65dd-3f65-dfd6-e636-63d3c2f4ad2e', '^crm_services^,^digital_marketing^'),
 ('aa19b04f-fb44-6261-f084-63c91f53d74e', 'test', '2023-01-17', 'beakon', 10000, NULL, NULL),
 ('bdf3ede9-8411-e6a4-1bfa-63d3b3aa98e9', '', '2023-01-20', 'beakon', 10000, NULL, NULL),
 ('d682fb16-2809-2ac8-c921-63d3b0731e4b', '', '2023-01-04', 'beakon', 10000, NULL, NULL),
@@ -5508,420 +5627,426 @@ CREATE TABLE `relationships` (
 --
 
 INSERT INTO `relationships` (`id`, `relationship_name`, `lhs_module`, `lhs_table`, `lhs_key`, `rhs_module`, `rhs_table`, `rhs_key`, `join_table`, `join_key_lhs`, `join_key_rhs`, `relationship_type`, `relationship_role_column`, `relationship_role_column_value`, `reverse`, `deleted`) VALUES
-('10b90917-dac4-d7fa-2469-63dcb4c8221b', 'securitygroups_opportunities', 'SecurityGroups', 'securitygroups', 'id', 'Opportunities', 'opportunities', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Opportunities', 0, 0),
-('11995e53-ea2c-7812-a209-63dcb44010c1', 'securitygroups_project', 'SecurityGroups', 'securitygroups', 'id', 'Project', 'project', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Project', 0, 0),
-('12a3eb25-b9f6-a234-5597-63dcb4c62d92', 'securitygroups_project_task', 'SecurityGroups', 'securitygroups', 'id', 'ProjectTask', 'project_task', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'ProjectTask', 0, 0),
-('12fe48ee-ddd2-645d-df09-63dcb45cf36f', 'jjwg_address_cache_modified_user', 'Users', 'users', 'id', 'jjwg_Address_Cache', 'jjwg_address_cache', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('144ad8a7-fa5c-b82e-40da-63dcb4ee43dd', 'jjwg_address_cache_created_by', 'Users', 'users', 'id', 'jjwg_Address_Cache', 'jjwg_address_cache', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('14e95468-9154-02f5-3e5b-63dcb409cda5', 'securitygroups_prospect_lists', 'SecurityGroups', 'securitygroups', 'id', 'ProspectLists', 'prospect_lists', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'ProspectLists', 0, 0),
-('155ec53d-6958-4417-7865-63dcb4794fb4', 'projects_notes', 'Project', 'project', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Project', 0, 0),
-('15b8dbc7-35ce-0767-9b8c-63dcb46461a5', 'jjwg_address_cache_assigned_user', 'Users', 'users', 'id', 'jjwg_Address_Cache', 'jjwg_address_cache', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('160365a7-038f-3540-16b2-63dcb4da4209', 'calls_modified_user', 'Users', 'users', 'id', 'Calls', 'calls', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('16a40f13-8c3f-15e3-b76c-63dcb442a1b0', 'projects_tasks', 'Project', 'project', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Project', 0, 0),
-('173f1658-cf59-e3e9-d305-63dcb434230f', 'calls_created_by', 'Users', 'users', 'id', 'Calls', 'calls', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('1789765f-50a8-24d4-0010-63dcb4b4dad0', 'securitygroups_prospects', 'SecurityGroups', 'securitygroups', 'id', 'Prospects', 'prospects', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Prospects', 0, 0),
-('17e440e6-19e5-386f-de8d-63dcb4c2daf7', 'projects_meetings', 'Project', 'project', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Project', 0, 0),
-('1889ab7c-6cba-88f7-434d-63dcb427be38', 'securitygroups_tasks', 'SecurityGroups', 'securitygroups', 'id', 'Tasks', 'tasks', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Tasks', 0, 0),
-('1897d790-9f85-41d3-0f56-63dcb4f4389a', 'calls_assigned_user', 'Users', 'users', 'id', 'Calls', 'calls', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('18dcf343-d30b-4988-1d0f-63dcb47c04c2', 'projects_calls', 'Project', 'project', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Project', 0, 0),
-('194d9052-bac3-ce9a-3a4e-63dcb46d14cb', 'aow_workflow_modified_user', 'Users', 'users', 'id', 'AOW_WorkFlow', 'aow_workflow', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('195041d8-ab62-84f2-6962-63dcb416b81d', 'aod_index_modified_user', 'Users', 'users', 'id', 'AOD_Index', 'aod_index', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('197012b0-1958-f3ac-9a0f-63dcb47ecdc4', 'securitygroups_users', 'SecurityGroups', 'securitygroups', 'id', 'Users', 'users', 'id', 'securitygroups_users', 'securitygroup_id', 'user_id', 'many-to-many', NULL, NULL, 0, 0),
-('1973a5a0-6c8b-761a-3179-63dcb4a0650c', 'calls_notes', 'Calls', 'calls', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Calls', 0, 0),
-('19bd680b-470d-17c1-43bc-63dcb4ec6184', 'projects_emails', 'Project', 'project', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Project', 0, 0),
-('1a525bf1-466d-4f5f-0037-63dcb4fa7452', 'calls_reschedule', 'Calls', 'calls', 'id', 'Calls_Reschedule', 'calls_reschedule', 'call_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('1a7902d8-2496-8031-62a5-63dcb40b59ad', 'project_users_1', 'Project', 'project', 'id', 'Users', 'users', 'id', 'project_users_1_c', 'project_users_1project_ida', 'project_users_1users_idb', 'many-to-many', NULL, NULL, 0, 0),
-('1a9c0c24-4ba1-dfa5-259f-63dcb4ae5823', 'aow_workflow_created_by', 'Users', 'users', 'id', 'AOW_WorkFlow', 'aow_workflow', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('1aa227b7-269a-4689-ad81-63dcb4b4ff5b', 'aod_index_created_by', 'Users', 'users', 'id', 'AOD_Index', 'aod_index', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('1aa594bc-4ed3-5136-90ca-63dcb4f9ef0e', 'projects_project_tasks', 'Project', 'project', 'id', 'ProjectTask', 'project_task', 'project_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('1b796066-a446-b43d-b8e8-63dcb430c6ae', 'aow_workflow_assigned_user', 'Users', 'users', 'id', 'AOW_WorkFlow', 'aow_workflow', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('1b873a92-175e-aef7-1d09-63dcb4dd0328', 'projects_assigned_user', 'Users', 'users', 'id', 'Project', 'project', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('1b8e70f2-9eaa-37ec-335b-63dcb4c1f636', 'aod_index_assigned_user', 'Users', 'users', 'id', 'AOD_Index', 'aod_index', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('1c581c67-55d8-11d6-f0e2-63dcb469f84a', 'aow_workflow_aow_conditions', 'AOW_WorkFlow', 'aow_workflow', 'id', 'AOW_Conditions', 'aow_conditions', 'aow_workflow_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('1c670d4d-1a3a-27f8-efce-63dcb4930cef', 'projects_modified_user', 'Users', 'users', 'id', 'Project', 'project', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('1d386498-ce09-9d10-9cac-63dcb49e1c0b', 'aow_workflow_aow_actions', 'AOW_WorkFlow', 'aow_workflow', 'id', 'AOW_Actions', 'aow_actions', 'aow_workflow_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('1d78c25c-bce1-06ec-d43b-63dcb42442a3', 'projects_created_by', 'Users', 'users', 'id', 'Project', 'project', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('1e9dfc05-72e9-b48f-c612-63dcb491d102', 'aow_workflow_aow_processed', 'AOW_WorkFlow', 'aow_workflow', 'id', 'AOW_Processed', 'aow_processed', 'aow_workflow_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('207b0ba8-582b-3e7b-e646-63dcb4ebf732', 'aos_quotes_created_by', 'Users', 'users', 'id', 'AOS_Quotes', 'aos_quotes', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('21aecd04-f7a9-d76d-9b3a-63dcb491c926', 'pay_payments_modified_user', 'Users', 'users', 'id', 'PAY_Payments', 'pay_payments', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('22f36a4b-eb14-ed3e-a874-63dcb4264d6b', 'pay_payments_created_by', 'Users', 'users', 'id', 'PAY_Payments', 'pay_payments', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('23637ae4-bb2d-c792-bc0e-63dcb4c6d32b', 'aop_case_events_modified_user', 'Users', 'users', 'id', 'AOP_Case_Events', 'aop_case_events', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('2447617d-7403-58d8-f4a6-63dcb4bb9644', 'pay_payments_assigned_user', 'Users', 'users', 'id', 'PAY_Payments', 'pay_payments', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('25000cc6-650b-485c-0514-63dcb4d06164', 'aop_case_events_created_by', 'Users', 'users', 'id', 'AOP_Case_Events', 'aop_case_events', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('25e1a9f4-1082-fe6e-bf19-63dcb4e96eed', 'aop_case_events_assigned_user', 'Users', 'users', 'id', 'AOP_Case_Events', 'aop_case_events', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('26e3eff3-08af-22d0-be95-63dcb46291b2', 'cases_aop_case_events', 'Cases', 'cases', 'id', 'AOP_Case_Events', 'aop_case_events', 'case_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('290b0eb9-2faf-6481-2ebf-63dcb486124a', 'pro_projects_pay_payments_1', 'pro_Projects', 'pro_projects', 'id', 'PAY_Payments', 'pay_payments', 'id', 'pro_projects_pay_payments_1_c', 'pro_projects_pay_payments_1pro_projects_ida', 'pro_projects_pay_payments_1pay_payments_idb', 'many-to-many', NULL, NULL, 0, 0),
-('290e94b1-2f42-47a0-24ca-63dcb44452ce', 'emails_assigned_user', 'Users', 'users', 'id', 'Emails', 'emails', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('29368423-f4a6-dcb7-9707-63dcb4e164ae', 'project_tasks_notes', 'ProjectTask', 'project_task', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'ProjectTask', 0, 0),
-('29f18709-09b9-b635-0298-63dcb4adefeb', 'aow_processed_modified_user', 'Users', 'users', 'id', 'AOW_Processed', 'aow_processed', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('2a4bfce2-d4df-3d41-a7ad-63dcb4e5fbb2', 'emails_modified_user', 'Users', 'users', 'id', 'Emails', 'emails', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('2a90c578-2684-1d03-155c-63dcb43b0c6d', 'project_tasks_tasks', 'ProjectTask', 'project_task', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'ProjectTask', 0, 0),
-('2b2a479c-ba19-b08f-6931-63dcb434f577', 'emails_created_by', 'Users', 'users', 'id', 'Emails', 'emails', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('2b2b76e8-9b35-f097-4919-63dcb40bc922', 'aow_processed_created_by', 'Users', 'users', 'id', 'AOW_Processed', 'aow_processed', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('2b7793e4-40b0-9b6a-6ede-63dcb406bc1f', 'project_tasks_meetings', 'ProjectTask', 'project_task', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'ProjectTask', 0, 0),
-('2c07e632-db17-6ee3-45a6-63dcb4ebcf94', 'emails_notes_rel', 'Emails', 'emails', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('2c761e50-c0fe-e6f2-e5dd-63dcb4fa88b1', 'project_tasks_calls', 'ProjectTask', 'project_task', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'ProjectTask', 0, 0),
-('2cf1441b-8dc4-6c9b-0189-63dcb480b67a', 'emails_contacts_rel', 'Emails', 'emails', 'id', 'Contacts', 'contacts', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Contacts', 0, 0),
-('2d624e5f-b7ae-6613-6f22-63dcb4b1d288', 'project_tasks_emails', 'ProjectTask', 'project_task', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'ProjectTask', 0, 0),
-('2dd2c6c6-d6c1-a909-ea50-63dcb4e34162', 'emails_accounts_rel', 'Emails', 'emails', 'id', 'Accounts', 'accounts', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Accounts', 0, 0),
-('2e473bed-b643-1b2b-9395-63dcb4518170', 'project_tasks_assigned_user', 'Users', 'users', 'id', 'ProjectTask', 'project_task', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('2ebe0e7b-e3e5-21d5-4b44-63dcb4698f69', 'aos_quotes_assigned_user', 'Users', 'users', 'id', 'AOS_Quotes', 'aos_quotes', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('2f12848a-b1e4-48f5-7d37-63dcb4d796bb', 'emails_leads_rel', 'Emails', 'emails', 'id', 'Leads', 'leads', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Leads', 0, 0),
-('2f288b69-5119-1619-6d6a-63dcb4e518aa', 'project_tasks_modified_user', 'Users', 'users', 'id', 'ProjectTask', 'project_task', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('2fbf1f63-553f-4b1c-357a-63dcb4362ad1', 'pro_projects_modified_user', 'Users', 'users', 'id', 'pro_Projects', 'pro_projects', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('2ff32be0-87c7-4f9c-b9c4-63dcb41e107a', 'emails_meetings_rel', 'Emails', 'emails', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('306d3121-2572-3def-d437-63dcb4e9a2f8', 'project_tasks_created_by', 'Users', 'users', 'id', 'ProjectTask', 'project_task', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('31116d00-2628-da65-4929-63dcb4897f5d', 'pro_projects_created_by', 'Users', 'users', 'id', 'pro_Projects', 'pro_projects', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('31ef6ddd-8bc0-77b0-40e9-63dcb461af8e', 'pro_projects_assigned_user', 'Users', 'users', 'id', 'pro_Projects', 'pro_projects', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('32e7f952-06df-e23e-07a2-63dcb4705694', 'aop_case_updates_modified_user', 'Users', 'users', 'id', 'AOP_Case_Updates', 'aop_case_updates', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('347e2c30-8860-fa5d-5eb3-63dcb49e7be0', 'aop_case_updates_created_by', 'Users', 'users', 'id', 'AOP_Case_Updates', 'aop_case_updates', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('356bce79-3050-1bd8-ed3d-63dcb4cf62d6', 'aop_case_updates_assigned_user', 'Users', 'users', 'id', 'AOP_Case_Updates', 'aop_case_updates', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('35afe563-594e-bb9f-f6f8-63dcb4eb1450', 'aow_conditions_modified_user', 'Users', 'users', 'id', 'AOW_Conditions', 'aow_conditions', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('364ab4e3-1594-fe5c-0fe9-63dcb4e3fb8f', 'cases_aop_case_updates', 'Cases', 'cases', 'id', 'AOP_Case_Updates', 'aop_case_updates', 'case_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('36e8ed5e-e1ec-191a-2bf6-63dcb402735f', 'aow_conditions_created_by', 'Users', 'users', 'id', 'AOW_Conditions', 'aow_conditions', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('374afbbd-b9c2-14d2-bfdc-63dcb455ee1f', 'aop_case_updates_notes', 'AOP_Case_Updates', 'aop_case_updates', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'AOP_Case_Updates', 0, 0),
-('39fe0c3e-2fdd-bf95-ce1b-63dcb4c35e05', 'securitygroups_acl_roles', 'SecurityGroups', 'securitygroups', 'id', 'ACLRoles', 'acl_roles', 'id', 'securitygroups_acl_roles', 'securitygroup_id', 'role_id', 'many-to-many', NULL, NULL, 0, 0),
-('3bb7034a-308d-36cf-c7ef-63dcb4f1c65c', 'aod_indexevent_modified_user', 'Users', 'users', 'id', 'AOD_IndexEvent', 'aod_indexevent', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('3d7d736a-6bec-2e63-a244-63dcb482ffad', 'calls_reschedule_modified_user', 'Users', 'users', 'id', 'Calls_Reschedule', 'calls_reschedule', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('3f063549-3f7d-5cd8-2993-63dcb4d26e76', 'calls_reschedule_created_by', 'Users', 'users', 'id', 'Calls_Reschedule', 'calls_reschedule', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('3f885da6-69ba-c81a-1cf8-63dcb4e369a7', 'meetings_modified_user', 'Users', 'users', 'id', 'Meetings', 'meetings', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('40014453-cd70-5948-2a87-63dcb4b8801c', 'calls_reschedule_assigned_user', 'Users', 'users', 'id', 'Calls_Reschedule', 'calls_reschedule', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('40d74746-9f90-e0ae-3192-63dcb40201bc', 'campaigns_modified_user', 'Users', 'users', 'id', 'Campaigns', 'campaigns', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('40daad7d-8e01-fe52-5f70-63dcb433e51e', 'meetings_created_by', 'Users', 'users', 'id', 'Meetings', 'meetings', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('41f526a8-0bff-7a67-be21-63dcb42e3a01', 'meetings_assigned_user', 'Users', 'users', 'id', 'Meetings', 'meetings', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('424b0344-8e1d-dfdc-14e5-63dcb4c59fd0', 'campaigns_created_by', 'Users', 'users', 'id', 'Campaigns', 'campaigns', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('42e0d2a3-f7f7-de41-9819-63dcb4974557', 'meetings_notes', 'Meetings', 'meetings', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Meetings', 0, 0),
-('431cc808-ba5d-f1ef-0ef2-63dcb49ae8cf', 'campaigns_assigned_user', 'Users', 'users', 'id', 'Campaigns', 'campaigns', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('43f6857c-955a-4597-e458-63dcb4edc7e2', 'campaign_accounts', 'Campaigns', 'campaigns', 'id', 'Accounts', 'accounts', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('45446d77-0e76-814d-a8f9-63dcb409b57f', 'campaign_contacts', 'Campaigns', 'campaigns', 'id', 'Contacts', 'contacts', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('4585fb94-2255-bc34-38f4-63dcb49a8ef3', 'at_attentance_modified_user', 'Users', 'users', 'id', 'at_Attentance', 'at_attentance', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('4619c091-f088-c5f1-bfc2-63dcb49d40c1', 'campaign_leads', 'Campaigns', 'campaigns', 'id', 'Leads', 'leads', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('46b5abfe-a939-08dd-0eeb-63dcb4e663f1', 'aor_reports_modified_user', 'Users', 'users', 'id', 'AOR_Reports', 'aor_reports', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('46de2cd1-2d3d-8433-4d20-63dcb45f7c16', 'at_attentance_created_by', 'Users', 'users', 'id', 'at_Attentance', 'at_attentance', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('46e9471f-3b52-c11e-8a3e-63dcb48f2df6', 'campaign_prospects', 'Campaigns', 'campaigns', 'id', 'Prospects', 'prospects', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('47c08ea6-5873-bab7-b075-63dcb42eea05', 'at_attentance_assigned_user', 'Users', 'users', 'id', 'at_Attentance', 'at_attentance', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('47c3792c-4b4d-efb9-b24c-63dcb44bbb26', 'campaign_opportunities', 'Campaigns', 'campaigns', 'id', 'Opportunities', 'opportunities', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('47f38c24-4a41-730a-f2d5-63dcb4558f2f', 'sly_salaries_modified_user', 'Users', 'users', 'id', 'SLY_Salaries', 'sly_salaries', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('488a0ba6-7692-8b82-9cf2-63dcb424c760', 'aor_reports_created_by', 'Users', 'users', 'id', 'AOR_Reports', 'aor_reports', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('489841e0-b3be-ecf7-a7e5-63dcb4769b87', 'campaign_email_marketing', 'Campaigns', 'campaigns', 'id', 'EmailMarketing', 'email_marketing', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('492bf56f-e80b-f7f0-d5bc-63dcb49589ba', 'sly_salaries_created_by', 'Users', 'users', 'id', 'SLY_Salaries', 'sly_salaries', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('493206ba-3a90-83e5-d6f5-63dcb4be004a', 'aos_quotes_aos_product_quotes', 'AOS_Quotes', 'aos_quotes', 'id', 'AOS_Products_Quotes', 'aos_products_quotes', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('497a078c-9fe8-8fce-7809-63dcb49db51c', 'securitygroups_accounts', 'SecurityGroups', 'securitygroups', 'id', 'Accounts', 'accounts', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Accounts', 0, 0),
-('497bf7cb-48d0-9960-89c5-63dcb4f6fd6f', 'campaign_emailman', 'Campaigns', 'campaigns', 'id', 'EmailMan', 'emailman', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('49846d93-2984-ba14-c24c-63dcb4f324fd', 'aor_reports_assigned_user', 'Users', 'users', 'id', 'AOR_Reports', 'aor_reports', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('4a0aaab4-1287-9d4c-91ec-63dcb46e1f6a', 'sly_salaries_assigned_user', 'Users', 'users', 'id', 'SLY_Salaries', 'sly_salaries', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('4a6883a5-1a8e-8c92-0e7b-63dcb4054272', 'aor_reports_aor_fields', 'AOR_Reports', 'aor_reports', 'id', 'AOR_Fields', 'aor_fields', 'aor_report_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('4aa3f14f-1f11-eaf3-3e63-63dcb40170e9', 'campaign_campaignlog', 'Campaigns', 'campaigns', 'id', 'CampaignLog', 'campaign_log', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('4b661e28-73d7-8782-73f0-63dcb4c2eaad', 'aor_reports_aor_conditions', 'AOR_Reports', 'aor_reports', 'id', 'AOR_Conditions', 'aor_conditions', 'aor_report_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('4b778aeb-83fc-9c34-5ac3-63dcb494e05a', 'campaign_assigned_user', 'Users', 'users', 'id', 'Campaigns', 'campaigns', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('4c42b1ed-9e56-6105-4e78-63dcb41b50f3', 'aor_scheduled_reports_aor_reports', 'AOR_Reports', 'aor_reports', 'id', 'AOR_Scheduled_Reports', 'aor_scheduled_reports', 'aor_report_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('4c64d5a5-3778-d324-7449-63dcb436ff2f', 'campaign_modified_user', 'Users', 'users', 'id', 'Campaigns', 'campaigns', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('4f70584c-61d6-1601-1390-63dcb4026615', 'tasks_modified_user', 'Users', 'users', 'id', 'Tasks', 'tasks', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('50a10b32-c1c3-600b-86ed-63dcb4c4334d', 'aod_indexevent_created_by', 'Users', 'users', 'id', 'AOD_IndexEvent', 'aod_indexevent', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('50cbfff6-9bf5-f1a9-596c-63dcb4849f45', 'tasks_created_by', 'Users', 'users', 'id', 'Tasks', 'tasks', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('51fcb44a-873c-f067-40b3-63dcb407754b', 'sly_salary_modified_user', 'Users', 'users', 'id', 'SLY_Salary', 'sly_salary', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('5297cf15-e63f-e01d-aa95-63dcb49bf595', 'emp_employee_modified_user', 'Users', 'users', 'id', 'EMP_Employee', 'emp_employee', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('52dba115-70f1-2737-525b-63dcb44a6100', 'tasks_assigned_user', 'Users', 'users', 'id', 'Tasks', 'tasks', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('53575d40-9e5e-1362-073b-63dcb46b6ba6', 'sly_salary_created_by', 'Users', 'users', 'id', 'SLY_Salary', 'sly_salary', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('53be0492-58bc-2287-8769-63dcb437452b', 'campaignlog_contact', 'CampaignLog', 'campaign_log', 'related_id', 'Contacts', 'contacts', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('53c8613f-bd1a-063a-19c5-63dcb4ad39df', 'tasks_notes', 'Tasks', 'tasks', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('53d3dbbf-0f6b-4961-914d-63dcb45ae496', 'emp_employee_created_by', 'Users', 'users', 'id', 'EMP_Employee', 'emp_employee', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('54379e4c-1261-be30-5d0c-63dcb4cf54c7', 'sly_salary_assigned_user', 'Users', 'users', 'id', 'SLY_Salary', 'sly_salary', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('552d133a-8d64-3cf2-f30b-63dcb4fe32b2', 'emp_employee_assigned_user', 'Users', 'users', 'id', 'EMP_Employee', 'emp_employee', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('575000d3-c4cd-d30c-e283-63dcb41b5e29', 'aos_quotes_aos_line_item_groups', 'AOS_Quotes', 'aos_quotes', 'id', 'AOS_Line_Item_Groups', 'aos_line_item_groups', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('576b0271-4e86-8d8e-edfc-63dcb47bedef', 'securitygroups_bugs', 'SecurityGroups', 'securitygroups', 'id', 'Bugs', 'bugs', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Bugs', 0, 0),
-('57bc8914-93fc-f8b6-9170-63dcb49439fe', 'aor_fields_modified_user', 'Users', 'users', 'id', 'AOR_Fields', 'aor_fields', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('5899e67f-76df-08bf-cfce-63dcb46d1af5', 'prospectlists_assigned_user', 'Users', 'users', 'id', 'prospectlists', 'prospect_lists', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('592d0eb6-0b22-9ab3-ca32-63dcb402bd18', 'aor_fields_created_by', 'Users', 'users', 'id', 'AOR_Fields', 'aor_fields', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('5e8a0025-a1f4-720d-e772-63dcb49140e7', 'aod_indexevent_assigned_user', 'Users', 'users', 'id', 'AOD_IndexEvent', 'aod_indexevent', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('5fbc96ff-c1e0-e075-462f-63dcb414c2cb', 'sh_salary_history_modified_user', 'Users', 'users', 'id', 'sh_Salary_History', 'sh_salary_history', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('60567cd3-219e-3249-6814-63dcb4c3710a', 'emp_employees_modified_user', 'Users', 'users', 'id', 'EMP_Employees', 'emp_employees', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('611bf084-2760-7f26-4a38-63dcb4917b9c', 'sh_salary_history_created_by', 'Users', 'users', 'id', 'sh_Salary_History', 'sh_salary_history', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('621dbb16-19be-ba4b-c9aa-63dcb458be98', 'sh_salary_history_assigned_user', 'Users', 'users', 'id', 'sh_Salary_History', 'sh_salary_history', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('63477526-7be9-d630-3f09-63dcb4470a03', 'aor_charts_modified_user', 'Users', 'users', 'id', 'AOR_Charts', 'aor_charts', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('648849e9-4884-5d68-2772-63dcb44ae4bf', 'aor_charts_created_by', 'Users', 'users', 'id', 'AOR_Charts', 'aor_charts', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('659abe26-af3e-7ef1-91eb-63dcb4eb0866', 'aor_charts_aor_reports', 'AOR_Reports', 'aor_reports', 'id', 'AOR_Charts', 'aor_charts', 'aor_report_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('662804a9-b3b0-e35c-ddaa-63dcb4134169', 'securitygroups_calls', 'SecurityGroups', 'securitygroups', 'id', 'Calls', 'calls', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Calls', 0, 0),
-('66f006f1-c9fd-55fc-1b58-63dcb45added', 'campaignlog_lead', 'CampaignLog', 'campaign_log', 'related_id', 'Leads', 'leads', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('67854e35-d2a6-80a9-7a12-63dcb467da77', 'prospects_modified_user', 'Users', 'users', 'id', 'Prospects', 'prospects', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('68d434bb-3f6f-e402-ee14-63dcb45f0035', 'prospects_created_by', 'Users', 'users', 'id', 'Prospects', 'prospects', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('69b73c32-dc8a-4bae-bff8-63dcb4e33646', 'prospects_assigned_user', 'Users', 'users', 'id', 'Prospects', 'prospects', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('6a9e09d0-d4f6-88b8-df5d-63dcb4f79c33', 'prospects_email_addresses', 'Prospects', 'prospects', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'bean_module', 'Prospects', 0, 0),
-('6b7cf1c3-0bfb-0bfb-7e1b-63dcb4e15972', 'prospects_email_addresses_primary', 'Prospects', 'prospects', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'primary_address', '1', 0, 0),
-('6c5c4010-4f56-afe9-9bd4-63dcb443beed', 'prospect_tasks', 'Prospects', 'prospects', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Prospects', 0, 0),
-('6d3c334e-63b5-3bf6-e172-63dcb448fd92', 'prospect_notes', 'Prospects', 'prospects', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Prospects', 0, 0),
-('6d99f450-57ac-792b-6610-63dcb40e7908', 'securitygroups_modified_user', 'Users', 'users', 'id', 'SecurityGroups', 'securitygroups', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('6e8899f1-e452-366e-8ffc-63dcb445ed9a', 'prospect_meetings', 'Prospects', 'prospects', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Prospects', 0, 0),
-('6edeb746-3e80-a9cf-300a-63dcb4e95a00', 'securitygroups_created_by', 'Users', 'users', 'id', 'SecurityGroups', 'securitygroups', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('6f8a5077-d0d9-832b-4e26-63dcb491ebe0', 'prospect_calls', 'Prospects', 'prospects', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Prospects', 0, 0),
-('6fb25e87-6abb-6297-bf66-63dcb434f5f1', 'aor_conditions_modified_user', 'Users', 'users', 'id', 'AOR_Conditions', 'aor_conditions', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('6fc621dc-80f9-d9cd-c935-63dcb48f2aef', 'securitygroups_assigned_user', 'Users', 'users', 'id', 'SecurityGroups', 'securitygroups', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('7068b2de-acb4-291a-959c-63dcb49d5f0b', 'prospect_emails', 'Prospects', 'prospects', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Prospects', 0, 0),
-('70730943-b309-a2c5-62a4-63dcb42dfbab', 'jjwg_areas_modified_user', 'Users', 'users', 'id', 'jjwg_Areas', 'jjwg_areas', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('70eacf5e-6d7c-b7ed-799f-63dcb45c1dcf', 'aor_conditions_created_by', 'Users', 'users', 'id', 'AOR_Conditions', 'aor_conditions', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('715d66f7-6c5a-dc65-221d-63dcb4b38ae6', 'prospect_campaign_log', 'Prospects', 'prospects', 'id', 'CampaignLog', 'campaign_log', 'target_id', NULL, NULL, NULL, 'one-to-many', 'target_type', 'Prospects', 0, 0),
-('741f0b79-1adb-aeeb-d8ce-63dcb478bfd7', 'securitygroups_campaigns', 'SecurityGroups', 'securitygroups', 'id', 'Campaigns', 'campaigns', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Campaigns', 0, 0),
-('7474a982-c831-4f59-c5ea-63dcb4bf7b80', 'email_template_email_marketings', 'EmailTemplates', 'email_templates', 'id', 'EmailMarketing', 'email_marketing', 'template_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('756a0a1a-866c-5d07-2a3f-63dcb4d16ea9', 'campaignlog_created_opportunities', 'CampaignLog', 'campaign_log', 'related_id', 'Opportunities', 'opportunities', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('75c96b7b-0c87-3b11-3707-63dcb412e548', 'documents_modified_user', 'Users', 'users', 'id', 'Documents', 'documents', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('772de341-dd6f-4c08-0f4f-63dcb43d8254', 'documents_created_by', 'Users', 'users', 'id', 'Documents', 'documents', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('77e45acb-6d57-5717-4321-63dcb4a2ae92', 'campaign_campaigntrakers', 'Campaigns', 'campaigns', 'id', 'CampaignTrackers', 'campaign_trkrs', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('781535c8-5381-200f-221e-63dcb4f30a84', 'documents_assigned_user', 'Users', 'users', 'id', 'Documents', 'documents', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('78180395-13a9-a9e8-61d5-63dcb4ecee9f', 'notes_assigned_user', 'Users', 'users', 'id', 'Notes', 'notes', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('78f5ebc0-a9e5-df26-9303-63dcb4c30a83', 'document_revisions', 'Documents', 'documents', 'id', 'DocumentRevisions', 'document_revisions', 'document_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('79097c49-4735-6519-3a3c-63dcb42d21f4', 'aor_scheduled_reports_modified_user', 'Users', 'users', 'id', 'AOR_Scheduled_Reports', 'aor_scheduled_reports', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('7a851969-8b76-fd27-dde6-63dcb4cbbf23', 'aor_scheduled_reports_created_by', 'Users', 'users', 'id', 'AOR_Scheduled_Reports', 'aor_scheduled_reports', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('7e817288-49c0-e170-9288-63dcb4bd39e6', 'revisions_created_by', 'Users', 'users', 'id', 'DocumentRevisions', 'document_revisions', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('8298909d-4286-8c2d-17ff-63dcb4b6444b', 'emp_employees_created_by', 'Users', 'users', 'id', 'EMP_Employees', 'emp_employees', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('84470446-b070-7186-e455-63dcb462570e', 'jjwg_areas_created_by', 'Users', 'users', 'id', 'jjwg_Areas', 'jjwg_areas', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('844fcddd-172a-5a5a-d259-63dcb4c17dcd', 'emp_employees_assigned_user', 'Users', 'users', 'id', 'EMP_Employees', 'emp_employees', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('8693666f-b8dc-0e8f-8789-63dcb4523816', 'schedulers_created_by_rel', 'Users', 'users', 'id', 'Schedulers', 'schedulers', 'created_by', NULL, NULL, NULL, 'one-to-one', NULL, NULL, 0, 0),
-('86e0473b-0ee5-ee16-fe5a-63dcb4ca30f0', 'aos_contracts_modified_user', 'Users', 'users', 'id', 'AOS_Contracts', 'aos_contracts', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('87e30ef8-c51e-95fb-9df2-63dcb42676a3', 'schedulers_modified_user_id_rel', 'Users', 'users', 'id', 'Schedulers', 'schedulers', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('8827d822-2acc-f43a-3337-63dcb40ea848', 'aos_contracts_created_by', 'Users', 'users', 'id', 'AOS_Contracts', 'aos_contracts', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('890894b5-1d8a-e160-11f5-63dcb4d2d80c', 'aos_contracts_assigned_user', 'Users', 'users', 'id', 'AOS_Contracts', 'aos_contracts', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('891a23df-e151-9786-339c-63dcb45a7346', 'schedulers_jobs_rel', 'Schedulers', 'schedulers', 'id', 'SchedulersJobs', 'job_queue', 'scheduler_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('89ef1ebc-663c-3732-94c2-63dcb4cd7911', 'aos_contracts_aos_products_quotes', 'AOS_Contracts', 'aos_contracts', 'id', 'AOS_Products_Quotes', 'aos_products_quotes', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('8a9b3df8-3c6b-d367-c2d3-63dcb4659136', 'schedulersjobs_assigned_user', 'Users', 'users', 'id', 'SchedulersJobs', 'schedulersjobs', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('8ac51c3f-bd4e-7518-e6fb-63dcb41f9bf5', 'aos_contracts_aos_line_item_groups', 'AOS_Contracts', 'aos_contracts', 'id', 'AOS_Line_Item_Groups', 'aos_line_item_groups', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('8bea068c-dd7c-2a48-bec2-63dcb494cbbc', 'campaignlog_targeted_users', 'CampaignLog', 'campaign_log', 'target_id', 'Users', 'users', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('8c7e0a24-630f-45f1-b2f3-63dcb491240d', 'securitygroups_cases', 'SecurityGroups', 'securitygroups', 'id', 'Cases', 'cases', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Cases', 0, 0),
-('8d520d2e-24d1-ee8f-0139-63dcb4b54c20', 'notes_modified_user', 'Users', 'users', 'id', 'Notes', 'notes', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('8e59d04d-e2db-217f-0ee4-63dcb4bfd227', 'inbound_email_created_by', 'Users', 'users', 'id', 'InboundEmail', 'inbound_email', 'created_by', NULL, NULL, NULL, 'one-to-one', NULL, NULL, 0, 0),
-('8f934979-cfbe-3b79-14b8-63dcb4592fc8', 'inbound_email_modified_user_id', 'Users', 'users', 'id', 'InboundEmail', 'inbound_email', 'modified_user_id', NULL, NULL, NULL, 'one-to-one', NULL, NULL, 0, 0),
-('92de01a3-9805-1bef-990c-63dcb4f27ed0', 'jjwg_areas_assigned_user', 'Users', 'users', 'id', 'jjwg_Areas', 'jjwg_areas', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('96d29a24-517a-c2ec-feb0-63dcb422cd7a', 'saved_search_assigned_user', 'Users', 'users', 'id', 'SavedSearch', 'saved_search', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('9792c52d-ebff-1716-359f-63dcb487dd8a', 'aos_invoices_modified_user', 'Users', 'users', 'id', 'AOS_Invoices', 'aos_invoices', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('98800b6f-d83b-9060-c5ed-63dcb493c11a', 'project_contacts_1', 'Project', 'project', 'id', 'Contacts', 'contacts', 'id', 'project_contacts_1_c', 'project_contacts_1project_ida', 'project_contacts_1contacts_idb', 'many-to-many', NULL, NULL, 0, 0),
-('98d6d5ea-0e48-edb6-049f-63dcb49d45a1', 'aos_invoices_created_by', 'Users', 'users', 'id', 'AOS_Invoices', 'aos_invoices', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('99211dda-285d-8824-c8e6-63dcb493a3f8', 'contacts_modified_user', 'Users', 'users', 'id', 'Contacts', 'contacts', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('99ec0a55-bc03-8c3c-c68b-63dcb44f6506', 'campaignlog_sent_emails', 'CampaignLog', 'campaign_log', 'related_id', 'Emails', 'emails', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('9a2ef164-eff6-8c9c-b84d-63dcb4b9a937', 'aos_invoices_assigned_user', 'Users', 'users', 'id', 'AOS_Invoices', 'aos_invoices', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('9a788f41-a2e9-9810-22fb-63dcb4e125f1', 'contacts_created_by', 'Users', 'users', 'id', 'Contacts', 'contacts', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('9ab202cb-9c3b-cc4f-4eae-63dcb42cefd0', 'securitygroups_contacts', 'SecurityGroups', 'securitygroups', 'id', 'Contacts', 'contacts', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Contacts', 0, 0),
-('9b0e5fb0-fa81-6e1e-9ffb-63dcb475005d', 'aos_invoices_aos_product_quotes', 'AOS_Invoices', 'aos_invoices', 'id', 'AOS_Products_Quotes', 'aos_products_quotes', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('9b4d05ef-99de-0ef4-1b06-63dcb434244c', 'notes_created_by', 'Users', 'users', 'id', 'Notes', 'notes', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('9b4f9870-539c-6741-f803-63dcb496f38b', 'contacts_assigned_user', 'Users', 'users', 'id', 'Contacts', 'contacts', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('9c0e5edc-c0cb-cdd3-0b18-63dcb4af154b', 'aos_invoices_aos_line_item_groups', 'AOS_Invoices', 'aos_invoices', 'id', 'AOS_Line_Item_Groups', 'aos_line_item_groups', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('9c22ac24-9567-00c0-f825-63dcb467cb49', 'contacts_email_addresses', 'Contacts', 'contacts', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'bean_module', 'Contacts', 0, 0),
-('9d0006af-4f9c-3afe-0589-63dcb43544f9', 'contacts_email_addresses_primary', 'Contacts', 'contacts', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'primary_address', '1', 0, 0),
-('9e490837-22b8-169a-edb8-63dcb440c2ce', 'contact_direct_reports', 'Contacts', 'contacts', 'id', 'Contacts', 'contacts', 'reports_to_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('9e5b3e73-0ba0-fdcf-cad5-63dcb42384af', 'emp_employee_list_modified_user', 'Users', 'users', 'id', 'EMP_Employee_List', 'emp_employee_list', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('9f28ce2f-7cfc-5649-bf6f-63dcb4045f54', 'contact_leads', 'Contacts', 'contacts', 'id', 'Leads', 'leads', 'contact_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('9fbccd78-4090-8bc1-457f-63dcb4d14ff4', 'emp_employee_list_created_by', 'Users', 'users', 'id', 'EMP_Employee_List', 'emp_employee_list', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('a011a95f-02f5-53d8-9ece-63dcb4e70dec', 'contact_notes', 'Contacts', 'contacts', 'id', 'Notes', 'notes', 'contact_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('a0bbbbdb-b371-0308-4609-63dcb49e7161', 'emp_employee_list_assigned_user', 'Users', 'users', 'id', 'EMP_Employee_List', 'emp_employee_list', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('a0edf587-a0be-74a2-e79d-63dcb4e94f94', 'contact_tasks', 'Contacts', 'contacts', 'id', 'Tasks', 'tasks', 'contact_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('a1cef915-f09a-e805-c203-63dcb4e99598', 'contact_tasks_parent', 'Contacts', 'contacts', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Contacts', 0, 0),
-('a2d8e530-595d-01ee-a681-63dcb4e17a11', 'contact_notes_parent', 'Contacts', 'contacts', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Contacts', 0, 0),
-('a3c50169-bc7e-495d-048e-63dcb4375122', 'contact_campaign_log', 'Contacts', 'contacts', 'id', 'CampaignLog', 'campaign_log', 'target_id', NULL, NULL, NULL, 'one-to-many', 'target_type', 'Contacts', 0, 0),
-('a4c50160-ee8d-8be2-746b-63dcb4125e29', 'contact_aos_quotes', 'Contacts', 'contacts', 'id', 'AOS_Quotes', 'aos_quotes', 'billing_contact_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('a57a4a6e-d245-e92b-f6f1-63dcb4dcc118', 'sugarfeed_modified_user', 'Users', 'users', 'id', 'SugarFeed', 'sugarfeed', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('a5a6f78a-40fd-8ff0-c70c-63dcb4413cb5', 'contact_aos_invoices', 'Contacts', 'contacts', 'id', 'AOS_Invoices', 'aos_invoices', 'billing_contact_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('a6b687e0-de51-98e7-b37e-63dcb4fc9d42', 'accounts_bugs', 'Accounts', 'accounts', 'id', 'Bugs', 'bugs', 'id', 'accounts_bugs', 'account_id', 'bug_id', 'many-to-many', NULL, NULL, 0, 0),
-('a6c83ea7-c4e2-d0a2-d524-63dcb407de90', 'sugarfeed_created_by', 'Users', 'users', 'id', 'SugarFeed', 'sugarfeed', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('a73c24d6-6b5c-e45e-a843-63dcb478e97d', 'contact_aos_contracts', 'Contacts', 'contacts', 'id', 'AOS_Contracts', 'aos_contracts', 'contact_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('a7a500e4-2ee4-3da7-2c38-63dcb484299b', 'sugarfeed_assigned_user', 'Users', 'users', 'id', 'SugarFeed', 'sugarfeed', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('a8146104-6969-7590-f6d2-63dcb4272d15', 'accounts_contacts', 'Accounts', 'accounts', 'id', 'Contacts', 'contacts', 'id', 'accounts_contacts', 'account_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
-('a8192e08-ff67-89aa-e79d-63dcb46665ab', 'contacts_aop_case_updates', 'Contacts', 'contacts', 'id', 'AOP_Case_Updates', 'aop_case_updates', 'contact_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('a901f35b-62b6-8ec8-f4b3-63dcb47a7497', 'accounts_opportunities', 'Accounts', 'accounts', 'id', 'Opportunities', 'opportunities', 'id', 'accounts_opportunities', 'account_id', 'opportunity_id', 'many-to-many', NULL, NULL, 0, 0),
-('a90ada52-ee00-2043-562d-63dcb4a4ef8c', 'aos_pdf_templates_modified_user', 'Users', 'users', 'id', 'AOS_PDF_Templates', 'aos_pdf_templates', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('a9e6b036-20ca-8593-02af-63dcb4a6f851', 'calls_contacts', 'Calls', 'calls', 'id', 'Contacts', 'contacts', 'id', 'calls_contacts', 'call_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
-('aa7efa12-540b-14b3-f3b4-63dcb416f79f', 'aos_pdf_templates_created_by', 'Users', 'users', 'id', 'AOS_PDF_Templates', 'aos_pdf_templates', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('aac96bc3-bd9a-993e-357b-63dcb4e35ff6', 'calls_users', 'Calls', 'calls', 'id', 'Users', 'users', 'id', 'calls_users', 'call_id', 'user_id', 'many-to-many', NULL, NULL, 0, 0),
-('aada0ead-959a-756c-e7da-63dcb4674a89', 'securitygroups_documents', 'SecurityGroups', 'securitygroups', 'id', 'Documents', 'documents', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Documents', 0, 0),
-('ab695585-cfab-1955-d9be-63dcb4cd5b57', 'aos_pdf_templates_assigned_user', 'Users', 'users', 'id', 'AOS_PDF_Templates', 'aos_pdf_templates', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('abb369a7-3f27-076e-734e-63dcb468f1b0', 'calls_leads', 'Calls', 'calls', 'id', 'Leads', 'leads', 'id', 'calls_leads', 'call_id', 'lead_id', 'many-to-many', NULL, NULL, 0, 0),
-('abc407c0-4cf1-c4d7-4c93-63dcb4b5c98c', 'am_projecttemplates_modified_user', 'Users', 'users', 'id', 'AM_ProjectTemplates', 'am_projecttemplates', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('acc933be-7302-d41e-8bda-63dcb42af09f', 'cases_bugs', 'Cases', 'cases', 'id', 'Bugs', 'bugs', 'id', 'cases_bugs', 'case_id', 'bug_id', 'many-to-many', NULL, NULL, 0, 0),
-('ad220594-1146-22d9-5a77-63dcb439d817', 'am_projecttemplates_created_by', 'Users', 'users', 'id', 'AM_ProjectTemplates', 'am_projecttemplates', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('ae0eafa4-4654-c986-5b00-63dcb4e1039b', 'contacts_bugs', 'Contacts', 'contacts', 'id', 'Bugs', 'bugs', 'id', 'contacts_bugs', 'contact_id', 'bug_id', 'many-to-many', NULL, NULL, 0, 0),
-('aee58c5e-ff6b-4f18-62e8-63dcb4b1c00d', 'am_projecttemplates_assigned_user', 'Users', 'users', 'id', 'AM_ProjectTemplates', 'am_projecttemplates', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('aef68aff-1860-2465-8c0a-63dcb44e66a5', 'contacts_cases', 'Contacts', 'contacts', 'id', 'Cases', 'cases', 'id', 'contacts_cases', 'contact_id', 'case_id', 'many-to-many', NULL, NULL, 0, 0),
-('afd22210-19b0-64b1-bbc7-63dcb4c404dd', 'contacts_users', 'Contacts', 'contacts', 'id', 'Users', 'users', 'id', 'contacts_users', 'contact_id', 'user_id', 'many-to-many', NULL, NULL, 0, 0),
-('b0d3ec25-0a44-1b7e-451f-63dcb45adc8e', 'emails_bugs_rel', 'Emails', 'emails', 'id', 'Bugs', 'bugs', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Bugs', 0, 0),
-('b1aeb674-eb08-e0d0-2045-63dcb40ad7eb', 'emails_cases_rel', 'Emails', 'emails', 'id', 'Cases', 'cases', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Cases', 0, 0),
-('b2b4ed25-4fe3-5f65-3045-63dcb4a43e01', 'emails_opportunities_rel', 'Emails', 'emails', 'id', 'Opportunities', 'opportunities', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Opportunities', 0, 0),
-('b3e936cd-f3e2-bdc8-48eb-63dcb4d43924', 'emails_tasks_rel', 'Emails', 'emails', 'id', 'Tasks', 'tasks', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Tasks', 0, 0),
-('b4c36e8c-fe13-3ba0-2998-63dcb465c13a', 'leads_modified_user', 'Users', 'users', 'id', 'Leads', 'leads', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('b4c779bc-ec07-7cd3-04d7-63dcb4eac148', 'emails_users_rel', 'Emails', 'emails', 'id', 'Users', 'users', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Users', 0, 0),
-('b5a840cd-943b-fa34-d873-63dcb41f7bb1', 'emails_project_task_rel', 'Emails', 'emails', 'id', 'ProjectTask', 'project_task', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'ProjectTask', 0, 0),
-('b668d0d8-9f22-9df8-0f4f-63dcb46b8428', 'aos_product_categories_modified_user', 'Users', 'users', 'id', 'AOS_Product_Categories', 'aos_product_categories', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('b6b5bfc0-35b2-8c29-e628-63dcb4e6459d', 'emails_projects_rel', 'Emails', 'emails', 'id', 'Project', 'project', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Project', 0, 0),
-('b6feb253-2eb8-5edb-28f2-63dcb496573a', 'leads_created_by', 'Users', 'users', 'id', 'Leads', 'leads', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('b79bcede-226c-9d91-5138-63dcb4f98fe1', 'emails_prospects_rel', 'Emails', 'emails', 'id', 'Prospects', 'prospects', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Prospects', 0, 0),
-('b7dacf12-3beb-0669-3231-63dcb4c6b799', 'aos_product_categories_created_by', 'Users', 'users', 'id', 'AOS_Product_Categories', 'aos_product_categories', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('b7f43f73-5da9-3ab0-f02d-63dcb4ea3d4a', 'leads_assigned_user', 'Users', 'users', 'id', 'Leads', 'leads', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('b86c50dc-36c5-c68e-4612-63dcb44869e1', 'accounts_modified_user', 'Users', 'users', 'id', 'Accounts', 'accounts', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('b8ad4feb-9bba-32f4-7b79-63dcb4fd7716', 'meetings_contacts', 'Meetings', 'meetings', 'id', 'Contacts', 'contacts', 'id', 'meetings_contacts', 'meeting_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
-('b8d27ef7-1e28-f464-a42f-63dcb4b2a36d', 'aos_product_categories_assigned_user', 'Users', 'users', 'id', 'AOS_Product_Categories', 'aos_product_categories', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('b8d950d9-3656-4386-07e3-63dcb4ab3612', 'leads_email_addresses', 'Leads', 'leads', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'bean_module', 'Leads', 0, 0),
-('b920e45d-5927-76b4-f84f-63dcb4965cd3', 'eapm_modified_user', 'Users', 'users', 'id', 'EAPM', 'eapm', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0);
+('1000058a-8ac4-e14a-e800-63ff3b952d02', 'emp_employees_tasks_1', 'EMP_Employees', 'emp_employees', 'id', 'Tasks', 'tasks', 'id', 'emp_employees_tasks_1_c', 'emp_employees_tasks_1emp_employees_ida', 'emp_employees_tasks_1tasks_idb', 'many-to-many', NULL, NULL, 0, 0),
+('106b5ebd-fb1e-d915-3444-63ff3b883fcb', 'calls_created_by', 'Users', 'users', 'id', 'Calls', 'calls', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('108b35d4-e2c5-346c-245b-63ff3bb792de', 'jjwg_address_cache_modified_user', 'Users', 'users', 'id', 'jjwg_Address_Cache', 'jjwg_address_cache', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('10a20724-42cb-88a9-57cd-63ff3b9f7ed8', 'fp_events_leads_1', 'FP_events', 'fp_events', 'id', 'Leads', 'leads', 'id', 'fp_events_leads_1_c', 'fp_events_leads_1fp_events_ida', 'fp_events_leads_1leads_idb', 'many-to-many', NULL, NULL, 0, 0),
+('11480146-72ce-1f91-25f7-63ff3b7fa6b4', 'calls_assigned_user', 'Users', 'users', 'id', 'Calls', 'calls', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('11aa9b41-d8cb-7ee4-85e6-63ff3b98af92', 'fp_events_prospects_1', 'FP_events', 'fp_events', 'id', 'Prospects', 'prospects', 'id', 'fp_events_prospects_1_c', 'fp_events_prospects_1fp_events_ida', 'fp_events_prospects_1prospects_idb', 'many-to-many', NULL, NULL, 0, 0),
+('11c6b3b1-b4c2-0411-9384-63ff3b4061e0', 'jjwg_address_cache_created_by', 'Users', 'users', 'id', 'jjwg_Address_Cache', 'jjwg_address_cache', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('1246188b-4794-e02c-d669-63ff3b16f7f8', 'calls_notes', 'Calls', 'calls', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Calls', 0, 0),
+('12b82923-a4a3-688c-1d7d-63ff3bb3f0c2', 'fp_event_locations_fp_events_1', 'FP_Event_Locations', 'fp_event_locations', 'id', 'FP_events', 'fp_events', 'id', 'fp_event_locations_fp_events_1_c', 'fp_event_locations_fp_events_1fp_event_locations_ida', 'fp_event_locations_fp_events_1fp_events_idb', 'many-to-many', NULL, NULL, 0, 0),
+('1315bb3d-c6b0-73a1-d982-63ff3b0d2d18', 'jjwg_address_cache_assigned_user', 'Users', 'users', 'id', 'jjwg_Address_Cache', 'jjwg_address_cache', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('137c2c9b-8547-44a4-9486-63ff3bc72752', 'calls_reschedule', 'Calls', 'calls', 'id', 'Calls_Reschedule', 'calls_reschedule', 'call_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('139e9e07-d931-4e11-6524-63ff3b98409b', 'jjwg_maps_jjwg_areas', 'jjwg_Maps', 'jjwg_maps', 'id', 'jjwg_Areas', 'jjwg_areas', 'id', 'jjwg_maps_jjwg_areas_c', 'jjwg_maps_5304wg_maps_ida', 'jjwg_maps_41f2g_areas_idb', 'many-to-many', NULL, NULL, 0, 0),
+('1412b50d-13af-0189-b101-63ff3bf1597d', 'project_tasks_notes', 'ProjectTask', 'project_task', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'ProjectTask', 0, 0),
+('14fd2d7b-32a4-27dd-1d13-63ff3b7d4e3a', 'jjwg_maps_jjwg_markers', 'jjwg_Maps', 'jjwg_maps', 'id', 'jjwg_Markers', 'jjwg_markers', 'id', 'jjwg_maps_jjwg_markers_c', 'jjwg_maps_b229wg_maps_ida', 'jjwg_maps_2e31markers_idb', 'many-to-many', NULL, NULL, 0, 0),
+('159edaa5-0b96-b5db-407f-63ff3b9bd8df', 'project_tasks_tasks', 'ProjectTask', 'project_task', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'ProjectTask', 0, 0),
+('15f1e08d-21ff-d599-0f71-63ff3b3821f8', 'leads_accounts_1', 'Leads', 'leads', 'id', 'Accounts', 'accounts', 'id', 'leads_accounts_1_c', 'leads_accounts_1leads_ida', 'leads_accounts_1accounts_idb', 'many-to-many', NULL, NULL, 0, 0),
+('1604d79d-c03d-05eb-548e-63ff3b51fd0f', 'aod_indexevent_modified_user', 'Users', 'users', 'id', 'AOD_IndexEvent', 'aod_indexevent', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('16a86847-d01c-8cb4-f8e0-63ff3b55f1cc', 'project_tasks_meetings', 'ProjectTask', 'project_task', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'ProjectTask', 0, 0),
+('16e156ca-f3d3-a24e-b865-63ff3b479935', 'leads_opportunities_1', 'Leads', 'leads', 'id', 'Opportunities', 'opportunities', 'id', 'leads_opportunities_1_c', 'leads_opportunities_1leads_ida', 'leads_opportunities_1opportunities_idb', 'many-to-many', NULL, NULL, 0, 0),
+('17319951-c37e-145b-1874-63ff3bfe8e4d', 'aod_indexevent_created_by', 'Users', 'users', 'id', 'AOD_IndexEvent', 'aod_indexevent', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('17b47a2d-e5be-2209-124c-63ff3be2739b', 'project_tasks_calls', 'ProjectTask', 'project_task', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'ProjectTask', 0, 0),
+('17d141de-b095-d9e0-5698-63ff3bb438af', 'leads_tasks_1', 'Leads', 'leads', 'id', 'Tasks', 'tasks', 'id', 'leads_tasks_1_c', 'leads_tasks_1leads_ida', 'leads_tasks_1tasks_idb', 'many-to-many', NULL, NULL, 0, 0),
+('17e003f4-b6e2-79ca-24b5-63ff3b4eb52e', 'notes_created_by', 'Users', 'users', 'id', 'Notes', 'notes', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('18001ec5-77f5-da89-ff46-63ff3b267156', 'aod_indexevent_assigned_user', 'Users', 'users', 'id', 'AOD_IndexEvent', 'aod_indexevent', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('18babb1b-baf2-78a1-451b-63ff3b59908c', 'aos_quotes_modified_user', 'Users', 'users', 'id', 'AOS_Quotes', 'aos_quotes', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('18bb34bf-3971-5a6f-a117-63ff3be08fa7', 'opportunities_accounts_1', 'Opportunities', 'opportunities', 'id', 'Accounts', 'accounts', 'id', 'opportunities_accounts_1_c', 'opportunities_accounts_1opportunities_ida', 'opportunities_accounts_1accounts_idb', 'many-to-many', NULL, NULL, 0, 0),
+('18ca29e0-c2ce-2dec-4eef-63ff3bb708f2', 'project_tasks_emails', 'ProjectTask', 'project_task', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'ProjectTask', 0, 0),
+('199e0cd5-6ee0-e5c8-10f2-63ff3bf107ef', 'projects_meetings', 'Project', 'project', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Project', 0, 0),
+('19aa68f6-ce44-be37-fbbe-63ff3bd7f0c7', 'opportunities_leads_1', 'Opportunities', 'opportunities', 'id', 'Leads', 'leads', 'id', 'opportunities_leads_1_c', 'opportunities_leads_1opportunities_ida', 'opportunities_leads_1leads_idb', 'many-to-many', NULL, NULL, 0, 0),
+('19e2c2a9-42b6-345c-c348-63ff3bb7a49c', 'project_tasks_assigned_user', 'Users', 'users', 'id', 'ProjectTask', 'project_task', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('1a041d46-eede-ccff-47ef-63ff3b6c40fa', 'aos_quotes_created_by', 'Users', 'users', 'id', 'AOS_Quotes', 'aos_quotes', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('1aeb863a-8137-23fb-263c-63ff3b9922fa', 'aos_quotes_assigned_user', 'Users', 'users', 'id', 'AOS_Quotes', 'aos_quotes', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('1b131b94-4fe7-223e-05ba-63ff3b85d78b', 'opportunities_tasks_1', 'Opportunities', 'opportunities', 'id', 'Tasks', 'tasks', 'id', 'opportunities_tasks_1_c', 'opportunities_tasks_1opportunities_ida', 'opportunities_tasks_1tasks_idb', 'many-to-many', NULL, NULL, 0, 0),
+('1b5225d7-a44f-3f52-3192-63ff3b9b6f4e', 'project_tasks_modified_user', 'Users', 'users', 'id', 'ProjectTask', 'project_task', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('1bfb2e5e-cd3e-25f6-7361-63ff3b16ea3d', 'project_contacts_1', 'Project', 'project', 'id', 'Contacts', 'contacts', 'id', 'project_contacts_1_c', 'project_contacts_1project_ida', 'project_contacts_1contacts_idb', 'many-to-many', NULL, NULL, 0, 0),
+('1c5f7c6d-3c44-4ff9-9168-63ff3b218c2c', 'project_tasks_created_by', 'Users', 'users', 'id', 'ProjectTask', 'project_task', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('1c90f4e5-00b1-c5cd-f97b-63ff3b0a804f', 'aos_quotes_aos_product_quotes', 'AOS_Quotes', 'aos_quotes', 'id', 'AOS_Products_Quotes', 'aos_products_quotes', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('1ceb3593-5488-62b6-2834-63ff3bcf92da', 'project_users_1', 'Project', 'project', 'id', 'Users', 'users', 'id', 'project_users_1_c', 'project_users_1project_ida', 'project_users_1users_idb', 'many-to-many', NULL, NULL, 0, 0),
+('1d727db6-7aaa-459b-2bb8-63ff3b111f93', 'aos_quotes_aos_line_item_groups', 'AOS_Quotes', 'aos_quotes', 'id', 'AOS_Line_Item_Groups', 'aos_line_item_groups', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('1dede3cf-e734-6669-a934-63ff3b162744', 'pro_projects_pay_payments_1', 'pro_Projects', 'pro_projects', 'id', 'PAY_Payments', 'pay_payments', 'id', 'pro_projects_pay_payments_1_c', 'pro_projects_pay_payments_1pro_projects_ida', 'pro_projects_pay_payments_1pay_payments_idb', 'many-to-many', NULL, NULL, 0, 0),
+('1e420f33-b596-df74-c671-63ff3b3db9bb', 'emp_employee_list_pro_projects_1', 'EMP_Employee_List', 'emp_employee_list', 'id', 'pro_Projects', 'pro_projects', 'id', 'emp_employee_list_pro_projects_1_c', 'emp_employee_list_pro_projects_1emp_employee_list_ida', 'emp_employee_list_pro_projects_1pro_projects_idb', 'many-to-many', NULL, NULL, 0, 0),
+('1ee07d64-e0df-b29e-9c28-63ff3b26c81d', 'securitygroups_acl_roles', 'SecurityGroups', 'securitygroups', 'id', 'ACLRoles', 'acl_roles', 'id', 'securitygroups_acl_roles', 'securitygroup_id', 'role_id', 'many-to-many', NULL, NULL, 0, 0),
+('1fcbc67d-38ba-eafd-f599-63ff3b7f58b9', 'securitygroups_accounts', 'SecurityGroups', 'securitygroups', 'id', 'Accounts', 'accounts', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Accounts', 0, 0),
+('2026d5bd-fc62-cb07-3a8e-63ff3bab5e7f', 'pay_payments_modified_user', 'Users', 'users', 'id', 'PAY_Payments', 'pay_payments', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('211eee5e-7a08-3f6e-5683-63ff3ba7c251', 'securitygroups_bugs', 'SecurityGroups', 'securitygroups', 'id', 'Bugs', 'bugs', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Bugs', 0, 0),
+('217dd4e4-4303-ae14-cad2-63ff3bf05a55', 'pay_payments_created_by', 'Users', 'users', 'id', 'PAY_Payments', 'pay_payments', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('22059470-82db-d4c0-d42f-63ff3b327b34', 'securitygroups_calls', 'SecurityGroups', 'securitygroups', 'id', 'Calls', 'calls', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Calls', 0, 0),
+('22450664-4664-6157-c6e9-63ff3bf4e1f2', 'emails_assigned_user', 'Users', 'users', 'id', 'Emails', 'emails', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('22643cb0-0f4a-1809-593f-63ff3bf47d90', 'pay_payments_assigned_user', 'Users', 'users', 'id', 'PAY_Payments', 'pay_payments', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('22e83893-f887-97a6-eda9-63ff3b7fe919', 'securitygroups_campaigns', 'SecurityGroups', 'securitygroups', 'id', 'Campaigns', 'campaigns', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Campaigns', 0, 0),
+('23822a31-b5a9-322a-fc19-63ff3b8df2ea', 'emails_modified_user', 'Users', 'users', 'id', 'Emails', 'emails', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('23eb19bc-7315-6f4e-d98a-63ff3bc8ace0', 'securitygroups_cases', 'SecurityGroups', 'securitygroups', 'id', 'Cases', 'cases', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Cases', 0, 0),
+('24699223-06bc-526a-63f6-63ff3b0da6e7', 'emails_created_by', 'Users', 'users', 'id', 'Emails', 'emails', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('24cbbf56-bf3d-210f-47f5-63ff3b3947f9', 'securitygroups_contacts', 'SecurityGroups', 'securitygroups', 'id', 'Contacts', 'contacts', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Contacts', 0, 0),
+('25597fff-bdf7-737d-d59b-63ff3bff0191', 'emails_notes_rel', 'Emails', 'emails', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('25ad3349-e35f-fe1d-3148-63ff3b008a47', 'securitygroups_documents', 'SecurityGroups', 'securitygroups', 'id', 'Documents', 'documents', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Documents', 0, 0),
+('263c1083-8276-8393-7463-63ff3bedd7ee', 'emails_contacts_rel', 'Emails', 'emails', 'id', 'Contacts', 'contacts', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Contacts', 0, 0),
+('2697fffd-86da-32dc-0995-63ff3bc1f80d', 'securitygroups_emails', 'SecurityGroups', 'securitygroups', 'id', 'Emails', 'emails', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Emails', 0, 0),
+('27169b09-2d31-0df2-abcd-63ff3bf7dfc3', 'emails_accounts_rel', 'Emails', 'emails', 'id', 'Accounts', 'accounts', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Accounts', 0, 0),
+('277b16d1-2f31-1252-36cf-63ff3bbe563c', 'securitygroups_emailtemplates', 'SecurityGroups', 'securitygroups', 'id', 'EmailTemplates', 'email_templates', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'EmailTemplates', 0, 0),
+('27e00f87-dd80-4754-2b40-63ff3b99237d', 'aow_actions_modified_user', 'Users', 'users', 'id', 'AOW_Actions', 'aow_actions', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('27fb8cb5-c06a-1259-1a8a-63ff3b625e6c', 'emails_leads_rel', 'Emails', 'emails', 'id', 'Leads', 'leads', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Leads', 0, 0),
+('28625edc-443c-d282-9e5a-63ff3bf905a6', 'securitygroups_leads', 'SecurityGroups', 'securitygroups', 'id', 'Leads', 'leads', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Leads', 0, 0),
+('28e49e70-9a35-c85e-c8ca-63ff3bc9e5e5', 'emails_meetings_rel', 'Emails', 'emails', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('292c082f-102a-ed81-f7c1-63ff3b58c90e', 'aow_actions_created_by', 'Users', 'users', 'id', 'AOW_Actions', 'aow_actions', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('295a5279-8e09-dc37-ebfb-63ff3bf86000', 'securitygroups_meetings', 'SecurityGroups', 'securitygroups', 'id', 'Meetings', 'meetings', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Meetings', 0, 0),
+('2a5b1f3e-7edf-2358-642a-63ff3b2f7e7f', 'securitygroups_notes', 'SecurityGroups', 'securitygroups', 'id', 'Notes', 'notes', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Notes', 0, 0),
+('2acecf00-e5c2-7a10-2fb3-63ff3b7053c6', 'campaigns_modified_user', 'Users', 'users', 'id', 'Campaigns', 'campaigns', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('2aee0931-9283-f9a4-fbf4-63ff3b6c864a', 'projects_calls', 'Project', 'project', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Project', 0, 0),
+('2bd188a6-5ff6-15b4-2b43-63ff3bfc0985', 'securitygroups_opportunities', 'SecurityGroups', 'securitygroups', 'id', 'Opportunities', 'opportunities', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Opportunities', 0, 0),
+('2c4945a7-593a-0ef7-3405-63ff3b83ef84', 'campaigns_created_by', 'Users', 'users', 'id', 'Campaigns', 'campaigns', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('2cd10f50-a3a2-8f2c-135c-63ff3b070164', 'emp_employee_list_sh_salary_history_1', 'EMP_Employee_List', 'emp_employee_list', 'id', 'sh_Salary_History', 'sh_salary_history', 'id', 'emp_employee_list_sh_salary_history_1_c', 'emp_employee_list_sh_salary_history_1emp_employee_list_ida', 'emp_employee_list_sh_salary_history_1sh_salary_history_idb', 'many-to-many', NULL, NULL, 0, 0),
+('2cdce156-84d3-b39d-c229-63ff3b908458', 'securitygroups_project', 'SecurityGroups', 'securitygroups', 'id', 'Project', 'project', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Project', 0, 0),
+('2d5c72ab-c6ec-da17-c40c-63ff3b876ac8', 'campaigns_assigned_user', 'Users', 'users', 'id', 'Campaigns', 'campaigns', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('2dbfa0c4-57a6-3731-4c27-63ff3b199052', 'securitygroups_project_task', 'SecurityGroups', 'securitygroups', 'id', 'ProjectTask', 'project_task', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'ProjectTask', 0, 0),
+('2e9bee88-cd3b-16ff-a0d7-63ff3b314421', 'securitygroups_prospect_lists', 'SecurityGroups', 'securitygroups', 'id', 'ProspectLists', 'prospect_lists', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'ProspectLists', 0, 0),
+('2ecbfae2-1afc-3409-6616-63ff3baea218', 'pro_projects_modified_user', 'Users', 'users', 'id', 'pro_Projects', 'pro_projects', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('2efd8554-59a1-4aa0-afe8-63ff3bef04b6', 'campaign_accounts', 'Campaigns', 'campaigns', 'id', 'Accounts', 'accounts', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('2f81349a-e0fe-b8eb-18b4-63ff3b8334f8', 'securitygroups_prospects', 'SecurityGroups', 'securitygroups', 'id', 'Prospects', 'prospects', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Prospects', 0, 0),
+('2f8f3f7c-deba-dc0c-ff1b-63ff3bbc9c36', 'aod_index_modified_user', 'Users', 'users', 'id', 'AOD_Index', 'aod_index', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('300d1dc6-9ccd-b861-d889-63ff3b2b84be', 'campaign_contacts', 'Campaigns', 'campaigns', 'id', 'Contacts', 'contacts', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('301941e9-5b44-b1bf-4562-63ff3b18ce89', 'pro_projects_created_by', 'Users', 'users', 'id', 'pro_Projects', 'pro_projects', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('30613f94-4809-576b-59a7-63ff3b088df9', 'securitygroups_tasks', 'SecurityGroups', 'securitygroups', 'id', 'Tasks', 'tasks', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Tasks', 0, 0),
+('3158133c-a931-8ed8-73ea-63ff3b7bc523', 'aod_index_created_by', 'Users', 'users', 'id', 'AOD_Index', 'aod_index', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('31664eb7-c9b4-8419-77bd-63ff3bff0cac', 'pro_projects_assigned_user', 'Users', 'users', 'id', 'pro_Projects', 'pro_projects', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('31776ed4-4856-9b1f-3529-63ff3bb46c45', 'campaign_leads', 'Campaigns', 'campaigns', 'id', 'Leads', 'leads', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('31afb901-abf6-8e2e-9366-63ff3bf093c3', 'securitygroups_users', 'SecurityGroups', 'securitygroups', 'id', 'Users', 'users', 'id', 'securitygroups_users', 'securitygroup_id', 'user_id', 'many-to-many', NULL, NULL, 0, 0),
+('323ce908-4787-5040-c7e4-63ff3b1a3ebb', 'aod_index_assigned_user', 'Users', 'users', 'id', 'AOD_Index', 'aod_index', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('329308c2-d17d-0500-e67b-63ff3b4cc057', 'campaign_prospects', 'Campaigns', 'campaigns', 'id', 'Prospects', 'prospects', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('339af5c4-eabe-fbda-f37e-63ff3bc68e51', 'campaign_opportunities', 'Campaigns', 'campaigns', 'id', 'Opportunities', 'opportunities', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('34a856ac-494f-df2c-f7c7-63ff3bb24922', 'campaign_email_marketing', 'Campaigns', 'campaigns', 'id', 'EmailMarketing', 'email_marketing', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('34fd05a0-8aa9-c7ef-2d2d-63ff3b833395', 'aow_workflow_modified_user', 'Users', 'users', 'id', 'AOW_WorkFlow', 'aow_workflow', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('3584a10a-178d-04d7-9b89-63ff3b05669f', 'campaign_emailman', 'Campaigns', 'campaigns', 'id', 'EmailMan', 'emailman', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('3648fd9a-3334-aa05-0149-63ff3b2b534b', 'aow_workflow_created_by', 'Users', 'users', 'id', 'AOW_WorkFlow', 'aow_workflow', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('366bacbe-58da-91f7-97c1-63ff3bfe8c4c', 'campaign_campaignlog', 'Campaigns', 'campaigns', 'id', 'CampaignLog', 'campaign_log', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('369bcf95-39a3-12dd-6cb2-63ff3b4b6e46', 'meetings_modified_user', 'Users', 'users', 'id', 'Meetings', 'meetings', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('3720dcbf-edff-9666-d28d-63ff3b501088', 'aow_workflow_assigned_user', 'Users', 'users', 'id', 'AOW_WorkFlow', 'aow_workflow', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('379e5e2b-4871-5d6d-fee0-63ff3b248d63', 'campaign_assigned_user', 'Users', 'users', 'id', 'Campaigns', 'campaigns', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('37fb04e5-77ee-cb8d-8b41-63ff3b831c6d', 'meetings_created_by', 'Users', 'users', 'id', 'Meetings', 'meetings', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('3858e3b1-2b2e-b76d-bdaf-63ff3bc2cb13', 'aow_workflow_aow_conditions', 'AOW_WorkFlow', 'aow_workflow', 'id', 'AOW_Conditions', 'aow_conditions', 'aow_workflow_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('387e2bff-6316-85b6-490f-63ff3b58a62c', 'campaign_modified_user', 'Users', 'users', 'id', 'Campaigns', 'campaigns', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('38debd0d-3873-9072-4680-63ff3bf29728', 'meetings_assigned_user', 'Users', 'users', 'id', 'Meetings', 'meetings', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('3941f1df-26a8-9e69-7f6f-63ff3b7148b1', 'aow_workflow_aow_actions', 'AOW_WorkFlow', 'aow_workflow', 'id', 'AOW_Actions', 'aow_actions', 'aow_workflow_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('39c7c9ed-fffa-434a-70ac-63ff3bf453b7', 'meetings_notes', 'Meetings', 'meetings', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Meetings', 0, 0),
+('3a410e3b-9a7b-7c18-ff51-63ff3b23b904', 'aow_workflow_aow_processed', 'AOW_WorkFlow', 'aow_workflow', 'id', 'AOW_Processed', 'aow_processed', 'aow_workflow_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('3ba10314-c245-3d2a-54e2-63ff3b868b27', 'projects_emails', 'Project', 'project', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Project', 0, 0),
+('3cc21e3b-3fba-c366-d929-63ff3b7bb187', 'calls_reschedule_modified_user', 'Users', 'users', 'id', 'Calls_Reschedule', 'calls_reschedule', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('3d7bacba-f301-0676-9015-63ff3bf33e53', 'aop_case_events_modified_user', 'Users', 'users', 'id', 'AOP_Case_Events', 'aop_case_events', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('3e1b2116-ed8e-0c83-8b3d-63ff3b678c21', 'calls_reschedule_created_by', 'Users', 'users', 'id', 'Calls_Reschedule', 'calls_reschedule', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('3ec29d0d-bb83-e8e7-6dd0-63ff3bc2ae4e', 'aop_case_events_created_by', 'Users', 'users', 'id', 'AOP_Case_Events', 'aop_case_events', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('3f0be546-9aa0-6e07-6aec-63ff3b2c1db9', 'calls_reschedule_assigned_user', 'Users', 'users', 'id', 'Calls_Reschedule', 'calls_reschedule', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('3f939f7b-38e5-f425-90d0-63ff3b29c314', 'aop_case_events_assigned_user', 'Users', 'users', 'id', 'AOP_Case_Events', 'aop_case_events', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('4063786d-9eb9-2e74-a98f-63ff3bac044e', 'cases_aop_case_events', 'Cases', 'cases', 'id', 'AOP_Case_Events', 'aop_case_events', 'case_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('40fc025f-e3bc-ef15-aeda-63ff3bb70e95', 'jjwg_areas_modified_user', 'Users', 'users', 'id', 'jjwg_Areas', 'jjwg_areas', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('42600908-ded9-8a5a-3cd7-63ff3bc0fd16', 'notes_modified_user', 'Users', 'users', 'id', 'Notes', 'notes', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('45233628-52c0-02be-76a2-63ff3b02c10f', 'prospectlists_assigned_user', 'Users', 'users', 'id', 'prospectlists', 'prospect_lists', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('464830a0-41c3-c1e3-c682-63ff3bce3233', 'aow_processed_modified_user', 'Users', 'users', 'id', 'AOW_Processed', 'aow_processed', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('473e33f5-8db5-8637-41db-63ff3b58db7f', 'sly_salaries_modified_user', 'Users', 'users', 'id', 'SLY_Salaries', 'sly_salaries', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('4747df9f-832b-b13c-3597-63ff3b38ec6f', 'tasks_modified_user', 'Users', 'users', 'id', 'Tasks', 'tasks', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('4798a04d-ba2a-89a5-87f2-63ff3bfd3747', 'aow_processed_created_by', 'Users', 'users', 'id', 'AOW_Processed', 'aow_processed', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('489343a2-c801-4a21-0899-63ff3b7cd5ab', 'sly_salaries_created_by', 'Users', 'users', 'id', 'SLY_Salaries', 'sly_salaries', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('4894c8aa-614e-b025-978d-63ff3bbef98b', 'tasks_created_by', 'Users', 'users', 'id', 'Tasks', 'tasks', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('4991332b-e998-b027-884f-63ff3b0af568', 'sly_salaries_assigned_user', 'Users', 'users', 'id', 'SLY_Salaries', 'sly_salaries', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('4ae1962f-8bba-d23d-07c2-63ff3bb9ef84', 'tasks_assigned_user', 'Users', 'users', 'id', 'Tasks', 'tasks', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('4ca6ee6f-4539-8017-c2b2-63ff3bec32a8', 'tasks_notes', 'Tasks', 'tasks', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('4d1ee355-2387-f0af-0e2b-63ff3bf72a9a', 'aop_case_updates_modified_user', 'Users', 'users', 'id', 'AOP_Case_Updates', 'aop_case_updates', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('4f2af277-5d2a-cbba-daf2-63ff3b985568', 'aop_case_updates_created_by', 'Users', 'users', 'id', 'AOP_Case_Updates', 'aop_case_updates', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('5068cb3a-3c79-9ec6-f23c-63ff3baf6539', 'aop_case_updates_assigned_user', 'Users', 'users', 'id', 'AOP_Case_Updates', 'aop_case_updates', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('5138e123-6ed1-f873-85e1-63ff3bc33a93', 'cases_aop_case_updates', 'Cases', 'cases', 'id', 'AOP_Case_Updates', 'aop_case_updates', 'case_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('51f50691-424d-d199-c2e3-63ff3b48190f', 'projects_project_tasks', 'Project', 'project', 'id', 'ProjectTask', 'project_task', 'project_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('5236329b-eca6-0ae1-8e92-63ff3b14b4ed', 'aop_case_updates_notes', 'AOP_Case_Updates', 'aop_case_updates', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'AOP_Case_Updates', 0, 0),
+('535b77bc-b52e-b3ea-1aa7-63ff3b4ca570', 'sly_salary_modified_user', 'Users', 'users', 'id', 'SLY_Salary', 'sly_salary', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('53993b25-61f3-f954-43c0-63ff3b1e364f', 'aow_conditions_modified_user', 'Users', 'users', 'id', 'AOW_Conditions', 'aow_conditions', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('545704ca-095b-4be8-23f2-63ff3b5383af', 'prospects_modified_user', 'Users', 'users', 'id', 'Prospects', 'prospects', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('5481c9e0-032f-d35e-b7e0-63ff3bc3919e', 'aow_conditions_created_by', 'Users', 'users', 'id', 'AOW_Conditions', 'aow_conditions', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('548a0fe8-7bbc-deae-68b8-63ff3bf9684e', 'jjwg_areas_created_by', 'Users', 'users', 'id', 'jjwg_Areas', 'jjwg_areas', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('549526ba-26e6-852a-f5c8-63ff3bfc4afc', 'sly_salary_created_by', 'Users', 'users', 'id', 'SLY_Salary', 'sly_salary', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('558d85ec-14d8-8404-1093-63ff3b83039b', 'prospects_created_by', 'Users', 'users', 'id', 'Prospects', 'prospects', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('558fa5b9-3058-3dc8-f277-63ff3b6fe756', 'sly_salary_assigned_user', 'Users', 'users', 'id', 'SLY_Salary', 'sly_salary', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('566bd929-e716-e613-34fd-63ff3bc7888f', 'prospects_assigned_user', 'Users', 'users', 'id', 'Prospects', 'prospects', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('57953ed1-930d-278a-d0f1-63ff3b84e739', 'prospects_email_addresses', 'Prospects', 'prospects', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'bean_module', 'Prospects', 0, 0),
+('586efa08-408b-8c4c-6be5-63ff3b52d17e', 'prospects_email_addresses_primary', 'Prospects', 'prospects', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'primary_address', '1', 0, 0),
+('59503a19-d947-2d21-b3ce-63ff3be0627e', 'prospect_tasks', 'Prospects', 'prospects', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Prospects', 0, 0),
+('5a3b484c-3f72-f66a-a451-63ff3b593d81', 'prospect_notes', 'Prospects', 'prospects', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Prospects', 0, 0),
+('5b2220ab-e3b2-e778-00fb-63ff3b02dfd3', 'prospect_meetings', 'Prospects', 'prospects', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Prospects', 0, 0),
+('5c6b8e25-d3e9-7b6b-645e-63ff3b36b6b2', 'prospect_calls', 'Prospects', 'prospects', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Prospects', 0, 0),
+('5d4e22dd-6a50-1b43-b293-63ff3b6914ca', 'prospect_emails', 'Prospects', 'prospects', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Prospects', 0, 0),
+('5e5ff66a-4c6a-9b6c-5d26-63ff3be16609', 'prospect_campaign_log', 'Prospects', 'prospects', 'id', 'CampaignLog', 'campaign_log', 'target_id', NULL, NULL, NULL, 'one-to-many', 'target_type', 'Prospects', 0, 0),
+('5e610a3b-eef0-01ed-d5bb-63ff3b232ae3', 'aor_reports_modified_user', 'Users', 'users', 'id', 'AOR_Reports', 'aor_reports', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('5fc0e6d8-393d-1ef3-b7a1-63ff3b1562c2', 'aor_reports_created_by', 'Users', 'users', 'id', 'AOR_Reports', 'aor_reports', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('609ea97c-f7ca-ea99-327f-63ff3b707a1f', 'aor_reports_assigned_user', 'Users', 'users', 'id', 'AOR_Reports', 'aor_reports', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('614e91f7-cb03-0935-6d1c-63ff3b89134b', 'at_attentance_modified_user', 'Users', 'users', 'id', 'at_Attentance', 'at_attentance', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('617ce9e2-48b7-28c0-22d4-63ff3bf4ba5f', 'aor_reports_aor_fields', 'AOR_Reports', 'aor_reports', 'id', 'AOR_Fields', 'aor_fields', 'aor_report_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('61a9d91a-3ad8-1bc1-a1de-63ff3b4dc381', 'sh_salary_history_modified_user', 'Users', 'users', 'id', 'sh_Salary_History', 'sh_salary_history', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('627edfc4-e701-3c84-b635-63ff3b3542cd', 'aor_reports_aor_conditions', 'AOR_Reports', 'aor_reports', 'id', 'AOR_Conditions', 'aor_conditions', 'aor_report_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('6290cbcf-791a-437b-e0c5-63ff3b553e9d', 'at_attentance_created_by', 'Users', 'users', 'id', 'at_Attentance', 'at_attentance', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('630dff37-7f7d-3322-39f3-63ff3b486e54', 'sh_salary_history_created_by', 'Users', 'users', 'id', 'sh_Salary_History', 'sh_salary_history', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('630e0020-acc4-c501-f992-63ff3b39d69f', 'jjwg_areas_assigned_user', 'Users', 'users', 'id', 'jjwg_Areas', 'jjwg_areas', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('630e03ae-95d8-969e-a371-63ff3ba465d0', 'projects_assigned_user', 'Users', 'users', 'id', 'Project', 'project', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('63614381-3fd7-7b39-9198-63ff3b3fed2e', 'aor_scheduled_reports_aor_reports', 'AOR_Reports', 'aor_reports', 'id', 'AOR_Scheduled_Reports', 'aor_scheduled_reports', 'aor_report_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('637828ae-7122-df80-bbe1-63ff3b521ab9', 'at_attentance_assigned_user', 'Users', 'users', 'id', 'at_Attentance', 'at_attentance', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('641d15ae-0541-0762-f613-63ff3bba582d', 'sh_salary_history_assigned_user', 'Users', 'users', 'id', 'sh_Salary_History', 'sh_salary_history', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('64340494-727c-501b-3597-63ff3b940583', 'fp_event_locations_modified_user', 'Users', 'users', 'id', 'FP_Event_Locations', 'fp_event_locations', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('649c31e0-580b-d75e-5cac-63ff3bcafbc8', 'email_template_email_marketings', 'EmailTemplates', 'email_templates', 'id', 'EmailMarketing', 'email_marketing', 'template_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('6b42d485-a29d-b8d3-0d99-63ff3b975424', 'campaign_campaigntrakers', 'Campaigns', 'campaigns', 'id', 'CampaignTrackers', 'campaign_trkrs', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('6bf151aa-400b-642d-89a3-63ff3b15190e', 'cli_clients_modified_user', 'Users', 'users', 'id', 'CLI_Clients', 'cli_clients', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('6d4ae254-7f25-ae83-6fbd-63ff3b9a918a', 'cli_clients_created_by', 'Users', 'users', 'id', 'CLI_Clients', 'cli_clients', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('6e52a0db-4803-0c3e-f7c8-63ff3be80e40', 'cli_clients_assigned_user', 'Users', 'users', 'id', 'CLI_Clients', 'cli_clients', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('6e9958d0-a511-1a43-501c-63ff3bcbc85f', 'aor_fields_modified_user', 'Users', 'users', 'id', 'AOR_Fields', 'aor_fields', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('6fddb990-7639-1b10-8eb9-63ff3b4c5058', 'securitygroups_modified_user', 'Users', 'users', 'id', 'SecurityGroups', 'securitygroups', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('6fe26e3e-db82-fb6b-0e0f-63ff3b258999', 'aor_fields_created_by', 'Users', 'users', 'id', 'AOR_Fields', 'aor_fields', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('71207fe5-87f7-543f-f18c-63ff3ba3f5a7', 'securitygroups_created_by', 'Users', 'users', 'id', 'SecurityGroups', 'securitygroups', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('7206eea1-5bcc-d779-bf89-63ff3b7d40d0', 'securitygroups_assigned_user', 'Users', 'users', 'id', 'SecurityGroups', 'securitygroups', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('737f017f-9d75-83c8-8ac4-63ff3b829481', 'projects_modified_user', 'Users', 'users', 'id', 'Project', 'project', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('77910a95-f246-42c8-90e8-63ff3b4ac4f4', 'aor_charts_modified_user', 'Users', 'users', 'id', 'AOR_Charts', 'aor_charts', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('781a1410-5e79-7bc9-4489-63ff3b8d882c', 'documents_modified_user', 'Users', 'users', 'id', 'Documents', 'documents', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('78d48421-bdcd-0fd9-6ab5-63ff3bfc6333', 'aor_charts_created_by', 'Users', 'users', 'id', 'AOR_Charts', 'aor_charts', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('79b119c3-8b48-1ec5-2e1c-63ff3b8d507f', 'aor_charts_aor_reports', 'AOR_Reports', 'aor_reports', 'id', 'AOR_Charts', 'aor_charts', 'aor_report_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('79d2deec-eee9-5ff5-a81f-63ff3bd49887', 'leads_modified_user', 'Users', 'users', 'id', 'Leads', 'leads', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('79e2bbad-52c3-e7c0-1ad3-63ff3b640a81', 'emp_employee_modified_user', 'Users', 'users', 'id', 'EMP_Employee', 'emp_employee', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('7a86c9d4-17e8-8386-4ace-63ff3bad7f67', 'documents_created_by', 'Users', 'users', 'id', 'Documents', 'documents', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('7b23437c-dbcd-40d6-5d6a-63ff3b0bfde7', 'emp_employee_created_by', 'Users', 'users', 'id', 'EMP_Employee', 'emp_employee', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('7b6befa5-95b1-9ef6-0fda-63ff3b7c5a6c', 'documents_assigned_user', 'Users', 'users', 'id', 'Documents', 'documents', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('7b9d09a9-cb28-4fa1-67b0-63ff3bc73a16', 'fp_event_locations_created_by', 'Users', 'users', 'id', 'FP_Event_Locations', 'fp_event_locations', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('7c029645-3e27-3e64-dff5-63ff3b2b6234', 'emp_employee_assigned_user', 'Users', 'users', 'id', 'EMP_Employee', 'emp_employee', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('7c60bea1-37fa-ef35-2ee3-63ff3b6d91e6', 'document_revisions', 'Documents', 'documents', 'id', 'DocumentRevisions', 'document_revisions', 'document_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('7d6ad0da-0557-01b4-6442-63ff3bb903a3', 'sk_skill_modified_user', 'Users', 'users', 'id', 'SK_Skill', 'sk_skill', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('7dba19ea-3902-2a2e-0a86-63ff3b10484b', 'schedulers_created_by_rel', 'Users', 'users', 'id', 'Schedulers', 'schedulers', 'created_by', NULL, NULL, NULL, 'one-to-one', NULL, NULL, 0, 0),
+('7eb0ea8c-f022-3573-1c9e-63ff3b5e3bd6', 'sk_skill_created_by', 'Users', 'users', 'id', 'SK_Skill', 'sk_skill', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('7ee00b58-20f1-ecb7-4110-63ff3bb707cc', 'projects_tasks', 'Project', 'project', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Project', 0, 0),
+('7f120f71-c9df-bb9b-e6b2-63ff3bb1077b', 'schedulers_modified_user_id_rel', 'Users', 'users', 'id', 'Schedulers', 'schedulers', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('7fa08950-88d9-8d43-04b4-63ff3b707b52', 'sk_skill_assigned_user', 'Users', 'users', 'id', 'SK_Skill', 'sk_skill', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('7ff1a035-c21a-954d-4051-63ff3b4821ce', 'schedulers_jobs_rel', 'Schedulers', 'schedulers', 'id', 'SchedulersJobs', 'job_queue', 'scheduler_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('81a38700-8dc5-c253-cfa5-63ff3bfcea61', 'schedulersjobs_assigned_user', 'Users', 'users', 'id', 'SchedulersJobs', 'schedulersjobs', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('83396771-caa6-d346-0e69-63ff3bbcb864', 'revisions_created_by', 'Users', 'users', 'id', 'DocumentRevisions', 'document_revisions', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('849b0ac2-63ce-37ec-2e93-63ff3b196cfa', 'projects_created_by', 'Users', 'users', 'id', 'Project', 'project', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('84cb538b-c673-a680-4520-63ff3bddfd73', 'aor_conditions_modified_user', 'Users', 'users', 'id', 'AOR_Conditions', 'aor_conditions', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('862d1e18-a64b-4fcb-f2af-63ff3b4ae9e7', 'aor_conditions_created_by', 'Users', 'users', 'id', 'AOR_Conditions', 'aor_conditions', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('870e08a0-75f3-846b-43b8-63ff3b4cc9d0', 'aos_line_item_groups_modified_user', 'Users', 'users', 'id', 'AOS_Line_Item_Groups', 'aos_line_item_groups', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('889742fd-97d1-873f-b6ad-63ff3bf3e08a', 'emp_employees_modified_user', 'Users', 'users', 'id', 'EMP_Employees', 'emp_employees', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('89dbe569-1cbc-2536-9b00-63ff3b8da1e5', 'emp_employees_created_by', 'Users', 'users', 'id', 'EMP_Employees', 'emp_employees', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('8ac28779-2b73-6e40-df32-63ff3bfe0544', 'emp_employees_assigned_user', 'Users', 'users', 'id', 'EMP_Employees', 'emp_employees', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('8edefe66-8c54-c2c9-acb6-63ff3b30d4be', 'aor_scheduled_reports_modified_user', 'Users', 'users', 'id', 'AOR_Scheduled_Reports', 'aor_scheduled_reports', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('900a062d-3f01-6f7e-6f2a-63ff3be81a11', 'fp_event_locations_assigned_user', 'Users', 'users', 'id', 'FP_Event_Locations', 'fp_event_locations', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('9024eb6f-8e23-8e9d-3c0b-63ff3b0c65a8', 'aor_scheduled_reports_created_by', 'Users', 'users', 'id', 'AOR_Scheduled_Reports', 'aor_scheduled_reports', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('91dffab8-d2d2-0458-52c5-63ff3b2f01ce', 'contacts_modified_user', 'Users', 'users', 'id', 'Contacts', 'contacts', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('939e4b86-fcb5-4e6b-4555-63ff3b3cfa68', 'contacts_created_by', 'Users', 'users', 'id', 'Contacts', 'contacts', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('9473370d-bd96-1f3c-5494-63ff3bc399cf', 'contacts_assigned_user', 'Users', 'users', 'id', 'Contacts', 'contacts', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('9491da51-fc5b-4aaf-3667-63ff3bb3646d', 'leads_created_by', 'Users', 'users', 'id', 'Leads', 'leads', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('95c919a1-fc99-3a63-0217-63ff3baf23fc', 'contacts_email_addresses', 'Contacts', 'contacts', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'bean_module', 'Contacts', 0, 0),
+('95cc822b-9425-348e-a821-63ff3b02caac', 'leads_assigned_user', 'Users', 'users', 'id', 'Leads', 'leads', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('96748bd9-1bd2-1fd6-5222-63ff3be4895f', 'inbound_email_created_by', 'Users', 'users', 'id', 'InboundEmail', 'inbound_email', 'created_by', NULL, NULL, NULL, 'one-to-one', NULL, NULL, 0, 0),
+('969a4918-e33f-fda8-398f-63ff3b31fae9', 'contacts_email_addresses_primary', 'Contacts', 'contacts', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'primary_address', '1', 0, 0),
+('96ff65fd-52e9-5318-ddc4-63ff3b205c8d', 'leads_email_addresses', 'Leads', 'leads', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'bean_module', 'Leads', 0, 0),
+('977d6891-694c-0680-0178-63ff3baeb0bd', 'contact_direct_reports', 'Contacts', 'contacts', 'id', 'Contacts', 'contacts', 'reports_to_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('97ae09a2-65aa-9ed9-e612-63ff3bdb8e9a', 'inbound_email_modified_user_id', 'Users', 'users', 'id', 'InboundEmail', 'inbound_email', 'modified_user_id', NULL, NULL, NULL, 'one-to-one', NULL, NULL, 0, 0),
+('97be9b0e-94d5-80cc-ba5e-63ff3b8f39e5', 'emp_employee_list_modified_user', 'Users', 'users', 'id', 'EMP_Employee_List', 'emp_employee_list', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('98549b6d-bb42-eba9-8d38-63ff3b98900f', 'leads_email_addresses_primary', 'Leads', 'leads', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'primary_address', '1', 0, 0),
+('985d6f72-ec82-caef-8a11-63ff3bd473b4', 'contact_leads', 'Contacts', 'contacts', 'id', 'Leads', 'leads', 'contact_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('9914f320-61b7-592f-c6d0-63ff3bdce64a', 'emp_employee_list_created_by', 'Users', 'users', 'id', 'EMP_Employee_List', 'emp_employee_list', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('993511d5-135a-d098-78c7-63ff3b977a22', 'contact_notes', 'Contacts', 'contacts', 'id', 'Notes', 'notes', 'contact_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('99af2228-868d-a703-8459-63ff3b051792', 'lead_direct_reports', 'Leads', 'leads', 'id', 'Leads', 'leads', 'reports_to_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('99fcb77b-cd71-c8ba-2a6f-63ff3bba84e9', 'emp_employee_list_assigned_user', 'Users', 'users', 'id', 'EMP_Employee_List', 'emp_employee_list', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('9a123ef4-0ad7-f1dd-6f7b-63ff3bbe8902', 'contact_tasks', 'Contacts', 'contacts', 'id', 'Tasks', 'tasks', 'contact_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('9b3019f3-7967-7ed2-10dc-63ff3b277a78', 'lead_tasks', 'Leads', 'leads', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Leads', 0, 0),
+('9b4212d1-6645-6223-e90a-63ff3b8c4ddb', 'contact_tasks_parent', 'Contacts', 'contacts', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Contacts', 0, 0),
+('9c32db55-4289-dd76-376d-63ff3b9dc54e', 'contact_notes_parent', 'Contacts', 'contacts', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Contacts', 0, 0),
+('9c6b4db2-32b7-c110-9ab0-63ff3bfd434c', 'lead_notes', 'Leads', 'leads', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Leads', 0, 0),
+('9d277c5a-631c-7cef-8101-63ff3beb5d85', 'contact_campaign_log', 'Contacts', 'contacts', 'id', 'CampaignLog', 'campaign_log', 'target_id', NULL, NULL, NULL, 'one-to-many', 'target_type', 'Contacts', 0, 0),
+('9d412896-16ec-8b42-7c4e-63ff3b8b93bd', 'aos_contracts_modified_user', 'Users', 'users', 'id', 'AOS_Contracts', 'aos_contracts', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('9d670ea8-28d1-238b-f9ba-63ff3b681370', 'aos_line_item_groups_created_by', 'Users', 'users', 'id', 'AOS_Line_Item_Groups', 'aos_line_item_groups', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('9d9cd1ce-8c74-7e11-5a06-63ff3b4d8d6f', 'lead_meetings', 'Leads', 'leads', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Leads', 0, 0),
+('9dffefe7-f7bd-aa88-8115-63ff3bbb2234', 'contact_aos_quotes', 'Contacts', 'contacts', 'id', 'AOS_Quotes', 'aos_quotes', 'billing_contact_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('9e330c43-0fad-4973-df03-63ff3bd7c2d3', 'optimistic_locking', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0),
+('9e7e7cac-a528-d1cc-6767-63ff3bf6d924', 'aos_contracts_created_by', 'Users', 'users', 'id', 'AOS_Contracts', 'aos_contracts', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('9ed1b200-40b0-a2e9-1f68-63ff3b4664ab', 'lead_calls', 'Leads', 'leads', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Leads', 0, 0),
+('9f00278a-a628-0db6-ddd7-63ff3b9e2006', 'contact_aos_invoices', 'Contacts', 'contacts', 'id', 'AOS_Invoices', 'aos_invoices', 'billing_contact_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('9f6b3e49-14da-87b7-3920-63ff3b548616', 'aos_contracts_assigned_user', 'Users', 'users', 'id', 'AOS_Contracts', 'aos_contracts', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('a02a6e5a-f940-abc5-03f6-63ff3b84beee', 'lead_emails', 'Leads', 'leads', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Leads', 0, 0),
+('a0416f7e-def0-c714-bbb0-63ff3bd6172d', 'contact_aos_contracts', 'Contacts', 'contacts', 'id', 'AOS_Contracts', 'aos_contracts', 'contact_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('a055313c-8485-1889-5176-63ff3bebab16', 'aos_contracts_aos_products_quotes', 'AOS_Contracts', 'aos_contracts', 'id', 'AOS_Products_Quotes', 'aos_products_quotes', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('a16695ed-5c9e-f943-2025-63ff3b734a63', 'lead_campaign_log', 'Leads', 'leads', 'id', 'CampaignLog', 'campaign_log', 'target_id', NULL, NULL, NULL, 'one-to-many', 'target_type', 'Leads', 0, 0),
+('a1a74a80-fcba-5c12-c34c-63ff3be42ec1', 'aos_contracts_aos_line_item_groups', 'AOS_Contracts', 'aos_contracts', 'id', 'AOS_Line_Item_Groups', 'aos_line_item_groups', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('a1b75c76-f435-6906-d87d-63ff3b0e2191', 'contacts_aop_case_updates', 'Contacts', 'contacts', 'id', 'AOP_Case_Updates', 'aop_case_updates', 'contact_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0);
 INSERT INTO `relationships` (`id`, `relationship_name`, `lhs_module`, `lhs_table`, `lhs_key`, `rhs_module`, `rhs_table`, `rhs_key`, `join_table`, `join_key_lhs`, `join_key_rhs`, `relationship_type`, `relationship_role_column`, `relationship_role_column_value`, `reverse`, `deleted`) VALUES
-('b9acb4c2-58d3-b660-0bb4-63dcb412bc62', 'accounts_created_by', 'Users', 'users', 'id', 'Accounts', 'accounts', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('b9c60795-bc7d-3358-024e-63dcb45f32c3', 'sub_product_categories', 'AOS_Product_Categories', 'aos_product_categories', 'id', 'AOS_Product_Categories', 'aos_product_categories', 'parent_category_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('b9daa725-236f-4ac8-e9a4-63dcb4c4235b', 'leads_email_addresses_primary', 'Leads', 'leads', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'primary_address', '1', 0, 0),
-('ba00f042-6b26-08b6-b8fc-63dcb46fd73e', 'meetings_users', 'Meetings', 'meetings', 'id', 'Users', 'users', 'id', 'meetings_users', 'meeting_id', 'user_id', 'many-to-many', NULL, NULL, 0, 0),
-('ba794e3e-4fe2-5c99-018c-63dcb4fd6598', 'eapm_created_by', 'Users', 'users', 'id', 'EAPM', 'eapm', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('bab894d2-ec9c-3db4-876a-63dcb493f7ed', 'lead_direct_reports', 'Leads', 'leads', 'id', 'Leads', 'leads', 'reports_to_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('bad00032-0e78-671d-3615-63dcb465adf6', 'securitygroups_emails', 'SecurityGroups', 'securitygroups', 'id', 'Emails', 'emails', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Emails', 0, 0),
-('baf3ed35-387c-a8f7-783f-63dcb49235a5', 'accounts_assigned_user', 'Users', 'users', 'id', 'Accounts', 'accounts', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('bb10108f-280c-ebec-6b43-63dcb4df93ec', 'meetings_leads', 'Meetings', 'meetings', 'id', 'Leads', 'leads', 'id', 'meetings_leads', 'meeting_id', 'lead_id', 'many-to-many', NULL, NULL, 0, 0),
-('bb5a1d6f-2a04-a0f5-0774-63dcb402be08', 'eapm_assigned_user', 'Users', 'users', 'id', 'EAPM', 'eapm', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('bb9d72a2-88bc-8de6-e74e-63dcb4a7e82c', 'lead_tasks', 'Leads', 'leads', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Leads', 0, 0),
-('bbd5c346-1f02-4a6a-89fc-63dcb4c62108', 'accounts_email_addresses', 'Accounts', 'accounts', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'bean_module', 'Accounts', 0, 0),
-('bbf90caa-60df-68d0-467c-63dcb4220fe9', 'opportunities_contacts', 'Opportunities', 'opportunities', 'id', 'Contacts', 'contacts', 'id', 'opportunities_contacts', 'opportunity_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
-('bc704baf-78d8-c971-4ec8-63dcb4f3a208', 'am_tasktemplates_modified_user', 'Users', 'users', 'id', 'AM_TaskTemplates', 'am_tasktemplates', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('bc72e5e9-f4d0-ad22-2cdd-63dcb4052e90', 'lead_notes', 'Leads', 'leads', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Leads', 0, 0),
-('bcb5981b-b0cc-6b57-3bd7-63dcb4494e22', 'accounts_email_addresses_primary', 'Accounts', 'accounts', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'primary_address', '1', 0, 0),
-('bce35e7a-6b4f-f478-d518-63dcb4a9c051', 'prospect_list_campaigns', 'ProspectLists', 'prospect_lists', 'id', 'Campaigns', 'campaigns', 'id', 'prospect_list_campaigns', 'prospect_list_id', 'campaign_id', 'many-to-many', NULL, NULL, 0, 0),
-('bd45b4a8-8f53-43e7-ee71-63dcb444c5aa', 'lead_meetings', 'Leads', 'leads', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Leads', 0, 0),
-('bd9dda26-9a15-233e-9cac-63dcb46a56a4', 'member_accounts', 'Accounts', 'accounts', 'id', 'Accounts', 'accounts', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('bdb37f0e-bc98-1a61-6e88-63dcb4e6db44', 'am_tasktemplates_created_by', 'Users', 'users', 'id', 'AM_TaskTemplates', 'am_tasktemplates', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('bdcaae9a-2fae-1ce5-1559-63dcb492b8fb', 'prospect_list_contacts', 'ProspectLists', 'prospect_lists', 'id', 'Contacts', 'contacts', 'id', 'prospect_lists_prospects', 'prospect_list_id', 'related_id', 'many-to-many', 'related_type', 'Contacts', 0, 0),
-('be7f9492-aa54-4f63-f8e3-63dcb4726c85', 'account_cases', 'Accounts', 'accounts', 'id', 'Cases', 'cases', 'account_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('be806e39-c851-5d3a-980e-63dcb4a9df7e', 'lead_calls', 'Leads', 'leads', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Leads', 0, 0),
-('bf09c3b3-fa00-d8bb-707a-63dcb48890c1', 'am_tasktemplates_assigned_user', 'Users', 'users', 'id', 'AM_TaskTemplates', 'am_tasktemplates', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('bf100fbf-a359-6901-00b8-63dcb422b727', 'aos_quotes_modified_user', 'Users', 'users', 'id', 'AOS_Quotes', 'aos_quotes', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('bf165063-c0e3-e26d-77a9-63dcb43e7935', 'prospect_list_prospects', 'ProspectLists', 'prospect_lists', 'id', 'Prospects', 'prospects', 'id', 'prospect_lists_prospects', 'prospect_list_id', 'related_id', 'many-to-many', 'related_type', 'Prospects', 0, 0),
-('bf831aba-c75b-5292-0cb9-63dcb4fe7070', 'account_tasks', 'Accounts', 'accounts', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Accounts', 0, 0),
-('c013d78e-41ab-de17-95d4-63dcb450a68a', 'prospect_list_leads', 'ProspectLists', 'prospect_lists', 'id', 'Leads', 'leads', 'id', 'prospect_lists_prospects', 'prospect_list_id', 'related_id', 'many-to-many', 'related_type', 'Leads', 0, 0),
-('c0a4e977-7524-03ac-0b26-63dcb4ca9d29', 'lead_emails', 'Leads', 'leads', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Leads', 0, 0),
-('c0c1d85e-67ff-5ddd-9399-63dcb48f719e', 'account_notes', 'Accounts', 'accounts', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Accounts', 0, 0),
-('c100a146-1042-c9fe-56a8-63dcb450f098', 'prospect_list_users', 'ProspectLists', 'prospect_lists', 'id', 'Users', 'users', 'id', 'prospect_lists_prospects', 'prospect_list_id', 'related_id', 'many-to-many', 'related_type', 'Users', 0, 0),
-('c19eaf5f-3267-f2b5-8c77-63dcb4016cd5', 'account_meetings', 'Accounts', 'accounts', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Accounts', 0, 0),
-('c1e23210-250f-7adc-95e3-63dcb426d17c', 'prospect_list_accounts', 'ProspectLists', 'prospect_lists', 'id', 'Accounts', 'accounts', 'id', 'prospect_lists_prospects', 'prospect_list_id', 'related_id', 'many-to-many', 'related_type', 'Accounts', 0, 0),
-('c25d22eb-cf64-f5c6-befa-63dcb4304316', 'lead_campaign_log', 'Leads', 'leads', 'id', 'CampaignLog', 'campaign_log', 'target_id', NULL, NULL, NULL, 'one-to-many', 'target_type', 'Leads', 0, 0),
-('c2e5b12e-6380-fdec-0445-63dcb4c26271', 'roles_users', 'Roles', 'roles', 'id', 'Users', 'users', 'id', 'roles_users', 'role_id', 'user_id', 'many-to-many', NULL, NULL, 0, 0),
-('c2e5b4fc-de8d-bbe1-8b13-63dcb4977eaf', 'oauthkeys_modified_user', 'Users', 'users', 'id', 'OAuthKeys', 'oauthkeys', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('c3cf8106-ebd2-d20c-789e-63dcb417b8f6', 'projects_bugs', 'Project', 'project', 'id', 'Bugs', 'bugs', 'id', 'projects_bugs', 'project_id', 'bug_id', 'many-to-many', NULL, NULL, 0, 0),
-('c4516783-0a4f-890c-48b6-63dcb4e5425f', 'oauthkeys_created_by', 'Users', 'users', 'id', 'OAuthKeys', 'oauthkeys', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('c48060f8-708b-b476-d312-63dcb486d3f0', 'account_calls', 'Accounts', 'accounts', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Accounts', 0, 0),
-('c513c528-73ad-a7e9-4542-63dcb470f53f', 'projects_cases', 'Project', 'project', 'id', 'Cases', 'cases', 'id', 'projects_cases', 'project_id', 'case_id', 'many-to-many', NULL, NULL, 0, 0),
-('c5897e18-eebc-7dce-3620-63dcb4d83288', 'aos_products_modified_user', 'Users', 'users', 'id', 'AOS_Products', 'aos_products', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('c6006e53-f966-1063-851a-63dcb49a3f19', 'projects_accounts', 'Project', 'project', 'id', 'Accounts', 'accounts', 'id', 'projects_accounts', 'project_id', 'account_id', 'many-to-many', NULL, NULL, 0, 0),
-('c6427c39-4863-493f-16c2-63dcb4bfb92f', 'account_emails', 'Accounts', 'accounts', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Accounts', 0, 0),
-('c6705261-2664-3a7e-aba3-63dcb4f2fba9', 'oauthkeys_assigned_user', 'Users', 'users', 'id', 'OAuthKeys', 'oauthkeys', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('c6f48574-74e9-7292-025d-63dcb4263ae5', 'projects_contacts', 'Project', 'project', 'id', 'Contacts', 'contacts', 'id', 'projects_contacts', 'project_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
-('c72a2f53-448a-8bb4-18e8-63dcb443f3ae', 'aos_products_created_by', 'Users', 'users', 'id', 'AOS_Products', 'aos_products', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('c73bacf9-3cbf-e1f8-ee54-63dcb4118f9a', 'account_leads', 'Accounts', 'accounts', 'id', 'Leads', 'leads', 'account_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('c7e32090-77eb-1ce2-d984-63dcb42bd063', 'projects_opportunities', 'Project', 'project', 'id', 'Opportunities', 'opportunities', 'id', 'projects_opportunities', 'project_id', 'opportunity_id', 'many-to-many', NULL, NULL, 0, 0),
-('c7f40273-79fd-ce05-da26-63dcb48ccfb3', 'aow_actions_modified_user', 'Users', 'users', 'id', 'AOW_Actions', 'aow_actions', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('c82958d4-8812-8ba1-516c-63dcb474ef5d', 'account_campaign_log', 'Accounts', 'accounts', 'id', 'CampaignLog', 'campaign_log', 'target_id', NULL, NULL, NULL, 'one-to-many', 'target_type', 'Accounts', 0, 0),
-('c8cc3ba1-85c2-c23f-67c4-63dcb48abdd6', 'acl_roles_actions', 'ACLRoles', 'acl_roles', 'id', 'ACLActions', 'acl_actions', 'id', 'acl_roles_actions', 'role_id', 'action_id', 'many-to-many', NULL, NULL, 0, 0),
-('c908210e-585e-f594-3bc7-63dcb432618e', 'account_aos_quotes', 'Accounts', 'accounts', 'id', 'AOS_Quotes', 'aos_quotes', 'billing_account_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('c9d75499-5d53-c912-9130-63dcb40d0df1', 'aos_products_assigned_user', 'Users', 'users', 'id', 'AOS_Products', 'aos_products', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('c9da3825-83f0-bf22-0abb-63dcb40c09f0', 'acl_roles_users', 'ACLRoles', 'acl_roles', 'id', 'Users', 'users', 'id', 'acl_roles_users', 'role_id', 'user_id', 'many-to-many', NULL, NULL, 0, 0),
-('c9e84687-9524-331f-23a4-63dcb44600b1', 'account_aos_invoices', 'Accounts', 'accounts', 'id', 'AOS_Invoices', 'aos_invoices', 'billing_account_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('ca60d9ba-28a8-4a14-a842-63dcb40af7fe', 'am_projectholidays_modified_user', 'Users', 'users', 'id', 'AM_ProjectHolidays', 'am_projectholidays', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('caba3521-8e94-068c-197a-63dcb419b5bf', 'product_categories', 'AOS_Product_Categories', 'aos_product_categories', 'id', 'AOS_Products', 'aos_products', 'aos_product_category_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('cb0a0d6f-30d7-f90c-8857-63dcb47d356a', 'securitygroups_emailtemplates', 'SecurityGroups', 'securitygroups', 'id', 'EmailTemplates', 'email_templates', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'EmailTemplates', 0, 0),
-('cb3287bb-b3cb-0c37-63e7-63dcb45e8dfd', 'account_aos_contracts', 'Accounts', 'accounts', 'id', 'AOS_Contracts', 'aos_contracts', 'contract_account_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('cb4976a4-0c5e-2ffd-da06-63dcb4c2da96', 'email_marketing_prospect_lists', 'EmailMarketing', 'email_marketing', 'id', 'ProspectLists', 'prospect_lists', 'id', 'email_marketing_prospect_lists', 'email_marketing_id', 'prospect_list_id', 'many-to-many', NULL, NULL, 0, 0),
-('cb8d4b75-1bba-f1c9-3767-63dcb451731f', 'am_projectholidays_created_by', 'Users', 'users', 'id', 'AM_ProjectHolidays', 'am_projectholidays', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('cd2b8508-303e-6192-8c58-63dcb42ab24f', 'consumer_tokens', 'OAuthKeys', 'oauth_consumer', 'id', 'OAuthTokens', 'oauth_tokens', 'consumer', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('cd47f92f-312c-9bdc-dc92-63dcb481a697', 'leads_documents', 'Leads', 'leads', 'id', 'Documents', 'documents', 'id', 'linked_documents', 'parent_id', 'document_id', 'many-to-many', 'parent_type', 'Leads', 0, 0),
-('cdd5a8a7-c95d-0aa5-673c-63dcb43f8e40', 'am_projectholidays_assigned_user', 'Users', 'users', 'id', 'AM_ProjectHolidays', 'am_projectholidays', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('ce605dd2-d728-1552-d3fc-63dcb47f675f', 'oauthtokens_assigned_user', 'Users', 'users', 'id', 'OAuthTokens', 'oauth_tokens', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('ce7686c4-92a6-be04-848c-63dcb46290ba', 'documents_accounts', 'Documents', 'documents', 'id', 'Accounts', 'accounts', 'id', 'documents_accounts', 'document_id', 'account_id', 'many-to-many', NULL, NULL, 0, 0),
-('cf5a88a7-297d-df26-4d42-63dcb43459e5', 'documents_contacts', 'Documents', 'documents', 'id', 'Contacts', 'contacts', 'id', 'documents_contacts', 'document_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
-('cfa9eb85-4421-3481-bb5d-63dcb4594251', 'cases_modified_user', 'Users', 'users', 'id', 'Cases', 'cases', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('d0969ef7-b4cb-985c-9fbb-63dcb479f597', 'documents_opportunities', 'Documents', 'documents', 'id', 'Opportunities', 'opportunities', 'id', 'documents_opportunities', 'document_id', 'opportunity_id', 'many-to-many', NULL, NULL, 0, 0),
-('d0f4ced1-ac6b-d917-3041-63dcb46ac157', 'cases_created_by', 'Users', 'users', 'id', 'Cases', 'cases', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('d185d1e8-dded-f2fe-e7fd-63dcb49bb7d2', 'documents_cases', 'Documents', 'documents', 'id', 'Cases', 'cases', 'id', 'documents_cases', 'document_id', 'case_id', 'many-to-many', NULL, NULL, 0, 0),
-('d1d688fc-ffac-1c9d-3376-63dcb4677479', 'cases_assigned_user', 'Users', 'users', 'id', 'Cases', 'cases', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('d26d6f83-1116-fa19-329d-63dcb4f5db2b', 'documents_bugs', 'Documents', 'documents', 'id', 'Bugs', 'bugs', 'id', 'documents_bugs', 'document_id', 'bug_id', 'many-to-many', NULL, NULL, 0, 0),
-('d3531a7d-cda6-b8cd-17bb-63dcb486cc48', 'case_calls', 'Cases', 'cases', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Cases', 0, 0),
-('d354cbd9-1a28-343c-6a20-63dcb4fbce41', 'accounts_leads_1', 'Accounts', 'accounts', 'id', 'Leads', 'leads', 'id', 'accounts_leads_1_c', 'accounts_leads_1accounts_ida', 'accounts_leads_1leads_idb', 'many-to-many', NULL, NULL, 0, 0),
-('d434b8bb-56ce-8d0d-0eee-63dcb4148c74', 'case_tasks', 'Cases', 'cases', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Cases', 0, 0),
-('d43cc3b5-04cb-138a-6114-63dcb4673634', 'accounts_opportunities_1', 'Accounts', 'accounts', 'id', 'Opportunities', 'opportunities', 'id', 'accounts_opportunities_1_c', 'accounts_opportunities_1accounts_ida', 'accounts_opportunities_1opportunities_idb', 'many-to-many', NULL, NULL, 0, 0),
-('d512fc5c-130e-0286-d21d-63dcb484c112', 'case_notes', 'Cases', 'cases', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Cases', 0, 0),
-('d5451421-2850-4168-f086-63dcb4034f3d', 'accounts_tasks_1', 'Accounts', 'accounts', 'id', 'Tasks', 'tasks', 'id', 'accounts_tasks_1_c', 'accounts_tasks_1accounts_ida', 'accounts_tasks_1tasks_idb', 'many-to-many', NULL, NULL, 0, 0),
-('d5f36a56-8e46-0ac9-822e-63dcb491d78c', 'case_meetings', 'Cases', 'cases', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Cases', 0, 0),
-('d6600325-a306-dc6d-e7c9-63dcb440d299', 'aos_products_quotes_modified_user', 'Users', 'users', 'id', 'AOS_Products_Quotes', 'aos_products_quotes', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('d6904746-674b-d384-3bb5-63dcb498e517', 'am_projectholidays_project', 'Project', 'project', 'id', 'AM_ProjectHolidays', 'am_projectholidays', 'id', 'am_projectholidays_project_c', 'am_projectholidays_projectproject_ida', 'am_projectholidays_projectam_projectholidays_idb', 'many-to-many', NULL, NULL, 0, 0),
-('d6d3c5a4-5dea-8d41-468a-63dcb4c1a879', 'case_emails', 'Cases', 'cases', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Cases', 0, 0),
-('d7785644-88b9-9161-c8c1-63dcb4588aad', 'am_projecttemplates_project_1', 'AM_ProjectTemplates', 'am_projecttemplates', 'id', 'Project', 'project', 'id', 'am_projecttemplates_project_1_c', 'am_projecttemplates_project_1am_projecttemplates_ida', 'am_projecttemplates_project_1project_idb', 'many-to-many', NULL, NULL, 0, 0),
-('d7a3b3a5-14fd-bde1-d4cd-63dcb48fd704', 'aos_products_quotes_created_by', 'Users', 'users', 'id', 'AOS_Products_Quotes', 'aos_products_quotes', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('d814b572-a7f0-8ec6-1a4f-63dcb427c28c', 'cases_created_contact', 'Contacts', 'contacts', 'id', 'Cases', 'cases', 'contact_created_by_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('d87f5529-f114-8e1a-842d-63dcb4240cf4', 'aos_products_quotes_assigned_user', 'Users', 'users', 'id', 'AOS_Products_Quotes', 'aos_products_quotes', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('d8b882c5-cb30-0ce9-f4a5-63dcb4fa2c49', 'am_tasktemplates_am_projecttemplates', 'AM_ProjectTemplates', 'am_projecttemplates', 'id', 'AM_TaskTemplates', 'am_tasktemplates', 'id', 'am_tasktemplates_am_projecttemplates_c', 'am_tasktemplates_am_projecttemplatesam_projecttemplates_ida', 'am_tasktemplates_am_projecttemplatesam_tasktemplates_idb', 'many-to-many', NULL, NULL, 0, 0),
-('d91e0e84-f398-2f0c-6da3-63dcb4e4dbce', 'securitygroups_leads', 'SecurityGroups', 'securitygroups', 'id', 'Leads', 'leads', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Leads', 0, 0),
-('d960abab-9c59-ac38-4489-63dcb41130a3', 'aos_product_quotes_aos_products', 'AOS_Products', 'aos_products', 'id', 'AOS_Products_Quotes', 'aos_products_quotes', 'product_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('d986d33e-96f6-0b63-2338-63dcb4e43626', 'opportunities_modified_user', 'Users', 'users', 'id', 'Opportunities', 'opportunities', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('d99b5b33-264c-7a37-64de-63dcb4cd3dc8', 'aos_contracts_documents', 'AOS_Contracts', 'aos_contracts', 'id', 'Documents', 'documents', 'id', 'aos_contracts_documents', 'aos_contracts_id', 'documents_id', 'many-to-many', NULL, NULL, 0, 0),
-('da8049fc-f6b3-3cd1-641d-63dcb4ac9e02', 'aos_quotes_aos_contracts', 'AOS_Quotes', 'aos_quotes', 'id', 'AOS_Contracts', 'aos_contracts', 'id', 'aos_quotes_os_contracts_c', 'aos_quotese81e_quotes_ida', 'aos_quotes4dc0ntracts_idb', 'many-to-many', NULL, NULL, 0, 0),
-('daab9441-7572-327c-0230-63dcb41a5cbd', 'fp_events_modified_user', 'Users', 'users', 'id', 'FP_events', 'fp_events', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('daebe9b0-2435-55bb-25da-63dcb4314cdb', 'opportunities_created_by', 'Users', 'users', 'id', 'Opportunities', 'opportunities', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('db8f5af8-63db-6c04-9384-63dcb442e94c', 'aos_quotes_aos_invoices', 'AOS_Quotes', 'aos_quotes', 'id', 'AOS_Invoices', 'aos_invoices', 'id', 'aos_quotes_aos_invoices_c', 'aos_quotes77d9_quotes_ida', 'aos_quotes6b83nvoices_idb', 'many-to-many', NULL, NULL, 0, 0),
-('dbc7e61a-fbb0-cb6e-431a-63dcb4bac25d', 'opportunities_assigned_user', 'Users', 'users', 'id', 'Opportunities', 'opportunities', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('dbf6f192-b612-f505-551c-63dcb45969db', 'fp_events_created_by', 'Users', 'users', 'id', 'FP_events', 'fp_events', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('dc20077e-0e55-0a93-e1d2-63dcb4025024', 'aow_actions_created_by', 'Users', 'users', 'id', 'AOW_Actions', 'aow_actions', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('dc427365-83c8-dee3-5aba-63dcb44eb8e0', 'jjwg_maps_modified_user', 'Users', 'users', 'id', 'jjwg_Maps', 'jjwg_maps', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('dc71445f-b085-a73d-70bb-63dcb40039c8', 'aos_quotes_project', 'AOS_Quotes', 'aos_quotes', 'id', 'Project', 'project', 'id', 'aos_quotes_project_c', 'aos_quotes1112_quotes_ida', 'aos_quotes7207project_idb', 'many-to-many', NULL, NULL, 0, 0),
-('dcd797c1-c4ac-a38e-c0f7-63dcb4436169', 'fp_events_assigned_user', 'Users', 'users', 'id', 'FP_events', 'fp_events', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('dcfad6c5-69ab-2609-b85e-63dcb411c381', 'opportunity_calls', 'Opportunities', 'opportunities', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Opportunities', 0, 0),
-('dd5b2aad-fa3f-82bd-3f5a-63dcb4decccf', 'aow_processed_aow_actions', 'AOW_Processed', 'aow_processed', 'id', 'AOW_Actions', 'aow_actions', 'id', 'aow_processed_aow_actions', 'aow_processed_id', 'aow_action_id', 'many-to-many', NULL, NULL, 0, 0),
-('dd9a33c5-5988-14f7-8d20-63dcb4c51bf3', 'jjwg_maps_created_by', 'Users', 'users', 'id', 'jjwg_Maps', 'jjwg_maps', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('ddda8f8c-4a9b-7153-0fbf-63dcb4d82b16', 'opportunity_meetings', 'Opportunities', 'opportunities', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Opportunities', 0, 0),
-('de42e04e-244e-07c4-a282-63dcb40958f3', 'emp_employees_at_attentance_1', 'EMP_Employees', 'emp_employees', 'id', 'at_Attentance', 'at_attentance', 'id', 'emp_employees_at_attentance_1_c', 'emp_employees_at_attentance_1emp_employees_ida', 'emp_employees_at_attentance_1at_attentance_idb', 'many-to-many', NULL, NULL, 0, 0),
-('de785e43-58cf-26d4-8af6-63dcb4d60351', 'jjwg_maps_assigned_user', 'Users', 'users', 'id', 'jjwg_Maps', 'jjwg_maps', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('debb2bbf-e11c-dc1f-1041-63dcb4c91f48', 'opportunity_tasks', 'Opportunities', 'opportunities', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Opportunities', 0, 0),
-('df578f92-63b9-4a39-ac81-63dcb42b0a5c', 'emp_employees_documents_1', 'EMP_Employees', 'emp_employees', 'id', 'Documents', 'documents', 'id', 'emp_employees_documents_1_c', 'emp_employees_documents_1emp_employees_ida', 'emp_employees_documents_1documents_idb', 'many-to-many', NULL, NULL, 0, 0),
-('df9e8df9-9980-2064-849b-63dcb4ea0d2b', 'opportunity_notes', 'Opportunities', 'opportunities', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Opportunities', 0, 0),
-('e04dadb5-4c23-0b00-e249-63dcb4b8ab6b', 'emp_employees_pro_projects_1', 'EMP_Employees', 'emp_employees', 'id', 'pro_Projects', 'pro_projects', 'id', 'emp_employees_pro_projects_1_c', 'emp_employees_pro_projects_1emp_employees_ida', 'emp_employees_pro_projects_1pro_projects_idb', 'many-to-many', NULL, NULL, 0, 0),
-('e0813625-b309-1d2d-090d-63dcb4da9c56', 'opportunity_emails', 'Opportunities', 'opportunities', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Opportunities', 0, 0),
-('e160f6ee-2570-522b-b3aa-63dcb4ae1c8e', 'opportunity_leads', 'Opportunities', 'opportunities', 'id', 'Leads', 'leads', 'opportunity_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('e1950484-1e17-9fa9-9d18-63dcb4e84646', 'emp_employees_sh_salary_history_1', 'EMP_Employees', 'emp_employees', 'id', 'sh_Salary_History', 'sh_salary_history', 'id', 'emp_employees_sh_salary_history_1_c', 'emp_employees_sh_salary_history_1emp_employees_ida', 'emp_employees_sh_salary_history_1sh_salary_history_idb', 'many-to-many', NULL, NULL, 0, 0),
-('e27fb97b-323b-e3b4-5299-63dcb442851a', 'emp_employees_tasks_1', 'EMP_Employees', 'emp_employees', 'id', 'Tasks', 'tasks', 'id', 'emp_employees_tasks_1_c', 'emp_employees_tasks_1emp_employees_ida', 'emp_employees_tasks_1tasks_idb', 'many-to-many', NULL, NULL, 0, 0),
-('e292411e-482f-db03-9e1a-63dcb43dcb63', 'opportunity_currencies', 'Opportunities', 'opportunities', 'currency_id', 'Currencies', 'currencies', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('e380ff2d-00b4-588d-679f-63dcb4492edd', 'opportunities_campaign', 'Campaigns', 'campaigns', 'id', 'Opportunities', 'opportunities', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('e39058f2-7cef-01c4-c119-63dcb41e9e67', 'emp_employee_list_at_attentance_1', 'EMP_Employee_List', 'emp_employee_list', 'id', 'at_Attentance', 'at_attentance', 'id', 'emp_employee_list_at_attentance_1_c', 'emp_employee_list_at_attentance_1emp_employee_list_ida', 'emp_employee_list_at_attentance_1at_attentance_idb', 'many-to-many', NULL, NULL, 0, 0),
-('e47021e4-3fda-cc4d-3e33-63dcb494cf16', 'emp_employee_list_pro_projects_1', 'EMP_Employee_List', 'emp_employee_list', 'id', 'pro_Projects', 'pro_projects', 'id', 'emp_employee_list_pro_projects_1_c', 'emp_employee_list_pro_projects_1emp_employee_list_ida', 'emp_employee_list_pro_projects_1pro_projects_idb', 'many-to-many', NULL, NULL, 0, 0),
-('e48c6870-9562-5207-4e2d-63dcb42257a6', 'opportunity_aos_quotes', 'Opportunities', 'opportunities', 'id', 'AOS_Quotes', 'aos_quotes', 'opportunity_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('e4aeeed6-61f5-bb73-edab-63dcb490f1cf', 'bugs_modified_user', 'Users', 'users', 'id', 'Bugs', 'bugs', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('e4f1fb73-1afc-7634-fad8-63dcb4610dfb', 'aos_line_item_groups_modified_user', 'Users', 'users', 'id', 'AOS_Line_Item_Groups', 'aos_line_item_groups', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('e56100bd-4664-cf8f-651c-63dcb4c1d588', 'emp_employee_list_sh_salary_history_1', 'EMP_Employee_List', 'emp_employee_list', 'id', 'sh_Salary_History', 'sh_salary_history', 'id', 'emp_employee_list_sh_salary_history_1_c', 'emp_employee_list_sh_salary_history_1emp_employee_list_ida', 'emp_employee_list_sh_salary_history_1sh_salary_history_idb', 'many-to-many', NULL, NULL, 0, 0),
-('e56b35cd-b78c-be57-ae97-63dcb4dc56b9', 'opportunity_aos_contracts', 'Opportunities', 'opportunities', 'id', 'AOS_Contracts', 'aos_contracts', 'opportunity_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('e6085ff8-4952-b55a-836c-63dcb4c90fcd', 'bugs_created_by', 'Users', 'users', 'id', 'Bugs', 'bugs', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('e6459a01-10a9-780f-abc0-63dcb48a5dc9', 'fp_events_contacts', 'FP_events', 'fp_events', 'id', 'Contacts', 'contacts', 'id', 'fp_events_contacts_c', 'fp_events_contactsfp_events_ida', 'fp_events_contactscontacts_idb', 'many-to-many', NULL, NULL, 0, 0),
-('e6573224-786e-3044-a1e9-63dcb4f1d417', 'aos_line_item_groups_created_by', 'Users', 'users', 'id', 'AOS_Line_Item_Groups', 'aos_line_item_groups', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('e6e825a5-98ed-91b8-231a-63dcb4e13541', 'bugs_assigned_user', 'Users', 'users', 'id', 'Bugs', 'bugs', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('e7451b10-e878-fe0d-f8a3-63dcb4942748', 'aos_line_item_groups_assigned_user', 'Users', 'users', 'id', 'AOS_Line_Item_Groups', 'aos_line_item_groups', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('e78ef64d-cdf5-e1cd-c0ea-63dcb4915ed8', 'fp_events_fp_event_locations_1', 'FP_events', 'fp_events', 'id', 'FP_Event_Locations', 'fp_event_locations', 'id', 'fp_events_fp_event_locations_1_c', 'fp_events_fp_event_locations_1fp_events_ida', 'fp_events_fp_event_locations_1fp_event_locations_idb', 'many-to-many', NULL, NULL, 0, 0),
-('e81a07c9-88a5-b9d8-353c-63dcb4c352b6', 'bug_tasks', 'Bugs', 'bugs', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Bugs', 0, 0),
-('e88150f5-6bec-53d8-fa99-63dcb4911173', 'fp_events_leads_1', 'FP_events', 'fp_events', 'id', 'Leads', 'leads', 'id', 'fp_events_leads_1_c', 'fp_events_leads_1fp_events_ida', 'fp_events_leads_1leads_idb', 'many-to-many', NULL, NULL, 0, 0),
-('e897b7e9-3a15-56a3-451a-63dcb4beaeb2', 'groups_aos_product_quotes', 'AOS_Line_Item_Groups', 'aos_line_item_groups', 'id', 'AOS_Products_Quotes', 'aos_products_quotes', 'group_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('e8e91863-9976-a60f-0bb2-63dcb44d8c86', 'fp_event_locations_modified_user', 'Users', 'users', 'id', 'FP_Event_Locations', 'fp_event_locations', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('e8f99568-28aa-da8e-5fce-63dcb42141fa', 'bug_meetings', 'Bugs', 'bugs', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Bugs', 0, 0),
-('e9e1dc68-c8cd-87ad-f1eb-63dcb4d21608', 'fp_events_prospects_1', 'FP_events', 'fp_events', 'id', 'Prospects', 'prospects', 'id', 'fp_events_prospects_1_c', 'fp_events_prospects_1fp_events_ida', 'fp_events_prospects_1prospects_idb', 'many-to-many', NULL, NULL, 0, 0),
-('ea1fe01e-df90-2c28-3781-63dcb4b3e5f9', 'fp_event_locations_created_by', 'Users', 'users', 'id', 'FP_Event_Locations', 'fp_event_locations', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('eac726ca-88f9-f28c-05ec-63dcb4f597d1', 'fp_event_locations_fp_events_1', 'FP_Event_Locations', 'fp_event_locations', 'id', 'FP_events', 'fp_events', 'id', 'fp_event_locations_fp_events_1_c', 'fp_event_locations_fp_events_1fp_event_locations_ida', 'fp_event_locations_fp_events_1fp_events_idb', 'many-to-many', NULL, NULL, 0, 0),
-('eb04a472-bf42-6ca3-8e87-63dcb42e4123', 'fp_event_locations_assigned_user', 'Users', 'users', 'id', 'FP_Event_Locations', 'fp_event_locations', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('eb310e08-0af4-6847-07ba-63dcb4be2301', 'bug_calls', 'Bugs', 'bugs', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Bugs', 0, 0),
-('ebd95db8-0a70-03d6-d6b6-63dcb42dabf4', 'jjwg_maps_jjwg_areas', 'jjwg_Maps', 'jjwg_maps', 'id', 'jjwg_Areas', 'jjwg_areas', 'id', 'jjwg_maps_jjwg_areas_c', 'jjwg_maps_5304wg_maps_ida', 'jjwg_maps_41f2g_areas_idb', 'many-to-many', NULL, NULL, 0, 0),
-('ebeee22b-703f-3bca-434e-63dcb4b79716', 'optimistic_locking', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0),
-('ec511e79-79ed-64d2-4870-63dcb4986f8f', 'bug_emails', 'Bugs', 'bugs', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Bugs', 0, 0),
-('ec5b75e7-b3b4-98cc-a811-63dcb41c7fd0', 'jjwg_markers_modified_user', 'Users', 'users', 'id', 'jjwg_Markers', 'jjwg_markers', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('ecfb3430-ce8a-6a38-3c41-63dcb433923b', 'unified_search', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0),
-('ed180e0c-b340-98e2-68e8-63dcb4b05ebd', 'jjwg_maps_jjwg_markers', 'jjwg_Maps', 'jjwg_maps', 'id', 'jjwg_Markers', 'jjwg_markers', 'id', 'jjwg_maps_jjwg_markers_c', 'jjwg_maps_b229wg_maps_ida', 'jjwg_maps_2e31markers_idb', 'many-to-many', NULL, NULL, 0, 0),
-('ed335bfc-3472-a59f-16e3-63dcb4fb556e', 'bug_notes', 'Bugs', 'bugs', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Bugs', 0, 0),
-('ed972860-d5ff-9b3b-fb03-63dcb4295572', 'jjwg_markers_created_by', 'Users', 'users', 'id', 'jjwg_Markers', 'jjwg_markers', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('ee43344d-0d9c-9d53-0ea0-63dcb43ae335', 'bugs_release', 'Releases', 'releases', 'id', 'Bugs', 'bugs', 'found_in_release', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('ee73eee7-93d1-32b3-8768-63dcb4407810', 'jjwg_markers_assigned_user', 'Users', 'users', 'id', 'jjwg_Markers', 'jjwg_markers', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('eea0c5db-40eb-2c05-8526-63dcb47b83b9', 'leads_accounts_1', 'Leads', 'leads', 'id', 'Accounts', 'accounts', 'id', 'leads_accounts_1_c', 'leads_accounts_1leads_ida', 'leads_accounts_1accounts_idb', 'many-to-many', NULL, NULL, 0, 0),
-('eeaa0f9f-780e-3f5d-0cad-63dcb4f7709e', 'securitygroups_meetings', 'SecurityGroups', 'securitygroups', 'id', 'Meetings', 'meetings', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Meetings', 0, 0),
-('ef34d688-4e8e-86b8-ab5e-63dcb4bf6ed4', 'bugs_fixed_in_release', 'Releases', 'releases', 'id', 'Bugs', 'bugs', 'fixed_in_release', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('efa14715-2f43-0c80-ff27-63dcb4f96525', 'leads_opportunities_1', 'Leads', 'leads', 'id', 'Opportunities', 'opportunities', 'id', 'leads_opportunities_1_c', 'leads_opportunities_1leads_ida', 'leads_opportunities_1opportunities_idb', 'many-to-many', NULL, NULL, 0, 0),
-('f00a2f18-a528-7ea2-1588-63dcb44ce9da', 'emailtemplates_assigned_user', 'Users', 'users', 'id', 'EmailTemplates', 'email_templates', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('f09982ae-debe-783c-859f-63dcb4177b9b', 'leads_tasks_1', 'Leads', 'leads', 'id', 'Tasks', 'tasks', 'id', 'leads_tasks_1_c', 'leads_tasks_1leads_ida', 'leads_tasks_1tasks_idb', 'many-to-many', NULL, NULL, 0, 0),
-('f0cc864a-32a0-a157-d9a4-63dcb46aebc4', 'user_direct_reports', 'Users', 'users', 'id', 'Users', 'users', 'reports_to_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('f17e9abc-e755-ad58-1cd8-63dcb4f0fac9', 'opportunities_accounts_1', 'Opportunities', 'opportunities', 'id', 'Accounts', 'accounts', 'id', 'opportunities_accounts_1_c', 'opportunities_accounts_1opportunities_ida', 'opportunities_accounts_1accounts_idb', 'many-to-many', NULL, NULL, 0, 0),
-('f1b4edba-bae5-a5a1-97d5-63dcb4054451', 'users_email_addresses', 'Users', 'users', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'bean_module', 'Users', 0, 0),
-('f2c20a2f-ebdd-813f-80af-63dcb4523f8a', 'users_email_addresses_primary', 'Users', 'users', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'primary_address', '1', 0, 0),
-('f2c45eaf-a903-da73-bf6c-63dcb42902fd', 'opportunities_leads_1', 'Opportunities', 'opportunities', 'id', 'Leads', 'leads', 'id', 'opportunities_leads_1_c', 'opportunities_leads_1opportunities_ida', 'opportunities_leads_1leads_idb', 'many-to-many', NULL, NULL, 0, 0),
-('f3bc2566-2810-c286-ab17-63dcb4c27b4c', 'opportunities_tasks_1', 'Opportunities', 'opportunities', 'id', 'Tasks', 'tasks', 'id', 'opportunities_tasks_1_c', 'opportunities_tasks_1opportunities_ida', 'opportunities_tasks_1tasks_idb', 'many-to-many', NULL, NULL, 0, 0),
-('fd390ca3-322b-fcb7-d910-63dcb446b3e3', 'securitygroups_notes', 'SecurityGroups', 'securitygroups', 'id', 'Notes', 'notes', 'id', 'securitygroups_records', 'securitygroup_id', 'record_id', 'many-to-many', 'module', 'Notes', 0, 0);
+('a251ec5d-849c-c707-27e0-63ff3bc31330', 'saved_search_assigned_user', 'Users', 'users', 'id', 'SavedSearch', 'saved_search', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('a6653275-37d2-3064-d95d-63ff3b58b733', 'am_projecttemplates_modified_user', 'Users', 'users', 'id', 'AM_ProjectTemplates', 'am_projecttemplates', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('a797942f-ef02-71e1-8fac-63ff3b52f503', 'am_projecttemplates_created_by', 'Users', 'users', 'id', 'AM_ProjectTemplates', 'am_projecttemplates', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('a880192c-376e-5706-7a20-63ff3bfd6822', 'am_projecttemplates_assigned_user', 'Users', 'users', 'id', 'AM_ProjectTemplates', 'am_projecttemplates', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('ab0604e2-690c-a129-af79-63ff3b4fd588', 'unified_search', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0),
+('ae966a24-1f2b-ccb7-160d-63ff3be587aa', 'aos_invoices_modified_user', 'Users', 'users', 'id', 'AOS_Invoices', 'aos_invoices', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b003ad1e-5187-e25b-7939-63ff3bee92bd', 'aos_invoices_created_by', 'Users', 'users', 'id', 'AOS_Invoices', 'aos_invoices', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b0e7af63-31cd-c3c0-8e34-63ff3be5a5f1', 'aos_invoices_assigned_user', 'Users', 'users', 'id', 'AOS_Invoices', 'aos_invoices', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b1470be7-e414-4c43-f1b5-63ff3b8e50e4', 'aos_line_item_groups_assigned_user', 'Users', 'users', 'id', 'AOS_Line_Item_Groups', 'aos_line_item_groups', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b1678d6c-3cef-9617-4af9-63ff3be1cf1f', 'accounts_modified_user', 'Users', 'users', 'id', 'Accounts', 'accounts', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b1c76a7d-255e-a95f-736d-63ff3b736cfa', 'aos_invoices_aos_product_quotes', 'AOS_Invoices', 'aos_invoices', 'id', 'AOS_Products_Quotes', 'aos_products_quotes', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b2a7c3a0-9bfe-5597-199f-63ff3b017088', 'aos_invoices_aos_line_item_groups', 'AOS_Invoices', 'aos_invoices', 'id', 'AOS_Line_Item_Groups', 'aos_line_item_groups', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b36c0bd4-0170-7c78-9027-63ff3be118e2', 'accounts_created_by', 'Users', 'users', 'id', 'Accounts', 'accounts', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b466ca73-09da-9414-5a49-63ff3b5655af', 'accounts_assigned_user', 'Users', 'users', 'id', 'Accounts', 'accounts', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b4d038da-e6bb-f248-4e0d-63ff3b23db2f', 'am_tasktemplates_modified_user', 'Users', 'users', 'id', 'AM_TaskTemplates', 'am_tasktemplates', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b547190b-a1ce-01cd-8d5d-63ff3b9160a6', 'accounts_email_addresses', 'Accounts', 'accounts', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'bean_module', 'Accounts', 0, 0),
+('b615d371-d00e-9705-efef-63ff3bd4833e', 'am_tasktemplates_created_by', 'Users', 'users', 'id', 'AM_TaskTemplates', 'am_tasktemplates', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b62729e7-6244-d00c-f34e-63ff3b05214c', 'accounts_email_addresses_primary', 'Accounts', 'accounts', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'primary_address', '1', 0, 0),
+('b6435580-5814-e6c5-3b10-63ff3baade6c', 'sugarfeed_modified_user', 'Users', 'users', 'id', 'SugarFeed', 'sugarfeed', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b75f9409-387e-0066-da7f-63ff3b7cc723', 'member_accounts', 'Accounts', 'accounts', 'id', 'Accounts', 'accounts', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b7715a21-be7f-3083-479d-63ff3b559d4c', 'cases_modified_user', 'Users', 'users', 'id', 'Cases', 'cases', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b77ac04d-27b0-04ec-26dc-63ff3b9a2fe7', 'am_tasktemplates_assigned_user', 'Users', 'users', 'id', 'AM_TaskTemplates', 'am_tasktemplates', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b77e6bbe-729e-85dd-4b90-63ff3b4d0a1b', 'sugarfeed_created_by', 'Users', 'users', 'id', 'SugarFeed', 'sugarfeed', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b85ed87c-7f93-af11-4b98-63ff3b89ab80', 'sugarfeed_assigned_user', 'Users', 'users', 'id', 'SugarFeed', 'sugarfeed', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b86b83ea-2bf8-fd81-67d0-63ff3b2ef1a4', 'account_cases', 'Accounts', 'accounts', 'id', 'Cases', 'cases', 'account_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b8b6acff-3da0-b17a-8eac-63ff3b968661', 'cases_created_by', 'Users', 'users', 'id', 'Cases', 'cases', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b95286fc-a4fa-9455-bcc0-63ff3b17fdb1', 'account_tasks', 'Accounts', 'accounts', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Accounts', 0, 0),
+('b9894752-da58-5c8d-4b5c-63ff3b8879c2', 'cases_assigned_user', 'Users', 'users', 'id', 'Cases', 'cases', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b9f45286-28b7-ca16-aad5-63ff3bd7dc48', 'accounts_bugs', 'Accounts', 'accounts', 'id', 'Bugs', 'bugs', 'id', 'accounts_bugs', 'account_id', 'bug_id', 'many-to-many', NULL, NULL, 0, 0),
+('ba32b11c-8dcb-a1a0-b4fa-63ff3babbab1', 'account_notes', 'Accounts', 'accounts', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Accounts', 0, 0),
+('ba5dd9a6-7dfb-873a-9813-63ff3b885f52', 'case_calls', 'Cases', 'cases', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Cases', 0, 0),
+('baeb943f-4b64-b2f7-a3ab-63ff3b518444', 'accounts_contacts', 'Accounts', 'accounts', 'id', 'Contacts', 'contacts', 'id', 'accounts_contacts', 'account_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
+('bb1108fd-0ab6-819e-f355-63ff3ba8051c', 'account_meetings', 'Accounts', 'accounts', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Accounts', 0, 0),
+('bb4fed67-8d9c-5765-11a0-63ff3bdf3bbd', 'case_tasks', 'Cases', 'cases', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Cases', 0, 0),
+('bbde9502-f17b-3026-6844-63ff3b477aea', 'accounts_opportunities', 'Accounts', 'accounts', 'id', 'Opportunities', 'opportunities', 'id', 'accounts_opportunities', 'account_id', 'opportunity_id', 'many-to-many', NULL, NULL, 0, 0),
+('bc09fc23-1c03-7ebe-0cd2-63ff3b66f20b', 'account_calls', 'Accounts', 'accounts', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Accounts', 0, 0),
+('bc8550f1-8566-f3dc-6dd9-63ff3b42186a', 'case_notes', 'Cases', 'cases', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Cases', 0, 0),
+('bcefbc74-127e-fceb-86bb-63ff3b19c42c', 'calls_contacts', 'Calls', 'calls', 'id', 'Contacts', 'contacts', 'id', 'calls_contacts', 'call_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
+('bd567b24-a965-edfd-689e-63ff3b8268be', 'account_emails', 'Accounts', 'accounts', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Accounts', 0, 0),
+('bd7b0751-f815-6e95-3248-63ff3b7bf5b1', 'case_meetings', 'Cases', 'cases', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Cases', 0, 0),
+('bddecce0-04ef-21ae-82f4-63ff3bd34713', 'calls_users', 'Calls', 'calls', 'id', 'Users', 'users', 'id', 'calls_users', 'call_id', 'user_id', 'many-to-many', NULL, NULL, 0, 0),
+('be377e0b-14c4-cbb5-93b4-63ff3b93b3b4', 'account_leads', 'Accounts', 'accounts', 'id', 'Leads', 'leads', 'account_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('be743a84-8aa3-847f-6250-63ff3b3968b9', 'case_emails', 'Cases', 'cases', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Cases', 0, 0),
+('be9993d4-810e-0d3f-1062-63ff3b50c5fc', 'aos_pdf_templates_modified_user', 'Users', 'users', 'id', 'AOS_PDF_Templates', 'aos_pdf_templates', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('bf172243-39e7-6542-7fb2-63ff3bc7a882', 'account_campaign_log', 'Accounts', 'accounts', 'id', 'CampaignLog', 'campaign_log', 'target_id', NULL, NULL, NULL, 'one-to-many', 'target_type', 'Accounts', 0, 0),
+('bf22d74f-a6f4-c68f-f21b-63ff3beb8bc8', 'calls_leads', 'Calls', 'calls', 'id', 'Leads', 'leads', 'id', 'calls_leads', 'call_id', 'lead_id', 'many-to-many', NULL, NULL, 0, 0),
+('bf67e3a0-9c8d-99d2-1633-63ff3b782e47', 'cases_created_contact', 'Contacts', 'contacts', 'id', 'Cases', 'cases', 'contact_created_by_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('bfba0095-d3f8-2e3a-c701-63ff3b838fec', 'groups_aos_product_quotes', 'AOS_Line_Item_Groups', 'aos_line_item_groups', 'id', 'AOS_Products_Quotes', 'aos_products_quotes', 'group_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('c00d5e9c-86e6-66cd-71d7-63ff3bbf9449', 'cases_bugs', 'Cases', 'cases', 'id', 'Bugs', 'bugs', 'id', 'cases_bugs', 'case_id', 'bug_id', 'many-to-many', NULL, NULL, 0, 0),
+('c00fe09c-27ba-60a2-6a1d-63ff3b3f8106', 'account_aos_quotes', 'Accounts', 'accounts', 'id', 'AOS_Quotes', 'aos_quotes', 'billing_account_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('c0b18b06-c9e7-057f-2024-63ff3b7b8ae1', 'aos_pdf_templates_created_by', 'Users', 'users', 'id', 'AOS_PDF_Templates', 'aos_pdf_templates', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('c0f839a8-d9f7-56ac-3d4e-63ff3b5fb638', 'account_aos_invoices', 'Accounts', 'accounts', 'id', 'AOS_Invoices', 'aos_invoices', 'billing_account_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('c1025e4a-268b-2bec-8c30-63ff3ba978a1', 'contacts_bugs', 'Contacts', 'contacts', 'id', 'Bugs', 'bugs', 'id', 'contacts_bugs', 'contact_id', 'bug_id', 'many-to-many', NULL, NULL, 0, 0),
+('c1e9604c-fe1c-a8bc-da3c-63ff3bebc810', 'contacts_cases', 'Contacts', 'contacts', 'id', 'Cases', 'cases', 'id', 'contacts_cases', 'contact_id', 'case_id', 'many-to-many', NULL, NULL, 0, 0),
+('c1fd88ed-16d4-aee1-78f3-63ff3b6a34c1', 'account_aos_contracts', 'Accounts', 'accounts', 'id', 'AOS_Contracts', 'aos_contracts', 'contract_account_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('c2152efc-8846-8678-0e88-63ff3bcf2a80', 'aos_pdf_templates_assigned_user', 'Users', 'users', 'id', 'AOS_PDF_Templates', 'aos_pdf_templates', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('c2d682bc-d2df-4c5d-33e4-63ff3b1190c7', 'contacts_users', 'Contacts', 'contacts', 'id', 'Users', 'users', 'id', 'contacts_users', 'contact_id', 'user_id', 'many-to-many', NULL, NULL, 0, 0),
+('c3edde7d-911a-cbc3-cae9-63ff3b5f76ef', 'emails_bugs_rel', 'Emails', 'emails', 'id', 'Bugs', 'bugs', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Bugs', 0, 0),
+('c57f082d-906e-3f87-bf4a-63ff3b5db4b8', 'emails_cases_rel', 'Emails', 'emails', 'id', 'Cases', 'cases', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Cases', 0, 0),
+('c5a1f05d-41f1-b8c6-c785-63ff3bf86b4a', 'am_projectholidays_modified_user', 'Users', 'users', 'id', 'AM_ProjectHolidays', 'am_projectholidays', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('c6858749-e3fc-10d9-a15f-63ff3b1068ed', 'emails_opportunities_rel', 'Emails', 'emails', 'id', 'Opportunities', 'opportunities', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Opportunities', 0, 0),
+('c6f1b706-941d-24dd-df56-63ff3bc30ed1', 'am_projectholidays_created_by', 'Users', 'users', 'id', 'AM_ProjectHolidays', 'am_projectholidays', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('c78872a6-2e2b-ee45-3fa7-63ff3bfb90ce', 'emails_tasks_rel', 'Emails', 'emails', 'id', 'Tasks', 'tasks', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Tasks', 0, 0),
+('c82eba4b-4484-7778-78fb-63ff3b84e4c1', 'am_projectholidays_assigned_user', 'Users', 'users', 'id', 'AM_ProjectHolidays', 'am_projectholidays', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('c870751c-d4d5-0843-66bf-63ff3bc4bb1e', 'emails_users_rel', 'Emails', 'emails', 'id', 'Users', 'users', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Users', 0, 0),
+('c94660ff-8e5f-f1d4-f4ce-63ff3b90fd23', 'emails_project_task_rel', 'Emails', 'emails', 'id', 'ProjectTask', 'project_task', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'ProjectTask', 0, 0),
+('c9dd30e2-995e-cbf3-4985-63ff3bc70c93', 'eapm_modified_user', 'Users', 'users', 'id', 'EAPM', 'eapm', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('ca207871-fc83-b10d-72be-63ff3b2fa26e', 'emails_projects_rel', 'Emails', 'emails', 'id', 'Project', 'project', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Project', 0, 0),
+('cb131737-4c02-ead4-652e-63ff3bd1ecba', 'eapm_created_by', 'Users', 'users', 'id', 'EAPM', 'eapm', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('cb5eed14-c4c3-3f8b-9313-63ff3b90a231', 'emails_prospects_rel', 'Emails', 'emails', 'id', 'Prospects', 'prospects', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Prospects', 0, 0),
+('cbe7d107-5be5-8bc9-157f-63ff3b1d39dc', 'eapm_assigned_user', 'Users', 'users', 'id', 'EAPM', 'eapm', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('cc4b0f7f-d5b3-b247-5c08-63ff3bca205a', 'meetings_contacts', 'Meetings', 'meetings', 'id', 'Contacts', 'contacts', 'id', 'meetings_contacts', 'meeting_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
+('ccc4ed6b-77f5-1b70-ff5f-63ff3bddb2ed', 'bugs_modified_user', 'Users', 'users', 'id', 'Bugs', 'bugs', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('cd31b46a-36bb-fdee-4ea2-63ff3b2ef6ad', 'meetings_users', 'Meetings', 'meetings', 'id', 'Users', 'users', 'id', 'meetings_users', 'meeting_id', 'user_id', 'many-to-many', NULL, NULL, 0, 0),
+('ce181b31-2855-885d-78c1-63ff3b549e97', 'meetings_leads', 'Meetings', 'meetings', 'id', 'Leads', 'leads', 'id', 'meetings_leads', 'meeting_id', 'lead_id', 'many-to-many', NULL, NULL, 0, 0),
+('ce1ff0cf-6ff3-767a-3746-63ff3bfbeb69', 'aos_product_categories_modified_user', 'Users', 'users', 'id', 'AOS_Product_Categories', 'aos_product_categories', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('ce287e3c-5746-a607-7529-63ff3bd8578a', 'bugs_created_by', 'Users', 'users', 'id', 'Bugs', 'bugs', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('cef91796-3de7-94a1-2a04-63ff3b0c63a9', 'opportunities_contacts', 'Opportunities', 'opportunities', 'id', 'Contacts', 'contacts', 'id', 'opportunities_contacts', 'opportunity_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
+('cf1bda20-dcdf-d47c-51d0-63ff3ba79c8e', 'bugs_assigned_user', 'Users', 'users', 'id', 'Bugs', 'bugs', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('cf763f2f-a8dc-6278-f230-63ff3baaeab8', 'aos_product_categories_created_by', 'Users', 'users', 'id', 'AOS_Product_Categories', 'aos_product_categories', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('cfdc6c4e-0f4d-c810-9778-63ff3bb823c0', 'prospect_list_campaigns', 'ProspectLists', 'prospect_lists', 'id', 'Campaigns', 'campaigns', 'id', 'prospect_list_campaigns', 'prospect_list_id', 'campaign_id', 'many-to-many', NULL, NULL, 0, 0),
+('d0125023-fa65-c774-895a-63ff3b95be67', 'bug_tasks', 'Bugs', 'bugs', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Bugs', 0, 0),
+('d05bb488-d1a5-9572-d337-63ff3b8886a3', 'aos_product_categories_assigned_user', 'Users', 'users', 'id', 'AOS_Product_Categories', 'aos_product_categories', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d0ba58cb-fb9f-985c-a6df-63ff3b4b16f6', 'opportunities_modified_user', 'Users', 'users', 'id', 'Opportunities', 'opportunities', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d12cc8b2-cac0-d46b-9f6b-63ff3b9216ac', 'bug_meetings', 'Bugs', 'bugs', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Bugs', 0, 0),
+('d159938b-c044-6b72-2032-63ff3baea9fc', 'prospect_list_contacts', 'ProspectLists', 'prospect_lists', 'id', 'Contacts', 'contacts', 'id', 'prospect_lists_prospects', 'prospect_list_id', 'related_id', 'many-to-many', 'related_type', 'Contacts', 0, 0),
+('d162dec5-4049-6fa6-1dba-63ff3b3c8527', 'sub_product_categories', 'AOS_Product_Categories', 'aos_product_categories', 'id', 'AOS_Product_Categories', 'aos_product_categories', 'parent_category_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d2005152-a7b8-cd94-198f-63ff3b583f35', 'opportunities_created_by', 'Users', 'users', 'id', 'Opportunities', 'opportunities', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d239996a-4bbd-83ad-db59-63ff3bc11df1', 'prospect_list_prospects', 'ProspectLists', 'prospect_lists', 'id', 'Prospects', 'prospects', 'id', 'prospect_lists_prospects', 'prospect_list_id', 'related_id', 'many-to-many', 'related_type', 'Prospects', 0, 0),
+('d2896bfa-fb68-7429-6399-63ff3bebf6e1', 'bug_calls', 'Bugs', 'bugs', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Bugs', 0, 0),
+('d31c4586-59ad-a9c4-eb88-63ff3b13ec44', 'prospect_list_leads', 'ProspectLists', 'prospect_lists', 'id', 'Leads', 'leads', 'id', 'prospect_lists_prospects', 'prospect_list_id', 'related_id', 'many-to-many', 'related_type', 'Leads', 0, 0),
+('d3371474-c352-86ef-0898-63ff3b0428cd', 'opportunities_assigned_user', 'Users', 'users', 'id', 'Opportunities', 'opportunities', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d3970bd4-e919-c577-38d7-63ff3bd3781b', 'bug_emails', 'Bugs', 'bugs', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Bugs', 0, 0),
+('d40c0ebd-3835-7da8-10cb-63ff3b39dd81', 'prospect_list_users', 'ProspectLists', 'prospect_lists', 'id', 'Users', 'users', 'id', 'prospect_lists_prospects', 'prospect_list_id', 'related_id', 'many-to-many', 'related_type', 'Users', 0, 0),
+('d416a224-7996-0a24-de17-63ff3ba21983', 'opportunity_calls', 'Opportunities', 'opportunities', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Opportunities', 0, 0),
+('d4c41aba-ef5d-c5c3-692b-63ff3b4b3be9', 'bug_notes', 'Bugs', 'bugs', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Bugs', 0, 0),
+('d4e0b9a4-ac56-5276-e3f4-63ff3b9ba5fd', 'oauthkeys_modified_user', 'Users', 'users', 'id', 'OAuthKeys', 'oauthkeys', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d4fed8dc-7142-1c9f-9819-63ff3b0541e9', 'opportunity_meetings', 'Opportunities', 'opportunities', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Opportunities', 0, 0),
+('d544e0d9-2660-f9d0-98b3-63ff3bd02859', 'prospect_list_accounts', 'ProspectLists', 'prospect_lists', 'id', 'Accounts', 'accounts', 'id', 'prospect_lists_prospects', 'prospect_list_id', 'related_id', 'many-to-many', 'related_type', 'Accounts', 0, 0),
+('d5c5189c-2ea8-ae46-c17b-63ff3b3cb338', 'bugs_release', 'Releases', 'releases', 'id', 'Bugs', 'bugs', 'found_in_release', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d5dee4cf-3331-4ba5-fdd9-63ff3bd7566d', 'opportunity_tasks', 'Opportunities', 'opportunities', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Opportunities', 0, 0),
+('d6302951-3743-c7b8-9e61-63ff3b6ad620', 'oauthkeys_created_by', 'Users', 'users', 'id', 'OAuthKeys', 'oauthkeys', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d67c70c5-c60f-253f-7cdd-63ff3bdc2da9', 'roles_users', 'Roles', 'roles', 'id', 'Users', 'users', 'id', 'roles_users', 'role_id', 'user_id', 'many-to-many', NULL, NULL, 0, 0),
+('d6bf194d-2013-90de-a7e3-63ff3b12c3b3', 'opportunity_notes', 'Opportunities', 'opportunities', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Opportunities', 0, 0),
+('d6c91695-be97-1590-073c-63ff3b8b07c8', 'bugs_fixed_in_release', 'Releases', 'releases', 'id', 'Bugs', 'bugs', 'fixed_in_release', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d7046f97-75bb-9f4a-c80b-63ff3b183455', 'jjwg_maps_modified_user', 'Users', 'users', 'id', 'jjwg_Maps', 'jjwg_maps', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d7225a73-e5ad-7f24-dd8c-63ff3b7fc768', 'oauthkeys_assigned_user', 'Users', 'users', 'id', 'OAuthKeys', 'oauthkeys', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d7659443-6959-64db-e274-63ff3b03dd77', 'projects_bugs', 'Project', 'project', 'id', 'Bugs', 'bugs', 'id', 'projects_bugs', 'project_id', 'bug_id', 'many-to-many', NULL, NULL, 0, 0),
+('d7a1483e-4669-2f89-4832-63ff3b611aa8', 'opportunity_emails', 'Opportunities', 'opportunities', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Opportunities', 0, 0),
+('d865f634-9bf9-def9-e0dd-63ff3b23022a', 'jjwg_maps_created_by', 'Users', 'users', 'id', 'jjwg_Maps', 'jjwg_maps', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d8741371-3bb6-e385-2fb7-63ff3bb581da', 'projects_cases', 'Project', 'project', 'id', 'Cases', 'cases', 'id', 'projects_cases', 'project_id', 'case_id', 'many-to-many', NULL, NULL, 0, 0),
+('d8d968b1-c463-345b-3d67-63ff3b414303', 'opportunity_leads', 'Opportunities', 'opportunities', 'id', 'Leads', 'leads', 'opportunity_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d8e075fb-caa2-f937-1982-63ff3bd9f98b', 'user_direct_reports', 'Users', 'users', 'id', 'Users', 'users', 'reports_to_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d9447891-4df5-37e6-3c8c-63ff3bca5407', 'jjwg_maps_assigned_user', 'Users', 'users', 'id', 'jjwg_Maps', 'jjwg_maps', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d97016ae-0e81-100d-1ca6-63ff3b0a2b02', 'projects_accounts', 'Project', 'project', 'id', 'Accounts', 'accounts', 'id', 'projects_accounts', 'project_id', 'account_id', 'many-to-many', NULL, NULL, 0, 0),
+('d9b9f501-7497-1a3f-61ab-63ff3b7a176b', 'opportunity_currencies', 'Opportunities', 'opportunities', 'currency_id', 'Currencies', 'currencies', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d9eb6379-c1f3-10d6-6130-63ff3b397ea8', 'users_email_addresses', 'Users', 'users', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'bean_module', 'Users', 0, 0),
+('da749d84-3053-18ad-86d9-63ff3b12293e', 'projects_contacts', 'Project', 'project', 'id', 'Contacts', 'contacts', 'id', 'projects_contacts', 'project_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
+('daf30c6d-5e40-0ced-c7cf-63ff3bf713e8', 'users_email_addresses_primary', 'Users', 'users', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'primary_address', '1', 0, 0),
+('db5ab3bc-7673-6a72-8f7c-63ff3b8c580b', 'projects_opportunities', 'Project', 'project', 'id', 'Opportunities', 'opportunities', 'id', 'projects_opportunities', 'project_id', 'opportunity_id', 'many-to-many', NULL, NULL, 0, 0),
+('dc177c6f-09bc-86b2-efa6-63ff3b2e48ea', 'opportunities_campaign', 'Campaigns', 'campaigns', 'id', 'Opportunities', 'opportunities', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('dca22569-9b18-a21a-612c-63ff3baffeae', 'acl_roles_actions', 'ACLRoles', 'acl_roles', 'id', 'ACLActions', 'acl_actions', 'id', 'acl_roles_actions', 'role_id', 'action_id', 'many-to-many', NULL, NULL, 0, 0),
+('dd7626a2-53bc-bda0-7e6a-63ff3b6e405c', 'opportunity_aos_quotes', 'Opportunities', 'opportunities', 'id', 'AOS_Quotes', 'aos_quotes', 'opportunity_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('dd96aac1-05c8-9c13-f35a-63ff3b203989', 'acl_roles_users', 'ACLRoles', 'acl_roles', 'id', 'Users', 'users', 'id', 'acl_roles_users', 'role_id', 'user_id', 'many-to-many', NULL, NULL, 0, 0),
+('ddc7c1c9-8a67-132b-61d1-63ff3bb0991f', 'consumer_tokens', 'OAuthKeys', 'oauth_consumer', 'id', 'OAuthTokens', 'oauth_tokens', 'consumer', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('ddcc6f43-f199-974e-4a4a-63ff3b70424b', 'aos_products_modified_user', 'Users', 'users', 'id', 'AOS_Products', 'aos_products', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('de5501cb-3df5-1126-ceb7-63ff3b155291', 'opportunity_aos_contracts', 'Opportunities', 'opportunities', 'id', 'AOS_Contracts', 'aos_contracts', 'opportunity_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('de8c6f0f-d8ab-4437-5ba9-63ff3b57c666', 'email_marketing_prospect_lists', 'EmailMarketing', 'email_marketing', 'id', 'ProspectLists', 'prospect_lists', 'id', 'email_marketing_prospect_lists', 'email_marketing_id', 'prospect_list_id', 'many-to-many', NULL, NULL, 0, 0),
+('df0c8094-5566-ce9a-2226-63ff3be68585', 'oauthtokens_assigned_user', 'Users', 'users', 'id', 'OAuthTokens', 'oauth_tokens', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('df0f9f83-d760-54d9-d067-63ff3b505f23', 'aos_products_created_by', 'Users', 'users', 'id', 'AOS_Products', 'aos_products', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('df73d8dd-2220-6b51-7a06-63ff3ba9058f', 'leads_documents', 'Leads', 'leads', 'id', 'Documents', 'documents', 'id', 'linked_documents', 'parent_id', 'document_id', 'many-to-many', 'parent_type', 'Leads', 0, 0),
+('dff3bd6a-5322-4884-14e4-63ff3bd30015', 'aos_products_assigned_user', 'Users', 'users', 'id', 'AOS_Products', 'aos_products', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('e08790d6-a23f-fe61-6ad2-63ff3b229e2f', 'documents_accounts', 'Documents', 'documents', 'id', 'Accounts', 'accounts', 'id', 'documents_accounts', 'document_id', 'account_id', 'many-to-many', NULL, NULL, 0, 0),
+('e0e24886-be7e-e838-4a89-63ff3b878012', 'product_categories', 'AOS_Product_Categories', 'aos_product_categories', 'id', 'AOS_Products', 'aos_products', 'aos_product_category_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('e1748db6-c53f-b240-2405-63ff3be7601b', 'documents_contacts', 'Documents', 'documents', 'id', 'Contacts', 'contacts', 'id', 'documents_contacts', 'document_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
+('e1d37420-d3d2-04ca-1ed8-63ff3bceada3', 'campaignlog_contact', 'CampaignLog', 'campaign_log', 'related_id', 'Contacts', 'contacts', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('e2acde07-ebf2-a594-b5c7-63ff3b160043', 'documents_opportunities', 'Documents', 'documents', 'id', 'Opportunities', 'opportunities', 'id', 'documents_opportunities', 'document_id', 'opportunity_id', 'many-to-many', NULL, NULL, 0, 0),
+('e349d87f-392a-83d2-a24a-63ff3bce8e0a', 'campaignlog_lead', 'CampaignLog', 'campaign_log', 'related_id', 'Leads', 'leads', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('e3b30ca1-92fe-b029-934f-63ff3bceed0e', 'documents_cases', 'Documents', 'documents', 'id', 'Cases', 'cases', 'id', 'documents_cases', 'document_id', 'case_id', 'many-to-many', NULL, NULL, 0, 0),
+('e45e5cb9-fb13-5e93-0b82-63ff3b1c00bb', 'campaignlog_created_opportunities', 'CampaignLog', 'campaign_log', 'related_id', 'Opportunities', 'opportunities', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('e4a85e2c-5b91-8341-51b3-63ff3b22cf4c', 'documents_bugs', 'Documents', 'documents', 'id', 'Bugs', 'bugs', 'id', 'documents_bugs', 'document_id', 'bug_id', 'many-to-many', NULL, NULL, 0, 0),
+('e578ea06-18a3-5f1d-512f-63ff3bb5c96c', 'campaignlog_targeted_users', 'CampaignLog', 'campaign_log', 'target_id', 'Users', 'users', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('e590ac7d-1da1-24a1-9ef5-63ff3bafc885', 'accounts_leads_1', 'Accounts', 'accounts', 'id', 'Leads', 'leads', 'id', 'accounts_leads_1_c', 'accounts_leads_1accounts_ida', 'accounts_leads_1leads_idb', 'many-to-many', NULL, NULL, 0, 0),
+('e64ea5aa-c683-030e-65d0-63ff3b24bc4d', 'emailtemplates_assigned_user', 'Users', 'users', 'id', 'EmailTemplates', 'email_templates', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('e6795140-9d3e-06ac-abd0-63ff3ba9f6f6', 'accounts_opportunities_1', 'Accounts', 'accounts', 'id', 'Opportunities', 'opportunities', 'id', 'accounts_opportunities_1_c', 'accounts_opportunities_1accounts_ida', 'accounts_opportunities_1opportunities_idb', 'many-to-many', NULL, NULL, 0, 0),
+('e6a32511-576f-84f4-13a7-63ff3bf3c921', 'campaignlog_sent_emails', 'CampaignLog', 'campaign_log', 'related_id', 'Emails', 'emails', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('e705067d-eecc-07f0-eeab-63ff3b3b9136', 'fp_events_contacts', 'FP_events', 'fp_events', 'id', 'Contacts', 'contacts', 'id', 'fp_events_contacts_c', 'fp_events_contactsfp_events_ida', 'fp_events_contactscontacts_idb', 'many-to-many', NULL, NULL, 0, 0),
+('e75eacaa-4e4f-0305-1d3f-63ff3b0883fc', 'accounts_tasks_1', 'Accounts', 'accounts', 'id', 'Tasks', 'tasks', 'id', 'accounts_tasks_1_c', 'accounts_tasks_1accounts_ida', 'accounts_tasks_1tasks_idb', 'many-to-many', NULL, NULL, 0, 0),
+('e761187a-f4d9-c7dc-2c78-63ff3be97f26', 'jjwg_markers_modified_user', 'Users', 'users', 'id', 'jjwg_Markers', 'jjwg_markers', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('e84581f8-3107-301d-7a28-63ff3b8e0ca8', 'am_projectholidays_project', 'Project', 'project', 'id', 'AM_ProjectHolidays', 'am_projectholidays', 'id', 'am_projectholidays_project_c', 'am_projectholidays_projectproject_ida', 'am_projectholidays_projectam_projectholidays_idb', 'many-to-many', NULL, NULL, 0, 0),
+('e8deb536-76aa-9063-942a-63ff3b53c36c', 'jjwg_markers_created_by', 'Users', 'users', 'id', 'jjwg_Markers', 'jjwg_markers', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('e93f89b9-bd87-19bf-6967-63ff3bb49ece', 'am_projecttemplates_project_1', 'AM_ProjectTemplates', 'am_projecttemplates', 'id', 'Project', 'project', 'id', 'am_projecttemplates_project_1_c', 'am_projecttemplates_project_1am_projecttemplates_ida', 'am_projecttemplates_project_1project_idb', 'many-to-many', NULL, NULL, 0, 0),
+('e9d32381-97ab-8d8f-b8eb-63ff3b31f1fe', 'jjwg_markers_assigned_user', 'Users', 'users', 'id', 'jjwg_Markers', 'jjwg_markers', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('ea2e9774-2bc4-d41a-702c-63ff3b8805df', 'am_tasktemplates_am_projecttemplates', 'AM_ProjectTemplates', 'am_projecttemplates', 'id', 'AM_TaskTemplates', 'am_tasktemplates', 'id', 'am_tasktemplates_am_projecttemplates_c', 'am_tasktemplates_am_projecttemplatesam_projecttemplates_ida', 'am_tasktemplates_am_projecttemplatesam_tasktemplates_idb', 'many-to-many', NULL, NULL, 0, 0),
+('eb142c47-c489-b137-1b6d-63ff3b1af8cc', 'aos_contracts_documents', 'AOS_Contracts', 'aos_contracts', 'id', 'Documents', 'documents', 'id', 'aos_contracts_documents', 'aos_contracts_id', 'documents_id', 'many-to-many', NULL, NULL, 0, 0),
+('ebfebdfe-6145-43ec-461d-63ff3b55dfe6', 'fp_events_modified_user', 'Users', 'users', 'id', 'FP_events', 'fp_events', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('ec20961e-dd36-ed17-3c7c-63ff3bc70cb1', 'aos_quotes_aos_contracts', 'AOS_Quotes', 'aos_quotes', 'id', 'AOS_Contracts', 'aos_contracts', 'id', 'aos_quotes_os_contracts_c', 'aos_quotese81e_quotes_ida', 'aos_quotes4dc0ntracts_idb', 'many-to-many', NULL, NULL, 0, 0),
+('ed45ec30-c84e-80f5-b1bb-63ff3b7bbf2b', 'fp_events_created_by', 'Users', 'users', 'id', 'FP_events', 'fp_events', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('ed4d6b02-0f00-27bb-9f96-63ff3b9e121e', 'aos_products_quotes_modified_user', 'Users', 'users', 'id', 'AOS_Products_Quotes', 'aos_products_quotes', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('ed55d7c4-b7f6-dd0b-7d24-63ff3b0fed59', 'aos_quotes_aos_invoices', 'AOS_Quotes', 'aos_quotes', 'id', 'AOS_Invoices', 'aos_invoices', 'id', 'aos_quotes_aos_invoices_c', 'aos_quotes77d9_quotes_ida', 'aos_quotes6b83nvoices_idb', 'many-to-many', NULL, NULL, 0, 0),
+('ee21eff6-5ef4-774f-7e23-63ff3b023fae', 'fp_events_assigned_user', 'Users', 'users', 'id', 'FP_events', 'fp_events', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('ee3d115a-3fb5-5c05-cbc8-63ff3bec7adf', 'aos_quotes_project', 'AOS_Quotes', 'aos_quotes', 'id', 'Project', 'project', 'id', 'aos_quotes_project_c', 'aos_quotes1112_quotes_ida', 'aos_quotes7207project_idb', 'many-to-many', NULL, NULL, 0, 0),
+('ee910277-fff3-dd21-0948-63ff3b6f200c', 'aos_products_quotes_created_by', 'Users', 'users', 'id', 'AOS_Products_Quotes', 'aos_products_quotes', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('ef1fc50e-3697-7869-a829-63ff3bfb038e', 'aow_processed_aow_actions', 'AOW_Processed', 'aow_processed', 'id', 'AOW_Actions', 'aow_actions', 'id', 'aow_processed_aow_actions', 'aow_processed_id', 'aow_action_id', 'many-to-many', NULL, NULL, 0, 0),
+('ef7ad09c-a870-42f5-904d-63ff3b7dd5e6', 'aos_products_quotes_assigned_user', 'Users', 'users', 'id', 'AOS_Products_Quotes', 'aos_products_quotes', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('f0070b18-67d4-efae-f42a-63ff3b89cc43', 'emp_employees_at_attentance_1', 'EMP_Employees', 'emp_employees', 'id', 'at_Attentance', 'at_attentance', 'id', 'emp_employees_at_attentance_1_c', 'emp_employees_at_attentance_1emp_employees_ida', 'emp_employees_at_attentance_1at_attentance_idb', 'many-to-many', NULL, NULL, 0, 0),
+('f065db88-1f8f-8efa-ecc4-63ff3b051e57', 'aos_product_quotes_aos_products', 'AOS_Products', 'aos_products', 'id', 'AOS_Products_Quotes', 'aos_products_quotes', 'product_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('f0eb0026-503b-54ec-df76-63ff3b1c13a4', 'calls_modified_user', 'Users', 'users', 'id', 'Calls', 'calls', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('f0f3c4b2-a538-a498-0ae2-63ff3be2f34e', 'emp_employees_documents_1', 'EMP_Employees', 'emp_employees', 'id', 'Documents', 'documents', 'id', 'emp_employees_documents_1_c', 'emp_employees_documents_1emp_employees_ida', 'emp_employees_documents_1documents_idb', 'many-to-many', NULL, NULL, 0, 0),
+('f1d75415-4fb9-bf14-1541-63ff3b2d6a62', 'emp_employees_pro_projects_1', 'EMP_Employees', 'emp_employees', 'id', 'pro_Projects', 'pro_projects', 'id', 'emp_employees_pro_projects_1_c', 'emp_employees_pro_projects_1emp_employees_ida', 'emp_employees_pro_projects_1pro_projects_idb', 'many-to-many', NULL, NULL, 0, 0),
+('f30fe252-0dda-3ae1-3dd7-63ff3bbd25eb', 'emp_employees_sh_salary_history_1', 'EMP_Employees', 'emp_employees', 'id', 'sh_Salary_History', 'sh_salary_history', 'id', 'emp_employees_sh_salary_history_1_c', 'emp_employees_sh_salary_history_1emp_employees_ida', 'emp_employees_sh_salary_history_1sh_salary_history_idb', 'many-to-many', NULL, NULL, 0, 0),
+('f31ffe83-bcfd-d329-74f1-63ff3bcd30fc', 'notes_assigned_user', 'Users', 'users', 'id', 'Notes', 'notes', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('f324d83e-b785-560f-d82c-63ff3be3ecdb', 'projects_notes', 'Project', 'project', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Project', 0, 0),
+('fb5606e2-bbf2-0e8b-4860-63ff3bd12c76', 'fp_events_fp_event_locations_1', 'FP_events', 'fp_events', 'id', 'FP_Event_Locations', 'fp_event_locations', 'id', 'fp_events_fp_event_locations_1_c', 'fp_events_fp_event_locations_1fp_events_ida', 'fp_events_fp_event_locations_1fp_event_locations_idb', 'many-to-many', NULL, NULL, 0, 0),
+('fe300f7f-7e85-83be-0e3e-63ff3be8131f', 'emp_employee_list_at_attentance_1', 'EMP_Employee_List', 'emp_employee_list', 'id', 'at_Attentance', 'at_attentance', 'id', 'emp_employee_list_at_attentance_1_c', 'emp_employee_list_at_attentance_1emp_employee_list_ida', 'emp_employee_list_at_attentance_1at_attentance_idb', 'many-to-many', NULL, NULL, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -6179,6 +6304,7 @@ INSERT INTO `sh_salary_history` (`id`, `name`, `date_entered`, `date_modified`, 
 ('3e650d03-7e3a-c769-46ed-63d3b398d909', 'SLH_5', '2023-01-27 11:21:36', '2023-01-27 11:21:36', '1', '1', '', 0, NULL, 5),
 ('5db49c71-3350-55e8-0950-63d3b77a23a4', 'SLH_6', NULL, '2023-01-27 11:35:34', '1', '1', 'test', 0, NULL, 6),
 ('d8f5b02d-4a3a-9682-e91c-63903631bb09', 'SLH_3', '2022-12-07 06:45:01', '2023-01-24 06:23:29', '1', '1', 'testing', 1, '1', 3),
+('ddb45ace-061c-f43c-79bd-63f620512dfc', 'SLH_7', '2023-02-22 14:02:23', '2023-02-22 14:02:23', '1', '1', 'test', 0, NULL, 7),
 ('e9cb18e3-65d5-a354-f5c7-6388a1bb39a7', 'kamalesh', '2022-12-01 12:43:20', '2023-01-24 06:23:29', '1', '1', 'test', 1, '1', 1);
 
 -- --------------------------------------------------------
@@ -6225,7 +6351,81 @@ INSERT INTO `sh_salary_history_cstm` (`id_c`, `employe_salary_amont_c`, `employe
 ('3e650d03-7e3a-c769-46ed-63d3b398d909', 1223, '2023-01-07', NULL, 3, 'yyyy'),
 ('5db49c71-3350-55e8-0950-63d3b77a23a4', 122312, '2023-01-06', NULL, 3, 'kamalesh.K'),
 ('d8f5b02d-4a3a-9682-e91c-63903631bb09', 1223, '2022-12-01', '2022-11-30 23:00:00', NULL, NULL),
+('ddb45ace-061c-f43c-79bd-63f620512dfc', 7000, '2023-02-14', NULL, 1, 'mani'),
 ('e9cb18e3-65d5-a354-f5c7-6388a1bb39a7', 1223, '2022-12-09', '2022-12-08 23:00:00', NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sk_skill`
+--
+
+CREATE TABLE `sk_skill` (
+  `id` char(36) NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `date_entered` datetime DEFAULT NULL,
+  `date_modified` datetime DEFAULT NULL,
+  `modified_user_id` char(36) DEFAULT NULL,
+  `created_by` char(36) DEFAULT NULL,
+  `description` text,
+  `deleted` tinyint(1) DEFAULT '0',
+  `assigned_user_id` char(36) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `sk_skill`
+--
+
+INSERT INTO `sk_skill` (`id`, `name`, `date_entered`, `date_modified`, `modified_user_id`, `created_by`, `description`, `deleted`, `assigned_user_id`) VALUES
+('5c3cbdc0-46e3-4aac-fab5-63e9c77cb4f0', 'mani', '2023-02-13 05:17:48', '2023-02-23 04:45:47', '1', '1', NULL, 0, ''),
+('60e1cd4b-b3a1-177f-5ee3-63eb195bd4fc', 'karthi', '2023-02-14 05:17:05', '2023-02-23 04:46:09', '1', '1', NULL, 0, ''),
+('68689fc6-73a9-8110-d365-63eb43fef40f', 'kamalesh', '2023-02-14 08:16:09', '2023-02-23 04:43:52', '1', '1', NULL, 0, ''),
+('695c9ee1-d925-311e-feec-63f6ef6033ca', 'karan', '2023-02-23 04:45:16', '2023-02-23 04:45:16', '1', '1', NULL, 0, NULL),
+('90ac729c-16df-59fb-b021-63ea62bd8fa3', 'raj', '2023-02-13 16:16:22', '2023-02-14 07:49:48', '1', '1', NULL, 1, ''),
+('ef01054e-d73b-c93e-3046-63f6ef629224', 'vicky', '2023-02-23 04:44:27', '2023-02-23 04:44:27', '1', '1', NULL, 0, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sk_skill_audit`
+--
+
+CREATE TABLE `sk_skill_audit` (
+  `id` char(36) NOT NULL,
+  `parent_id` char(36) NOT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `created_by` varchar(36) DEFAULT NULL,
+  `field_name` varchar(100) DEFAULT NULL,
+  `data_type` varchar(100) DEFAULT NULL,
+  `before_value_string` varchar(255) DEFAULT NULL,
+  `after_value_string` varchar(255) DEFAULT NULL,
+  `before_value_text` text,
+  `after_value_text` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sk_skill_cstm`
+--
+
+CREATE TABLE `sk_skill_cstm` (
+  `id_c` char(36) NOT NULL,
+  `skill_name_c` varchar(255) DEFAULT NULL,
+  `skill_proficion_c` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `sk_skill_cstm`
+--
+
+INSERT INTO `sk_skill_cstm` (`id_c`, `skill_name_c`, `skill_proficion_c`) VALUES
+('5c3cbdc0-46e3-4aac-fab5-63e9c77cb4f0', 'Graphic Designer', 'Beginner'),
+('60e1cd4b-b3a1-177f-5ee3-63eb195bd4fc', 'UI Designer', 'Intermediate'),
+('68689fc6-73a9-8110-d365-63eb43fef40f', 'game developer', 'Beginner'),
+('695c9ee1-d925-311e-feec-63f6ef6033ca', 'CRM  Services', 'Advanced'),
+('90ac729c-16df-59fb-b021-63ea62bd8fa3', 'Engineer', 'Beginner'),
+('ef01054e-d73b-c93e-3046-63f6ef629224', 'App Developer', 'Beginner');
 
 -- --------------------------------------------------------
 
@@ -6545,18 +6745,37 @@ INSERT INTO `tracker` (`id`, `monitor_id`, `user_id`, `module_name`, `item_id`, 
 (681, '2c0ddff1-d8c7-34bb-d402-63d79ad8e323', '1', 'Accounts', '1509469a-e1a7-4908-67b6-6394265cb78a', 'kamalesh', '2023-01-30 10:21:31', 'detailview', '0ia024v9jepidlm08no6rj4cc5', 1, 0),
 (732, '7386999b-c03c-3fa0-fe08-63d7b930141a', '1', 'ACLRoles', '6107ef79-7840-b925-6480-6350e837e5cc', 'Admin', '2023-01-30 12:34:43', 'detailview', '0ia024v9jepidlm08no6rj4cc5', 0, 0),
 (748, '49586db9-ef33-7d3b-7af9-63d7cb1a5980', '1', 'Users', 'cedc344d-e69a-331d-33cb-63943345eb53', 'test', '2023-01-30 13:52:42', 'detailview', '0ia024v9jepidlm08no6rj4cc5', 1, 0),
-(761, 'a8ae1a04-ee1e-4918-3db9-63d7d0a1a544', '1', 'Users', '42e1c8dc-ae01-9efb-5fee-63d7ceb668ef', 'Ragu Kumar', '2023-01-30 14:14:03', 'detailview', 'if32drtuvvjd0p75n18s6bd3n0', 1, 0),
-(791, '2ac27c1d-ec4c-24a2-bc76-63d92124d01f', '1', 'at_Attentance', 'd9675e71-2598-b64d-a6af-63d3b32db81f', 'ATT_9', '2023-01-31 14:09:57', 'detailview', 'vgidd1msmloc6b5thp9cfkpq30', 1, 0),
-(796, 'dc620260-a770-502b-f750-63d9ec2f5d88', '1', 'ACLRoles', '46f0b097-365e-001e-94fe-63d7b914542e', 'Administration', '2023-02-01 04:37:43', 'detailview', '3k4rvu1hlvlpt2hq94agkd52u0', 1, 0),
-(798, '20e2342c-9f22-bf0c-5943-63d9ecc76ac4', '1', 'EMP_Employee_List', '55de057b-8cc0-423f-18cb-63d3ba47c4d2', 'EMP_3', '2023-02-01 04:38:38', 'detailview', '3k4rvu1hlvlpt2hq94agkd52u0', 1, 0),
-(800, '58a56740-db8b-10cc-22a6-63d9f07c8cd1', '1', 'Users', '1', 'Kamalesh Administrator', '2023-02-01 04:55:34', 'detailview', '3k4rvu1hlvlpt2hq94agkd52u0', 1, 0),
 (802, 'b6b51145-1d82-f7db-57f6-63d9fb011ddd', '1', 'sh_Salary_History', '3e650d03-7e3a-c769-46ed-63d3b398d909', 'SLH_5', '2023-02-01 05:40:46', 'detailview', 'a33jvsbls7b82fbgo8ld9vpn23', 1, 0),
 (808, '58f5315f-9a79-8ed6-e64c-63da1049ade2', '1', 'Leads', '2653a62e-19ca-b543-142f-63942407df80', 'Mr. kamalesh kali', '2023-02-01 07:12:59', 'detailview', 'a33jvsbls7b82fbgo8ld9vpn23', 1, 0),
-(823, '3691649d-8b0b-b74d-7c9a-63db585cc0e1', '1', 'ACLRoles', 'c2012072-6d7a-c77d-e70f-63d7b9315945', 'Employee', '2023-02-02 06:30:24', 'detailview', 'ml6uou7b7j4nrn5a6u27qenq17', 1, 0),
-(825, 'c617363e-4e0b-03b1-1b34-63dbc36fea83', '1', 'EMP_Employee_List', '1b1f65dd-3f65-dfd6-e636-63d3c2f4ad2e', 'EMP_4', '2023-02-02 14:06:42', 'detailview', 'qokgpjs96n1rpng76oc1qf3536', 1, 0),
-(826, 'a926ece0-dcff-e47e-ea7c-63dbc3fe5051', '1', 'EMP_Employee_List', '28e7bb6e-ffd9-89a5-1af9-63d0c1069938', 'EMP_1', '2023-02-02 14:06:49', 'detailview', 'qokgpjs96n1rpng76oc1qf3536', 1, 0),
-(828, '5bd20cc0-7c65-b9f7-3c11-63dcb1c54c10', '1', 'pro_Projects', '6baefc3b-b985-a6d4-73cc-63d3b5c3f3ba', 'PRO_7', '2023-02-03 07:02:46', 'editview', 'k4aehok6n1h932p8p37lsiddr5', 1, 0),
-(836, '4a0ed5df-3ea0-ccf6-79fa-63dcb49f0bdd', '1', 'PAY_Payments', '55007ae1-476a-c74a-bd9e-63da16def25c', 'kamalesh', '2023-02-03 07:14:17', 'editview', 'k4aehok6n1h932p8p37lsiddr5', 1, 0);
+(843, 'edba05cd-f6fe-9cd8-029b-63e4d2860f3a', '1', 'at_Attentance', 'd9675e71-2598-b64d-a6af-63d3b32db81f', 'ATT_9', '2023-02-09 11:02:30', 'detailview', '2gi6schso4dco8m50ui8d50df5', 1, 0),
+(882, '41a4f172-510f-b21f-2b5d-63eb3d6036c1', '1', 'SK_Skill', '90ac729c-16df-59fb-b021-63ea62bd8fa3', 'raj', '2023-02-14 07:49:39', 'detailview', 'ecoq3hjqb30udu02shssu93gr0', 0, 0),
+(888, 'c2d3994a-fdb9-d9a1-c330-63edbb2907fc', '1', 'Employees', 'a239f89f-027f-ae86-b05b-63e4a3c5e538', 'vicky test', '2023-02-16 05:13:14', 'detailview', '6cu24k84aoq0dor6tr1brs6643', 1, 0),
+(893, 'b562ce61-59ec-8b31-e292-63edbdcf1402', '1', 'Users', '42e1c8dc-ae01-9efb-5fee-63d7ceb668ef', 'Ragu Kumar', '2023-02-16 05:21:27', 'detailview', '6cu24k84aoq0dor6tr1brs6643', 1, 0),
+(896, 'be66f0f4-d3b3-ae85-0838-63ef1fc3a45e', '1', 'ACLRoles', 'c2012072-6d7a-c77d-e70f-63d7b9315945', 'Employee', '2023-02-17 06:34:32', 'detailview', 'a1o84pb1hq5p5hoa0jv8vhjpc5', 1, 0),
+(897, '938ea662-582a-22ea-4b53-63ef204e6926', '1', 'ACLRoles', '46f0b097-365e-001e-94fe-63d7b914542e', 'Administration', '2023-02-17 06:34:41', 'detailview', 'a1o84pb1hq5p5hoa0jv8vhjpc5', 1, 0),
+(899, 'f090ee8d-998a-af8d-74da-63ef2c81afe2', '1', 'Users', '1', 'Kamalesh Administrator', '2023-02-17 07:29:35', 'editview', 'a1o84pb1hq5p5hoa0jv8vhjpc5', 1, 0),
+(937, '674377c4-9596-1b80-60dc-63f4a24e6a53', '1', 'EMP_Employee_List', '55de057b-8cc0-423f-18cb-63d3ba47c4d2', 'EMP_3', '2023-02-21 10:51:11', 'detailview', 'ju5fee4d96jg2i28cisslhn6b5', 1, 0),
+(951, '59e56b36-49e0-9fe5-f3df-63f5a1ec9ef5', '1', 'pro_Projects', '4c7b7103-b5ef-3c17-5b99-63f2ffdb27a6', 'PRO_8', '2023-02-22 05:00:34', 'detailview', 'fqidkvahpa9ljfpvvviqjpccg3', 1, 0),
+(967, '6a3272fa-4fb3-74f1-a3b6-63f5bfe49b6b', '1', 'at_Attentance', '13480227-3f80-a014-351c-63d3b4736d3e', 'ATT_10', '2023-02-22 07:09:28', 'detailview', 'fqidkvahpa9ljfpvvviqjpccg3', 0, 0),
+(968, '4c28f720-18c5-81d5-cd24-63f5bfd3f692', '1', 'EMP_Employee_List', '28e7bb6e-ffd9-89a5-1af9-63d0c1069938', 'EMP_1', '2023-02-22 07:09:46', 'detailview', 'fqidkvahpa9ljfpvvviqjpccg3', 1, 0),
+(973, '96ef8744-40ad-996a-b515-63f5f104d84c', '1', 'EMP_Employee_List', '344b0904-cbdb-dcdd-0b5c-63f5a4745aa5', 'EMP_6', '2023-02-22 10:41:08', 'detailview', 'fqidkvahpa9ljfpvvviqjpccg3', 1, 0),
+(979, 'a3579770-a0ea-341b-7f56-63f61fb81c96', '1', 'at_Attentance', '300cadf5-b3b8-c036-0b5a-63f61fcc7abc', 'ATT_13', '2023-02-22 13:59:15', 'detailview', 'fqidkvahpa9ljfpvvviqjpccg3', 1, 0),
+(981, '66448264-9914-d3c9-66ce-63f624ceee1c', '1', 'PAY_Payments', '55007ae1-476a-c74a-bd9e-63da16def25c', 'kamalesh', '2023-02-22 14:18:30', 'detailview', 'fqidkvahpa9ljfpvvviqjpccg3', 1, 0),
+(982, '1eb72f4e-1848-b5ef-5d5f-63f624f7eb5a', '1', 'PAY_Payments', '21794ff6-3240-07f1-20e9-63f62425babb', 'ATT_2', '2023-02-22 14:18:57', 'detailview', 'fqidkvahpa9ljfpvvviqjpccg3', 1, 0),
+(985, '8224c545-dbfb-5200-271b-63f6efcb6062', '1', 'SK_Skill', '68689fc6-73a9-8110-d365-63eb43fef40f', 'kamalesh', '2023-02-23 04:43:55', 'detailview', '58plgu0bqbf4r0p6ssp37h3db2', 1, 0),
+(986, 'b4c704b6-64aa-aea5-ae01-63f6efd068af', '1', 'SK_Skill', 'ef01054e-d73b-c93e-3046-63f6ef629224', 'vicky', '2023-02-23 04:44:28', 'detailview', '58plgu0bqbf4r0p6ssp37h3db2', 1, 0),
+(987, '46c479db-330a-d37d-6682-63f6ef7aec34', '1', 'SK_Skill', '695c9ee1-d925-311e-feec-63f6ef6033ca', 'karan', '2023-02-23 04:45:17', 'detailview', '58plgu0bqbf4r0p6ssp37h3db2', 1, 0),
+(990, 'b17ca2b1-ecd5-bb31-1bc6-63f6efac0e1e', '1', 'SK_Skill', '5c3cbdc0-46e3-4aac-fab5-63e9c77cb4f0', 'mani', '2023-02-23 04:45:49', 'detailview', '58plgu0bqbf4r0p6ssp37h3db2', 1, 0),
+(993, '5991baf8-e3a0-586a-7aa6-63f6ef24eadf', '1', 'SK_Skill', '60e1cd4b-b3a1-177f-5ee3-63eb195bd4fc', 'karthi', '2023-02-23 04:46:11', 'detailview', '58plgu0bqbf4r0p6ssp37h3db2', 1, 0),
+(1002, '83b9279e-05e6-a41b-11b2-63f74590ccfa', '1', 'PAY_Payments', '915b3b90-74f9-2c97-4809-63f74474dc1d', 'ATT_3', '2023-02-23 10:50:45', 'editview', '58plgu0bqbf4r0p6ssp37h3db2', 1, 0),
+(1006, '13d1e42a-3a01-fd3a-10cd-63fed56dd305', '1', 'EMP_Employee_List', '81a1ade6-8a93-f010-f494-63f5fa4fe72b', 'EMP_7', '2023-03-01 04:33:49', 'detailview', 'p3n9ca76vot7l60ll8pu16int0', 1, 0),
+(1012, 'dd5218dd-6a1b-fc6e-6c81-63ff3a639caf', '1', 'EMP_Employee_List', '508492db-9f9c-45e4-c9d3-63f4c90d7ec7', 'EMP_5', '2023-03-01 11:46:02', 'detailview', 'ii9v4sofag41gardgqdmkkhhn5', 1, 0),
+(1013, '268aecf0-566b-9c1c-1152-63ff3bbbc703', '1', 'pro_Projects', '5f9d8183-5ee9-394f-651e-63f5c95bb6ca', 'PRO_10', '2023-03-01 11:46:14', 'detailview', 'ii9v4sofag41gardgqdmkkhhn5', 1, 0),
+(1014, '7800a3d2-f479-d9db-34ff-63ff3b454768', '1', 'pro_Projects', '5c7abcb2-e4db-5d0d-d335-63f5b87a74ee', 'PRO_9', '2023-03-01 11:46:55', 'detailview', 'ii9v4sofag41gardgqdmkkhhn5', 1, 0),
+(1016, 'a161a5d5-c9b0-a713-64ef-63ff50389583', '1', 'pro_Projects', '6baefc3b-b985-a6d4-73cc-63d3b5c3f3ba', 'PRO_7', '2023-03-01 13:19:32', 'detailview', 'ii9v4sofag41gardgqdmkkhhn5', 1, 0),
+(1017, 'bf948f31-c375-ea5a-d717-63ff50a17823', '1', 'EMP_Employee_List', '1b1f65dd-3f65-dfd6-e636-63d3c2f4ad2e', 'EMP_4', '2023-03-01 13:19:37', 'detailview', 'ii9v4sofag41gardgqdmkkhhn5', 1, 0),
+(1019, '6dc86265-926e-c906-4520-640971f5ff43', '1', 'sh_Salary_History', 'ddb45ace-061c-f43c-79bd-63f620512dfc', 'SLH_7', '2023-03-09 05:41:00', 'detailview', 'on3ogo682245mlrto7u5u9bq61', 1, 0),
+(1020, '967e0aaa-0934-f9a2-d659-640971276c94', '1', 'EMP_Employee_List', 'b60c5610-6fa0-1c8d-79fc-63f5fbc8becf', 'EMP_8', '2023-03-09 05:41:06', 'detailview', 'on3ogo682245mlrto7u5u9bq61', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -6585,6 +6804,7 @@ CREATE TABLE `upgrade_history` (
 
 INSERT INTO `upgrade_history` (`id`, `filename`, `md5sum`, `type`, `status`, `version`, `name`, `description`, `id_name`, `manifest`, `date_entered`, `enabled`) VALUES
 ('1b7e83b5-3f13-ea5a-9d74-63d9f59868c3', 'upload/upgrades/module/Payments2023_02_01_061429.zip', '0bedae7a51e56a8e7b8d516183bb4a1f', 'module', 'installed', '1675228468', 'Payments', '', 'Payments', 'YTozOntzOjg6Im1hbmlmZXN0IjthOjEzOntpOjA7YToxOntzOjI1OiJhY2NlcHRhYmxlX3N1Z2FyX3ZlcnNpb25zIjthOjE6e2k6MDtzOjA6IiI7fX1pOjE7YToxOntzOjI0OiJhY2NlcHRhYmxlX3N1Z2FyX2ZsYXZvcnMiO2E6Mzp7aTowO3M6MjoiQ0UiO2k6MTtzOjM6IlBSTyI7aToyO3M6MzoiRU5UIjt9fXM6NjoicmVhZG1lIjtzOjA6IiI7czozOiJrZXkiO3M6MzoiUEFZIjtzOjY6ImF1dGhvciI7czo4OiJrYW1hbGVzaCI7czoxMToiZGVzY3JpcHRpb24iO3M6MDoiIjtzOjQ6Imljb24iO3M6MDoiIjtzOjE2OiJpc191bmluc3RhbGxhYmxlIjtiOjE7czo0OiJuYW1lIjtzOjg6IlBheW1lbnRzIjtzOjE0OiJwdWJsaXNoZWRfZGF0ZSI7czoxOToiMjAyMy0wMi0wMSAwNToxNDoyOCI7czo0OiJ0eXBlIjtzOjY6Im1vZHVsZSI7czo3OiJ2ZXJzaW9uIjtpOjE2NzUyMjg0Njg7czoxMzoicmVtb3ZlX3RhYmxlcyI7czo2OiJwcm9tcHQiO31zOjExOiJpbnN0YWxsZGVmcyI7YTo3OntzOjI6ImlkIjtzOjg6IlBheW1lbnRzIjtzOjU6ImJlYW5zIjthOjE6e2k6MDthOjQ6e3M6NjoibW9kdWxlIjtzOjEyOiJQQVlfUGF5bWVudHMiO3M6NToiY2xhc3MiO3M6MTI6IlBBWV9QYXltZW50cyI7czo0OiJwYXRoIjtzOjM3OiJtb2R1bGVzL1BBWV9QYXltZW50cy9QQVlfUGF5bWVudHMucGhwIjtzOjM6InRhYiI7YjoxO319czoxMDoibGF5b3V0ZGVmcyI7YTowOnt9czoxMzoicmVsYXRpb25zaGlwcyI7YTowOnt9czo5OiJpbWFnZV9kaXIiO3M6MTY6IjxiYXNlcGF0aD4vaWNvbnMiO3M6NDoiY29weSI7YToxOntpOjA7YToyOntzOjQ6ImZyb20iO3M6NDQ6IjxiYXNlcGF0aD4vU3VnYXJNb2R1bGVzL21vZHVsZXMvUEFZX1BheW1lbnRzIjtzOjI6InRvIjtzOjIwOiJtb2R1bGVzL1BBWV9QYXltZW50cyI7fX1zOjg6Imxhbmd1YWdlIjthOjE6e2k6MDthOjM6e3M6NDoiZnJvbSI7czo1OToiPGJhc2VwYXRoPi9TdWdhck1vZHVsZXMvbGFuZ3VhZ2UvYXBwbGljYXRpb24vZW5fdXMubGFuZy5waHAiO3M6OToidG9fbW9kdWxlIjtzOjExOiJhcHBsaWNhdGlvbiI7czo4OiJsYW5ndWFnZSI7czo1OiJlbl91cyI7fX19czoxNjoidXBncmFkZV9tYW5pZmVzdCI7czowOiIiO30=', '2023-02-01 05:14:28', 1),
+('3badb5eb-725c-8d8a-4134-63f34c07dc23', 'upload/upgrades/module/Clients2023_02_20_113139.zip', 'aaf339dcfb7c69459bd9ecf5f07262bf', 'module', 'installed', '1676889099', 'Clients', '', 'Clients', 'YTozOntzOjg6Im1hbmlmZXN0IjthOjEzOntpOjA7YToxOntzOjI1OiJhY2NlcHRhYmxlX3N1Z2FyX3ZlcnNpb25zIjthOjE6e2k6MDtzOjA6IiI7fX1pOjE7YToxOntzOjI0OiJhY2NlcHRhYmxlX3N1Z2FyX2ZsYXZvcnMiO2E6Mzp7aTowO3M6MjoiQ0UiO2k6MTtzOjM6IlBSTyI7aToyO3M6MzoiRU5UIjt9fXM6NjoicmVhZG1lIjtzOjA6IiI7czozOiJrZXkiO3M6MzoiQ0xJIjtzOjY6ImF1dGhvciI7czo4OiJrYW1hbGVzaCI7czoxMToiZGVzY3JpcHRpb24iO3M6MDoiIjtzOjQ6Imljb24iO3M6MDoiIjtzOjE2OiJpc191bmluc3RhbGxhYmxlIjtiOjE7czo0OiJuYW1lIjtzOjc6IkNsaWVudHMiO3M6MTQ6InB1Ymxpc2hlZF9kYXRlIjtzOjE5OiIyMDIzLTAyLTIwIDEwOjMxOjM4IjtzOjQ6InR5cGUiO3M6NjoibW9kdWxlIjtzOjc6InZlcnNpb24iO2k6MTY3Njg4OTA5OTtzOjEzOiJyZW1vdmVfdGFibGVzIjtzOjY6InByb21wdCI7fXM6MTE6Imluc3RhbGxkZWZzIjthOjc6e3M6MjoiaWQiO3M6NzoiQ2xpZW50cyI7czo1OiJiZWFucyI7YToxOntpOjA7YTo0OntzOjY6Im1vZHVsZSI7czoxMToiQ0xJX0NsaWVudHMiO3M6NToiY2xhc3MiO3M6MTE6IkNMSV9DbGllbnRzIjtzOjQ6InBhdGgiO3M6MzU6Im1vZHVsZXMvQ0xJX0NsaWVudHMvQ0xJX0NsaWVudHMucGhwIjtzOjM6InRhYiI7YjoxO319czoxMDoibGF5b3V0ZGVmcyI7YTowOnt9czoxMzoicmVsYXRpb25zaGlwcyI7YTowOnt9czo5OiJpbWFnZV9kaXIiO3M6MTY6IjxiYXNlcGF0aD4vaWNvbnMiO3M6NDoiY29weSI7YToxOntpOjA7YToyOntzOjQ6ImZyb20iO3M6NDM6IjxiYXNlcGF0aD4vU3VnYXJNb2R1bGVzL21vZHVsZXMvQ0xJX0NsaWVudHMiO3M6MjoidG8iO3M6MTk6Im1vZHVsZXMvQ0xJX0NsaWVudHMiO319czo4OiJsYW5ndWFnZSI7YToxOntpOjA7YTozOntzOjQ6ImZyb20iO3M6NTk6IjxiYXNlcGF0aD4vU3VnYXJNb2R1bGVzL2xhbmd1YWdlL2FwcGxpY2F0aW9uL2VuX3VzLmxhbmcucGhwIjtzOjk6InRvX21vZHVsZSI7czoxMToiYXBwbGljYXRpb24iO3M6ODoibGFuZ3VhZ2UiO3M6NToiZW5fdXMiO319fXM6MTY6InVwZ3JhZGVfbWFuaWZlc3QiO3M6MDoiIjt9', '2023-02-20 10:31:38', 1),
 ('3bdbe316-4fbc-7182-2aad-638b364ebc1e', 'upload/upgrades/module/Projects2022_12_03_124149.zip', '2f47809b3f088e1248ab4153927d47c8', 'module', 'installed', '1670067709', 'Projects', '', 'Projects', 'YTozOntzOjg6Im1hbmlmZXN0IjthOjEzOntpOjA7YToxOntzOjI1OiJhY2NlcHRhYmxlX3N1Z2FyX3ZlcnNpb25zIjthOjE6e2k6MDtzOjA6IiI7fX1pOjE7YToxOntzOjI0OiJhY2NlcHRhYmxlX3N1Z2FyX2ZsYXZvcnMiO2E6Mzp7aTowO3M6MjoiQ0UiO2k6MTtzOjM6IlBSTyI7aToyO3M6MzoiRU5UIjt9fXM6NjoicmVhZG1lIjtzOjA6IiI7czozOiJrZXkiO3M6MzoicHJvIjtzOjY6ImF1dGhvciI7czo4OiJrYW1hbGVzaCI7czoxMToiZGVzY3JpcHRpb24iO3M6MDoiIjtzOjQ6Imljb24iO3M6MDoiIjtzOjE2OiJpc191bmluc3RhbGxhYmxlIjtiOjE7czo0OiJuYW1lIjtzOjg6IlByb2plY3RzIjtzOjE0OiJwdWJsaXNoZWRfZGF0ZSI7czoxOToiMjAyMi0xMi0wMyAxMTo0MTo0OSI7czo0OiJ0eXBlIjtzOjY6Im1vZHVsZSI7czo3OiJ2ZXJzaW9uIjtpOjE2NzAwNjc3MDk7czoxMzoicmVtb3ZlX3RhYmxlcyI7czo2OiJwcm9tcHQiO31zOjExOiJpbnN0YWxsZGVmcyI7YTo3OntzOjI6ImlkIjtzOjg6IlByb2plY3RzIjtzOjU6ImJlYW5zIjthOjE6e2k6MDthOjQ6e3M6NjoibW9kdWxlIjtzOjEyOiJwcm9fUHJvamVjdHMiO3M6NToiY2xhc3MiO3M6MTI6InByb19Qcm9qZWN0cyI7czo0OiJwYXRoIjtzOjM3OiJtb2R1bGVzL3Byb19Qcm9qZWN0cy9wcm9fUHJvamVjdHMucGhwIjtzOjM6InRhYiI7YjoxO319czoxMDoibGF5b3V0ZGVmcyI7YTowOnt9czoxMzoicmVsYXRpb25zaGlwcyI7YTowOnt9czo5OiJpbWFnZV9kaXIiO3M6MTY6IjxiYXNlcGF0aD4vaWNvbnMiO3M6NDoiY29weSI7YToxOntpOjA7YToyOntzOjQ6ImZyb20iO3M6NDQ6IjxiYXNlcGF0aD4vU3VnYXJNb2R1bGVzL21vZHVsZXMvcHJvX1Byb2plY3RzIjtzOjI6InRvIjtzOjIwOiJtb2R1bGVzL3Byb19Qcm9qZWN0cyI7fX1zOjg6Imxhbmd1YWdlIjthOjE6e2k6MDthOjM6e3M6NDoiZnJvbSI7czo1OToiPGJhc2VwYXRoPi9TdWdhck1vZHVsZXMvbGFuZ3VhZ2UvYXBwbGljYXRpb24vZW5fdXMubGFuZy5waHAiO3M6OToidG9fbW9kdWxlIjtzOjExOiJhcHBsaWNhdGlvbiI7czo4OiJsYW5ndWFnZSI7czo1OiJlbl91cyI7fX19czoxNjoidXBncmFkZV9tYW5pZmVzdCI7czowOiIiO30=', '2022-12-03 11:41:49', 1),
 ('4eb1ef7d-06c2-aaa8-5a39-63cf6ac30940', 'upload/upgrades/module/Employee_List2023_01_24_062143.zip', '21937eed59b48a336f5c55622a8b5fb4', 'module', 'installed', '1674537703', 'Employee_List', 'final employee module', 'Employee_List', 'YTozOntzOjg6Im1hbmlmZXN0IjthOjEzOntpOjA7YToxOntzOjI1OiJhY2NlcHRhYmxlX3N1Z2FyX3ZlcnNpb25zIjthOjE6e2k6MDtzOjA6IiI7fX1pOjE7YToxOntzOjI0OiJhY2NlcHRhYmxlX3N1Z2FyX2ZsYXZvcnMiO2E6Mzp7aTowO3M6MjoiQ0UiO2k6MTtzOjM6IlBSTyI7aToyO3M6MzoiRU5UIjt9fXM6NjoicmVhZG1lIjtzOjA6IiI7czozOiJrZXkiO3M6MzoiRU1QIjtzOjY6ImF1dGhvciI7czo4OiJrYW1hbGVzaCI7czoxMToiZGVzY3JpcHRpb24iO3M6MjE6ImZpbmFsIGVtcGxveWVlIG1vZHVsZSI7czo0OiJpY29uIjtzOjA6IiI7czoxNjoiaXNfdW5pbnN0YWxsYWJsZSI7YjoxO3M6NDoibmFtZSI7czoxMzoiRW1wbG95ZWVfTGlzdCI7czoxNDoicHVibGlzaGVkX2RhdGUiO3M6MTk6IjIwMjMtMDEtMjQgMDU6MjE6NDIiO3M6NDoidHlwZSI7czo2OiJtb2R1bGUiO3M6NzoidmVyc2lvbiI7aToxNjc0NTM3NzAzO3M6MTM6InJlbW92ZV90YWJsZXMiO3M6NjoicHJvbXB0Ijt9czoxMToiaW5zdGFsbGRlZnMiO2E6Nzp7czoyOiJpZCI7czoxMzoiRW1wbG95ZWVfTGlzdCI7czo1OiJiZWFucyI7YToxOntpOjA7YTo0OntzOjY6Im1vZHVsZSI7czoxNzoiRU1QX0VtcGxveWVlX0xpc3QiO3M6NToiY2xhc3MiO3M6MTc6IkVNUF9FbXBsb3llZV9MaXN0IjtzOjQ6InBhdGgiO3M6NDc6Im1vZHVsZXMvRU1QX0VtcGxveWVlX0xpc3QvRU1QX0VtcGxveWVlX0xpc3QucGhwIjtzOjM6InRhYiI7YjoxO319czoxMDoibGF5b3V0ZGVmcyI7YTowOnt9czoxMzoicmVsYXRpb25zaGlwcyI7YTowOnt9czo5OiJpbWFnZV9kaXIiO3M6MTY6IjxiYXNlcGF0aD4vaWNvbnMiO3M6NDoiY29weSI7YToxOntpOjA7YToyOntzOjQ6ImZyb20iO3M6NDk6IjxiYXNlcGF0aD4vU3VnYXJNb2R1bGVzL21vZHVsZXMvRU1QX0VtcGxveWVlX0xpc3QiO3M6MjoidG8iO3M6MjU6Im1vZHVsZXMvRU1QX0VtcGxveWVlX0xpc3QiO319czo4OiJsYW5ndWFnZSI7YToxOntpOjA7YTozOntzOjQ6ImZyb20iO3M6NTk6IjxiYXNlcGF0aD4vU3VnYXJNb2R1bGVzL2xhbmd1YWdlL2FwcGxpY2F0aW9uL2VuX3VzLmxhbmcucGhwIjtzOjk6InRvX21vZHVsZSI7czoxMToiYXBwbGljYXRpb24iO3M6ODoibGFuZ3VhZ2UiO3M6NToiZW5fdXMiO319fXM6MTY6InVwZ3JhZGVfbWFuaWZlc3QiO3M6MDoiIjt9', '2023-01-24 05:21:42', 1),
 ('78066abc-aa63-ea89-73f7-634e585dbca3', 'upload/upgrades/module/Salaries2022_10_18_093926.zip', 'a684661d20f547122e19ebc3c8f703d9', 'module', 'installed', '1666078765', 'Salaries', '', 'Salaries', 'YTozOntzOjg6Im1hbmlmZXN0IjthOjEzOntpOjA7YToxOntzOjI1OiJhY2NlcHRhYmxlX3N1Z2FyX3ZlcnNpb25zIjthOjE6e2k6MDtzOjA6IiI7fX1pOjE7YToxOntzOjI0OiJhY2NlcHRhYmxlX3N1Z2FyX2ZsYXZvcnMiO2E6Mzp7aTowO3M6MjoiQ0UiO2k6MTtzOjM6IlBSTyI7aToyO3M6MzoiRU5UIjt9fXM6NjoicmVhZG1lIjtzOjA6IiI7czozOiJrZXkiO3M6MzoiU0xZIjtzOjY6ImF1dGhvciI7czo4OiJrYW1hbGVzaCI7czoxMToiZGVzY3JpcHRpb24iO3M6MDoiIjtzOjQ6Imljb24iO3M6MDoiIjtzOjE2OiJpc191bmluc3RhbGxhYmxlIjtiOjE7czo0OiJuYW1lIjtzOjg6IlNhbGFyaWVzIjtzOjE0OiJwdWJsaXNoZWRfZGF0ZSI7czoxOToiMjAyMi0xMC0xOCAwNzozOToyNSI7czo0OiJ0eXBlIjtzOjY6Im1vZHVsZSI7czo3OiJ2ZXJzaW9uIjtpOjE2NjYwNzg3NjU7czoxMzoicmVtb3ZlX3RhYmxlcyI7czo2OiJwcm9tcHQiO31zOjExOiJpbnN0YWxsZGVmcyI7YTo3OntzOjI6ImlkIjtzOjg6IlNhbGFyaWVzIjtzOjU6ImJlYW5zIjthOjE6e2k6MDthOjQ6e3M6NjoibW9kdWxlIjtzOjEyOiJTTFlfU2FsYXJpZXMiO3M6NToiY2xhc3MiO3M6MTI6IlNMWV9TYWxhcmllcyI7czo0OiJwYXRoIjtzOjM3OiJtb2R1bGVzL1NMWV9TYWxhcmllcy9TTFlfU2FsYXJpZXMucGhwIjtzOjM6InRhYiI7YjoxO319czoxMDoibGF5b3V0ZGVmcyI7YTowOnt9czoxMzoicmVsYXRpb25zaGlwcyI7YTowOnt9czo5OiJpbWFnZV9kaXIiO3M6MTY6IjxiYXNlcGF0aD4vaWNvbnMiO3M6NDoiY29weSI7YToxOntpOjA7YToyOntzOjQ6ImZyb20iO3M6NDQ6IjxiYXNlcGF0aD4vU3VnYXJNb2R1bGVzL21vZHVsZXMvU0xZX1NhbGFyaWVzIjtzOjI6InRvIjtzOjIwOiJtb2R1bGVzL1NMWV9TYWxhcmllcyI7fX1zOjg6Imxhbmd1YWdlIjthOjE6e2k6MDthOjM6e3M6NDoiZnJvbSI7czo1OToiPGJhc2VwYXRoPi9TdWdhck1vZHVsZXMvbGFuZ3VhZ2UvYXBwbGljYXRpb24vZW5fdXMubGFuZy5waHAiO3M6OToidG9fbW9kdWxlIjtzOjExOiJhcHBsaWNhdGlvbiI7czo4OiJsYW5ndWFnZSI7czo1OiJlbl91cyI7fX19czoxNjoidXBncmFkZV9tYW5pZmVzdCI7czowOiIiO30=', '2022-10-18 07:39:25', 1),
@@ -6592,6 +6812,7 @@ INSERT INTO `upgrade_history` (`id`, `filename`, `md5sum`, `type`, `status`, `ve
 ('acd2ee0c-a04a-2ab9-46e2-63c8e0461100', 'upload/upgrades/module/Employee2023_01_19_071750.zip', '1d307b4945694cd7a8d379b874376800', 'module', 'installed', '1674109069', 'Employee', 'user employee', 'Employee', 'YTozOntzOjg6Im1hbmlmZXN0IjthOjEzOntpOjA7YToxOntzOjI1OiJhY2NlcHRhYmxlX3N1Z2FyX3ZlcnNpb25zIjthOjE6e2k6MDtzOjA6IiI7fX1pOjE7YToxOntzOjI0OiJhY2NlcHRhYmxlX3N1Z2FyX2ZsYXZvcnMiO2E6Mzp7aTowO3M6MjoiQ0UiO2k6MTtzOjM6IlBSTyI7aToyO3M6MzoiRU5UIjt9fXM6NjoicmVhZG1lIjtzOjA6IiI7czozOiJrZXkiO3M6MzoiRU1QIjtzOjY6ImF1dGhvciI7czo4OiJrYW1hbGVzaCI7czoxMToiZGVzY3JpcHRpb24iO3M6MTM6InVzZXIgZW1wbG95ZWUiO3M6NDoiaWNvbiI7czowOiIiO3M6MTY6ImlzX3VuaW5zdGFsbGFibGUiO2I6MTtzOjQ6Im5hbWUiO3M6ODoiRW1wbG95ZWUiO3M6MTQ6InB1Ymxpc2hlZF9kYXRlIjtzOjE5OiIyMDIzLTAxLTE5IDA2OjE3OjQ5IjtzOjQ6InR5cGUiO3M6NjoibW9kdWxlIjtzOjc6InZlcnNpb24iO2k6MTY3NDEwOTA2OTtzOjEzOiJyZW1vdmVfdGFibGVzIjtzOjY6InByb21wdCI7fXM6MTE6Imluc3RhbGxkZWZzIjthOjc6e3M6MjoiaWQiO3M6ODoiRW1wbG95ZWUiO3M6NToiYmVhbnMiO2E6MTp7aTowO2E6NDp7czo2OiJtb2R1bGUiO3M6MTI6IkVNUF9FbXBsb3llZSI7czo1OiJjbGFzcyI7czoxMjoiRU1QX0VtcGxveWVlIjtzOjQ6InBhdGgiO3M6Mzc6Im1vZHVsZXMvRU1QX0VtcGxveWVlL0VNUF9FbXBsb3llZS5waHAiO3M6MzoidGFiIjtiOjE7fX1zOjEwOiJsYXlvdXRkZWZzIjthOjA6e31zOjEzOiJyZWxhdGlvbnNoaXBzIjthOjA6e31zOjk6ImltYWdlX2RpciI7czoxNjoiPGJhc2VwYXRoPi9pY29ucyI7czo0OiJjb3B5IjthOjE6e2k6MDthOjI6e3M6NDoiZnJvbSI7czo0NDoiPGJhc2VwYXRoPi9TdWdhck1vZHVsZXMvbW9kdWxlcy9FTVBfRW1wbG95ZWUiO3M6MjoidG8iO3M6MjA6Im1vZHVsZXMvRU1QX0VtcGxveWVlIjt9fXM6ODoibGFuZ3VhZ2UiO2E6MTp7aTowO2E6Mzp7czo0OiJmcm9tIjtzOjU5OiI8YmFzZXBhdGg+L1N1Z2FyTW9kdWxlcy9sYW5ndWFnZS9hcHBsaWNhdGlvbi9lbl91cy5sYW5nLnBocCI7czo5OiJ0b19tb2R1bGUiO3M6MTE6ImFwcGxpY2F0aW9uIjtzOjg6Imxhbmd1YWdlIjtzOjU6ImVuX3VzIjt9fX1zOjE2OiJ1cGdyYWRlX21hbmlmZXN0IjtzOjA6IiI7fQ==', '2023-01-19 06:17:49', 1),
 ('b63b22e0-6456-0985-8198-63c8dfff7264', 'upload/upgrades/module/EMP_Employee2023_01_19_071108.zip', '9b72d72263c00925dae0e7fdfc6db679', 'module', 'installed', '1674108668', 'EMP_Employee', 'user employee', 'EMP_Employee', 'YTozOntzOjg6Im1hbmlmZXN0IjthOjEzOntpOjA7YToxOntzOjI1OiJhY2NlcHRhYmxlX3N1Z2FyX3ZlcnNpb25zIjthOjE6e2k6MDtzOjA6IiI7fX1pOjE7YToxOntzOjI0OiJhY2NlcHRhYmxlX3N1Z2FyX2ZsYXZvcnMiO2E6Mzp7aTowO3M6MjoiQ0UiO2k6MTtzOjM6IlBSTyI7aToyO3M6MzoiRU5UIjt9fXM6NjoicmVhZG1lIjtzOjA6IiI7czozOiJrZXkiO3M6MzoiRU1QIjtzOjY6ImF1dGhvciI7czo4OiJrYW1hbGVzaCI7czoxMToiZGVzY3JpcHRpb24iO3M6MTM6InVzZXIgZW1wbG95ZWUiO3M6NDoiaWNvbiI7czowOiIiO3M6MTY6ImlzX3VuaW5zdGFsbGFibGUiO2I6MTtzOjQ6Im5hbWUiO3M6MTI6IkVNUF9FbXBsb3llZSI7czoxNDoicHVibGlzaGVkX2RhdGUiO3M6MTk6IjIwMjMtMDEtMTkgMDY6MTE6MDciO3M6NDoidHlwZSI7czo2OiJtb2R1bGUiO3M6NzoidmVyc2lvbiI7aToxNjc0MTA4NjY4O3M6MTM6InJlbW92ZV90YWJsZXMiO3M6NjoicHJvbXB0Ijt9czoxMToiaW5zdGFsbGRlZnMiO2E6Nzp7czoyOiJpZCI7czoxMjoiRU1QX0VtcGxveWVlIjtzOjU6ImJlYW5zIjthOjE6e2k6MDthOjQ6e3M6NjoibW9kdWxlIjtzOjEyOiJFTVBfRW1wbG95ZWUiO3M6NToiY2xhc3MiO3M6MTI6IkVNUF9FbXBsb3llZSI7czo0OiJwYXRoIjtzOjM3OiJtb2R1bGVzL0VNUF9FbXBsb3llZS9FTVBfRW1wbG95ZWUucGhwIjtzOjM6InRhYiI7YjoxO319czoxMDoibGF5b3V0ZGVmcyI7YTowOnt9czoxMzoicmVsYXRpb25zaGlwcyI7YTowOnt9czo5OiJpbWFnZV9kaXIiO3M6MTY6IjxiYXNlcGF0aD4vaWNvbnMiO3M6NDoiY29weSI7YToxOntpOjA7YToyOntzOjQ6ImZyb20iO3M6NDQ6IjxiYXNlcGF0aD4vU3VnYXJNb2R1bGVzL21vZHVsZXMvRU1QX0VtcGxveWVlIjtzOjI6InRvIjtzOjIwOiJtb2R1bGVzL0VNUF9FbXBsb3llZSI7fX1zOjg6Imxhbmd1YWdlIjthOjE6e2k6MDthOjM6e3M6NDoiZnJvbSI7czo1OToiPGJhc2VwYXRoPi9TdWdhck1vZHVsZXMvbGFuZ3VhZ2UvYXBwbGljYXRpb24vZW5fdXMubGFuZy5waHAiO3M6OToidG9fbW9kdWxlIjtzOjExOiJhcHBsaWNhdGlvbiI7czo4OiJsYW5ndWFnZSI7czo1OiJlbl91cyI7fX19czoxNjoidXBncmFkZV9tYW5pZmVzdCI7czowOiIiO30=', '2023-01-19 06:11:07', 1),
 ('b67f16cc-46cd-a0e7-32ec-634e5839a733', 'upload/upgrades/module/Employees2022_10_18_093833.zip', '2c0d13ba02c63d3f791549b41775cf0e', 'module', 'installed', '1666078712', 'Employees', '', 'Employees', 'YTozOntzOjg6Im1hbmlmZXN0IjthOjEzOntpOjA7YToxOntzOjI1OiJhY2NlcHRhYmxlX3N1Z2FyX3ZlcnNpb25zIjthOjE6e2k6MDtzOjA6IiI7fX1pOjE7YToxOntzOjI0OiJhY2NlcHRhYmxlX3N1Z2FyX2ZsYXZvcnMiO2E6Mzp7aTowO3M6MjoiQ0UiO2k6MTtzOjM6IlBSTyI7aToyO3M6MzoiRU5UIjt9fXM6NjoicmVhZG1lIjtzOjA6IiI7czozOiJrZXkiO3M6MzoiRU1QIjtzOjY6ImF1dGhvciI7czo4OiJrYW1hbGVzaCI7czoxMToiZGVzY3JpcHRpb24iO3M6MDoiIjtzOjQ6Imljb24iO3M6MDoiIjtzOjE2OiJpc191bmluc3RhbGxhYmxlIjtiOjE7czo0OiJuYW1lIjtzOjk6IkVtcGxveWVlcyI7czoxNDoicHVibGlzaGVkX2RhdGUiO3M6MTk6IjIwMjItMTAtMTggMDc6Mzg6MzIiO3M6NDoidHlwZSI7czo2OiJtb2R1bGUiO3M6NzoidmVyc2lvbiI7aToxNjY2MDc4NzEyO3M6MTM6InJlbW92ZV90YWJsZXMiO3M6NjoicHJvbXB0Ijt9czoxMToiaW5zdGFsbGRlZnMiO2E6Nzp7czoyOiJpZCI7czo5OiJFbXBsb3llZXMiO3M6NToiYmVhbnMiO2E6MTp7aTowO2E6NDp7czo2OiJtb2R1bGUiO3M6MTM6IkVNUF9FbXBsb3llZXMiO3M6NToiY2xhc3MiO3M6MTM6IkVNUF9FbXBsb3llZXMiO3M6NDoicGF0aCI7czozOToibW9kdWxlcy9FTVBfRW1wbG95ZWVzL0VNUF9FbXBsb3llZXMucGhwIjtzOjM6InRhYiI7YjoxO319czoxMDoibGF5b3V0ZGVmcyI7YTowOnt9czoxMzoicmVsYXRpb25zaGlwcyI7YTowOnt9czo5OiJpbWFnZV9kaXIiO3M6MTY6IjxiYXNlcGF0aD4vaWNvbnMiO3M6NDoiY29weSI7YToxOntpOjA7YToyOntzOjQ6ImZyb20iO3M6NDU6IjxiYXNlcGF0aD4vU3VnYXJNb2R1bGVzL21vZHVsZXMvRU1QX0VtcGxveWVlcyI7czoyOiJ0byI7czoyMToibW9kdWxlcy9FTVBfRW1wbG95ZWVzIjt9fXM6ODoibGFuZ3VhZ2UiO2E6MTp7aTowO2E6Mzp7czo0OiJmcm9tIjtzOjU5OiI8YmFzZXBhdGg+L1N1Z2FyTW9kdWxlcy9sYW5ndWFnZS9hcHBsaWNhdGlvbi9lbl91cy5sYW5nLnBocCI7czo5OiJ0b19tb2R1bGUiO3M6MTE6ImFwcGxpY2F0aW9uIjtzOjg6Imxhbmd1YWdlIjtzOjU6ImVuX3VzIjt9fX1zOjE2OiJ1cGdyYWRlX21hbmlmZXN0IjtzOjA6IiI7fQ==', '2022-10-18 07:38:32', 1),
+('ce6b5030-836b-234e-7468-63e9c4041a89', 'upload/upgrades/module/Skill2023_02_13_060055.zip', '3da04dce88d0293ce726ab58e651fc64', 'module', 'installed', '1676264454', 'Skill', '', 'Skill', 'YTozOntzOjg6Im1hbmlmZXN0IjthOjEzOntpOjA7YToxOntzOjI1OiJhY2NlcHRhYmxlX3N1Z2FyX3ZlcnNpb25zIjthOjE6e2k6MDtzOjA6IiI7fX1pOjE7YToxOntzOjI0OiJhY2NlcHRhYmxlX3N1Z2FyX2ZsYXZvcnMiO2E6Mzp7aTowO3M6MjoiQ0UiO2k6MTtzOjM6IlBSTyI7aToyO3M6MzoiRU5UIjt9fXM6NjoicmVhZG1lIjtzOjA6IiI7czozOiJrZXkiO3M6MjoiU0siO3M6NjoiYXV0aG9yIjtzOjg6ImthbWFsZXNoIjtzOjExOiJkZXNjcmlwdGlvbiI7czowOiIiO3M6NDoiaWNvbiI7czowOiIiO3M6MTY6ImlzX3VuaW5zdGFsbGFibGUiO2I6MTtzOjQ6Im5hbWUiO3M6NToiU2tpbGwiO3M6MTQ6InB1Ymxpc2hlZF9kYXRlIjtzOjE5OiIyMDIzLTAyLTEzIDA1OjAwOjUzIjtzOjQ6InR5cGUiO3M6NjoibW9kdWxlIjtzOjc6InZlcnNpb24iO2k6MTY3NjI2NDQ1NDtzOjEzOiJyZW1vdmVfdGFibGVzIjtzOjY6InByb21wdCI7fXM6MTE6Imluc3RhbGxkZWZzIjthOjc6e3M6MjoiaWQiO3M6NToiU2tpbGwiO3M6NToiYmVhbnMiO2E6MTp7aTowO2E6NDp7czo2OiJtb2R1bGUiO3M6ODoiU0tfU2tpbGwiO3M6NToiY2xhc3MiO3M6ODoiU0tfU2tpbGwiO3M6NDoicGF0aCI7czoyOToibW9kdWxlcy9TS19Ta2lsbC9TS19Ta2lsbC5waHAiO3M6MzoidGFiIjtiOjE7fX1zOjEwOiJsYXlvdXRkZWZzIjthOjA6e31zOjEzOiJyZWxhdGlvbnNoaXBzIjthOjA6e31zOjk6ImltYWdlX2RpciI7czoxNjoiPGJhc2VwYXRoPi9pY29ucyI7czo0OiJjb3B5IjthOjE6e2k6MDthOjI6e3M6NDoiZnJvbSI7czo0MDoiPGJhc2VwYXRoPi9TdWdhck1vZHVsZXMvbW9kdWxlcy9TS19Ta2lsbCI7czoyOiJ0byI7czoxNjoibW9kdWxlcy9TS19Ta2lsbCI7fX1zOjg6Imxhbmd1YWdlIjthOjE6e2k6MDthOjM6e3M6NDoiZnJvbSI7czo1OToiPGJhc2VwYXRoPi9TdWdhck1vZHVsZXMvbGFuZ3VhZ2UvYXBwbGljYXRpb24vZW5fdXMubGFuZy5waHAiO3M6OToidG9fbW9kdWxlIjtzOjExOiJhcHBsaWNhdGlvbiI7czo4OiJsYW5ndWFnZSI7czo1OiJlbl91cyI7fX19czoxNjoidXBncmFkZV9tYW5pZmVzdCI7czowOiIiO30=', '2023-02-13 05:00:53', 1),
 ('de3286ba-4b74-0efa-82e1-63884e1ed6d4', 'upload/upgrades/module/Attentance2022_12_01_074926.zip', 'f41737b1264c128b8a7cb4eb0683a26f', 'module', 'installed', '1669877365', 'Attentance', '', 'Attentance', 'YTozOntzOjg6Im1hbmlmZXN0IjthOjEzOntpOjA7YToxOntzOjI1OiJhY2NlcHRhYmxlX3N1Z2FyX3ZlcnNpb25zIjthOjE6e2k6MDtzOjA6IiI7fX1pOjE7YToxOntzOjI0OiJhY2NlcHRhYmxlX3N1Z2FyX2ZsYXZvcnMiO2E6Mzp7aTowO3M6MjoiQ0UiO2k6MTtzOjM6IlBSTyI7aToyO3M6MzoiRU5UIjt9fXM6NjoicmVhZG1lIjtzOjA6IiI7czozOiJrZXkiO3M6MjoiYXQiO3M6NjoiYXV0aG9yIjtzOjg6ImthbWFsZXNoIjtzOjExOiJkZXNjcmlwdGlvbiI7czowOiIiO3M6NDoiaWNvbiI7czowOiIiO3M6MTY6ImlzX3VuaW5zdGFsbGFibGUiO2I6MTtzOjQ6Im5hbWUiO3M6MTA6IkF0dGVudGFuY2UiO3M6MTQ6InB1Ymxpc2hlZF9kYXRlIjtzOjE5OiIyMDIyLTEyLTAxIDA2OjQ5OjI1IjtzOjQ6InR5cGUiO3M6NjoibW9kdWxlIjtzOjc6InZlcnNpb24iO2k6MTY2OTg3NzM2NTtzOjEzOiJyZW1vdmVfdGFibGVzIjtzOjY6InByb21wdCI7fXM6MTE6Imluc3RhbGxkZWZzIjthOjc6e3M6MjoiaWQiO3M6MTA6IkF0dGVudGFuY2UiO3M6NToiYmVhbnMiO2E6MTp7aTowO2E6NDp7czo2OiJtb2R1bGUiO3M6MTM6ImF0X0F0dGVudGFuY2UiO3M6NToiY2xhc3MiO3M6MTM6ImF0X0F0dGVudGFuY2UiO3M6NDoicGF0aCI7czozOToibW9kdWxlcy9hdF9BdHRlbnRhbmNlL2F0X0F0dGVudGFuY2UucGhwIjtzOjM6InRhYiI7YjoxO319czoxMDoibGF5b3V0ZGVmcyI7YTowOnt9czoxMzoicmVsYXRpb25zaGlwcyI7YTowOnt9czo5OiJpbWFnZV9kaXIiO3M6MTY6IjxiYXNlcGF0aD4vaWNvbnMiO3M6NDoiY29weSI7YToxOntpOjA7YToyOntzOjQ6ImZyb20iO3M6NDU6IjxiYXNlcGF0aD4vU3VnYXJNb2R1bGVzL21vZHVsZXMvYXRfQXR0ZW50YW5jZSI7czoyOiJ0byI7czoyMToibW9kdWxlcy9hdF9BdHRlbnRhbmNlIjt9fXM6ODoibGFuZ3VhZ2UiO2E6MTp7aTowO2E6Mzp7czo0OiJmcm9tIjtzOjU5OiI8YmFzZXBhdGg+L1N1Z2FyTW9kdWxlcy9sYW5ndWFnZS9hcHBsaWNhdGlvbi9lbl91cy5sYW5nLnBocCI7czo5OiJ0b19tb2R1bGUiO3M6MTE6ImFwcGxpY2F0aW9uIjtzOjg6Imxhbmd1YWdlIjtzOjU6ImVuX3VzIjt9fX1zOjE2OiJ1cGdyYWRlX21hbmlmZXN0IjtzOjA6IiI7fQ==', '2022-12-01 06:49:25', 1),
 ('e201abd1-a037-3cbc-99f2-635a3b25e326', 'upload/upgrades/module/Salary2022_10_27_100527.zip', 'be5fe35178ae0b7a332b45eeb1e287c8', 'module', 'installed', '1666857927', 'Salary', 'Employe Salary', 'Salary', 'YTozOntzOjg6Im1hbmlmZXN0IjthOjEzOntpOjA7YToxOntzOjI1OiJhY2NlcHRhYmxlX3N1Z2FyX3ZlcnNpb25zIjthOjE6e2k6MDtzOjA6IiI7fX1pOjE7YToxOntzOjI0OiJhY2NlcHRhYmxlX3N1Z2FyX2ZsYXZvcnMiO2E6Mzp7aTowO3M6MjoiQ0UiO2k6MTtzOjM6IlBSTyI7aToyO3M6MzoiRU5UIjt9fXM6NjoicmVhZG1lIjtzOjA6IiI7czozOiJrZXkiO3M6MzoiU0xZIjtzOjY6ImF1dGhvciI7czo4OiJrYW1hbGVzaCI7czoxMToiZGVzY3JpcHRpb24iO3M6MTQ6IkVtcGxveWUgU2FsYXJ5IjtzOjQ6Imljb24iO3M6MDoiIjtzOjE2OiJpc191bmluc3RhbGxhYmxlIjtiOjE7czo0OiJuYW1lIjtzOjY6IlNhbGFyeSI7czoxNDoicHVibGlzaGVkX2RhdGUiO3M6MTk6IjIwMjItMTAtMjcgMDg6MDU6MjYiO3M6NDoidHlwZSI7czo2OiJtb2R1bGUiO3M6NzoidmVyc2lvbiI7aToxNjY2ODU3OTI3O3M6MTM6InJlbW92ZV90YWJsZXMiO3M6NjoicHJvbXB0Ijt9czoxMToiaW5zdGFsbGRlZnMiO2E6Nzp7czoyOiJpZCI7czo2OiJTYWxhcnkiO3M6NToiYmVhbnMiO2E6MTp7aTowO2E6NDp7czo2OiJtb2R1bGUiO3M6MTA6IlNMWV9TYWxhcnkiO3M6NToiY2xhc3MiO3M6MTA6IlNMWV9TYWxhcnkiO3M6NDoicGF0aCI7czozMzoibW9kdWxlcy9TTFlfU2FsYXJ5L1NMWV9TYWxhcnkucGhwIjtzOjM6InRhYiI7YjoxO319czoxMDoibGF5b3V0ZGVmcyI7YTowOnt9czoxMzoicmVsYXRpb25zaGlwcyI7YTowOnt9czo5OiJpbWFnZV9kaXIiO3M6MTY6IjxiYXNlcGF0aD4vaWNvbnMiO3M6NDoiY29weSI7YToxOntpOjA7YToyOntzOjQ6ImZyb20iO3M6NDI6IjxiYXNlcGF0aD4vU3VnYXJNb2R1bGVzL21vZHVsZXMvU0xZX1NhbGFyeSI7czoyOiJ0byI7czoxODoibW9kdWxlcy9TTFlfU2FsYXJ5Ijt9fXM6ODoibGFuZ3VhZ2UiO2E6MTp7aTowO2E6Mzp7czo0OiJmcm9tIjtzOjU5OiI8YmFzZXBhdGg+L1N1Z2FyTW9kdWxlcy9sYW5ndWFnZS9hcHBsaWNhdGlvbi9lbl91cy5sYW5nLnBocCI7czo5OiJ0b19tb2R1bGUiO3M6MTE6ImFwcGxpY2F0aW9uIjtzOjg6Imxhbmd1YWdlIjtzOjU6ImVuX3VzIjt9fX1zOjE2OiJ1cGdyYWRlX21hbmlmZXN0IjtzOjA6IiI7fQ==', '2022-10-27 08:05:26', 1);
 
@@ -6650,7 +6871,41 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `user_name`, `user_hash`, `system_generated_password`, `pwd_last_changed`, `authenticate_id`, `sugar_login`, `first_name`, `last_name`, `is_admin`, `external_auth_only`, `receive_notifications`, `description`, `date_entered`, `date_modified`, `modified_user_id`, `created_by`, `title`, `photo`, `department`, `phone_home`, `phone_mobile`, `phone_work`, `phone_other`, `phone_fax`, `status`, `address_street`, `address_city`, `address_state`, `address_country`, `address_postalcode`, `deleted`, `portal_only`, `show_on_employees`, `employee_status`, `messenger_id`, `messenger_type`, `reports_to_id`, `is_group`) VALUES
 ('1', 'admin', '$1$eD3.PP1.$PSzaFDfuLbaUxVZpLNcQr.', 0, NULL, NULL, 1, 'Kamalesh', 'Administrator', 1, 0, 1, NULL, '2022-10-18 05:48:09', '2022-10-18 05:50:02', '1', '', 'Administrator', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Active', NULL, NULL, NULL, NULL, NULL, 0, 0, 1, 'Active', NULL, NULL, '', 0),
 ('42e1c8dc-ae01-9efb-5fee-63d7ceb668ef', 'Administration', NULL, 0, NULL, NULL, 1, 'Ragu', 'Kumar', 0, 0, 1, NULL, '2023-01-30 14:03:17', '2023-01-30 14:14:03', '1', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Active', NULL, 'Bangalore', NULL, 'india', NULL, 0, 0, 1, 'Active', NULL, NULL, '', 0),
+('a239f89f-027f-ae86-b05b-63e4a3c5e538', '', NULL, 0, NULL, NULL, 1, 'vicky', 'test', 0, 0, 1, '', '2023-02-09 07:38:56', '2023-02-09 07:38:56', '1', '1', 'developer', NULL, '', '', '56574547', '', '', '', NULL, '', '', '', '', '', 0, 0, 1, 'Active', '', '', '', NULL),
 ('cedc344d-e69a-331d-33cb-63943345eb53', 'testuser', NULL, 0, NULL, NULL, 1, '', 'test', 1, 0, 1, '', '2022-12-10 07:23:08', '2022-12-10 07:23:08', '1', '1', '', NULL, '', '', '', '', '', '', 'Active', '', '', '', '', '', 0, 0, 1, 'Active', '', '', '', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users_audit`
+--
+
+CREATE TABLE `users_audit` (
+  `id` char(36) NOT NULL,
+  `parent_id` char(36) NOT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `created_by` varchar(36) DEFAULT NULL,
+  `field_name` varchar(100) DEFAULT NULL,
+  `data_type` varchar(100) DEFAULT NULL,
+  `before_value_string` varchar(255) DEFAULT NULL,
+  `after_value_string` varchar(255) DEFAULT NULL,
+  `before_value_text` text,
+  `after_value_text` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users_cstm`
+--
+
+CREATE TABLE `users_cstm` (
+  `id_c` char(36) NOT NULL,
+  `employee_gender_c` varchar(100) DEFAULT NULL,
+  `employee_date_of_birth_c` date DEFAULT NULL,
+  `employee_id_c` int(255) DEFAULT NULL,
+  `employe_qualification_c` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -6733,14 +6988,16 @@ CREATE TABLE `user_preferences` (
 
 INSERT INTO `user_preferences` (`id`, `category`, `deleted`, `date_entered`, `date_modified`, `assigned_user_id`, `contents`) VALUES
 ('15ada79d-2caa-ab5a-be2f-6350e5b5fef5', 'ACLRoles2_ACLROLE', 0, '2022-10-20 06:05:06', '2022-10-20 06:05:06', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
-('280d0f07-2bdb-7e44-1291-634e76e06279', 'EMP_Employees2_EMP_EMPLOYEES', 0, '2022-10-18 09:50:04', '2023-01-19 12:23:48', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMzoicmVjb3JkX251bWJlciI7czo5OiJzb3J0T3JkZXIiO3M6MzoiQVNDIjt9fQ=='),
+('280d0f07-2bdb-7e44-1291-634e76e06279', 'EMP_Employees2_EMP_EMPLOYEES', 0, '2022-10-18 09:50:04', '2023-02-15 10:06:58', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czowOiIiO3M6OToic29ydE9yZGVyIjtzOjA6IiI7fX0='),
 ('4472e949-7565-62d8-ff83-63884ea2efd9', 'at_Attentance2_AT_ATTENTANCE', 0, '2022-12-01 06:49:58', '2022-12-01 06:49:58', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('4e7714de-f023-68bf-c8fd-63c8e55d0a77', 'Project2_PROJECT', 0, '2023-01-19 06:38:37', '2023-01-19 12:18:57', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czo4OiJwcmlvcml0eSI7czo5OiJzb3J0T3JkZXIiO3M6MzoiQVNDIjt9fQ=='),
 ('5a688ab1-107f-bcf4-cc5b-63d7d0f94056', 'ETag', 0, '2023-01-30 14:14:03', '2023-01-30 14:14:03', '42e1c8dc-ae01-9efb-5fee-63d7ceb668ef', 'YToxOntzOjEyOiJtYWluTWVudUVUYWciO2k6MTt9'),
 ('61196f0c-5746-4f9c-79b6-638b36a2a912', 'pro_Projects2_PRO_PROJECTS', 0, '2022-12-03 11:43:32', '2022-12-03 11:43:32', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
+('6531f00a-683f-6aba-5475-63e9c4925b1e', 'SK_Skill2_SK_SKILL', 0, '2023-02-13 05:02:36', '2023-02-13 05:02:36', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('659e81ca-ac15-db1b-ad30-63d7cec67bb0', 'global', 0, '2023-01-30 14:03:17', '2023-01-30 14:14:03', '42e1c8dc-ae01-9efb-5fee-63d7ceb668ef', 'YTozMzp7czoxMjoibWFpbG1lcmdlX29uIjtzOjM6Im9mZiI7czoxNjoic3dhcF9sYXN0X3ZpZXdlZCI7czowOiIiO3M6MTQ6InN3YXBfc2hvcnRjdXRzIjtzOjA6IiI7czoxOToibmF2aWdhdGlvbl9wYXJhZGlnbSI7czoyOiJnbSI7czoxMzoic3VicGFuZWxfdGFicyI7czoyOiJvbiI7czoxMDoidXNlcl90aGVtZSI7czo2OiJTdWl0ZTciO3M6MTQ6Im1vZHVsZV9mYXZpY29uIjtzOjA6IiI7czo5OiJoaWRlX3RhYnMiO2E6MDp7fXM6MTE6InJlbW92ZV90YWJzIjthOjA6e31zOjc6Im5vX29wcHMiO3M6Mzoib2ZmIjtzOjEzOiJyZW1pbmRlcl90aW1lIjtpOi0xO3M6MTk6ImVtYWlsX3JlbWluZGVyX3RpbWUiO2k6LTE7czo4OiJ0aW1lem9uZSI7czoxMzoiRXVyb3BlL0JlcmxpbiI7czoyOiJ1dCI7czoxOiIwIjtzOjg6ImN1cnJlbmN5IjtzOjM6Ii05OSI7czozNToiZGVmYXVsdF9jdXJyZW5jeV9zaWduaWZpY2FudF9kaWdpdHMiO3M6MToiMiI7czoxMToibnVtX2dycF9zZXAiO3M6MToiLCI7czo3OiJkZWNfc2VwIjtzOjE6Ii4iO3M6NDoiZmRvdyI7czoxOiIwIjtzOjU6ImRhdGVmIjtzOjU6Im0vZC9ZIjtzOjU6InRpbWVmIjtzOjQ6Img6aWEiO3M6MTU6Im1haWxfc210cHNlcnZlciI7czoxNDoic210cC5nbWFpbC5jb20iO3M6MTM6Im1haWxfc210cHVzZXIiO3M6MTQ6IkFkbWluaXN0cmF0aW9uIjtzOjEzOiJtYWlsX3NtdHBwYXNzIjtzOjEwOiJTZWx0ZW5AMTIzIjtzOjI2OiJkZWZhdWx0X2xvY2FsZV9uYW1lX2Zvcm1hdCI7czo1OiJzIGYgbCI7czoxNjoiZXhwb3J0X2RlbGltaXRlciI7czoxOiIsIjtzOjIyOiJkZWZhdWx0X2V4cG9ydF9jaGFyc2V0IjtzOjU6IlVURi04IjtzOjE0OiJ1c2VfcmVhbF9uYW1lcyI7czoyOiJvbiI7czoxNzoibWFpbF9zbXRwYXV0aF9yZXEiO3M6MDoiIjtzOjEyOiJtYWlsX3NtdHBzc2wiO2k6MDtzOjE1OiJlbWFpbF9saW5rX3R5cGUiO3M6NToic3VnYXIiO3M6MTc6ImVtYWlsX3Nob3dfY291bnRzIjtpOjA7czoyMDoiY2FsZW5kYXJfcHVibGlzaF9rZXkiO3M6MzY6IjY1NmQzMGE0LWEzZjEtYzY5NS1mZTlkLTYzZDdjZThhMDIwMCI7fQ=='),
 ('6a9008f0-9af0-0468-9eb0-634e94aade41', 'SLY_Salaries2_SLY_SALARIES', 0, '2022-10-18 11:57:29', '2022-10-18 11:57:29', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('709b008e-c1ce-8789-b77a-634e454498e5', 'Accounts2_ACCOUNT', 0, '2022-10-18 06:20:13', '2022-10-18 06:20:13', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
+('71c3f9d5-e833-330c-1812-63f34cd47a0c', 'CLI_Clients2_CLI_CLIENTS', 0, '2023-02-20 10:34:21', '2023-02-20 10:34:21', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('8087880d-1663-5b0c-756f-63931f39a575', 'Opportunities2_OPPORTUNITY', 0, '2022-12-09 11:42:39', '2022-12-09 11:42:39', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('81c20c03-e2d0-6311-92f3-635a3c6e87ce', 'SLY_Salary2_SLY_SALARY', 0, '2022-10-27 08:09:45', '2022-10-27 08:09:45', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('83cb7166-a416-b3c4-909f-634e3e1d3bad', 'Home', 0, '2022-10-18 05:50:05', '2023-01-31 09:57:05', '1', 'YToyOntzOjg6ImRhc2hsZXRzIjthOjY6e3M6MzY6ImE4YWU2M2IyLTBmODEtN2QzMS05YWViLTYzNGUzZWQwYjkyMiI7YTo0OntzOjk6ImNsYXNzTmFtZSI7czoxNjoiU3VnYXJGZWVkRGFzaGxldCI7czo2OiJtb2R1bGUiO3M6OToiU3VnYXJGZWVkIjtzOjExOiJmb3JjZUNvbHVtbiI7aToxO3M6MTI6ImZpbGVMb2NhdGlvbiI7czo3MToiY3VzdG9tL21vZHVsZXMvU3VnYXJGZWVkL0Rhc2hsZXRzL1N1Z2FyRmVlZERhc2hsZXQvU3VnYXJGZWVkRGFzaGxldC5waHAiO31zOjM2OiJhOWI3MzI5YS1lYWVhLWM3MjItOWJiMi02MzRlM2VmM2RiNjQiO2E6NTp7czo5OiJjbGFzc05hbWUiO3M6MTQ6Ik15Q2FsbHNEYXNobGV0IjtzOjY6Im1vZHVsZSI7czo1OiJDYWxscyI7czoxMToiZm9yY2VDb2x1bW4iO2k6MDtzOjEyOiJmaWxlTG9jYXRpb24iO3M6NTY6Im1vZHVsZXMvQ2FsbHMvRGFzaGxldHMvTXlDYWxsc0Rhc2hsZXQvTXlDYWxsc0Rhc2hsZXQucGhwIjtzOjc6Im9wdGlvbnMiO2E6MDp7fX1zOjM2OiJhYWI4NjIwNC1iYzBlLTgzYTktYzE1NS02MzRlM2UzZDA2MWUiO2E6NTp7czo5OiJjbGFzc05hbWUiO3M6MTc6Ik15TWVldGluZ3NEYXNobGV0IjtzOjY6Im1vZHVsZSI7czo4OiJNZWV0aW5ncyI7czoxMToiZm9yY2VDb2x1bW4iO2k6MDtzOjEyOiJmaWxlTG9jYXRpb24iO3M6NjU6Im1vZHVsZXMvTWVldGluZ3MvRGFzaGxldHMvTXlNZWV0aW5nc0Rhc2hsZXQvTXlNZWV0aW5nc0Rhc2hsZXQucGhwIjtzOjc6Im9wdGlvbnMiO2E6MDp7fX1zOjM2OiJhYjg2OWQ3NS03YzQ0LTFmMDgtNmRhMy02MzRlM2UxMGQ0NWEiO2E6NTp7czo5OiJjbGFzc05hbWUiO3M6MjI6Ik15T3Bwb3J0dW5pdGllc0Rhc2hsZXQiO3M6NjoibW9kdWxlIjtzOjEzOiJPcHBvcnR1bml0aWVzIjtzOjExOiJmb3JjZUNvbHVtbiI7aTowO3M6MTI6ImZpbGVMb2NhdGlvbiI7czo4MDoibW9kdWxlcy9PcHBvcnR1bml0aWVzL0Rhc2hsZXRzL015T3Bwb3J0dW5pdGllc0Rhc2hsZXQvTXlPcHBvcnR1bml0aWVzRGFzaGxldC5waHAiO3M6Nzoib3B0aW9ucyI7YTowOnt9fXM6MzY6ImFjYTM5YmUwLTU2YmYtYWRhMC02YmFlLTYzNGUzZWM4N2QzMyI7YTo1OntzOjk6ImNsYXNzTmFtZSI7czoxNzoiTXlBY2NvdW50c0Rhc2hsZXQiO3M6NjoibW9kdWxlIjtzOjg6IkFjY291bnRzIjtzOjExOiJmb3JjZUNvbHVtbiI7aTowO3M6MTI6ImZpbGVMb2NhdGlvbiI7czo2NToibW9kdWxlcy9BY2NvdW50cy9EYXNobGV0cy9NeUFjY291bnRzRGFzaGxldC9NeUFjY291bnRzRGFzaGxldC5waHAiO3M6Nzoib3B0aW9ucyI7YTowOnt9fXM6MzY6ImFlMWQ2OTEwLTVmMDMtZjc4Zi0wODVkLTYzNGUzZTVkNGI2MiI7YTo1OntzOjk6ImNsYXNzTmFtZSI7czoxNDoiTXlMZWFkc0Rhc2hsZXQiO3M6NjoibW9kdWxlIjtzOjU6IkxlYWRzIjtzOjExOiJmb3JjZUNvbHVtbiI7aTowO3M6MTI6ImZpbGVMb2NhdGlvbiI7czo1NjoibW9kdWxlcy9MZWFkcy9EYXNobGV0cy9NeUxlYWRzRGFzaGxldC9NeUxlYWRzRGFzaGxldC5waHAiO3M6Nzoib3B0aW9ucyI7YTowOnt9fX1zOjU6InBhZ2VzIjthOjE6e2k6MDthOjM6e3M6NzoiY29sdW1ucyI7YToyOntpOjA7YToyOntzOjU6IndpZHRoIjtzOjM6IjYwJSI7czo4OiJkYXNobGV0cyI7YTo1OntpOjE7czozNjoiYTliNzMyOWEtZWFlYS1jNzIyLTliYjItNjM0ZTNlZjNkYjY0IjtpOjI7czozNjoiYWFiODYyMDQtYmMwZS04M2E5LWMxNTUtNjM0ZTNlM2QwNjFlIjtpOjM7czozNjoiYWI4NjlkNzUtN2M0NC0xZjA4LTZkYTMtNjM0ZTNlMTBkNDVhIjtpOjQ7czozNjoiYWNhMzliZTAtNTZiZi1hZGEwLTZiYWUtNjM0ZTNlYzg3ZDMzIjtpOjU7czozNjoiYWUxZDY5MTAtNWYwMy1mNzhmLTA4NWQtNjM0ZTNlNWQ0YjYyIjt9fWk6MTthOjI6e3M6NToid2lkdGgiO3M6MzoiNDAlIjtzOjg6ImRhc2hsZXRzIjthOjE6e2k6MDtzOjM2OiJhOGFlNjNiMi0wZjgxLTdkMzEtOWFlYi02MzRlM2VkMGI5MjIiO319fXM6MTA6Im51bUNvbHVtbnMiO3M6MToiMyI7czoxNDoicGFnZVRpdGxlTGFiZWwiO3M6MjA6IkxCTF9IT01FX1BBR0VfMV9OQU1FIjt9fX0='),
@@ -6757,10 +7014,13 @@ INSERT INTO `user_preferences` (`id`, `category`, `deleted`, `date_entered`, `da
 ('b9f2ebf4-d7f3-b3e6-3ba5-63902aea493d', 'Employees2_EMPLOYEE', 0, '2022-12-07 05:53:31', '2022-12-07 05:53:31', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('bba569fb-00b1-8291-08f5-634e9c0caa85', 'Users2_USER', 0, '2022-10-18 12:29:47', '2022-10-27 07:04:10', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMDoicGhvbmVfd29yayI7czo5OiJzb3J0T3JkZXIiO3M6MzoiQVNDIjt9fQ=='),
 ('c0c8ee9e-e1df-6765-becf-63931f89a611', 'Leads2_LEAD', 0, '2022-12-09 11:42:25', '2023-01-19 11:49:27', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czozOiJBU0MiO319'),
-('c36414b8-12a0-7e97-cb56-634e3ebbb41f', 'ETag', 0, '2022-10-18 05:50:02', '2023-02-01 05:14:28', '1', 'YToxOntzOjEyOiJtYWluTWVudUVUYWciO2k6MTM7fQ=='),
+('c36414b8-12a0-7e97-cb56-634e3ebbb41f', 'ETag', 0, '2022-10-18 05:50:02', '2023-02-20 10:31:38', '1', 'YToxOntzOjEyOiJtYWluTWVudUVUYWciO2k6MTU7fQ=='),
+('cc89bf35-8743-c0a4-08c2-63f34a7dadf4', 'Contacts2_CONTACT', 0, '2023-02-20 10:25:59', '2023-02-20 10:25:59', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('d9000981-5295-00ac-f055-638ee64a3d53', 'SecurityGroups2_SECURITYGROUP', 0, '2022-12-06 06:52:48', '2022-12-06 06:52:48', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
-('df14e7ff-0ad3-f980-d33c-634e3e98c75b', 'global', 0, '2022-10-18 05:48:09', '2023-01-31 12:03:19', '1', 'YTozODp7czoyMDoiY2FsZW5kYXJfcHVibGlzaF9rZXkiO3M6MzY6ImRlZTQxMDA5LWIwZGEtNzU0YS05ZDlkLTYzNGUzZTQwZjI4NCI7czoxMDoidXNlcl90aGVtZSI7czo2OiJTdWl0ZVIiO3M6MTM6InJlbWluZGVyX3RpbWUiO2k6MTgwMDtzOjEyOiJtYWlsbWVyZ2Vfb24iO3M6Mjoib24iO3M6ODoidGltZXpvbmUiO3M6MTM6IkV1cm9wZS9CZXJsaW4iO3M6MTY6InN3YXBfbGFzdF92aWV3ZWQiO3M6MDoiIjtzOjE0OiJzd2FwX3Nob3J0Y3V0cyI7czowOiIiO3M6MTk6Im5hdmlnYXRpb25fcGFyYWRpZ20iO3M6MjoiZ20iO3M6MTM6InN1YnBhbmVsX3RhYnMiO3M6MDoiIjtzOjE0OiJtb2R1bGVfZmF2aWNvbiI7czowOiIiO3M6OToiaGlkZV90YWJzIjthOjA6e31zOjExOiJyZW1vdmVfdGFicyI7YTowOnt9czo3OiJub19vcHBzIjtzOjM6Im9mZiI7czoxOToiZW1haWxfcmVtaW5kZXJfdGltZSI7aTotMTtzOjI6InV0IjtzOjE6IjEiO3M6ODoiY3VycmVuY3kiO3M6MzoiLTk5IjtzOjM1OiJkZWZhdWx0X2N1cnJlbmN5X3NpZ25pZmljYW50X2RpZ2l0cyI7czoxOiIyIjtzOjExOiJudW1fZ3JwX3NlcCI7czoxOiIsIjtzOjc6ImRlY19zZXAiO3M6MToiLiI7czo1OiJkYXRlZiI7czo1OiJtL2QvWSI7czo1OiJ0aW1lZiI7czo0OiJoOmlhIjtzOjE1OiJtYWlsX3NtdHBzZXJ2ZXIiO3M6MTQ6InNtdHAuZ21haWwuY29tIjtzOjEzOiJtYWlsX3NtdHB1c2VyIjtzOjA6IiI7czoxMzoibWFpbF9zbXRwcGFzcyI7czoxMDoiU3VyaXlhNzIxOCI7czoyNjoiZGVmYXVsdF9sb2NhbGVfbmFtZV9mb3JtYXQiO3M6NToicyBmIGwiO3M6MTQ6InVzZV9yZWFsX25hbWVzIjtzOjI6Im9uIjtzOjE3OiJtYWlsX3NtdHBhdXRoX3JlcSI7czowOiIiO3M6MTI6Im1haWxfc210cHNzbCI7aTowO3M6MTc6ImVtYWlsX3Nob3dfY291bnRzIjtpOjA7czoxOToidGhlbWVfY3VycmVudF9ncm91cCI7czozOiJBbGwiO3M6MTQ6IkVNUF9FbXBsb3llZXNRIjthOjE1OntzOjY6Im1vZHVsZSI7czoxMzoiRU1QX0VtcGxveWVlcyI7czo2OiJhY3Rpb24iO3M6NToiaW5kZXgiO3M6MTM6InNlYXJjaEZvcm1UYWIiO3M6MTU6ImFkdmFuY2VkX3NlYXJjaCI7czo1OiJxdWVyeSI7czo0OiJ0cnVlIjtzOjIyOiJyZWNvcmRfbnVtYmVyX2FkdmFuY2VkIjtzOjA6IiI7czo5OiJzaG93U1NESVYiO3M6MzoieWVzIjtzOjE3OiJzYXZlZF9zZWFyY2hfbmFtZSI7czowOiIiO3M6MTM6InNlYXJjaF9tb2R1bGUiO3M6MDoiIjtzOjE5OiJzYXZlZF9zZWFyY2hfYWN0aW9uIjtzOjA6IiI7czoxNDoiZGlzcGxheUNvbHVtbnMiO3M6NjM6IlJFQ09SRF9OVU1CRVJ8TkFNRV9DfEVNUExPWUVfQ09ORk9STV9EQVRFX0N8RU1QTE9ZRV9KT0lOX0RBVEVfQyI7czo4OiJoaWRlVGFicyI7czowOiIiO3M6MTI6ImRpc3BsYXlfdGFicyI7YToxOntpOjA7czoyMjoiRU1QTE9ZRV9DT05GT1JNX0RBVEVfQyI7fXM6Nzoib3JkZXJCeSI7czoxMzoiUkVDT1JEX05VTUJFUiI7czo5OiJzb3J0T3JkZXIiO3M6MzoiQVNDIjtzOjY6ImJ1dHRvbiI7czo2OiJTZWFyY2giO31zOjEwOiJFbXBsb3llZXNRIjthOjM6e3M6NjoibW9kdWxlIjtzOjk6IkVtcGxveWVlcyI7czo2OiJhY3Rpb24iO3M6NToiaW5kZXgiO3M6NToicXVlcnkiO3M6NDoidHJ1ZSI7fXM6Mjc6IkRvY3VtZW50c19ET0NVTUVOVF9PUkRFUl9CWSI7czoxMzoiZG9jdW1lbnRfbmFtZSI7czoxMzoicHJvX1Byb2plY3RzUSI7YToxNDp7czo2OiJtb2R1bGUiO3M6MTI6InByb19Qcm9qZWN0cyI7czo2OiJhY3Rpb24iO3M6NToiaW5kZXgiO3M6OToicGFyZW50VGFiIjtzOjEwOiJFbXBsb3llZXMgIjtzOjk6ImFqYXhfbG9hZCI7czoxOiIxIjtzOjE0OiJsb2FkTGFuZ3VhZ2VKUyI7czoxOiIxIjtzOjEzOiJzZWFyY2hGb3JtVGFiIjtzOjEyOiJiYXNpY19zZWFyY2giO3M6NToicXVlcnkiO3M6NDoidHJ1ZSI7czo3OiJvcmRlckJ5IjtzOjA6IiI7czo5OiJzb3J0T3JkZXIiO3M6MDoiIjtzOjE5OiJyZWNvcmRfbnVtYmVyX2Jhc2ljIjtzOjA6IiI7czoyMDoicHJvamVjdF9uYW1lX2NfYmFzaWMiO3M6MDoiIjtzOjMxOiJwcm9qZWN0X2V4cGVjdGVkX2luY29tZV9jX2Jhc2ljIjtzOjA6IiI7czoyNjoicHJvamVjdF9kYXRlX3N0YXJ0X2NfYmFzaWMiO3M6MDoiIjtzOjY6ImJ1dHRvbiI7czo2OiJTZWFyY2giO31zOjk6IkFjY291bnRzUSI7YTo5OntzOjY6Im1vZHVsZSI7czo4OiJBY2NvdW50cyI7czo2OiJhY3Rpb24iO3M6NToiaW5kZXgiO3M6MTM6InNlYXJjaEZvcm1UYWIiO3M6MTI6ImJhc2ljX3NlYXJjaCI7czo1OiJxdWVyeSI7czo0OiJ0cnVlIjtzOjc6Im9yZGVyQnkiO3M6MDoiIjtzOjk6InNvcnRPcmRlciI7czowOiIiO3M6MTA6Im5hbWVfYmFzaWMiO3M6ODoia2FtYWxlc2giO3M6MjM6ImN1cnJlbnRfdXNlcl9vbmx5X2Jhc2ljIjtzOjE6IjAiO3M6NjoiYnV0dG9uIjtzOjY6IlNlYXJjaCI7fXM6MTQ6ImF0X0F0dGVudGFuY2VRIjthOjEwOntzOjY6Im1vZHVsZSI7czoxMzoiYXRfQXR0ZW50YW5jZSI7czo2OiJhY3Rpb24iO3M6NToiaW5kZXgiO3M6MTM6InNlYXJjaEZvcm1UYWIiO3M6MTI6ImJhc2ljX3NlYXJjaCI7czo1OiJxdWVyeSI7czo0OiJ0cnVlIjtzOjc6Im9yZGVyQnkiO3M6MTI6IkRBVEVfRU5URVJFRCI7czo5OiJzb3J0T3JkZXIiO3M6NDoiREVTQyI7czoxOToicmVjb3JkX251bWJlcl9iYXNpYyI7czowOiIiO3M6MTg6ImVudHJ5X3RpbWVfY19iYXNpYyI7czowOiIiO3M6MTc6ImV4aXRfdGltZV9jX2Jhc2ljIjtzOjA6IiI7czo2OiJidXR0b24iO3M6NjoiU2VhcmNoIjt9czoxMzoiRU1QX0VtcGxveWVlUSI7YToyNTp7czoxMzoicmV0dXJuX2FjdGlvbiI7czowOiIiO3M6MTM6InJldHVybl9tb2R1bGUiO3M6MDoiIjtzOjY6Im1vZHVsZSI7czoxMjoiRU1QX0VtcGxveWVlIjtzOjY6ImFjdGlvbiI7czo1OiJpbmRleCI7czo0OiJsdnNvIjtzOjM6ImFzYyI7czozNToiRU1QX0VtcGxveWVlMl9FTVBfRU1QTE9ZRUVfT1JERVJfQlkiO3M6MTI6InVzZXJfZW1haWxfYyI7czoxODoic2VsZWN0X2VudGlyZV9saXN0IjtzOjE6IjAiO3M6MzM6IkVNUF9FbXBsb3llZTJfRU1QX0VNUExPWUVFX29mZnNldCI7czoyOiI0MCI7czo5OiJzaG93X3BsdXMiO3M6MDoiIjtzOjE4OiJhc3NpZ25lZF91c2VyX25hbWUiO3M6MDoiIjtzOjE2OiJhc3NpZ25lZF91c2VyX2lkIjtzOjA6IiI7czo5OiJhamF4X2xvYWQiO3M6MToiMSI7czoxNDoibG9hZExhbmd1YWdlSlMiO3M6MToiMSI7czoxMzoic2VhcmNoRm9ybVRhYiI7czoxMjoiYmFzaWNfc2VhcmNoIjtzOjU6InF1ZXJ5IjtzOjQ6InRydWUiO3M6Nzoib3JkZXJCeSI7czoxMjoiREFURV9FTlRFUkVEIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjtzOjE5OiJyZWNvcmRfbnVtYmVyX2Jhc2ljIjtzOjA6IiI7czoxMDoibmFtZV9iYXNpYyI7czowOiIiO3M6MTg6InVzZXJfZW1haWxfY19iYXNpYyI7czowOiIiO3M6MjU6InVzZXJfam9pbmluZ19kYXRlX2NfYmFzaWMiO3M6MDoiIjtzOjE4OiJ1c2VyX3Bob25lX2NfYmFzaWMiO3M6MDoiIjtzOjI1OiJ1c2VyX3Byb2plY3RfbmFtZV9jX2Jhc2ljIjtzOjA6IiI7czozMToidXNlcl9hdHRlbnRhbmNlX2hpc3RvcnlfY19iYXNpYyI7czowOiIiO3M6NjoiYnV0dG9uIjtzOjY6IlNlYXJjaCI7fXM6MTg6IkVNUF9FbXBsb3llZV9MaXN0USI7YTo4OntzOjY6Im1vZHVsZSI7czoxNzoiRU1QX0VtcGxveWVlX0xpc3QiO3M6NjoiYWN0aW9uIjtzOjU6ImluZGV4IjtzOjEzOiJzZWFyY2hGb3JtVGFiIjtzOjEyOiJiYXNpY19zZWFyY2giO3M6NToicXVlcnkiO3M6NDoidHJ1ZSI7czo3OiJvcmRlckJ5IjtzOjEyOiJEQVRFX0VOVEVSRUQiO3M6OToic29ydE9yZGVyIjtzOjQ6IkRFU0MiO3M6MjA6ImVtcF91c2VybmFtZV9jX2Jhc2ljIjtzOjA6IiI7czo2OiJidXR0b24iO3M6NjoiU2VhcmNoIjt9fQ=='),
+('df14e7ff-0ad3-f980-d33c-634e3e98c75b', 'global', 0, '2022-10-18 05:48:09', '2023-02-22 13:59:38', '1', 'YTozMDp7czoyMDoiY2FsZW5kYXJfcHVibGlzaF9rZXkiO3M6MzY6ImMzOWU3YzAyLTNlYjQtZDFhMy1kNTViLTYzZTRhMTRmMWQ2NyI7czoxMDoidXNlcl90aGVtZSI7czo2OiJTdWl0ZVIiO3M6MTM6InJlbWluZGVyX3RpbWUiO2k6MTgwMDtzOjEyOiJtYWlsbWVyZ2Vfb24iO3M6Mjoib24iO3M6ODoidGltZXpvbmUiO3M6MTM6IkV1cm9wZS9CZXJsaW4iO3M6MTY6InN3YXBfbGFzdF92aWV3ZWQiO3M6MDoiIjtzOjE0OiJzd2FwX3Nob3J0Y3V0cyI7czowOiIiO3M6MTk6Im5hdmlnYXRpb25fcGFyYWRpZ20iO3M6MjoiZ20iO3M6MTM6InN1YnBhbmVsX3RhYnMiO3M6MDoiIjtzOjE0OiJtb2R1bGVfZmF2aWNvbiI7czowOiIiO3M6OToiaGlkZV90YWJzIjthOjA6e31zOjExOiJyZW1vdmVfdGFicyI7YTowOnt9czo3OiJub19vcHBzIjtzOjM6Im9mZiI7czoxOToiZW1haWxfcmVtaW5kZXJfdGltZSI7aTotMTtzOjI6InV0IjtzOjE6IjEiO3M6ODoiY3VycmVuY3kiO3M6MzoiLTk5IjtzOjM1OiJkZWZhdWx0X2N1cnJlbmN5X3NpZ25pZmljYW50X2RpZ2l0cyI7czoxOiIyIjtzOjExOiJudW1fZ3JwX3NlcCI7czoxOiIsIjtzOjc6ImRlY19zZXAiO3M6MToiLiI7czo1OiJkYXRlZiI7czo1OiJtL2QvWSI7czo1OiJ0aW1lZiI7czo0OiJoOmlhIjtzOjI2OiJkZWZhdWx0X2xvY2FsZV9uYW1lX2Zvcm1hdCI7czo1OiJzIGYgbCI7czoxNDoidXNlX3JlYWxfbmFtZXMiO3M6Mjoib24iO3M6MTc6Im1haWxfc210cGF1dGhfcmVxIjtzOjA6IiI7czoxMjoibWFpbF9zbXRwc3NsIjtpOjA7czoxNzoiZW1haWxfc2hvd19jb3VudHMiO2k6MDtzOjE5OiJ0aGVtZV9jdXJyZW50X2dyb3VwIjtzOjM6IkFsbCI7czoxMDoiRW1wbG95ZWVzUSI7YTozOntzOjY6Im1vZHVsZSI7czo5OiJFbXBsb3llZXMiO3M6NjoiYWN0aW9uIjtzOjU6ImluZGV4IjtzOjU6InF1ZXJ5IjtzOjQ6InRydWUiO31zOjE4OiJFTVBfRW1wbG95ZWVfTGlzdFEiO2E6ODp7czo2OiJtb2R1bGUiO3M6MTc6IkVNUF9FbXBsb3llZV9MaXN0IjtzOjY6ImFjdGlvbiI7czo1OiJpbmRleCI7czoxMzoic2VhcmNoRm9ybVRhYiI7czoxMjoiYmFzaWNfc2VhcmNoIjtzOjU6InF1ZXJ5IjtzOjQ6InRydWUiO3M6Nzoib3JkZXJCeSI7czoxMjoiREFURV9FTlRFUkVEIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjtzOjIwOiJlbXBfdXNlcm5hbWVfY19iYXNpYyI7czowOiIiO3M6NjoiYnV0dG9uIjtzOjY6IlNlYXJjaCI7fXM6MTQ6ImF0X0F0dGVudGFuY2VRIjthOjk6e3M6NjoibW9kdWxlIjtzOjEzOiJhdF9BdHRlbnRhbmNlIjtzOjY6ImFjdGlvbiI7czo1OiJpbmRleCI7czoxMzoic2VhcmNoRm9ybVRhYiI7czoxMjoiYmFzaWNfc2VhcmNoIjtzOjU6InF1ZXJ5IjtzOjQ6InRydWUiO3M6Nzoib3JkZXJCeSI7czoxMjoiREFURV9FTlRFUkVEIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjtzOjE5OiJyZWNvcmRfbnVtYmVyX2Jhc2ljIjtzOjA6IiI7czoyNzoiYXR0ZW50YW5jZV9lbXBfbmFtZV9jX2Jhc2ljIjtzOjA6IiI7czo2OiJidXR0b24iO3M6NjoiU2VhcmNoIjt9fQ=='),
 ('e5f6e70e-a7f2-a238-25c5-63d9f5ab1f1a', 'PAY_Payments2_PAY_PAYMENTS', 0, '2023-02-01 05:16:06', '2023-02-01 05:16:06', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
+('e89c3a92-b2da-d128-997e-63ecae8c8ff9', 'Meetings2_MEETING', 0, '2023-02-15 10:07:29', '2023-02-15 10:07:29', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
+('ea0b9fda-a7fe-4b9a-5f0a-63ecaead57c1', 'Tasks2_TASK', 0, '2023-02-15 10:06:33', '2023-02-15 10:06:33', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('f0200f4b-913a-c8cf-a125-63889fc17c86', 'sh_Salary_History2_SH_SALARY_HISTORY', 0, '2022-12-01 12:33:29', '2022-12-01 12:33:29', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('f0e6be0b-697e-5601-461c-639433ed2896', 'global', 0, '2022-12-10 07:23:08', '2022-12-10 07:23:08', 'cedc344d-e69a-331d-33cb-63943345eb53', 'YTozMzp7czoxMjoibWFpbG1lcmdlX29uIjtzOjM6Im9mZiI7czoxNjoic3dhcF9sYXN0X3ZpZXdlZCI7czowOiIiO3M6MTQ6InN3YXBfc2hvcnRjdXRzIjtzOjA6IiI7czoxOToibmF2aWdhdGlvbl9wYXJhZGlnbSI7czoyOiJnbSI7czoxMzoic3VicGFuZWxfdGFicyI7czoyOiJvbiI7czoxMDoidXNlcl90aGVtZSI7czo2OiJTdWl0ZTciO3M6MTQ6Im1vZHVsZV9mYXZpY29uIjtzOjA6IiI7czo5OiJoaWRlX3RhYnMiO2E6MDp7fXM6MTE6InJlbW92ZV90YWJzIjthOjA6e31zOjc6Im5vX29wcHMiO3M6Mzoib2ZmIjtzOjEzOiJyZW1pbmRlcl90aW1lIjtpOi0xO3M6MTk6ImVtYWlsX3JlbWluZGVyX3RpbWUiO2k6LTE7czo4OiJ0aW1lem9uZSI7czoxMzoiRXVyb3BlL0JlcmxpbiI7czoyOiJ1dCI7czoxOiIwIjtzOjg6ImN1cnJlbmN5IjtzOjM6Ii05OSI7czozNToiZGVmYXVsdF9jdXJyZW5jeV9zaWduaWZpY2FudF9kaWdpdHMiO3M6MToiMiI7czoxMToibnVtX2dycF9zZXAiO3M6MToiLCI7czo3OiJkZWNfc2VwIjtzOjE6Ii4iO3M6NDoiZmRvdyI7czoxOiIwIjtzOjU6ImRhdGVmIjtzOjU6Im0vZC9ZIjtzOjU6InRpbWVmIjtzOjQ6Img6aWEiO3M6MTU6Im1haWxfc210cHNlcnZlciI7czoxNDoic210cC5nbWFpbC5jb20iO3M6MTM6Im1haWxfc210cHVzZXIiO3M6MDoiIjtzOjEzOiJtYWlsX3NtdHBwYXNzIjtzOjc6InRlc3QxMjMiO3M6MjY6ImRlZmF1bHRfbG9jYWxlX25hbWVfZm9ybWF0IjtzOjU6InMgZiBsIjtzOjE2OiJleHBvcnRfZGVsaW1pdGVyIjtzOjE6IiwiO3M6MjI6ImRlZmF1bHRfZXhwb3J0X2NoYXJzZXQiO3M6NToiVVRGLTgiO3M6MTQ6InVzZV9yZWFsX25hbWVzIjtzOjI6Im9uIjtzOjE3OiJtYWlsX3NtdHBhdXRoX3JlcSI7czowOiIiO3M6MTI6Im1haWxfc210cHNzbCI7aTowO3M6MTU6ImVtYWlsX2xpbmtfdHlwZSI7czo1OiJzdWdhciI7czoxNzoiZW1haWxfc2hvd19jb3VudHMiO2k6MDtzOjIwOiJjYWxlbmRhcl9wdWJsaXNoX2tleSI7czozNjoiZjBhMThlNTYtNDNkZi03NjQ0LWVkYTktNjM5NDMzOTg3MTk4Ijt9');
 
@@ -6804,8 +7064,8 @@ CREATE TABLE `versions` (
 --
 
 INSERT INTO `versions` (`id`, `deleted`, `date_entered`, `date_modified`, `modified_user_id`, `created_by`, `name`, `file_version`, `db_version`) VALUES
-('1ca4f0c6-91a1-6d3a-a509-63dcb4f2352e', 0, '2023-02-03 07:13:57', '2023-02-03 07:13:57', '1', '1', 'Rebuild Relationships', '4.0.0', '4.0.0'),
-('34702f87-509b-dd32-63f4-63dcb420dd37', 0, '2023-02-03 07:13:57', '2023-02-03 07:13:57', '1', '1', 'Rebuild Extensions', '4.0.0', '4.0.0'),
+('34480762-f0a7-2748-f0fb-63ff3b5e2c83', 0, '2023-03-01 11:47:45', '2023-03-01 11:47:45', '1', '1', 'Rebuild Relationships', '4.0.0', '4.0.0'),
+('4f808387-feb9-e3e3-ee0f-63ff3bc491a3', 0, '2023-03-01 11:47:45', '2023-03-01 11:47:45', '1', '1', 'Rebuild Extensions', '4.0.0', '4.0.0'),
 ('6107fc1c-a5f4-16bd-cc48-634e3eb4b3c1', 0, '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '1', 'Chart Data Cache', '3.5.1', '3.5.1'),
 ('686f8516-a477-8091-dc8d-634e3e431287', 0, '2022-10-18 05:48:09', '2022-10-18 05:48:09', '1', '1', 'htaccess', '3.5.1', '3.5.1');
 
@@ -7418,6 +7678,25 @@ ALTER TABLE `cases_bugs`
 -- Indexes for table `cases_cstm`
 --
 ALTER TABLE `cases_cstm`
+  ADD PRIMARY KEY (`id_c`);
+
+--
+-- Indexes for table `cli_clients`
+--
+ALTER TABLE `cli_clients`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `cli_clients_audit`
+--
+ALTER TABLE `cli_clients_audit`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_cli_clients_parent_id` (`parent_id`);
+
+--
+-- Indexes for table `cli_clients_cstm`
+--
+ALTER TABLE `cli_clients_cstm`
   ADD PRIMARY KEY (`id_c`);
 
 --
@@ -8178,7 +8457,8 @@ ALTER TABLE `outbound_email`
 -- Indexes for table `pay_payments`
 --
 ALTER TABLE `pay_payments`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `record_number` (`record_number`);
 
 --
 -- Indexes for table `pay_payments_audit`
@@ -8470,6 +8750,25 @@ ALTER TABLE `sh_salary_history_cstm`
   ADD PRIMARY KEY (`id_c`);
 
 --
+-- Indexes for table `sk_skill`
+--
+ALTER TABLE `sk_skill`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `sk_skill_audit`
+--
+ALTER TABLE `sk_skill_audit`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_sk_skill_parent_id` (`parent_id`);
+
+--
+-- Indexes for table `sk_skill_cstm`
+--
+ALTER TABLE `sk_skill_cstm`
+  ADD PRIMARY KEY (`id_c`);
+
+--
 -- Indexes for table `sly_salaries`
 --
 ALTER TABLE `sly_salaries`
@@ -8545,6 +8844,19 @@ ALTER TABLE `users`
   ADD KEY `idx_user_name` (`user_name`,`is_group`,`status`,`last_name`,`first_name`,`id`);
 
 --
+-- Indexes for table `users_audit`
+--
+ALTER TABLE `users_audit`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_users_parent_id` (`parent_id`);
+
+--
+-- Indexes for table `users_cstm`
+--
+ALTER TABLE `users_cstm`
+  ADD PRIMARY KEY (`id_c`);
+
+--
 -- Indexes for table `users_feeds`
 --
 ALTER TABLE `users_feeds`
@@ -8600,7 +8912,7 @@ ALTER TABLE `versions`
 -- AUTO_INCREMENT for table `at_attentance`
 --
 ALTER TABLE `at_attentance`
-  MODIFY `record_number` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `record_number` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `bugs`
@@ -8648,7 +8960,13 @@ ALTER TABLE `emp_employees`
 -- AUTO_INCREMENT for table `emp_employee_list`
 --
 ALTER TABLE `emp_employee_list`
-  MODIFY `record_number` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `record_number` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `pay_payments`
+--
+ALTER TABLE `pay_payments`
+  MODIFY `record_number` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `prospects`
@@ -8660,19 +8978,19 @@ ALTER TABLE `prospects`
 -- AUTO_INCREMENT for table `pro_projects`
 --
 ALTER TABLE `pro_projects`
-  MODIFY `record_number` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `record_number` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `sh_salary_history`
 --
 ALTER TABLE `sh_salary_history`
-  MODIFY `record_number` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `record_number` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tracker`
 --
 ALTER TABLE `tracker`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=837;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1021;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
